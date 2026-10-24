@@ -235,8 +235,8 @@ function spriteSize(art) {
 // or a float for agy) and blinks on its own. `hops` are [second, height];
 // the bubble spans are [from, to]: alert '!', work '...', ask '?', done tick.
 // say adds bubbles of your own: [content, spans, fill?], content a short
-// string ('zZ') or a node.
-export function mascot(s, m, i, { x = mascotX(i), hops = [], alert = [], work = [], ask = [], done = [], say = [] } = {}) {
+// string ('zZ') or a node. sleep spans keep the eyes shut.
+export function mascot(s, m, i, { x = mascotX(i), hops = [], alert = [], work = [], ask = [], done = [], say = [], sleep = [] } = {}) {
   const { width, height } = spriteSize(m.art);
   const left = x - width / 2;
   const top = GROUND - height - (m.float ? 12 : 0);
@@ -249,7 +249,8 @@ export function mascot(s, m, i, { x = mascotX(i), hops = [], alert = [], work = 
   const blinkAt = 1 + (i * 0.7) % 3;
   const body = g({},
     sprite(m.art, m.palette, { px: PX }),
-    lids.length ? s.anim(g({}, lids), [[0, { opacity: 0 }], [blinkAt, { opacity: 1 }, 'step'], [blinkAt + 0.15, { opacity: 0 }, 'step']], { period: 4 }) : null);
+    lids.length ? s.anim(g({}, lids), [[0, { opacity: 0 }], [blinkAt, { opacity: 1 }, 'step'], [blinkAt + 0.15, { opacity: 0 }, 'step']], { period: 4 }) : null,
+    lids.length && sleep.length ? during(s, g({}, lids), sleep) : null);
 
   const idle = m.float
     ? s.anim(body, [[0, { y: 0 }], [1, { y: -6 }, 'inOut'], [2, { y: 0 }, 'inOut']], { period: 2 })

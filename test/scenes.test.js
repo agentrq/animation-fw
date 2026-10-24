@@ -25,3 +25,16 @@ test('a mascot can say a bubble of its own', async () => {
   assert.match(svg, />zZ</);
   assert.match(svg, /width="38"[^>]*fill="#f00"/);
 });
+
+test('a sleeping mascot keeps its eyes shut, and only when asked', async () => {
+  const { newScene, mascot, MASCOTS } = await import('../kit/agentrq.js');
+  const draw = (opts) => {
+    const s = newScene({ description: 'x', poster: 1 });
+    mascot(s, MASCOTS[0], 0, opts);
+    return s.toSVG();
+  };
+  const awake = draw({});
+  const asleep = draw({ sleep: [[0, 5]] });
+  assert.equal((awake.match(/@keyframes/g) ?? []).length + 1, (asleep.match(/@keyframes/g) ?? []).length);
+  assert.equal((asleep.match(/fill="#d97757"/g) ?? []).length, (awake.match(/fill="#d97757"/g) ?? []).length + 2);
+});
