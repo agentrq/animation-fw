@@ -11,6 +11,9 @@ node bin/animfw.js check dist/*.svg
 npm test
 ```
 
+Making an AgentRQ scene? Read [SCENES.md](SCENES.md): the house style lives
+in `kit/agentrq.js`, and `scenes/task-board.js` is the reference.
+
 ## Why it is built this way
 
 GitHub shows a README SVG as an `<img>`: scripts are stripped and nothing
