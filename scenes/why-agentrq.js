@@ -53,7 +53,7 @@ const ACTS = Object.fromEntries(Object.keys(X).map((n) => [n, { hops: [], alert:
 export default function whyAgentrq() {
   const s = newScene({
     poster: 20.2,
-    description: 'What sets AgentRQ apart, in six beats: claude saves a lesson to workspace memory and codex picks up the task thread on another machine; a claude supervisor splits Ship billing v2 into three worker tasks for codex, agy and hermes; a plain-text chain of events hands qa to deploy to release notes; you switch the pr-review skill on for three more workspaces; you answer claude\'s prompt from your phone; and claude over Claude Channels and codex, agy, hermes and openclaw over ACP v1 all join one workspace and celebrate.',
+    description: 'What sets AgentRQ apart, in six beats: claude saves a lesson to workspace memory and codex picks up the task thread on another machine; a claude supervisor splits Ship billing v2 into three worker tasks for codex, agy and hermes; a workflow graph of small event and workspace nodes hands qa to deploy to release, each getting a task in plain words; you switch the pr-review skill on for three more workspaces; you answer claude\'s edit prompt on its live terminal from your phone; and claude over Claude Channels and codex, agy, hermes and openclaw over ACP v1 all join one workspace and celebrate.',
   });
 
   sky(s);
@@ -88,7 +88,7 @@ function story(s) {
       [B[1], B[2], '> supervisor -> 3 workers'],
       [B[2], B[3], '> qa_passed -> deploy'],
       [B[3], B[4], '> pr-review: on in 4 spaces'],
-      [B[4], B[5], '> you: y, from your phone'],
+      [B[4], B[5], '> you: Yes, from your phone'],
       [B[5], B[6], '> ACP v1 + Claude Channels'],
     ],
   });
@@ -98,7 +98,7 @@ function story(s) {
 const TITLES = [
   ['Distributed memory', 'task + workspace'],
   ['Supervisor and workers', 'one agent leads'],
-  ['Chain of events', 'plain-text workflows'],
+  ['Chain of events', 'plain-language workflows'],
   ['Distributed skills', 'one switch per workspace'],
   ['Your terminal, anywhere', 'phone, web, Chrome'],
   ['Every agent plugs in', 'ACP v1 + Claude Channels'],
@@ -195,41 +195,79 @@ function supervisor(s) {
   ACTS.claude.done.push([t + 3.1, B[2]]);
 }
 
-// 03: a workflow written as an indented list; each event lights the next
-// agent, which gets a task in plain words.
+// 03: a workflow as the app draws it: small event nodes (violet) above,
+// workspace nodes below, zigzagging left to right. Each event lights the
+// next workspace, which gets a task written in plain words.
+const EV = { text: '#a78bfa', bg: '#1a1528', line: '#3b2d63', lit: '#c4b5fd' };
+const START = '#34d399';
+
 function chain(s) {
   const t = B[2];
-  const E = [456, 56, 380, 220];
-  const LINES = ['- event:pr_merged', '  - agent:qa', '    - event:qa_passed', '      - agent:deploy', '        - event:deploy_finished', '          - agent:release-notes'];
-  const lit = (k) => t + 0.3 + 0.5 * k;
-  const TASKS = [[1, 'qa', 'codex', 'Run the e2e suite on main'], [3, 'deploy', 'agy', 'Ship main to production'], [5, 'release-notes', 'hermes', 'Write the release notes']];
-  const parts = [
-    box(...E, SCREEN, BORDER),
-    s.text('text mode', { x: E[0] + 14, y: E[1] + 24, font: 'pixel', size: 16, fill: C.dim }),
+  const NODES = [
+    { event: true, label: 'pr_merged', start: true },
+    { label: 'qa', agent: 'codex', task: 'Run the e2e suite' },
+    { event: true, label: 'qa_passed' },
+    { label: 'deploy', agent: 'agy', task: 'Ship to production' },
+    { event: true, label: 'deploy_finished' },
+    { label: 'release', agent: 'hermes', task: 'Write release notes' },
   ];
-  LINES.forEach((line, k) => {
-    const y = E[1] + 54 + k * 26;
-    const event = line.includes('event:');
-    parts.push(s.anim(box(E[0] + 6, y - 15, E[2] - 12, 22, '#14532d'), [[0, { opacity: 0 }], [lit(k), { opacity: 1 }, 'step'], [lit(k) + 0.5, { opacity: 0.35 }]]));
-    // SVG collapses leading spaces, so the indent is an offset: 0.6em a character.
-    const indent = line.length - line.trimStart().length;
-    parts.push(s.text(line.trimStart(), { x: E[0] + 14 + indent * 7.8, y, font: 'mono', size: 13, fill: event ? C.cron : C.text }));
+  const NW = 112;
+  const NH = 30;
+  const TOP = 64;
+  const BOT = 168;
+  const LANE = 132;
+  const nx = (k) => 456 + k * 118;
+  const mid = (k) => nx(k) + NW / 2;
+  const ny = (k) => (NODES[k].event ? TOP : BOT);
+  const lit = (k) => t + 0.3 + 0.5 * k;
+  const parts = [];
+
+  // The edges: down or up from each node to a shared lane, along it, and on
+  // into the next node.
+  NODES.forEach((n, k) => {
+    parts.push(vline(mid(k), n.event ? TOP + NH : LANE, n.event ? LANE : BOT, BORDER));
+    if (k < NODES.length - 1) parts.push(hline(mid(k), mid(k + 1), LANE, BORDER));
   });
-  TASKS.forEach(([k, ws, agent, task], n) => {
-    const y = 60 + n * 74;
-    const at = lit(k) + 0.2;
-    parts.push(appear(s, g({},
-      box(852, y, 312, 58, C.card, C.line),
-      s.text(`new task in ${ws}`, { x: 866, y: y + 22, font: 'mono', size: 11, fill: C.dim }),
-      dot(1150 - agent.length * 7 - 12, y + 16, mascotByName(agent).color),
-      s.text(agent, { x: 1150, y: y + 23, font: 'mono', size: 11, fill: C.dim, anchor: 'end' }),
-      s.text(task, { x: 866, y: y + 45, font: 'semi', size: 14, fill: C.text })), at));
-    parts.push(pulse(s, at - 0.3, [E[0] + E[2], E[1] + 54 + k * 26 - 4], [852, y + 29], { fill: C.cron, dur: 0.3 }));
-    ACTS[agent].alert.push([at, at + 0.4]);
-    ACTS[agent].work.push([at + 0.4, at + 1.0]);
-    ACTS[agent].done.push([at + 1.0, B[3]]);
-    ACTS[agent].hops.push([at + 1.0, 14]);
+
+  NODES.forEach((n, k) => {
+    const x = nx(k);
+    const y = ny(k);
+    const at = lit(k);
+    const node = [
+      el('rect', { x, y, width: NW, height: NH, fill: n.event ? EV.bg : C.card, stroke: n.event ? EV.line : C.line, 'stroke-width': n.event ? 2 : 1, class: 'px' }),
+      s.text(n.label, { x: x + 8, y: y + 19, font: 'mono', size: 10, fill: n.event ? EV.text : C.text }),
+    ];
+    if (n.start) node.push(s.text('start', { x: x + NW - 8, y: y + 19, font: 'pixel', size: 8, fill: START, anchor: 'end' }));
+    if (n.event) {
+      // Fired: a flash, then lit.
+      node.push(s.anim(el('rect', { x, y, width: NW, height: NH, fill: EV.text, class: 'px' }),
+        [[0, { opacity: 0 }], [at, { opacity: 0.45 }, 'step'], [at + 0.4, { opacity: 0.14 }]]));
+    } else {
+      const done = at + 1.0;
+      const m = mascotByName(n.agent);
+      node.push(
+        dot(x + NW - 50, y + 12, m.color),
+        s.text(n.agent, { x: x + NW - 40, y: y + 19, font: 'mono', size: 9, fill: C.dim }),
+        s.anim(el('rect', { x, y, width: 4, height: NH, class: 'px' }), [[0, { fill: C.notstarted }], [at, { fill: C.ongoing }, 'step'], [done, { fill: C.done }, 'step']]),
+        appear(s, el('rect', { x, y, width: NW, height: NH, fill: 'none', stroke: C.ongoing, 'stroke-width': 2, class: 'px' }), at, done),
+        // The task it gets, in plain words.
+        appear(s, g({},
+          s.text('new task', { x, y: y + NH + 20, font: 'pixel', size: 8, fill: C.dim }),
+          s.text(n.task, { x, y: y + NH + 38, font: 'semi', size: 12, fill: C.text }),
+          appear(s, sprite(CHECK, { '#': C.ongoing }, { px: 2, x: x + NW - 16, y: y + NH + 10 }), done)), at),
+      );
+      ACTS[n.agent].alert.push([at, at + 0.4]);
+      ACTS[n.agent].work.push([at + 0.4, done]);
+      ACTS[n.agent].done.push([done, B[3]]);
+      ACTS[n.agent].hops.push([done, 14]);
+    }
+    parts.push(...node);
+    // A pulse runs from this node along the lane into the next one.
+    if (k < NODES.length - 1) {
+      parts.push(pulse(s, at + 0.15, [mid(k), LANE], [mid(k + 1), LANE], { fill: EV.lit, dur: 0.35 }));
+    }
   });
+  parts.push(appear(s, s.text('no YAML, no glue code: events and plain-language tasks', { x: 456, y: 278, font: 'mono', size: 12, fill: C.lit }), t + 2.8));
   beat(s, 2, parts);
 }
 
@@ -266,48 +304,98 @@ function skills(s) {
   beat(s, 3, parts);
 }
 
-// 05: claude asks on a machine at home; you answer on your phone.
-const TAP = B[4] + 1.4;
-const TAP_AT = { x: 560, y: 250 };
+// 05: claude waits on an edit prompt on a machine at home; you answer it on
+// your phone, on the app's own terminal page: the way back to the machine,
+// the workspace, Stop, the frame with its status, and the phone's key row.
+const PH = { x: 740, y: 36, w: 214, h: 254 };
+const TERM = { x: PH.x + 8, y: PH.y + 66, w: PH.w - 16, h: 150 };
+const KEYS = ['Esc', '^C', 'Tab', '⇧Tab', '↑', '↓', '←', '→', 'enter'];
+const KEY_W = 20;
+const KEY_GAP = (TERM.w - KEYS.length * KEY_W) / (KEYS.length - 1);
+const KEY_Y = TERM.y + TERM.h + 4;
+const keyX = (k) => TERM.x + k * (KEY_W + KEY_GAP);
+const TAP = B[4] + 1.5;
+const TAP_AT = { x: keyX(KEYS.length - 1) + KEY_W / 2 - 2, y: KEY_Y + 8 };
+const ENTER = `
+  .....#
+  .....#
+  .#...#
+  ##...#
+  ######
+  ##....
+  .#....`;
 
 function terminal(s) {
   const t = B[4];
-  const P = [470, 52, 180, 232];
-  const M = [900, 120, 250, 70];
-  const lines = [
-    [0, '> fix the flaky test', C.text],
-    [0, '* Read(login.spec.ts)', C.dim],
-    [0, '* Update(session.ts)', C.dim],
-    [t + 0.6, 'Apply this edit? y/n', C.ask],
-    [TAP, 'y', C.text],
-    [t + 1.9, '* Edit applied.', C.dim],
-    [t + 2.4, '* 12 tests pass', C.lit],
+  const CHW = 5.7;                         // JetBrains Mono 9.5 is 0.6em a character
+  const row = (r, text, { indent = 0, fill = C.text } = {}) =>
+    s.text(text, { x: TERM.x + 8 + indent * CHW, y: TERM.y + 32 + r * 13, font: 'mono', size: 9.5, fill });
+  const PROMPT = t + 0.5;
+  const before = [
+    [2, 'Do you want to make this edit', { indent: 1 }],
+    [3, 'to session.ts?', { indent: 1 }],
+    [4, '❯ 1. Yes', { indent: 1, fill: C.cron }],
+    [5, '2. Yes, allow all edits', { indent: 3, fill: C.dim }],
+    [6, '3. No, and tell Claude', { indent: 3, fill: C.dim }],
+  ];
+  const after = [
+    [2, '└ Updated with 4 additions', { indent: 2, fill: C.dim }, TAP + 0.2],
+    [3, '● Bash(npm test)', {}, TAP + 0.6],
+    [4, '└ 12 passed', { indent: 2, fill: C.lit }, TAP + 1.1],
+    [5, '● The flaky test is fixed.', {}, TAP + 1.5],
   ];
   const parts = [
-    el('rect', { x: P[0], y: P[1], width: P[2], height: P[3], rx: 18, fill: SCREEN, stroke: BORDER, 'stroke-width': 3 }),
-    el('rect', { x: P[0] + 66, y: P[1] + 10, width: 48, height: 6, rx: 3, fill: BORDER }),
-    ...lines.map(([at, line, fill], k) => {
-      const node = s.text(line, { x: P[0] + 14, y: P[1] + 40 + k * 20, font: 'mono', size: 11, fill });
-      return at ? appear(s, node, at) : node;
-    }),
-    appear(s, g({}, box(TAP_AT.x - 40, TAP_AT.y - 14, 80, 26, C.ask),
-      s.text('Yes', { x: TAP_AT.x, y: TAP_AT.y + 4, font: 'semi', size: 13, fill: C.ink, anchor: 'middle' })), t + 0.6, TAP + 0.2),
-    // The wire from your phone to the machine.
-    ...Array.from({ length: 30 }, (_, k) => el('rect', { x: P[0] + P[2] + 10 + k * 8, y: 154, width: 4, height: 2, fill: WIRE, class: 'px' })),
-    pulse(s, TAP, [P[0] + P[2] + 10, 155], [M[0], 155], { dur: 0.4 }),
-    pulse(s, t + 1.9, [M[0], 155], [P[0] + P[2] + 10, 155], { dur: 0.4, fill: C.text }),
-    box(...M, C.card, C.line),
-    s.text('dev-box', { x: M[0] + 14, y: M[1] + 26, font: 'pixel', size: 16, fill: C.dim }),
-    dot(M[0] + 14, M[1] + 42, mascotByName('claude').color),
-    s.text('claude code, live', { x: M[0] + 26, y: M[1] + 50, font: 'mono', size: 12, fill: C.text }),
-    s.text('same session from your phone,', { x: 1025, y: 236, font: 'mono', size: 12, fill: C.dim, anchor: 'middle' }),
-    s.text('any browser, the Chrome panel', { x: 1025, y: 256, font: 'mono', size: 12, fill: C.dim, anchor: 'middle' }),
+    // The machine at home, and the wire to your phone.
+    box(456, 110, 204, 76, C.card, C.line),
+    s.text('dev-box', { x: 470, y: 136, font: 'pixel', size: 16, fill: C.dim }),
+    dot(470, 150, mascotByName('claude').color),
+    s.text('claude-code, running', { x: 482, y: 157, font: 'mono', size: 12, fill: C.text }),
+    s.text('at home', { x: 470, y: 176, font: 'mono', size: 11, fill: C.dim }),
+    ...Array.from({ length: 10 }, (_, k) => el('rect', { x: 664 + k * 8, y: 147, width: 4, height: 2, fill: WIRE, class: 'px' })),
+    pulse(s, TAP, [PH.x - 4, 148], [664, 148], { dur: 0.35 }),
+    pulse(s, TAP + 0.25, [664, 148], [PH.x - 4, 148], { dur: 0.35, fill: C.text }),
+
+    // The phone.
+    el('rect', { x: PH.x, y: PH.y, width: PH.w, height: PH.h, rx: 18, fill: C.bg, stroke: BORDER, 'stroke-width': 3 }),
+    el('rect', { x: PH.x + PH.w / 2 - 24, y: PH.y + 8, width: 48, height: 5, rx: 2, fill: BORDER }),
+    s.text('← DEV-BOX', { x: PH.x + 12, y: PH.y + 30, font: 'semi', size: 9, fill: C.notstarted, spacing: 1 }),
+    s.text('agentrq-web', { x: PH.x + 12, y: PH.y + 47, font: 'bold', size: 13, fill: C.text }),
+    s.text('claude-code', { x: PH.x + 12, y: PH.y + 59, font: 'mono', size: 9, fill: C.dim }),
+    box(PH.x + PH.w - 50, PH.y + 32, 38, 18, C.card, BORDER),
+    s.text('STOP', { x: PH.x + PH.w - 31, y: PH.y + 45, font: 'semi', size: 8, fill: '#f87171', anchor: 'middle', spacing: 1 }),
+
+    // The terminal frame: dots, status, claude's screen.
+    el('rect', { x: TERM.x, y: TERM.y, width: TERM.w, height: TERM.h, fill: SCREEN, stroke: C.line, 'stroke-width': 1, class: 'px' }),
+    el('rect', { x: TERM.x + 1, y: TERM.y + 1, width: TERM.w - 2, height: 16, fill: C.card, class: 'px' }),
+    ...[0, 1, 2].map((k) => el('rect', { x: TERM.x + 7 + k * 9, y: TERM.y + 6, width: 6, height: 6, fill: BORDER, class: 'px' })),
+    el('rect', { x: TERM.x + 40, y: TERM.y + 6, width: 5, height: 5, fill: C.ongoing, class: 'px' }),
+    s.text('LIVE', { x: TERM.x + 49, y: TERM.y + 12, font: 'semi', size: 8, fill: C.dim, spacing: 1 }),
+    row(0, '> fix the flaky login test'),
+    row(1, '● Update(src/auth/session.ts)'),
+    ...before.map(([r, text, o]) => appear(s, row(r, text, o), PROMPT, TAP + 0.1)),
+    ...after.map(([r, text, o, at]) => appear(s, row(r, text, o), at)),
+
+    // The key row a phone keyboard lacks.
+    ...KEYS.map((label, k) => g({},
+      el('rect', { x: keyX(k), y: KEY_Y, width: KEY_W, height: 16, rx: 3, fill: C.card, stroke: BORDER, 'stroke-width': 1 }),
+      label === 'enter'
+        ? sprite(ENTER, { '#': C.text }, { px: 1.5, x: keyX(k) + 5.5, y: KEY_Y + 3 })
+        : s.text(label, { x: keyX(k) + KEY_W / 2, y: KEY_Y + 11.5, font: 'mono', size: label.length > 3 ? 6.5 : 8, fill: C.text, anchor: 'middle' }))),
+    s.anim(el('rect', { x: keyX(KEYS.length - 1), y: KEY_Y, width: KEY_W, height: 16, rx: 3, fill: C.ongoing }),
+      [[0, { opacity: 0 }], [TAP - 0.15, { opacity: 0.7 }, 'step'], [TAP + 0.1, { opacity: 0 }, 'step']]),
+    el('rect', { x: PH.x + PH.w / 2 - 30, y: PH.y + PH.h - 12, width: 60, height: 4, rx: 2, fill: BORDER }),
+
+    // What it is.
+    s.text('the same live session', { x: 976, y: 132, font: 'mono', size: 12, fill: C.text }),
+    s.text('from your phone,', { x: 976, y: 152, font: 'mono', size: 12, fill: C.dim }),
+    s.text('any browser, or the', { x: 976, y: 172, font: 'mono', size: 12, fill: C.dim }),
+    s.text('Chrome side panel', { x: 976, y: 192, font: 'mono', size: 12, fill: C.dim }),
   ];
   beat(s, 4, parts);
-  ACTS.claude.ask.push([t + 0.6, TAP]);
-  ACTS.claude.work.push([TAP + 0.1, t + 2.4]);
-  ACTS.claude.done.push([t + 2.4, B[5]]);
-  ACTS.claude.hops.push([TAP + 0.1, 14], [t + 2.4, 18]);
+  ACTS.claude.ask.push([PROMPT, TAP]);
+  ACTS.claude.work.push([TAP + 0.1, TAP + 1.5]);
+  ACTS.claude.done.push([TAP + 1.5, B[5]]);
+  ACTS.claude.hops.push([TAP + 0.1, 14], [TAP + 1.5, 18]);
 }
 
 // 06: claude joins over Claude Channels, the rest over ACP v1, all into
