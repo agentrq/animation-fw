@@ -15,3 +15,14 @@ test('the problems-solved slide is a still 1920 x 1080 picture that passes check
   assert.ok(!svg.includes('>NEW<'), 'no card is flagged new');
   for (const line of ['Self-learning task manager and orchestration layer', 'hi@agentrq.com', 'Mustafa Turan', 'Founder @ Contextual, Inc.']) assert.ok(svg.includes(line), line);
 });
+
+test('the animated slide is a 16 s loop with the same picture at its poster frame', async () => {
+  const { default: build, LOOP } = await import('../slides/problems-solved.js');
+  const s = await build({ animated: true });
+  assert.deepEqual([s.width, s.height, s.loop], [1920, 1080, LOOP]);
+  assert.ok(s.anims > 0, 'the cards, mascots and stars move');
+  assert.ok(s.poster > 0 && s.poster < LOOP);
+  const svg = s.toSVG();
+  assert.deepEqual(check(svg, { maxBytes: 300_000 }), []);
+  for (const line of ['Self-learning task manager and orchestration layer', 'hi@agentrq.com', 'Founder @ Contextual, Inc.']) assert.ok(svg.includes(line), line);
+});
