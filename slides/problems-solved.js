@@ -46,11 +46,11 @@ export const CARDS = [
     'task, and shared Pano docs',
     'pass plans and checklists',
     'between agents.']],
-  ['ANYWHERE', 'Agents tied to one laptop', [
-    'Access your agents where you',
-    'go: web, desktop and mobile,',
-    'while they run on your own',
-    'machines.']],
+  ['LIVE TERMINALS', 'Agents tied to one laptop', [
+    'Agents run on your machines,',
+    'in live terminals you open from',
+    'where you go: web, desktop',
+    'and mobile.']],
   ['ANY AGENT', 'Every harness is different', [
     'One MCP surface for any MCP or',
     'ACP agent: Claude Code, Codex,',
