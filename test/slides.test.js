@@ -12,6 +12,6 @@ test('the problems-solved slide is a still 1920 x 1080 picture that passes check
   const svg = s.toSVG();
   assert.deepEqual(check(svg, { maxBytes: 300_000 }), []);
   assert.equal(CARDS.length, 10);
-  assert.equal(CARDS[0][0], 'DISTRIBUTED SKILLS', 'distributed skills lead');
-  for (const line of ['hi@agentrq.com', 'Mustafa Turan', 'Founder @ Contextual, Inc.']) assert.ok(svg.includes(line), line);
+  assert.ok(!svg.includes('>NEW<'), 'no card is flagged new');
+  for (const line of ['Self-learning task manager and orchestration layer', 'hi@agentrq.com', 'Mustafa Turan', 'Founder @ Contextual, Inc.']) assert.ok(svg.includes(line), line);
 });

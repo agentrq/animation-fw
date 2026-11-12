@@ -9,13 +9,13 @@ export const H = 1080;
 const GROUND = 960;
 const PX = 6;
 
-// [kicker, problem, solution lines, highlight]
+// [kicker, problem, solution lines]
 export const CARDS = [
   ['DISTRIBUTED SKILLS', 'Playbooks copied to every box', [
     'Stored once, served over MCP',
     'to every agent, machine and',
     'harness. Edit once, and every',
-    'workspace reads the new copy.'], 'lead'],
+    'workspace reads the new copy.']],
   ['ONE TASK BOARD', 'Babysitting every terminal', [
     'Agents pick up tasks, report',
     'status and ask you questions on',
@@ -40,7 +40,7 @@ export const CARDS = [
     'Cron runs, events and drag and',
     'drop workflows. A failed CI run',
     'on GitHub arrives as a task',
-    'for an agent.'], 'new'],
+    'for an agent.']],
   ['MEMORY + PANO', 'Agents forget everything', [
     'Workspace memory outlives a',
     'task, and shared Pano docs',
@@ -82,15 +82,10 @@ function logo(s, x, y, scale) {
       el('path', { d: 'M12 7l-3.5 8M12 7l3.5 8M9.5 12h5' }))));
 }
 
-function card(s, { x, y, w, h }, [kicker, problem, lines, mark], n) {
-  const lead = mark === 'lead';
-  s.add(el('rect', { x, y, width: w, height: h, fill: lead ? '#0f1f14' : C.panel, stroke: lead ? C.ongoing : C.line, 'stroke-width': 2, class: 'px' }));
-  s.add(s.text(String(n).padStart(2, '0'), { x: x + 20, y: y + 38, font: 'pixel', size: 18, fill: lead ? C.lit : C.notstarted }));
-  s.add(s.text(kicker, { x: x + 56, y: y + 38, font: 'pixel', size: 18, fill: lead ? C.lit : C.text }));
-  if (mark === 'new') {
-    s.add(el('rect', { x: x + w - 66, y: y + 18, width: 48, height: 26, fill: C.ask, class: 'px' }));
-    s.add(s.text('NEW', { x: x + w - 42, y: y + 37, font: 'pixel', size: 16, fill: C.ink, anchor: 'middle' }));
-  }
+function card(s, { x, y, w, h }, [kicker, problem, lines], n) {
+  s.add(el('rect', { x, y, width: w, height: h, fill: C.panel, stroke: C.line, 'stroke-width': 2, class: 'px' }));
+  s.add(s.text(String(n).padStart(2, '0'), { x: x + 20, y: y + 38, font: 'pixel', size: 18, fill: C.notstarted }));
+  s.add(s.text(kicker, { x: x + 56, y: y + 38, font: 'pixel', size: 18, fill: C.text }));
   // The problem, marked in the blocked red.
   s.add(el('rect', { x: x + 20, y: y + 62, width: 10, height: 10, fill: C.blocked, class: 'px' }));
   s.add(s.text(problem, { x: x + 40, y: y + 72, font: 'mono', size: 15, fill: C.dim }));
@@ -104,7 +99,7 @@ export default async function () {
   const base = newScene({ description: 'x', poster: 1 });
   const s = new Scene({
     width: W, height: H, loop: 1, background: C.bg, poster: 0,
-    description: 'What AgentRQ solves today: ten problems of running AI coding agents, each with what AgentRQ does about it, led by distributed skills. Contact hi@agentrq.com, Mustafa Turan, Founder at Contextual, Inc.',
+    description: 'What AgentRQ solves today: ten problems of running AI coding agents, each with what AgentRQ does about it. Contact hi@agentrq.com, Mustafa Turan, Founder at Contextual, Inc.',
   });
   s.fonts = base.fonts;
 
@@ -116,7 +111,7 @@ export default async function () {
   s.add(s.text('WHAT IT SOLVES TODAY', { x: 290, y: 99, font: 'pixel', size: 22, fill: C.dim }));
   s.add(s.text('Hand AI agents real work.', { x: 80, y: 196, font: 'bold', size: 68, fill: C.text, spacing: -1.5 }));
   s.add(s.text('Stay in control.', { x: 80, y: 272, font: 'bold', size: 68, fill: C.lit, spacing: -1.5 }));
-  s.add(s.text('The task manager and orchestration layer for AI agents: any harness, any machine, one board.', { x: 80, y: 318, font: 'body', size: 24, fill: C.dim }));
+  s.add(s.text('Self-learning task manager and orchestration layer for AI agents: any harness, any machine, one board.', { x: 80, y: 318, font: 'body', size: 24, fill: C.dim }));
 
   // Ten problems in two rows of five.
   const cols = 5, gap = 24, x0 = 80, y0 = 362, w = (W - 2 * x0 - (cols - 1) * gap) / cols, h = 240;
