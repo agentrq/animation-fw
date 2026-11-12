@@ -3,7 +3,7 @@
 // for a GIF. It is not a README scene, so it lives in slides/ and keeps out
 // of the scenes/ tests that hold scenes to 1200 x 440.
 import { Scene, sprite, el, g } from '../src/index.js';
-import { C, MASCOTS, rng, newScene } from '../kit/agentrq.js';
+import { C, MASCOTS, CHECK, rng, newScene } from '../kit/agentrq.js';
 
 export const W = 1920;
 export const H = 1080;
@@ -67,7 +67,7 @@ export const CARDS = [
 // The animated loop: the header and the cards come in one by one, the
 // mascots celebrate, everything holds, then fades out so the loop restarts.
 export const LOOP = 16;
-const T = { header: 0.2, line1: 0.5, line2: 0.8, sub: 1.1, cards: 1.5, every: 0.4, solve: 0.35, contact: 6.0, party: 6.3, out: 15.3 };
+const T = { header: 0.2, line1: 0.5, line2: 0.8, sub: 1.1, cards: 1.5, every: 0.4, solve: 0.35, tick: 0.75, contact: 6.0, party: 6.3, out: 15.3 };
 
 // Wraps nodes so they slide up and fade in at `at`, then fade out with the
 // loop. A still slide just groups them.
@@ -114,6 +114,15 @@ function card(s, animated, at, { x, y, w, h }, [kicker, problem, lines], n) {
   s.add(reveal(s, animated, at + T.solve,
     el('rect', { x: x + 20, y: y + 112, width: 10, height: 10, fill: C.ongoing, class: 'px' }),
     ...lines.map((line, i) => s.text(line, { x: x + 40, y: y + 122 + i * 28, font: 'body', size: 18, fill: C.text }))));
+  // In the animation, a green check pops onto the card once its fix is in.
+  if (animated) {
+    const tick = g({},
+      el('rect', { width: 26, height: 26, fill: C.lit, class: 'px' }),
+      sprite(CHECK, { '#': C.ink }, { px: 3, x: 3, y: 4 }));
+    const pos = { x: x + w - 38, y: y + 19 }, on = at + T.tick;
+    s.add(s.anim(tick, [[0, { ...pos, scale: 0, opacity: 0 }], [on, { scale: 0, opacity: 0 }], [on + 0.3, { scale: 1, opacity: 1 }, 'back'],
+      [T.out, { scale: 1, opacity: 1 }], [T.out + 0.5, { opacity: 0 }, 'in']], { origin: 'center' }));
+  }
 }
 
 // A mascot on the ground: still, or bobbing and hopping when the cards are in.
@@ -140,7 +149,7 @@ export default async function ({ animated = false } = {}) {
   const base = newScene({ description: 'x', poster: 1 });
   const s = new Scene({
     width: W, height: H, loop: animated ? LOOP : 1, background: C.bg, poster: animated ? 10 : 0,
-    description: 'What AgentRQ solves today: ten problems of running AI coding agents, each with what AgentRQ does about it. Contact hi@agentrq.com, Mustafa Turan, Founder at Contextual, Inc.',
+    description: `What AgentRQ solves today: ten problems of running AI coding agents, each with what AgentRQ does about it. Contact hi@agentrq.com${animated ? '' : ', Mustafa Turan, Founder at Contextual, Inc'}.`,
   });
   s.fonts = base.fonts;
 
@@ -166,10 +175,10 @@ export default async function ({ animated = false } = {}) {
   let mx = 80;
   MASCOTS.forEach((m, i) => { mx += mascot(s, animated, m, i, mx) + 44; });
 
-  // Contact, bottom right.
+  // Contact, bottom right. The animated loop names only AgentRQ, not the founder.
   s.add(reveal(s, animated, T.contact,
-    s.text('hi@agentrq.com', { x: W - 80, y: GROUND + 46, font: 'bold', size: 30, fill: C.text, anchor: 'end' }),
-    s.text('Mustafa Turan  ·  Founder @ Contextual, Inc.', { x: W - 80, y: GROUND + 84, font: 'body', size: 22, fill: C.dim, anchor: 'end' })));
+    s.text('hi@agentrq.com', { x: W - 80, y: GROUND + (animated ? 64 : 46), font: 'bold', size: 30, fill: C.text, anchor: 'end' }),
+    animated ? null : s.text('Mustafa Turan  ·  Founder @ Contextual, Inc.', { x: W - 80, y: GROUND + 84, font: 'body', size: 22, fill: C.dim, anchor: 'end' })));
   s.add(s.text('agentrq.com', { x: 80, y: GROUND + 84, font: 'mono', size: 18, fill: C.notstarted }));
   return s;
 }
