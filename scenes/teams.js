@@ -6,18 +6,41 @@ import {
   C, MASCOTS, PX, GROUND, OFF, newScene, sky, ground, intro, frame, mascot, cursor, press, during,
 } from '../kit/agentrq.js';
 
-// Three teammates, each with their own agent.
+// A teammate in pixels: hair, face, shirt and legs, drawn as a mascot so
+// the kit's idle, blink, hops and bubbles work for people too.
+const PERSON = `
+  ...hhhh...
+  ..hhhhhh..
+  ..hffffh..
+  ..f#ff#f..
+  ..ffffff..
+  ...ffff...
+  ..ssssss..
+  .ssssssss.
+  f.ssssss.f
+  ..ssssss..
+  ..ll..ll..
+  ..ll..ll..`;
+const person = (name, color, hair, skin) => ({
+  name, color, art: PERSON,
+  palette: { h: hair, f: skin, '#': '#1c1917', s: color, l: '#3f3f46' },
+  eyes: [[3, 3, 1, 1], [6, 3, 1, 1]], skin,
+});
+
+// Three teammates, each with their own agent. Badges are in the person's
+// colour: the work is theirs, the agent does it.
 const PEOPLE = [
-  { name: 'ada', initial: 'A', m: MASCOTS[0], task: 'Fix export timeout' },
-  { name: 'ben', initial: 'B', m: MASCOTS[1], task: 'Add export filters' },
-  { name: 'cy', initial: 'C', m: MASCOTS[2], task: 'Ship release 1.4' },
+  { name: 'ada', initial: 'A', color: '#f472b6', m: MASCOTS[0], task: 'Fix export timeout', h: person('ada', '#f472b6', '#7c2d12', '#fdba74') },
+  { name: 'ben', initial: 'B', color: '#38bdf8', m: MASCOTS[1], task: 'Add export filters', h: person('ben', '#38bdf8', '#1c1917', '#d6a77a') },
+  { name: 'cy', initial: 'C', color: '#facc15', m: MASCOTS[2], task: 'Ship release 1.4', h: person('cy', '#facc15', '#a16207', '#fde2c8') },
 ];
-const AGENTS = PEOPLE.map((p, i) => ({ ...p, x: 580 + i * 240 }));
+// Each agent stands on the ground with its person just left of it.
+const AGENTS = PEOPLE.map((p, i) => ({ ...p, x: 625 + i * 240, hx: 548 + i * 240 }));
 
 // ---------------------------------------------------------------- the story
 // Every time below is in seconds on the 24 s loop.
-const SW = (i) => 0.9 + 0.55 * i;          // you switch on Tasks, Skills, Memory
-const TASK = [3.2, 9.0, 14.2];             // each agent gets its task
+const SW = (i) => 0.9 + 0.55 * i;          // ada switches on Tasks, Skills, Memory
+const TASK = [3.2, 9.0, 14.2];             // each person hands their agent a task
 const WRITE = 6.4;                         // ada's agent saves what it learned
 const SAVED = WRITE + 1;                   // the note lands in team memory
 const READ = 9.8;                          // ben's agent reads it
@@ -76,7 +99,7 @@ function bubbleAt({ m, x }) {
 export default function teams() {
   const s = newScene({
     poster: 13.2,
-    description: 'AgentRQ teams: you share a workspace with your team, switching on Tasks, Skills and Memory. Ada\'s agent, claude, fixes an export timeout and saves what it learned to the team memory; Ben\'s agent, codex, reads that note before it starts and finishes with no wrong turns; Cy\'s agent, agy, improves the team\'s release skill and the new version reaches every agent, and they celebrate.',
+    description: 'AgentRQ teams, for people and their agents: Ada shares a workspace with teammates Ben and Cy, switching on Tasks, Skills and Memory. Ada\'s agent, claude, fixes an export timeout and saves what it learned to the team memory; Ben\'s agent, codex, reads that note before it starts and finishes with no wrong turns; Cy\'s agent, agy, improves the team\'s release skill and the new version reaches every agent, and they celebrate.',
   });
 
   sky(s);
@@ -97,19 +120,19 @@ function story(s) {
   intro(s, {
     kicker: 'teams',
     headline: ['Learn it once,', 'the team knows.'],
-    sub: 'Your agent learns from your teammates.',
+    sub: 'People and their agents, one team.',
     steps: [['share', SW(0) - 0.2, TASK[0]], ['learn', TASK[0], TASK[1]], ['reuse', TASK[1], TASK[2]], ['improve', TASK[2], RESET]],
     log: [
       [0, SW(0), '> payments: not shared_'],
-      [SW(0), TASK[0], '> you: share with the team'],
-      [TASK[0], SAVED, '> ada\'s agent: export timeout'],
-      [SAVED, TASK[1], '> saved ada/export.md', C.lit],
-      [TASK[1], GOT, '> ben\'s agent: export filters'],
-      [GOT, DONE[1], '> read ada/export.md first', C.lit],
-      [DONE[1], TASK[2], '> done, no wrong turns', C.lit],
-      [TASK[2], ARRIVE(0), '> cy\'s agent: improves release'],
-      [ARRIVE(0), DONE[2] + 0.4, '> release v2 for every agent', C.lit],
-      [DONE[2] + 0.4, RESET, '> 3 of 3 done, 1 lesson', C.lit],
+      [SW(0), TASK[0], '> ada: share with the team'],
+      [TASK[0], SAVED, '> ada asks claude: export timeout'],
+      [SAVED, TASK[1], '> claude saved ada/export.md', C.lit],
+      [TASK[1], GOT, '> ben asks codex: export filters'],
+      [GOT, DONE[1], '> codex read ada/export.md first', C.lit],
+      [DONE[1], TASK[2], '> ben: done, no wrong turns', C.lit],
+      [TASK[2], ARRIVE(0), '> cy asks agy: ship release 1.4'],
+      [ARRIVE(0), DONE[2] + 0.4, '> agy improved release for all', C.lit],
+      [DONE[2] + 0.4, RESET, '> 3 people, 3 agents, 1 lesson', C.lit],
     ],
   });
 }
@@ -147,7 +170,7 @@ function toggle(s, i) {
 // A teammate's initial, in their agent's colour.
 function badge(s, p, x, y) {
   return g({},
-    el('rect', { x, y, width: 22, height: 22, fill: p.m.color, class: 'px' }),
+    el('rect', { x, y, width: 22, height: 22, fill: p.color, class: 'px' }),
     s.text(p.initial, { x: x + 11, y: y + 16, font: 'pixel', size: 14, fill: C.ink, anchor: 'middle' }));
 }
 
@@ -252,8 +275,18 @@ function agent(s, a, i) {
   if (i < 2) hops.push([ARRIVE(i), 12]);
   if (i === 1) hops.push([GOT, 14]);
   mascot(s, a.m, i, { x: a.x, hops, alert: [[TASK[i], TASK[i] + 0.6]], say, work, done });
-  // Whose agent it is, beside its name.
-  s.add(s.text(`@${a.name}`, { x: a.x + a.m.name.length * 6 + 10, y: GROUND + 28, font: 'mono', size: 12, fill: '#71717a' }));
+  human(s, a, i);
+}
+
+// The person beside each agent: hands it the task, cheers when it is done
+// and dances with the others. Ada also hops as she shares the workspace, and
+// Ben gets a tick when his agent shows up with Ada's note.
+function human(s, a, i) {
+  const hops = [[TASK[i] - 0.6, 12], [DONE[i] + 0.2, 16], [DANCE + 0.08 + i * 0.15, 16], [DANCE + 0.98 + i * 0.15, 16]];
+  if (i === 0) hops.push(...SWITCHES.map((_, k) => [SW(k), 8]));
+  const say = [['go', [[TASK[i] - 0.6, TASK[i] + 0.3]], a.color]];
+  if (i === 1) say.push([note({ px: 2, x: 11, y: 5 }), [[GOT + 0.2, GOT + 1.2]], C.lit]);
+  mascot(s, a.h, i + 3, { x: a.hx, hops, say, done: [[DONE[i] + 0.2, DONE[i] + 1.4], [DANCE, RESET]] });
 }
 
 // You: switch on Tasks, Skills and Memory, then let the agents work.
