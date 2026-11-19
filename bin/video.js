@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// node bin/video.js <scene.js> <out.mp4> [--audio voice.wav] [--size 1920x1080] [--fps 24]
+// node bin/video.js <scene.js> <out.mp4> [--audio voice.wav] [--size 1920x1080] [--fps 24] [--crf 20] [--preset medium]
 //
 // Renders a scene as a video: every CSS animation is paused and set to the
 // same moment per frame (as frames() does), the frames are piped to ffmpeg,
@@ -14,11 +14,13 @@ import { chromium } from 'playwright';
 const args = process.argv.slice(2);
 const [file, out] = args.filter((a, i) => !a.startsWith('--') && !args[i - 1]?.startsWith('--'));
 const opt = (name, def) => { const i = args.indexOf(`--${name}`); return i < 0 ? def : args[i + 1]; };
-if (!file || !out) { console.error('usage: video.js <scene.js> <out.mp4> [--audio voice.wav] [--size 1920x1080] [--fps 24]'); process.exit(2); }
+if (!file || !out) { console.error('usage: video.js <scene.js> <out.mp4> [--audio voice.wav] [--size 1920x1080] [--fps 24] [--crf 20] [--preset medium]'); process.exit(2); }
 
 const [outW, outH] = opt('size', '1920x1080').split('x').map(Number);
 const fps = Number(opt('fps', 24));
 const audio = opt('audio', '');
+const crf = opt('crf', '20');
+const preset = opt('preset', 'medium');
 const ffmpeg = process.env.FFMPEG || 'ffmpeg';
 
 const scene = await (await import(pathToFileURL(path.resolve(file)).href)).default();
@@ -31,8 +33,8 @@ const frames = Math.round(seconds * fps);
 
 const ffArgs = ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(fps), '-i', '-'];
 if (audio) ffArgs.push('-i', audio);
-ffArgs.push('-vf', `scale=${outW}:${outH}:flags=lanczos`, '-c:v', 'libx264', '-profile:v', 'high', '-pix_fmt', 'yuv420p', '-crf', '20', '-movflags', '+faststart');
-if (audio) ffArgs.push('-c:a', 'aac', '-b:a', '160k', '-shortest');
+ffArgs.push('-vf', `scale=${outW}:${outH}:flags=lanczos`, '-c:v', 'libx264', '-profile:v', 'high', '-pix_fmt', 'yuv420p', '-crf', crf, '-preset', preset, '-movflags', '+faststart');
+if (audio) ffArgs.push('-c:a', 'aac', '-b:a', '192k', '-shortest');
 ffArgs.push(out);
 const ff = spawn(ffmpeg, ffArgs, { stdio: ['pipe', 'inherit', 'inherit'] });
 
