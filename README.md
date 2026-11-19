@@ -58,3 +58,16 @@ Eases: `linear` (default), `step` (hold, then jump at the key), `in`, `out`,
 
 Bundled, all SIL OFL 1.1 (licences in `fonts/`): Silkscreen, Inter and
 JetBrains Mono. Subsets are cached in `.cache/fonts`.
+
+## Narrated videos
+
+`videos/` holds scenes that tell a story with a voice, as 16:9 video rather than a README loop: the house kit on top
+(left column, stage, mascots) and the narration as captions underneath. Their timing comes from the voice:
+`VIDEO_TIMELINE` is the `timeline.json` that `short-video/build-voice.mjs` in the landing repo writes beside `voice.wav`.
+
+```sh
+VIDEO_TIMELINE=timeline.json node bin/video.js videos/overview.js out.mp4 --audio voice.wav --size 1920x1080 --fps 24
+```
+
+`bin/video.js` pauses every CSS animation, sets all of them to each frame's moment (as `frames()` does), pipes the frames to
+ffmpeg and muxes the voice in.
