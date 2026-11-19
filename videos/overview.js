@@ -318,8 +318,8 @@ function close(s) {
   const t0 = tl.S[8];
   const big = s.anim(g({},
     s.text('OPEN SOURCE', { x: 810, y: 130, font: 'pixel', size: 58, fill: C.lit, anchor: 'middle' }),
-    s.text('agentrq.com', { x: 810, y: 204, font: 'bold', size: 52, fill: C.text, anchor: 'middle', spacing: -1 }),
-    s.text('Self-host it, or use the cloud.', { x: 810, y: 250, font: 'body', size: 20, fill: C.dim, anchor: 'middle' })),
+    s.text('Your turn', { x: 810, y: 204, font: 'bold', size: 52, fill: C.text, anchor: 'middle', spacing: -1 }),
+    s.text('Comment below: your multi agent headaches.', { x: 810, y: 250, font: 'body', size: 20, fill: C.dim, anchor: 'middle' })),
   [[0, { opacity: 0, y: 20 }], [t0 + 0.2, { opacity: 0, y: 20 }, 'step'], [t0 + 0.6, { opacity: 1, y: 0 }, 'back']]);
   s.add(showDuring(s, big, [beatSpan(tl, 8)]));
 }
@@ -396,7 +396,7 @@ export default function overview() {
       { at: [5], headline: ['One learns,', 'all know.'], sub: 'Skills and memory, shared.', log: '> skill: deploy-staging' },
       { at: [6], headline: ['Bring any', 'agent.'], sub: '55+ coding agents.', log: '> 55+ agents, 1 board' },
       { at: [7], headline: ['Web, desktop,', 'mobile, CLI.'], sub: 'Check in from anywhere.', log: '> web | desktop | mobile | cli' },
-      { at: [8], headline: ['Open source.', 'Try it today.'], sub: 'Self-host it, or use the cloud.', log: '> agentrq.com' },
+      { at: [8], headline: ['Open source.', 'Your turn.'], sub: 'Share your multi agent headaches below.', log: '> comment below' },
     ],
   });
 
