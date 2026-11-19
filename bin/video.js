@@ -1,60 +1,54 @@
 #!/usr/bin/env node
-// node bin/video.js <scene.js> <out.mp4> [--audio voice.wav] [--size 1920x1080] [--fps 24] [--crf 20] [--preset medium]
+// node bin/video.js <scene.js> [flags]     narration -> voice -> video, posters and a preview
+// node bin/video.js new <name>             start a story: videos/<name>.js + <name>.narration.json
+// node bin/video.js setup                  fetch the local voice (Piper), once
 //
-// Renders a scene as a video: every CSS animation is paused and set to the
-// same moment per frame (as frames() does), the frames are piped to ffmpeg,
-// and the voice track is muxed in. A scene says how long it runs with
-// scene.videoEnd (seconds); otherwise it is the loop.
-import fs from 'node:fs';
-import path from 'node:path';
-import { spawn } from 'node:child_process';
-import { pathToFileURL } from 'node:url';
-import { chromium } from 'playwright';
+// A video is a scene (videos/x.js) with its script beside it (videos/x.narration.json).
+// The script is spoken by a local voice, the scene is timed to the speech, every
+// frame is drawn by several browsers at once, and ffmpeg joins them with the voice.
+// Out comes out/<name>.mp4, <name>-poster.png, <name>-poster-1280x720.jpg and
+// <name>-preview.mp4 (small enough to attach to a chat).
+//
+//   --draft              a rough cut (960 wide, 15 fps): seconds, for checking timing; no posters
+//   --quality hq|web|draft   hq (default): 1920x1080, 30 fps, crf 14, slow. web: crf 20, medium
+//   --out <dir>          where the files go (default out)
+//   --workers <n>        browsers drawing frames at once (default: half the CPUs, at most 8)
+//   --poster-at <s>      the poster frame (default: the scene's thumbnail)
+//   --no-pack            the video only
+//   --fps, --size 1920x1080, --crf, --preset   override the quality's settings
+//   --audio <wav> --timeline <json>   use a voice made elsewhere instead of the narration file
+//   an explicit second argument ending in .mp4 names the video file.
+import { parseArgs } from '../src/args.js';
+import { makeVideo } from '../src/make.js';
+import { scaffoldVideo } from '../src/scaffold.js';
+import { setupVoice } from '../src/setup.js';
 
-const args = process.argv.slice(2);
-const [file, out] = args.filter((a, i) => !a.startsWith('--') && !args[i - 1]?.startsWith('--'));
-const opt = (name, def) => { const i = args.indexOf(`--${name}`); return i < 0 ? def : args[i + 1]; };
-if (!file || !out) { console.error('usage: video.js <scene.js> <out.mp4> [--audio voice.wav] [--size 1920x1080] [--fps 24] [--crf 20] [--preset medium]'); process.exit(2); }
+const USAGE = 'usage: video.js <scene.js> [--draft] [--quality hq|web|draft] [--out dir] [--workers n] | video.js new <name> | video.js setup';
 
-const [outW, outH] = opt('size', '1920x1080').split('x').map(Number);
-const fps = Number(opt('fps', 24));
-const audio = opt('audio', '');
-const crf = opt('crf', '20');
-const preset = opt('preset', 'medium');
-const ffmpeg = process.env.FFMPEG || 'ffmpeg';
-
-const scene = await (await import(pathToFileURL(path.resolve(file)).href)).default();
-const svgPath = path.resolve('dist', `${path.basename(file, '.js')}.svg`);
-fs.mkdirSync(path.dirname(svgPath), { recursive: true });
-fs.writeFileSync(svgPath, scene.toSVG());
-
-const seconds = scene.videoEnd ?? scene.loop;
-const frames = Math.round(seconds * fps);
-
-const ffArgs = ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(fps), '-i', '-'];
-if (audio) ffArgs.push('-i', audio);
-ffArgs.push('-vf', `scale=${outW}:${outH}:flags=lanczos`, '-c:v', 'libx264', '-profile:v', 'high', '-pix_fmt', 'yuv420p', '-crf', crf, '-preset', preset, '-movflags', '+faststart');
-if (audio) ffArgs.push('-c:a', 'aac', '-b:a', '192k', '-shortest');
-ffArgs.push(out);
-const ff = spawn(ffmpeg, ffArgs, { stdio: ['pipe', 'inherit', 'inherit'] });
-
-const browser = await chromium.launch();
-try {
-  const page = await browser.newPage({ viewport: { width: scene.width, height: scene.height }, deviceScaleFactor: outW / scene.width });
-  await page.goto(pathToFileURL(svgPath).href);
-  await page.evaluate(async () => {
-    await document.fonts.ready;
-    await Promise.all(document.getAnimations().map((a) => { a.pause(); return a.ready; }));
-  });
-  for (let i = 0; i < frames; i++) {
-    await page.evaluate((ms) => { for (const a of document.getAnimations()) a.currentTime = ms; }, (i / fps) * 1000);
-    const buf = await page.screenshot({ type: 'jpeg', quality: 92 });
-    if (!ff.stdin.write(buf)) await new Promise((r) => ff.stdin.once('drain', r));
-    if (i % 240 === 0) console.log(`frame ${i}/${frames}`);
+async function main() {
+  const { opts, pos } = parseArgs(process.argv.slice(2));
+  const [first, second] = pos;
+  if (opts.help || !first) { console.error(USAGE); return opts.help ? 0 : 2; }
+  if (first === 'setup') { await setupVoice(); return 0; }
+  if (first === 'new') {
+    if (!second) { console.error('usage: video.js new <name>'); return 2; }
+    for (const f of scaffoldVideo(second)) console.log(`wrote ${f}`);
+    console.log(`next: edit the narration, then  node bin/video.js videos/${second}.js --draft`);
+    return 0;
   }
-} finally {
-  await browser.close();
-  ff.stdin.end();
+  await makeVideo({
+    scenePath: first,
+    quality: opts.draft ? 'draft' : opts.quality ?? 'hq',
+    overrides: { fps: opts.fps, size: opts.size, crf: opts.crf, preset: opts.preset },
+    outDir: opts.out ?? 'out',
+    outFile: second?.endsWith('.mp4') ? second : undefined,
+    audio: opts.audio,
+    timeline: opts.timeline,
+    workers: opts.workers ? Number(opts.workers) : undefined,
+    posterAt: opts['poster-at'] ? Number(opts['poster-at']) : undefined,
+    pack: !opts['no-pack'],
+  });
+  return 0;
 }
-await new Promise((r) => ff.on('close', r));
-console.log(`wrote ${out} (${frames} frames, ${seconds.toFixed(1)} s)`);
+
+main().then((code) => process.exit(code), (e) => { console.error(e.message ?? e); process.exit(1); });

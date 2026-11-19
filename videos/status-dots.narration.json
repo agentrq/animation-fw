@@ -1,0 +1,49 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 4.8,
+      "text": "Six agents are working at once, and all you see is one small dot beside each workspace. Let's follow a day in the life of those dots."
+    },
+    {
+      "id": "yellow",
+      "min": 6.6,
+      "text": "Morning. The storefront agent is busy, green and pulsing. Then it wants to push to main, and its dot turns yellow. It's waiting on you. One tap on Allow, and it's off again."
+    },
+    {
+      "id": "red",
+      "min": 5.2,
+      "text": "Meanwhile, the billing agent hits a wall. It needs a credential only you have. Its dot turns red: blocked."
+    },
+    {
+      "id": "green",
+      "min": 4.6,
+      "text": "Over in search, an agent is happily grinding away. A green pulse. Nothing for you to do."
+    },
+    {
+      "id": "redpulse",
+      "min": 5.8,
+      "text": "But the mobile agent's laptop just went to sleep. The task still says ongoing, yet the dot pulses red, because nothing is actually moving."
+    },
+    {
+      "id": "idle",
+      "min": 5.4,
+      "text": "The docs agent finished and is waiting for work: steady green. And infra, where nobody's home: grey."
+    },
+    {
+      "id": "order",
+      "min": 6.2,
+      "text": "Six workspaces, every state, and you never opened one. When a workspace has several, the dot shows the most urgent. Yellow beats red, and red beats green."
+    },
+    {
+      "id": "queue",
+      "min": 4.6,
+      "text": "That little number? Tasks queued for the agent to pick up."
+    },
+    {
+      "id": "close",
+      "min": 4.8,
+      "text": "That's your whole team, at a glance. Find it at Agent R Q dot com."
+    }
+  ]
+}

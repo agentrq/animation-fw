@@ -4,10 +4,11 @@ import sharp from 'sharp';
 
 // PNGs of the scene at the given seconds. Every animation is paused and set
 // to the same moment, so a frame is exact rather than a lucky screenshot.
-export async function frames(svgPath, times, { width, height } = {}) {
+// `scale` draws it larger than the scene (1.6 turns 1200 wide into 1920).
+export async function frames(svgPath, times, { width, height, scale = 1 } = {}) {
   const browser = await chromium.launch();
   try {
-    const page = await browser.newPage({ viewport: { width, height } });
+    const page = await browser.newPage({ viewport: { width, height }, deviceScaleFactor: scale });
     await page.goto(pathToFileURL(svgPath).href);
     // A pause completes a frame later and then sets its own time, undoing a
     // seek made before it: pause everything once and wait for that.

@@ -1,7 +1,7 @@
 // Shared pieces for the narrated story videos: a 16:9 scene built from the
 // house kit, a caption band under the stage, and the left column's story copy.
-// The timing comes from the voice: VIDEO_TIMELINE is the timeline.json that
-// the landing repo's short-video/build-voice.mjs writes next to voice.wav.
+// The timing comes from the voice: bin/video.js speaks <scene>.narration.json
+// (src/voice.js) and points VIDEO_TIMELINE at the timeline.json it writes.
 import fs from 'node:fs';
 import { Scene, FONTS, el, g } from '../src/index.js';
 import { C, PX, sky, ground, during } from '../kit/agentrq.js';
@@ -22,10 +22,15 @@ export function loadTimeline() {
   const T = (b, o) => +(S[b] + o * K[b]).toFixed(2);
   // The sky's stars blink on 2, 3, 4 and 6 s periods: the loop must hold all of them.
   const loop = Math.ceil((tl.end + 0.5) / 12) * 12;
-  return { S, N: S.length, end: tl.end, beatEnd, K, T, loop, sentences: tl.sentences };
+  // A moment `frac` of the way through beat b, for picking a poster frame.
+  const at = (b, frac) => +(S[b] + frac * (beatEnd(b) - S[b])).toFixed(2);
+  return { S, N: S.length, end: tl.end, beatEnd, K, T, at, loop, sentences: tl.sentences };
 }
 
-export function videoScene({ description, tl, poster }) {
+// `thumbnail` is the second the posters are taken at: pick a moment with the
+// caption showing and the stage full (tl.at(beat, 0.7)). `poster` is the still
+// the loop stops on for reduced motion, as in any scene.
+export function videoScene({ description, tl, poster, thumbnail }) {
   const s = new Scene({ width: VW, height: VH, loop: tl.loop, background: C.bg, poster, description })
     .font('pixel', FONTS.silkscreen, { fallback: 'monospace' })
     .font('bold', FONTS.inter, { axes: { wght: 700, opsz: 32 } })
@@ -33,6 +38,7 @@ export function videoScene({ description, tl, poster }) {
     .font('body', FONTS.inter, { axes: { wght: 500, opsz: 18 } })
     .font('mono', FONTS.jetbrainsMono, { axes: { wght: 500 }, fallback: 'monospace' });
   s.videoEnd = tl.end;
+  s.thumbnail = thumbnail;
   sky(s);
   ground(s);
   return s;

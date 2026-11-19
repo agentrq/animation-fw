@@ -1,6 +1,6 @@
 // A day in the life of the sidebar dots, narrated: what yellow, red, green,
 // red-pulsing and grey mean beside each workspace, and which one wins.
-// Build: VIDEO_TIMELINE=<timeline.json> node bin/video.js videos/status-dots.js out.mp4 --audio voice.wav
+// Build: node bin/video.js videos/status-dots.js   (it speaks videos/status-dots.narration.json first)
 import { el, g, sprite } from '../src/index.js';
 import {
   C, CHECK, OFF, mascotByName, mascot, cursor, press,
@@ -194,6 +194,7 @@ export default function statusDots() {
   const s = videoScene({
     tl,
     poster: T(6, 3),
+    thumbnail: tl.at(6, 0.88), // all six dots, "yellow beats red" on the captions
     description: 'A day in the life of the sidebar dots in AgentRQ: a workspace dot turns yellow when an approval waits on you, red when blocked, pulses green while an agent works, pulses red when a running task loses its agent, stays steady green or grey when idle, and the most urgent state wins when a workspace has several.',
   });
 
