@@ -16,8 +16,11 @@ export const FONTS = {
 // An SVG shown as a README <img> loads nothing from outside itself, so every
 // font is embedded, cut down to the characters the scene draws. A variable
 // font is pinned to `axes` first ({ wght: 700 }) so only one style ships.
+// python3 runs isolated (-I), so a fontTools that lives outside its site-packages
+// (pip install --target DIR fonttools brotli) is found through ANIMFW_PYLIB=DIR.
 const PY = `
-import sys, json, io, base64
+import sys, os, json, io, base64
+sys.path[:0] = [p for p in os.environ.get('ANIMFW_PYLIB', '').split(os.pathsep) if p]
 from fontTools.ttLib import TTFont
 from fontTools import subset
 from fontTools.varLib import instancer

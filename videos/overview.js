@@ -1,6 +1,6 @@
 // AgentRQ in one story, narrated: three agents, one gets stuck, you approve
 // from your phone, a schedule runs, skills spread, any agent works.
-// Build: VIDEO_TIMELINE=<timeline.json> node bin/video.js videos/overview.js out.mp4 --audio voice.wav
+// Build: node bin/video.js videos/overview.js   (it speaks videos/overview.narration.json first)
 import { sprite, el, g } from '../src/index.js';
 import {
   C, CHECK, OFF, GROUND, mascotByName, mascot, cursor, press,
@@ -379,6 +379,7 @@ export default function overview() {
   const s = videoScene({
     tl,
     poster: tl.S[5] + 6,
+    thumbnail: tl.at(1, 0.75), // the board, Codex stuck, "one task board" on the captions
     description: 'AgentRQ, told as a story: three agents work through your backlog and one gets blocked; its card rolls up to you and one tap approves it, even from your phone; a schedule runs the audit by itself; a skill one agent saved is loaded by the others; any of 55+ agents works, on the web, desktop, phone or terminal; and it is open source.',
   });
 

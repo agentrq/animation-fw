@@ -1,0 +1,49 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 4.8,
+      "text": "Friday evening. You hand three AI agents your backlog and head to dinner. Then one gets stuck. Which one?"
+    },
+    {
+      "id": "board",
+      "min": 4.4,
+      "text": "Agent R Q puts them all on one task board, each with an owner and a status."
+    },
+    {
+      "id": "blocked",
+      "min": 6.2,
+      "text": "Codex wants to push, so its card jumps to Blocked, with Allow and Deny right on it. One tap, and it carries on."
+    },
+    {
+      "id": "phone",
+      "min": 5.2,
+      "text": "At dinner, your phone buzzes. Claude Code wants to run a command. Allow Once, and it's back to work."
+    },
+    {
+      "id": "schedule",
+      "min": 5.6,
+      "text": "Monday, nine a.m. The dependency audit already ran, because you scheduled it. Every run is a task you can review."
+    },
+    {
+      "id": "skills",
+      "min": 6.2,
+      "text": "Best part: over the weekend, Claude learned how to deploy to staging and saved it as a skill. Codex and Antigravity already know it, even that staging needs the VPN."
+    },
+    {
+      "id": "agents",
+      "min": 5.0,
+      "text": "Claude Code, Codex, Antigravity, Hermes, and over fifty others. Use whichever agent you like."
+    },
+    {
+      "id": "surfaces",
+      "min": 4.2,
+      "text": "Check in from the web, the desktop app, your phone, or the terminal."
+    },
+    {
+      "id": "close",
+      "min": 4.6,
+      "text": "Your agents report in, learn from each other, and ask when they need you. It's open source. Try it at Agent R Q dot com."
+    }
+  ]
+}
