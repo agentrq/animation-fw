@@ -107,6 +107,6 @@ Say the brand as `Agent R Q` in a script (and `Agent R Q dot com`): the voice re
 object beside `"lines"`.
 
 **What it needs.** ffmpeg (on the PATH, `FFMPEG=/path/to/ffmpeg`, or the optional `ffmpeg-static` package), Chromium
-(`npx playwright install chromium`), and the voice: `node bin/video.js setup` downloads Piper (MIT) and the `en_US-ryan-high`
+(`npx playwright install chromium`), and the voice: `node bin/video.js setup` downloads Piper (MIT) and the `en_US-bryce-medium` (public domain, free for commercial use; avoid the `ryan` voices, whose data is CC BY-NC-SA)
 voice into `~/.cache/animfw/voice` (`ANIMFW_VOICE_HOME` moves it; `PIPER` and `PIPER_VOICE` point at your own). Fonts need
 Python's `fonttools` and `brotli`; if they are installed with `pip install --target DIR`, set `ANIMFW_PYLIB=DIR`.

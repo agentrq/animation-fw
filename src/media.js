@@ -58,7 +58,7 @@ export function ffmpegBin(env = process.env) {
 
 // Where `node bin/video.js setup` puts the voice, and where the pipeline looks.
 export const voiceHome = (env = process.env) => env.ANIMFW_VOICE_HOME ?? path.join(os.homedir(), '.cache/animfw/voice');
-export const VOICE_MODEL = 'en_US-ryan-high';
+export const VOICE_MODEL = 'en_US-bryce-medium';
 
 // $PIPER and $PIPER_VOICE (or $VOICE, as the landing repo's script had it), else the setup's.
 export function voiceTools(env = process.env) {
