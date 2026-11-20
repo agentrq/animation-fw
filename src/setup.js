@@ -1,5 +1,5 @@
 // `node bin/video.js setup`: fetch the speech engine once. Piper (MIT) is a small
-// local text-to-speech program; the voice is en_US-ryan-high from rhasspy/piper-voices.
+// local text-to-speech program; the voice is en_US-bryce-medium from rhasspy/piper-voices.
 // Both come over HTTPS from their projects' own releases and are kept in voiceHome().
 import fs from 'node:fs';
 import path from 'node:path';
@@ -15,7 +15,7 @@ const ASSETS = {
   'darwin-x64': 'piper_macos_x64.tar.gz',
   'darwin-arm64': 'piper_macos_aarch64.tar.gz',
 };
-const VOICE_BASE = `https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/ryan/high/${VOICE_MODEL}`;
+const VOICE_BASE = `https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/bryce/medium/${VOICE_MODEL}`;
 
 export function piperAsset(platform = process.platform, arch = process.arch) {
   const asset = ASSETS[`${platform}-${arch}`];
