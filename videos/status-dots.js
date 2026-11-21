@@ -185,7 +185,7 @@ function close(s) {
   s.add(showDuring(s, s.anim(g({},
     s.text('YOUR TEAM', { x: 810, y: 124, font: 'pixel', size: 54, fill: C.lit, anchor: 'middle' }),
     s.text('at a glance', { x: 810, y: 196, font: 'bold', size: 56, fill: C.text, anchor: 'middle', spacing: -1 }),
-    s.text('agentrq.com', { x: 810, y: 250, font: 'body', size: 22, fill: C.dim, anchor: 'middle' }),
+    s.text('Comment below: which dot is yours?', { x: 810, y: 250, font: 'body', size: 22, fill: C.dim, anchor: 'middle' }),
     ...['yellow', 'red', 'greenPulse', 'redPulse', 'greenIdle', 'grey'].map((k, i) => dot(s, k, 698 + i * 32, 262))),
   [[0, { opacity: 0, y: 20 }], [t0 + 0.2, { opacity: 0, y: 20 }, 'step'], [t0 + 0.6, { opacity: 1, y: 0 }, 'back']]), [beatSpan(tl, 8)]));
 }
@@ -213,7 +213,7 @@ export default function statusDots() {
       { at: [5], headline: ['Steady dots:', 'idle.'], sub: 'Online is green. Offline is grey.', log: '> docs idle, infra offline' },
       { at: [6], headline: ['Most urgent', 'wins.'], sub: 'Yellow, red, then green.', log: '> yellow > red > green' },
       { at: [7], headline: ['Queued for', 'the agent.'], sub: 'The little number.', log: '> storefront: 2 queued' },
-      { at: [8], headline: ['Your team,', 'at a glance.'], sub: 'Find it at agentrq.com.', log: '> agentrq.com' },
+      { at: [8], headline: ['Your team,', 'at a glance.'], sub: 'Tell us which dot you see most.', log: '> comment below' },
     ],
   });
 
