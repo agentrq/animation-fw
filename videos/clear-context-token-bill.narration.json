@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "b1",
+      "min": 5,
+      "text": "Your agent starts task one. The context is small, the replies are quick, and the bill is tiny."
+    },
+    {
+      "id": "b2",
+      "min": 5,
+      "text": "Then task two arrives, and every reply now drags task one along with it."
+    },
+    {
+      "id": "b3",
+      "min": 5,
+      "text": "By task three, most of what the agent reads is history from the last two jobs."
+    },
+    {
+      "id": "b4",
+      "min": 5,
+      "text": "The token bill climbs on every turn, because the whole history is sent again each time."
+    },
+    {
+      "id": "b5",
+      "min": 5,
+      "text": "Most of that old context has nothing to do with the new task. You are paying to re-read the past."
+    },
+    {
+      "id": "b6",
+      "min": 5,
+      "text": "Agent R Q fixes this. Right before a Claude Code agent picks up a task, it sends slash clear."
+    },
+    {
+      "id": "b7",
+      "min": 5,
+      "text": "Every task begins with an empty context. The agent reads only the new task, and nothing else."
+    },
+    {
+      "id": "b8",
+      "min": 5,
+      "text": "What the agent needs to remember lives in workspace memory, so clearing never loses the important parts."
+    },
+    {
+      "id": "b9",
+      "min": 5,
+      "text": "The same work costs a fraction of the tokens, and every turn comes back faster."
+    },
+    {
+      "id": "b10",
+      "min": 5,
+      "text": "You do not have to remember to clear anything. It happens before every task, on its own."
+    },
+    {
+      "id": "b11",
+      "min": 5,
+      "text": "Pay for the work, not the history."
+    },
+    {
+      "id": "b12",
+      "min": 5,
+      "text": "How much do you think old context costs you each month? Guess in the comments, then try clear context at Agent R Q dot com."
+    }
+  ]
+}

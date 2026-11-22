@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "Auto approval is wonderful for safe, repetitive work. But it is not a switch for the whole world."
+    },
+    {
+      "id": "safe",
+      "min": 8,
+      "text": "Formatting, lint fixes and docs edits are fine. They are local, and you can undo them in one command."
+    },
+    {
+      "id": "risky",
+      "min": 8,
+      "text": "Deploys, deletes and anything with money are different. A wrong call there cannot be taken back."
+    },
+    {
+      "id": "ask",
+      "min": 8,
+      "text": "For that work, you want the question. The agent stops, and a human says yes or no."
+    },
+    {
+      "id": "task",
+      "min": 8,
+      "text": "So YOLO is set per task. The lint sweep gets it, and the deploy task does not."
+    },
+    {
+      "id": "ws",
+      "min": 8,
+      "text": "Or set it per workspace. A docs workspace can run free, and a billing workspace never does."
+    },
+    {
+      "id": "rule",
+      "min": 8,
+      "text": "Keep risky work in a workspace or task that never has YOLO. Then a slip of the finger cannot reach it."
+    },
+    {
+      "id": "record",
+      "min": 8,
+      "text": "Even with YOLO on, every call stays in the tool call history, so you can check afterwards."
+    },
+    {
+      "id": "review",
+      "min": 8,
+      "text": "Skim the history after a run. If something looks odd, you catch it while it is still small."
+    },
+    {
+      "id": "stop",
+      "min": 8,
+      "text": "And if a task starts to feel risky, switch YOLO off in the middle, and the questions return at once."
+    },
+    {
+      "id": "trust",
+      "min": 8,
+      "text": "Start small. Give YOLO to one safe task, watch the history, and widen it only as trust grows."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "You decide where trust is earned. Try YOLO mode at Agent R Q dot com."
+    }
+  ]
+}

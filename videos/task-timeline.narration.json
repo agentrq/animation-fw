@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "The task took three hours. Was the agent slow, or was it waiting on you?"
+    },
+    {
+      "id": "guess",
+      "min": 8,
+      "text": "The usual guess is that the agent is slow, so maybe it needs a bigger model."
+    },
+    {
+      "id": "tl",
+      "min": 8,
+      "text": "Every task in Agent R Q keeps a timeline of its status, recorded automatically."
+    },
+    {
+      "id": "bar",
+      "min": 8,
+      "text": "Open it, and you get a bar. Working in green, blocked in red, waiting on you in yellow."
+    },
+    {
+      "id": "work",
+      "min": 8,
+      "text": "Add up the green, and the agent only worked for an hour and twenty five minutes."
+    },
+    {
+      "id": "blocked",
+      "min": 8,
+      "text": "Twenty minutes were blocked. The agent hit a wall, like a missing credential, and stopped."
+    },
+    {
+      "id": "wait",
+      "min": 8,
+      "text": "The biggest slice is yellow. An hour and fifteen minutes of approvals, sitting unanswered."
+    },
+    {
+      "id": "pct",
+      "min": 8,
+      "text": "Forty one percent of the task was waiting on a human. Now the bottleneck has a number."
+    },
+    {
+      "id": "fix",
+      "min": 8,
+      "text": "So skip the faster model, and fix the queue instead. Faster approvals, or fewer interruptions."
+    },
+    {
+      "id": "rule",
+      "min": 8,
+      "text": "Pre approve the safe commands once, and that yellow slice shrinks on every task."
+    },
+    {
+      "id": "cmp",
+      "min": 8,
+      "text": "Next week, the timeline shows the change. One hour forty, with the agent barely waiting."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "Stop guessing why a task was slow. Open the timeline. Try it at Agent R Q dot com."
+    }
+  ]
+}

@@ -1,0 +1,378 @@
+{
+ "title": "Machines: GPU box",
+ "kicker": "machines",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 5,
+   "hed": [
+    "A big box,",
+    "sitting idle."
+   ],
+   "sub": "You are out.",
+   "log": "> gpu-box: idle",
+   "text": "You have a powerful computer of your own at home, and you are out with a slim laptop. The big one sits idle.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Home GPU box",
+     "sub": "Powerful, doing nothing",
+     "chip": [
+      "Idle",
+      "z"
+     ],
+     "at": 1
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Slim laptop",
+     "sub": "Where you are",
+     "chip": [
+      "Away",
+      "b"
+     ],
+     "at": 2.6
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "waste",
+   "min": 5,
+   "hed": [
+    "Hardware",
+    "going to waste."
+   ],
+   "sub": "While you wait.",
+   "log": "> laptop: slow",
+   "text": "Meanwhile your laptop struggles, and a rented cloud machine costs money you would rather not spend.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> laptop: fan at full speed",
+       "r"
+      ],
+      [
+       "> build: 14 minutes",
+       "r"
+      ],
+      [
+       "> gpu-box: 2% load",
+       "y"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "install",
+   "min": 5,
+   "hed": [
+    "Install the",
+    "daemon."
+   ],
+   "sub": "One command.",
+   "log": "> install agentrqd",
+   "text": "Install the Agent R Q D daemon on the big computer. It is one small program that runs in the background.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> install agentrqd",
+       "p"
+      ],
+      [
+       "> daemon: running",
+       "g"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "enrol",
+   "min": 5,
+   "hed": [
+    "Enrol with",
+    "a code."
+   ],
+   "sub": "Single use.",
+   "log": "> enrol: code AB12",
+   "text": "Enrol it with a single-use code from Agent R Q. The code works once, then it is spent.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "AB12-CD34",
+     "sub": "single-use code",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "appear",
+   "min": 5,
+   "hed": [
+    "It becomes",
+    "a machine."
+   ],
+   "sub": "In your account.",
+   "log": "> machine: gpu-box online",
+   "text": "And the computer appears in Agent R Q as a machine, online, with its name and its load.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "gpu-box",
+     "sub": "Home, 32 cores",
+     "chip": [
+      "Online",
+      "g"
+     ],
+     "at": 1
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "laptop",
+     "sub": "This device",
+     "chip": [
+      "Online",
+      "g"
+     ],
+     "at": 2.4
+    }
+   ]
+  },
+  {
+   "id": "start",
+   "min": 5,
+   "hed": [
+    "Start agents",
+    "from the panel."
+   ],
+   "sub": "In the right repo.",
+   "log": "> start: claude in ./shop",
+   "text": "From the control panel, start your coding agents on it, each in the right repository.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Control panel",
+       "start"
+      ],
+      [
+       "gpu-box",
+       "claude in shop"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "load",
+   "min": 5,
+   "hed": [
+    "Watch the",
+    "machine load."
+   ],
+   "sub": "It is working.",
+   "log": "> load: 85%",
+   "text": "Watch the load climb as the agents work. The idle box finally earns its keep.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "CPU",
+       85,
+       "g"
+      ],
+      [
+       "free",
+       15,
+       "z"
+      ]
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "GPU",
+       70,
+       "y"
+      ],
+      [
+       "free",
+       30,
+       "z"
+      ]
+     ],
+     "at": 2.8
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work"
+   }
+  },
+  {
+   "id": "term",
+   "min": 5,
+   "hed": [
+    "Open its",
+    "terminal."
+   ],
+   "sub": "From any browser.",
+   "log": "> terminal: live",
+   "text": "Open its live terminal from any browser, and see exactly what each agent is doing.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> claude: running tests",
+       "g"
+      ],
+      [
+       "> 128 passed",
+       "g"
+      ],
+      [
+       "> codex: refactoring",
+       "y"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work"
+   }
+  },
+  {
+   "id": "many",
+   "min": 5,
+   "hed": [
+    "Run several",
+    "at once."
+   ],
+   "sub": "One per repo.",
+   "log": "> 3 agents on gpu-box",
+   "text": "Run several agents at once, one per repository, because the box has the muscle for it.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "shop",
+      "api",
+      "docs"
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work",
+    "agy": "work"
+   }
+  },
+  {
+   "id": "safe",
+   "min": 5,
+   "hed": [
+    "Still under",
+    "your control."
+   ],
+   "sub": "Approvals apply.",
+   "log": "> approval: required",
+   "text": "Approvals still apply, so the powerful machine only does what you allow, wherever you are.",
+   "scene": [
+    {
+     "k": "btns",
+     "code": "Bash  docker build .",
+     "buttons": [
+      "Allow",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 4.2,
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "own",
+   "min": 5,
+   "hed": [
+    "Your hardware,",
+    "your rules."
+   ],
+   "sub": "No cloud bill.",
+   "log": "> cost: 0",
+   "text": "Your own hardware, working while you are somewhere else, with no extra cloud bill.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Your hardware.",
+     "sub": "working for you",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "close",
+   "min": 5,
+   "hed": [
+    "Put the",
+    "box to work."
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "What is the beefiest computer you own that sits idle? Tell us, or enrol it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Enrol it.",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

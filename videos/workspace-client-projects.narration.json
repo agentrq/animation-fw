@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "You freelance for three clients. One agent works across all of them, and the details start to blur together."
+    },
+    {
+      "id": "mix",
+      "min": 8,
+      "text": "Then one morning the agent asks which repo it is in, and nobody is quite sure. That is how a bank key lands in a retail site."
+    },
+    {
+      "id": "cost",
+      "min": 8,
+      "text": "Clients notice mistakes like that. You end up checking every task by hand, and the agent saves you no time at all."
+    },
+    {
+      "id": "idea",
+      "min": 8,
+      "text": "Agent R Q fixes this with workspaces. Each client gets a workspace of its own, a clean room for their work."
+    },
+    {
+      "id": "own",
+      "min": 8,
+      "text": "Every workspace has its own tasks, its own history, and its own live event stream. Nothing is shared by accident."
+    },
+    {
+      "id": "token",
+      "min": 8,
+      "text": "Each one also has its own M C P token. The agent for client B simply cannot see client A."
+    },
+    {
+      "id": "morning",
+      "min": 8,
+      "text": "Open client A in the morning, and only client A tasks are there. Nothing to filter and nothing to remember."
+    },
+    {
+      "id": "agents",
+      "min": 8,
+      "text": "Use a different agent per client if you like. Claude on the retail site, Codex on the bank app, Gemini on the blog."
+    },
+    {
+      "id": "ask",
+      "min": 8,
+      "text": "When one agent needs you, only that workspace lights up, so a question from client B never gets buried."
+    },
+    {
+      "id": "end",
+      "min": 8,
+      "text": "If a client leaves, you rotate or delete that one token, and the other two workspaces keep working untouched."
+    },
+    {
+      "id": "hand",
+      "min": 8,
+      "text": "When the project is finished, the whole story of that client is in one place, ready to hand over or look back on."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "One client, one lane. Try workspaces for your own client work at Agent R Q dot com."
+    }
+  ]
+}

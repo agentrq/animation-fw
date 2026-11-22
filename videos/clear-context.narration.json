@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "b1",
+      "min": 5,
+      "text": "Task five. Your agent is still carrying everything from tasks one through four."
+    },
+    {
+      "id": "b2",
+      "min": 5,
+      "text": "That is slow, because it re-reads everything. Expensive, because you pay for all of it."
+    },
+    {
+      "id": "b3",
+      "min": 5,
+      "text": "The fix is simple. Every task should start fresh, as if it were the first job of the day."
+    },
+    {
+      "id": "b4",
+      "min": 5,
+      "text": "A task finishes. The code is committed and the result is reported."
+    },
+    {
+      "id": "b5",
+      "min": 5,
+      "text": "Agent R Q sends slash clear to the Claude Code agent right before it picks up the next task."
+    },
+    {
+      "id": "b6",
+      "min": 5,
+      "text": "The next task starts with an empty context. Fix the signup email bug."
+    },
+    {
+      "id": "b7",
+      "min": 5,
+      "text": "Anything worth keeping lives in workspace memory, so the agent loads the notes and not the noise."
+    },
+    {
+      "id": "b8",
+      "min": 5,
+      "text": "Without stale context to re-read, the agent answers faster on every turn."
+    },
+    {
+      "id": "b9",
+      "min": 5,
+      "text": "It spends fewer tokens too, so you pay for the task, not the history."
+    },
+    {
+      "id": "b10",
+      "min": 5,
+      "text": "And it stays on topic, with no bleed from the last task into the new one."
+    },
+    {
+      "id": "b11",
+      "min": 5,
+      "text": "All of it happens automatically, before every task, with nothing for you to remember."
+    },
+    {
+      "id": "b12",
+      "min": 5,
+      "text": "How much of your agent budget goes to old context? Drop your story below, and try clear context at Agent R Q dot com."
+    }
+  ]
+}

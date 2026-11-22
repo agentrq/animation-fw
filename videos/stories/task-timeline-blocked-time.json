@@ -1,0 +1,389 @@
+{
+ "title": "Timeline: blocked time",
+ "kicker": "task timeline",
+ "mascots": [
+  "claude"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 7.2,
+   "hed": [
+    "It finishes,",
+    "but slowly."
+   ],
+   "sub": "Feels slow.",
+   "log": "> hook",
+   "text": "Your agent finishes its tasks in the end, but they always feel slow.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Migrate billing",
+     "sub": "Took 3 hours",
+     "chip": [
+      "Done",
+      "z"
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "why",
+   "min": 7.2,
+   "hed": [
+    "You cannot",
+    "say why."
+   ],
+   "sub": "No data.",
+   "log": "> why",
+   "text": "You cannot say why. Was the agent slow, or was something in the way?",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Why so|slow?",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "guess",
+   "min": 7.2,
+   "hed": [
+    "Guessing",
+    "fixes nothing."
+   ],
+   "sub": "Gut feeling only.",
+   "log": "> guess",
+   "text": "Without data, all you have is a gut feeling, and gut feelings fix nothing.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Working? Waiting? Stuck?",
+     "sub": "Nobody knows",
+     "chip": [
+      "Unknown",
+      "z"
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "record",
+   "min": 7.2,
+   "hed": [
+    "Every task",
+    "gets a timeline."
+   ],
+   "sub": "Start to close.",
+   "log": "> record",
+   "text": "Agent R Q records a timeline for every task, from the moment it starts until it closes.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Migrate billing",
+     "sub": "Timeline recorded",
+     "chip": [
+      "Recorded",
+      "g"
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "three",
+   "min": 7.2,
+   "hed": [
+    "Working,",
+    "blocked, waiting."
+   ],
+   "sub": "Three states.",
+   "log": "> three",
+   "text": "It records how long the task was working, how long it was blocked, and how long it waited on you.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Working",
+       40,
+       "g"
+      ],
+      [
+       "Blocked",
+       25,
+       "r"
+      ],
+      [
+       "Waiting on you",
+       35,
+       "y"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "read",
+   "min": 7.2,
+   "hed": [
+    "Read it",
+    "at a glance."
+   ],
+   "sub": "One bar.",
+   "log": "> read",
+   "text": "All of that fits in one bar, which you can read at a glance.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Working",
+       40,
+       "g"
+      ],
+      [
+       "Blocked",
+       25,
+       "r"
+      ],
+      [
+       "Waiting on you",
+       35,
+       "y"
+      ]
+     ],
+     "at": 0.6
+    },
+    {
+     "k": "big",
+     "text": "3 hours",
+     "sub": "one task",
+     "at": 2.4
+    }
+   ]
+  },
+  {
+   "id": "blocked",
+   "min": 7.2,
+   "hed": [
+    "A quarter",
+    "was blocked."
+   ],
+   "sub": "On something small.",
+   "log": "> blocked",
+   "text": "A quarter of the time, the task was blocked, on something small like a missing credential.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Blocked on a credential",
+     "sub": "25% of the time",
+     "chip": [
+      "Fix it",
+      "r"
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "alert"
+   }
+  },
+  {
+   "id": "fixable",
+   "min": 7.2,
+   "hed": [
+    "That is",
+    "fixable."
+   ],
+   "sub": "Add the key once.",
+   "log": "> fixable",
+   "text": "That is fixable. Add the credential once, and it never blocks again.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "You",
+     "text": "Added the billing key.",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Credential added",
+     "sub": "No more blocks",
+     "chip": [
+      "Fixed",
+      "g"
+     ],
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "wait",
+   "min": 7.2,
+   "hed": [
+    "A third was",
+    "waiting on you."
+   ],
+   "sub": "Also fixable.",
+   "log": "> wait",
+   "text": "And a third of the time, it was waiting for you. That is fixable too.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Waiting on you",
+     "sub": "35% of the time",
+     "chip": [
+      "Needs you",
+      "y"
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "approvals",
+   "min": 7.2,
+   "hed": [
+    "Faster replies,",
+    "faster work."
+   ],
+   "sub": "Notifications help.",
+   "log": "> approvals",
+   "text": "Faster replies, or pre approved commands, and the waiting shrinks.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Authorization required",
+      "y"
+     ],
+     "code": "Bash  npm run migrate",
+     "buttons": [
+      "Allow Once",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 3.8,
+     "at": 1
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "after",
+   "min": 7.2,
+   "hed": [
+    "Next time:",
+    "one hour."
+   ],
+   "sub": "Same task.",
+   "log": "> after",
+   "text": "Next time, the same task takes one hour instead of three.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Working",
+       70,
+       "g"
+      ],
+      [
+       "Wait",
+       20,
+       "y"
+      ],
+      [
+       "Blocked",
+       10,
+       "r"
+      ]
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Migrate billing",
+     "sub": "Took 1 hour",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 2.6
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "fix",
+   "min": 7.2,
+   "hed": [
+    "Fix the",
+    "real delay."
+   ],
+   "sub": "Not the agent.",
+   "log": "> fix",
+   "text": "Once you can see the delay, you can remove it.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Fix the|real delay.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "close",
+   "min": 7.2,
+   "hed": [
+    "What blocks",
+    "your agents?"
+   ],
+   "sub": "agentrq.com",
+   "log": "> close",
+   "text": "What blocks your agents most often? Tell us in the comments, or try it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "What blocks|your agents?",
+     "sub": "comment below",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  }
+ ]
+}

@@ -1,0 +1,364 @@
+{
+ "title": "Task Board",
+ "kicker": "task board",
+ "mascots": [
+  "claude",
+  "codex"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 7.2,
+   "hed": [
+    "A fork",
+    "in the road."
+   ],
+   "sub": "And you are away.",
+   "log": "> hook",
+   "text": "Your coding agent just hit a fork in the road, and you are nowhere near your terminal.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Migrate the users table now, or wait for the weekend?",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "wait",
+   "min": 7.2,
+   "hed": [
+    "It cannot",
+    "go on."
+   ],
+   "sub": "So it waits.",
+   "log": "> wait",
+   "text": "So the agent simply stops, and waits for you.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Migrate the users table now, or wait for the weekend?",
+     "at": 0.6
+    },
+    {
+     "k": "msg",
+     "from": "system",
+     "who": null,
+     "text": "Waiting for you...",
+     "at": 2.2
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "lost",
+   "min": 7.2,
+   "hed": [
+    "Waiting",
+    "costs you."
+   ],
+   "sub": "Hours go by.",
+   "log": "> lost",
+   "text": "Every hour it waits is an hour of work that does not happen.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Idle agent",
+     "sub": "hours lost",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "board",
+   "min": 7.2,
+   "hed": [
+    "One task",
+    "board."
+   ],
+   "sub": "Real time.",
+   "log": "> board",
+   "text": "With Agent R Q, every request your agents make lands on one task board, in real time.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Refactor checkout service",
+     "sub": "Claude Code",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 0.8
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Migrate the users table?",
+     "sub": "Claude Code",
+     "chip": [
+      "Needs you",
+      "y"
+     ],
+     "at": 2
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Update the README",
+     "sub": "Codex",
+     "chip": [
+      "Queued",
+      "z"
+     ],
+     "at": 3.2
+    }
+   ],
+   "mascot": {
+    "claude": "ask",
+    "codex": "work"
+   }
+  },
+  {
+   "id": "statuses",
+   "min": 7.2,
+   "hed": [
+    "Every status,",
+    "one place."
+   ],
+   "sub": "Ongoing, waiting, done.",
+   "log": "> statuses",
+   "text": "Ongoing, waiting, blocked, done. Every status is visible in one place.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "Queued",
+      "Ongoing",
+      "Blocked",
+      "Done"
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "phone",
+   "min": 7.2,
+   "hed": [
+    "Open it",
+    "on your phone."
+   ],
+   "sub": "Anywhere.",
+   "log": "> phone",
+   "text": "Open it on your phone, wherever you are, and read the question in full.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Migrate the users table?",
+     "sub": "Claude Code, from your phone",
+     "chip": [
+      "Needs you",
+      "y"
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "answer",
+   "min": 7.2,
+   "hed": [
+    "Just answer.",
+    "Wait."
+   ],
+   "sub": "Plain words.",
+   "log": "> answer",
+   "text": "Then just answer, in plain words. Wait for the weekend, and do the indexes first.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "You, from your phone",
+     "text": "Wait for the weekend. Do the indexes first.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "pick",
+   "min": 7.2,
+   "hed": [
+    "Instantly",
+    "picked up."
+   ],
+   "sub": "No refresh.",
+   "log": "> pick",
+   "text": "The agent picks up your reply instantly, with no refresh and no copy and paste.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "You",
+     "text": "Wait for the weekend.",
+     "at": 0.6
+    },
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "On it. Indexes first.",
+     "at": 2.4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "perm",
+   "min": 7.2,
+   "hed": [
+    "Or it needs",
+    "permission."
+   ],
+   "sub": "Before it acts.",
+   "log": "> perm",
+   "text": "Or the agent needs permission. An approval card shows exactly what it wants to run.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Authorization required",
+      "y"
+     ],
+     "code": "Bash  npm run build",
+     "buttons": [
+      "Allow Once",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 3.8,
+     "at": 1
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "choices",
+   "min": 7.2,
+   "hed": [
+    "Allow once,",
+    "always, or deny."
+   ],
+   "sub": "Your call.",
+   "log": "> choices",
+   "text": "Allow once, always allow, or deny. You stay in control of every command.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "Allow Once",
+      "Always Allow",
+      "Deny"
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "carry",
+   "min": 7.2,
+   "hed": [
+    "Approved.",
+    "It carries on."
+   ],
+   "sub": "No delay.",
+   "log": "> carry",
+   "text": "Approved, and the agent carries straight on with the job.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Approved",
+     "sub": "The agent carries on",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work"
+   }
+  },
+  {
+   "id": "end",
+   "min": 7.2,
+   "hed": [
+    "Never miss",
+    "a request."
+   ],
+   "sub": "Never block an agent.",
+   "log": "> end",
+   "text": "You never miss a request, and no agent ever stays stuck for long.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Never|stuck.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done"
+   }
+  },
+  {
+   "id": "close",
+   "min": 7.2,
+   "hed": [
+    "What do you",
+    "miss most?"
+   ],
+   "sub": "agentrq.com",
+   "log": "> close",
+   "text": "Which request from an agent do you miss most often? Let us know below, or try it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "What do you|miss most?",
+     "sub": "comment below",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done"
+   }
+  }
+ ]
+}

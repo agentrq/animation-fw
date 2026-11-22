@@ -1,0 +1,331 @@
+{
+ "title": "Distributed Skills",
+ "kicker": "distributed skills",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "b1",
+   "min": 5,
+   "hed": [
+    "Your best",
+    "playbook."
+   ],
+   "sub": "On one laptop.",
+   "log": "> skill: laptop only",
+   "text": "Your best deploy playbook lives in a folder on one laptop.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Laptop A",
+     "sub": "~/skills/deploy-staging",
+     "at": 1.2,
+     "chip": [
+      "Has it",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b2",
+   "min": 5,
+   "hed": [
+    "Nobody else",
+    "has it."
+   ],
+   "sub": "Every other agent.",
+   "log": "> others: missing",
+   "text": "Every other agent has never heard of it. They guess the steps, and every guess is a little different.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Server B",
+     "sub": "No skills folder",
+     "at": 1.2,
+     "chip": [
+      "Missing",
+      "r"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Cloud box agent",
+     "sub": "Guessing the steps",
+     "at": 3.2,
+     "chip": [
+      "Missing",
+      "r"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "min": 5,
+   "hed": [
+    "Copying files",
+    "does not scale."
+   ],
+   "sub": "Drift is certain.",
+   "log": "> copy: manual",
+   "text": "You could copy the folder around by hand, but each copy drifts the moment someone edits it.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "scp -r ~/skills server-b:",
+       "r"
+      ],
+      [
+       "scp -r ~/skills cloud-box:",
+       "r"
+      ]
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b4",
+   "min": 5,
+   "hed": [
+    "Skills belong",
+    "in the workspace."
+   ],
+   "sub": "Not on a machine.",
+   "log": "> skills: workspace",
+   "text": "In Agent R Q, skills do not live on a machine. They live in the workspace, as one shared library.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Workspace skills",
+     "sub": "deploy-staging  \u00b7  triage-bugs  \u00b7  release-notes",
+     "at": 1.2,
+     "chip": [
+      "Shared",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b5",
+   "min": 5,
+   "hed": [
+    "An agent",
+    "saves a skill."
+   ],
+   "sub": "Once.",
+   "log": "> skills save",
+   "text": "When an agent learns something worth repeating, it saves it as a skill, and the workspace stores it.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Claude Code",
+       "saves"
+      ],
+      [
+       "Workspace",
+       "stores"
+      ]
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "b6",
+   "min": 5,
+   "hed": [
+    "Any agent",
+    "can find it."
+   ],
+   "sub": "Over M C P.",
+   "log": "> skills search",
+   "text": "Any agent can search the library over M C P, and find the skill it needs by name.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "skills search deploy",
+       "p"
+      ],
+      [
+       "found: deploy-staging (v7)",
+       "g"
+      ]
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "codex": "work"
+   }
+  },
+  {
+   "id": "b7",
+   "min": 5,
+   "hed": [
+    "Then load",
+    "it."
+   ],
+   "sub": "On demand.",
+   "log": "> skills load",
+   "text": "It loads the skill only when it needs it, so the playbook is always the current one.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "skills load deploy-staging",
+       "p"
+      ],
+      [
+       "v7 loaded",
+       "g"
+      ]
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "codex": "work"
+   }
+  },
+  {
+   "id": "b8",
+   "min": 5,
+   "hed": [
+    "Every agent",
+    "gets the same."
+   ],
+   "sub": "Claude, Codex, Gemini.",
+   "log": "> agents: same skill",
+   "text": "Claude, Codex, Gemini, Cursor, all of them get the same playbook, on any machine.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "Claude",
+      "Codex",
+      "Gemini",
+      "Cursor"
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work",
+    "agy": "work"
+   }
+  },
+  {
+   "id": "b9",
+   "min": 5,
+   "hed": [
+    "A step is",
+    "missing."
+   ],
+   "sub": "An agent notices.",
+   "log": "> gap: vpn",
+   "text": "Then an agent notices a missing step. Staging needs the VPN first, so it updates the skill.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Codex",
+     "text": "Staging needs the VPN first. Updating the skill.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "codex": "work"
+   }
+  },
+  {
+   "id": "b10",
+   "min": 5,
+   "hed": [
+    "Version eight",
+    "goes live."
+   ],
+   "sub": "For everyone.",
+   "log": "> skill: v8",
+   "text": "The skill becomes version eight, and it is live for every agent in the workspace at once.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "deploy-staging",
+     "sub": "v8 now live for every agent",
+     "at": 1.2,
+     "chip": [
+      "Updated",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "codex": "done"
+   }
+  },
+  {
+   "id": "b11",
+   "min": 5,
+   "hed": [
+    "No copying",
+    "files, ever."
+   ],
+   "sub": "One library.",
+   "log": "> copies: 0",
+   "text": "No copying files around, ever. Fix a step once, and every agent gets the update.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "One library.|Every agent.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  },
+  {
+   "id": "b12",
+   "min": 5,
+   "hed": [
+    "Where do your",
+    "skills live?"
+   ],
+   "sub": "Tell us below.",
+   "log": "> agentrq.com",
+   "text": "Where do your agents keep their playbooks today? Tell us in the comments, and try it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Where do your|skills live?",
+     "sub": "comment below",
+     "at": 1.2
+    }
+   ]
+  }
+ ]
+}

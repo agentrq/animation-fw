@@ -1,0 +1,365 @@
+{
+ "title": "Pizza Research",
+ "kicker": "pizza research",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "Thirty six",
+    "pizza stores."
+   ],
+   "sub": "A famous study.",
+   "log": "> study: 36 stores",
+   "text": "In the nineteen nineties, researchers studied thirty six pizza stores, to see how knowledge spread.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "36 pizza stores",
+     "at": 1.4,
+     "sub": "Darr, Argote and Epple, 1995"
+    }
+   ]
+  },
+  {
+   "id": "why",
+   "min": 8,
+   "hed": [
+    "Why pizza?"
+   ],
+   "sub": "Same recipe, same ovens.",
+   "log": "> why pizza",
+   "text": "Pizza stores are a clean test. Same menu, same ovens, and each store making the same thing every day.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Store A",
+     "sub": "Same menu, same ovens",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Store B",
+     "sub": "Same menu, same ovens",
+     "at": 2.6
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Store C",
+     "sub": "Same menu, same ovens",
+     "at": 4.0
+    }
+   ]
+  },
+  {
+   "id": "learn",
+   "min": 8,
+   "hed": [
+    "Stores kept",
+    "learning tricks."
+   ],
+   "sub": "Faster dough, fewer burns.",
+   "log": "> tricks: found",
+   "text": "Over time, every store learned its own little tricks. A better dough, a faster oven, a smarter way to box.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> store A: faster dough",
+       "g"
+      ],
+      [
+       "> store B: fewer burns",
+       "g"
+      ],
+      [
+       "> store C: smarter boxes",
+       "g"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "owner",
+   "min": 8,
+   "hed": [
+    "Same owner:",
+    "lessons spread."
+   ],
+   "sub": "Shared.",
+   "log": "> same owner: shared",
+   "text": "The finding. Stores learned from each other only when the same franchisee owned them.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Same owner",
+     "sub": "Lessons spread between stores",
+     "at": 1.2,
+     "chip": [
+      "Shared",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "diff",
+   "min": 8,
+   "hed": [
+    "Different owners:",
+    "lessons stuck."
+   ],
+   "sub": "Never reached.",
+   "log": "> different owners: stuck",
+   "text": "Across different owners, the very same lessons never made the trip.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Different owners",
+     "sub": "Same lessons, never reached",
+     "at": 1.2,
+     "chip": [
+      "Stuck",
+      "r"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wall",
+   "min": 8,
+   "hed": [
+    "The wall was",
+    "not distance."
+   ],
+   "sub": "It was ownership.",
+   "log": "> boundary: ownership",
+   "text": "The stores were not far apart. The wall was the boundary between owners.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Not distance.|Ownership.",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "min": 8,
+   "hed": [
+    "Agents are",
+    "the same."
+   ],
+   "sub": "Each one learns alone.",
+   "log": "> agents: learn alone",
+   "text": "Agents are the same. Each learns something useful, then keeps it to itself.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Ada's agent",
+     "sub": "Knows the deploy trick",
+     "at": 1.2,
+     "chip": [
+      "Knows",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Ben's agent",
+     "sub": "Rediscovering it",
+     "at": 3.0,
+     "chip": [
+      "Starts over",
+      "r"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "alert"
+   }
+  },
+  {
+   "id": "desk",
+   "min": 8,
+   "hed": [
+    "Two desks apart,",
+    "a world away."
+   ],
+   "sub": "Same team, no sharing.",
+   "log": "> two desks apart",
+   "text": "Two desks apart, and a world away. Same company, same repo, nothing shared.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Ben's agent",
+     "text": "Deploys keep failing. Investigating...",
+     "at": 1.2
+    },
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Ada's agent",
+     "text": "I fixed that last week.",
+     "at": 3.0
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "teams",
+   "min": 8,
+   "hed": [
+    "Teams removes",
+    "the boundary."
+   ],
+   "sub": "Agent R Q Teams.",
+   "log": "> teams: on",
+   "text": "Teams in Agent R Q takes that boundary down. Agents read each other's memory.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Memory index",
+     "sub": "yours, ada, ben",
+     "at": 1.2,
+     "chip": [
+      "Team",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "ada / deploy-trick",
+     "sub": "Read-only for Ben's agent",
+     "at": 3.0,
+     "chip": [
+      "Read",
+      "b"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "skills",
+   "min": 8,
+   "hed": [
+    "They improve",
+    "the same skills."
+   ],
+   "sub": "Opt in, improve together.",
+   "log": "> skills: shared",
+   "text": "And they improve the same skills, so a fix by one agent lifts every agent.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Skill: deploy",
+     "sub": "Improved by Ada's agent",
+     "at": 1.2,
+     "chip": [
+      "Updated",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Skill: deploy",
+     "sub": "Now used by Ben's agent",
+     "at": 3.0,
+     "chip": [
+      "Shared",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work"
+   }
+  },
+  {
+   "id": "flow",
+   "min": 8,
+   "hed": [
+    "Learn once.",
+    "Everyone knows."
+   ],
+   "sub": "The lesson travels.",
+   "log": "> lesson travels",
+   "text": "Ada's agent learns, the team memory holds it, and Ben's agent already knows.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Ada's agent",
+       "learns"
+      ],
+      [
+       "Team memory and skills",
+       "shared"
+      ],
+      [
+       "Ben's agent",
+       "already knows"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done"
+   }
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Knock down",
+    "the walls."
+   ],
+   "sub": "ag// Teams in Agent R Q",
+   "log": "> agentrq.com",
+   "text": "Where does knowledge get stuck on your team? Fix it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "No more|pizza walls.",
+     "at": 1.4,
+     "sub": "agentrq.com"
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

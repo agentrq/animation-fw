@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 5,
+      "text": "Your agent is great at code. But it has no idea your task list, your notes, or your teammates exist."
+    },
+    {
+      "id": "paste",
+      "min": 5,
+      "text": "So you paste the task, paste the notes, and paste the rules, again and again, every session."
+    },
+    {
+      "id": "line",
+      "min": 5,
+      "text": "Add one line of config, and Agent R Q plugs into the agent over M C P, the Model Context Protocol."
+    },
+    {
+      "id": "seven",
+      "min": 5,
+      "text": "The agent gets seven native tools, which show up beside the ones it already has."
+    },
+    {
+      "id": "task",
+      "min": 5,
+      "text": "Tasks and replies. The agent picks up its own work, and answers you when it is done."
+    },
+    {
+      "id": "mem",
+      "min": 5,
+      "text": "Memory keeps what it learned, and skills hold the playbooks, so lessons stick between sessions."
+    },
+    {
+      "id": "pano",
+      "min": 5,
+      "text": "Pano docs and shared websites give it the same pages your team reads."
+    },
+    {
+      "id": "help",
+      "min": 5,
+      "text": "Even a help tool that explains every action, so nobody has to write a manual."
+    },
+    {
+      "id": "alone",
+      "min": 5,
+      "text": "Now the agent picks up its own tasks, replies when it is stuck, and saves what it learned."
+    },
+    {
+      "id": "you",
+      "min": 5,
+      "text": "You just watch the board move, and step in only when it needs a human decision."
+    },
+    {
+      "id": "safe",
+      "min": 5,
+      "text": "Risky actions still wait for your approval, so connecting an agent never costs you control."
+    },
+    {
+      "id": "close",
+      "min": 5,
+      "text": "What would you let your agents do on their own? Share it, or connect one at Agent R Q dot com."
+    }
+  ]
+}

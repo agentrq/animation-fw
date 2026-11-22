@@ -1,0 +1,381 @@
+{
+ "title": "Monday Fix",
+ "kicker": "monday fix",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "mon",
+   "min": 8,
+   "hed": [
+    "Monday.",
+    "Ben's agent digs in."
+   ],
+   "sub": "The build keeps flaking.",
+   "log": "> monday: flaky build",
+   "text": "Monday. Ben's agent spends two hours working out why the build keeps flaking.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Ben",
+     "sub": "Fixing the flaky build",
+     "at": 1.2,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    },
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> run e2e: fail",
+       "r"
+      ],
+      [
+       "> run e2e: pass",
+       "g"
+      ],
+      [
+       "> run e2e: fail",
+       "r"
+      ]
+     ],
+     "at": 3.0
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "crack",
+   "min": 8,
+   "hed": [
+    "Finally,",
+    "it cracks it."
+   ],
+   "sub": "The cache was the culprit.",
+   "log": "> found: stale cache",
+   "text": "It finally cracks it. The cache has to be cleared before the end to end run.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Ben's agent",
+     "text": "Found it. Clear the cache before the e2e run.",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "lost",
+   "min": 8,
+   "hed": [
+    "Then the lesson",
+    "goes nowhere."
+   ],
+   "sub": "It dies with the session.",
+   "log": "> lesson: not saved",
+   "text": "Then the session ends, and that lesson goes nowhere. It lives in one chat, on one laptop.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Ben's session",
+     "sub": "Closed",
+     "at": 1.2,
+     "chip": [
+      "Ended",
+      "z"
+     ]
+    },
+    {
+     "k": "big",
+     "text": "Lost.",
+     "at": 3.0
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "tue",
+   "min": 8,
+   "hed": [
+    "Tuesday.",
+    "Ada hits it too."
+   ],
+   "sub": "Same flaky build.",
+   "log": "> tuesday: same build",
+   "text": "Tuesday. Ada's agent runs into the very same flaky build.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Ada",
+     "sub": "Same flaky build, next day",
+     "at": 1.2,
+     "chip": [
+      "Ongoing",
+      "y"
+     ]
+    },
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Ada's agent",
+     "text": "Build is flaky. Investigating from scratch...",
+     "at": 3.0
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "zero",
+   "min": 8,
+   "hed": [
+    "It starts",
+    "from zero."
+   ],
+   "sub": "Another two hours gone.",
+   "log": "> two hours, again",
+   "text": "It starts from zero. Another two hours go by, to find the same answer Ben already found.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Ben, Monday 2h",
+       50,
+       "g"
+      ],
+      [
+       "Ada, Tuesday 2h",
+       50,
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "codex": "alert"
+   }
+  },
+  {
+   "id": "cost",
+   "min": 8,
+   "hed": [
+    "Same bug.",
+    "Twice the cost."
+   ],
+   "sub": "Multiply by the team.",
+   "log": "> cost: 4 hours",
+   "text": "That is four hours of agent time and human attention, for one single fix. Now multiply that by the whole team.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "4 hours",
+     "at": 1.4,
+     "sub": "for one fix"
+    }
+   ],
+   "mascot": {
+    "codex": "alert"
+   }
+  },
+  {
+   "id": "teams",
+   "min": 8,
+   "hed": [
+    "Now, with Teams."
+   ],
+   "sub": "Memory is shared.",
+   "log": "> teams: on",
+   "text": "With Teams in Agent R Q, an agent's memory index lists every teammate's memory next to its own.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Memory index",
+     "sub": "yours, ben, ada",
+     "at": 1.2,
+     "chip": [
+      "Team",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "ben / flaky-build-fix",
+     "sub": "Read-only for Ada's agent",
+     "at": 3.0,
+     "chip": [
+      "Read",
+      "b"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "write",
+   "min": 8,
+   "hed": [
+    "It can read theirs.",
+    "It writes its own."
+   ],
+   "sub": "Nobody edits another's notes.",
+   "log": "> read theirs, write own",
+   "text": "It can read theirs, but it only ever writes to its own. Nobody can overwrite a note.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Read",
+     "sub": "Ben's memory",
+     "at": 1.2,
+     "chip": [
+      "Allowed",
+      "b"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Write",
+     "sub": "Own memory only",
+     "at": 3.0,
+     "chip": [
+      "Allowed",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sav",
+   "min": 8,
+   "hed": [
+    "Ben saves",
+    "the note."
+   ],
+   "sub": "Once, on Monday.",
+   "log": "> memory: saved",
+   "text": "So on Monday, Ben's agent saves what it learned, as a short note, in its own memory.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "ben / flaky-build-fix",
+     "sub": "Clear the cache first",
+     "at": 1.2,
+     "chip": [
+      "Saved",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "read",
+   "min": 8,
+   "hed": [
+    "Ada's agent reads it."
+   ],
+   "sub": "Tuesday, minute one.",
+   "log": "> team memory: found",
+   "text": "On Tuesday, Ada's agent reads that note first. Clear the cache, then run the tests.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Ada's agent",
+     "text": "Team memory says: clear the cache first. Doing that.",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "codex": "work"
+   }
+  },
+  {
+   "id": "green",
+   "min": 8,
+   "hed": [
+    "Build green",
+    "in two minutes."
+   ],
+   "sub": "Not two hours.",
+   "log": "> build: green",
+   "text": "Done in two minutes, instead of two hours. That is the whole point of sharing.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Build green",
+     "sub": "Fixed in 2 minutes",
+     "at": 1.2,
+     "chip": [
+      "Done",
+      "g"
+     ]
+    },
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "2 min",
+       8,
+       "g"
+      ]
+     ],
+     "at": 3.0
+    }
+   ],
+   "mascot": {
+    "codex": "done"
+   }
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Solve it once."
+   ],
+   "sub": "ag// Teams memory",
+   "log": "> agentrq.com",
+   "text": "Solve it once, and let the whole team keep it. Try it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Solve it|once.",
+     "at": 1.4,
+     "sub": "agentrq.com"
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

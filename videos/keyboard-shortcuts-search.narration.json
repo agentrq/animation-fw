@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 5,
+      "text": "You remember one word from a task you made last month. Just the word migration. That is all you have."
+    },
+    {
+      "id": "scroll",
+      "min": 5,
+      "text": "Two hundred tasks, five workspaces. Scrolling means opening each one and squinting at titles."
+    },
+    {
+      "id": "open",
+      "min": 5,
+      "text": "Press Command K, or Control K on Windows. A search box opens over whatever you are doing."
+    },
+    {
+      "id": "type",
+      "min": 5,
+      "text": "Type your one word. It searches titles and descriptions, so a single remembered word is enough."
+    },
+    {
+      "id": "local",
+      "min": 5,
+      "text": "The search runs straight from your device, with no round trip to a server, so it feels instant."
+    },
+    {
+      "id": "live",
+      "min": 5,
+      "text": "Results appear as you type, and the list narrows with every letter you add."
+    },
+    {
+      "id": "arrow",
+      "min": 5,
+      "text": "Arrow down to the one you want, and press enter. The task opens right where you left off."
+    },
+    {
+      "id": "status",
+      "min": 5,
+      "text": "Each result carries its status, so you can tell a finished task from one still running at a glance."
+    },
+    {
+      "id": "desc",
+      "min": 5,
+      "text": "Even a word buried in the description counts, so the detail you wrote last month is findable."
+    },
+    {
+      "id": "old",
+      "min": 5,
+      "text": "Every old task is one keystroke away. Nothing you filed ever gets lost in the scroll."
+    },
+    {
+      "id": "esc",
+      "min": 5,
+      "text": "Press escape, and you are straight back to what you were doing."
+    },
+    {
+      "id": "close",
+      "min": 5,
+      "text": "What is the oldest task you wish you could find right now? Search it at Agent R Q dot com."
+    }
+  ]
+}

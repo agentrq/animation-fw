@@ -1,0 +1,69 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 7.2,
+      "text": "You are walking the dog when you suddenly think of a great task for your agent."
+    },
+    {
+      "id": "idea",
+      "min": 7.2,
+      "text": "Fix the flaky checkout test. A good idea, and you want it captured before it fades away."
+    },
+    {
+      "id": "thumbs",
+      "min": 7.2,
+      "text": "Typing a long description on a phone with your thumbs? Typo after typo after typo."
+    },
+    {
+      "id": "mic",
+      "min": 7.2,
+      "text": "So tap the mic and talk. Say the task the way you would tell a teammate."
+    },
+    {
+      "id": "desktop",
+      "min": 7.2,
+      "text": "On a computer, a local Whisper model transcribes your voice inside your browser."
+    },
+    {
+      "id": "phone",
+      "min": 7.2,
+      "text": "On a phone, it hands off to the dictation your phone already has built in."
+    },
+    {
+      "id": "private",
+      "min": 7.2,
+      "text": "On desktop, your voice never leaves your device. Nothing is uploaded, ever."
+    },
+    {
+      "id": "text",
+      "min": 7.2,
+      "text": "Your words show up as text. Add a retry, fix a typo, and make it exactly right."
+    },
+    {
+      "id": "send",
+      "min": 7.2,
+      "text": "Then send it, and a brand new task appears on your board."
+    },
+    {
+      "id": "pickup",
+      "min": 7.2,
+      "text": "Your agent picks it up, and starts working before you are even back home."
+    },
+    {
+      "id": "fast",
+      "min": 7.2,
+      "text": "Speaking is much faster than typing, so ideas get captured before they are forgotten."
+    },
+    {
+      "id": "walk",
+      "min": 7.2,
+      "text": "Capture it in seconds, then enjoy the rest of your walk."
+    },
+    {
+      "id": "close",
+      "min": 7.2,
+      "text": "Would you talk to your agents on a walk? Tell us what you would say first, or try it at Agent R Q dot com."
+    }
+  ]
+}

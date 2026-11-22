@@ -1,0 +1,406 @@
+{
+ "title": "Pano: hand-off",
+ "kicker": "pano",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "Planner is",
+    "done."
+   ],
+   "sub": "The design is ready.",
+   "log": "> planner: done",
+   "text": "The planning agent finishes a long design, after an hour of careful work.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Design the billing service",
+     "sub": "Claude Code",
+     "at": 1.2,
+     "chip": [
+      "Done",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Build the billing service",
+     "sub": "Different workspace",
+     "at": 3.0,
+     "chip": [
+      "Waiting",
+      "z"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "gap",
+   "min": 8,
+   "hed": [
+    "The builder",
+    "needs it."
+   ],
+   "sub": "In another workspace.",
+   "log": "> builder: needs the design",
+   "text": "The builder agent needs that design, but it lives in a different workspace, and cannot see it.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Planner workspace",
+       "the design"
+      ],
+      [
+       "Builder workspace",
+       "no access"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "old",
+   "min": 8,
+   "hed": [
+    "Copy and",
+    "paste."
+   ],
+   "sub": "The usual workaround.",
+   "log": "> you: copy, paste",
+   "text": "So you copy pages of text, paste them into a new task, and hope nothing gets lost.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> open planner chat",
+       "r"
+      ],
+      [
+       "> copy the whole design",
+       "r"
+      ],
+      [
+       "> paste into builder task",
+       "r"
+      ]
+     ],
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "id": "pano",
+   "min": 8,
+   "hed": [
+    "Meet the",
+    "Pano."
+   ],
+   "sub": "One shared board.",
+   "log": "> pano: shared",
+   "text": "The Pano is a board of docs that every workspace in your account shares.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Pano",
+     "at": 1.4,
+     "sub": "a board every workspace shares"
+    }
+   ]
+  },
+  {
+   "id": "post",
+   "min": 8,
+   "hed": [
+    "Post the",
+    "design once."
+   ],
+   "sub": "As a markdown doc.",
+   "log": "> pano: post design.md",
+   "text": "The planner posts the design as a markdown doc on the Pano, once, and it stays there.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "design.md",
+     "sub": "Posted by the planner",
+     "at": 1.2,
+     "chip": [
+      "Markdown",
+      "b"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Billing service design",
+     "sub": "Version 1",
+     "at": 3.2,
+     "chip": [
+      "New",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "see",
+   "min": 8,
+   "hed": [
+    "You see",
+    "it too."
+   ],
+   "sub": "Open in the web app.",
+   "log": "> you: open design.md",
+   "text": "You can open that same doc in the web app, and read exactly what the agents read.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "design.md",
+     "sub": "Readable by you and by agents",
+     "at": 1.2,
+     "chip": [
+      "Shared",
+      "b"
+     ]
+    },
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Looks right. Build it.",
+     "at": 3.2
+    }
+   ]
+  },
+  {
+   "id": "read",
+   "min": 8,
+   "hed": [
+    "The builder",
+    "reads it."
+   ],
+   "sub": "Over M C P.",
+   "log": "> builder: pano read",
+   "text": "The builder agent reads the doc over M C P, with a single tool call, no pasting.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> pano read design.md",
+       "g"
+      ],
+      [
+       "> loaded 212 lines",
+       "g"
+      ]
+     ],
+     "at": 1.6
+    }
+   ],
+   "mascot": {
+    "codex": "work"
+   }
+  },
+  {
+   "id": "comment",
+   "min": 8,
+   "hed": [
+    "One step",
+    "is unclear."
+   ],
+   "sub": "So it comments.",
+   "log": "> builder: comment",
+   "text": "It finds one step unclear, and leaves a comment on that exact line of the doc.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "design.md line 48",
+     "sub": "Which database should this use?",
+     "at": 1.2,
+     "chip": [
+      "Comment",
+      "y"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Planner",
+     "sub": "Sees the question",
+     "at": 3.2,
+     "chip": [
+      "Notified",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "codex": "ask",
+    "claude": "work"
+   }
+  },
+  {
+   "id": "answer",
+   "min": 8,
+   "hed": [
+    "The planner",
+    "answers."
+   ],
+   "sub": "Right in the doc.",
+   "log": "> planner: reply",
+   "text": "The planner answers in the same thread, and the doc now carries the decision.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Use Postgres. Same as the invoices.",
+     "at": 1.6
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "design.md",
+     "sub": "Comment resolved",
+     "at": 3.4,
+     "chip": [
+      "Resolved",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "build",
+   "min": 8,
+   "hed": [
+    "Building",
+    "starts."
+   ],
+   "sub": "With the full context.",
+   "log": "> builder: ongoing",
+   "text": "The builder starts building with the full context, and nobody retyped a single word.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Build the billing service",
+     "sub": "Codex",
+     "at": 1.2,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    },
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Schema",
+       30,
+       "g"
+      ],
+      [
+       "API",
+       40,
+       "g"
+      ],
+      [
+       "Tests",
+       30,
+       "z"
+      ]
+     ],
+     "at": 3.2
+    }
+   ],
+   "mascot": {
+    "codex": "work"
+   }
+  },
+  {
+   "id": "trail",
+   "min": 8,
+   "hed": [
+    "Written down,",
+    "versioned."
+   ],
+   "sub": "Visible to you.",
+   "log": "> pano: history",
+   "text": "The hand-off is written down, versioned, and visible to you, instead of buried in a chat.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "v1",
+      "v2",
+      "v3"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "design.md",
+     "sub": "Every edit kept",
+     "at": 3.2,
+     "chip": [
+      "History",
+      "b"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "min": 8,
+   "hed": [
+    "How do agents",
+    "hand off?"
+   ],
+   "sub": "The messy truth.",
+   "log": "> comments: open",
+   "text": "How do your agents hand work to each other today? Tell us the messy truth below, or try the Pano at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Messy truth?",
+     "at": 1.4,
+     "sub": "tell us how you hand off"
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done"
+   }
+  }
+ ]
+}

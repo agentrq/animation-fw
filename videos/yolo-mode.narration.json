@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "Allow. Allow. Allow. Your agent asks permission to read a file for the forty-second time today."
+    },
+    {
+      "id": "cost",
+      "min": 8,
+      "text": "Each click is a tiny interruption. Forty-two of them, and your focus is gone for the day."
+    },
+    {
+      "id": "same",
+      "min": 8,
+      "text": "And you always say yes. When the answer never changes, the question is just noise."
+    },
+    {
+      "id": "idea",
+      "min": 8,
+      "text": "YOLO mode auto approves tool calls. The agent keeps moving, and nobody has to click."
+    },
+    {
+      "id": "run",
+      "min": 8,
+      "text": "Read, edit, edit, all approved on the spot. The whole job finishes while you do something else."
+    },
+    {
+      "id": "task",
+      "min": 8,
+      "text": "Turn it on for a single task, the narrowest switch there is. Everything else keeps asking."
+    },
+    {
+      "id": "ws",
+      "min": 8,
+      "text": "Or for a whole workspace, if everything inside it is low risk, like a docs site or a sandbox."
+    },
+    {
+      "id": "scope",
+      "min": 8,
+      "text": "Pick the scope you trust. Anything outside it still asks first, like a deploy to production."
+    },
+    {
+      "id": "log",
+      "min": 8,
+      "text": "And every call is still in the task history. YOLO removes the clicks, not the visibility."
+    },
+    {
+      "id": "away",
+      "min": 8,
+      "text": "So walk away. Come back to finished work, and a log that shows exactly how it got there."
+    },
+    {
+      "id": "off",
+      "min": 8,
+      "text": "And when you want the careful defaults back, you switch it off, and the questions return."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "Fewer clicks, same control. Try YOLO mode at Agent R Q dot com."
+    }
+  ]
+}

@@ -1,0 +1,469 @@
+{
+ "title": "Task Board: overnight",
+ "kicker": "task board",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 7.2,
+   "hed": [
+    "Midnight.",
+    "Three agents."
+   ],
+   "sub": "All working the backlog.",
+   "log": "> hook",
+   "text": "Midnight. Three agents are working through your backlog while you are fast asleep.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Refactor checkout",
+     "sub": "Claude Code",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Update the README",
+     "sub": "Codex",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 2.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Rotate the keys",
+     "sub": "Antigravity",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 3.6
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work",
+    "agy": "work"
+   }
+  },
+  {
+   "id": "stop",
+   "min": 7.2,
+   "hed": [
+    "Then each one",
+    "hits a wall."
+   ],
+   "sub": "Only you can answer.",
+   "log": "> stop",
+   "text": "Then each one hits a question that only you can answer.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Rename the users table?",
+     "sub": "Claude Code",
+     "chip": [
+      "Needs you",
+      "y"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Delete the old branch?",
+     "sub": "Codex",
+     "chip": [
+      "Needs you",
+      "y"
+     ],
+     "at": 2.4
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Credentials expired",
+     "sub": "Antigravity",
+     "chip": [
+      "Blocked",
+      "r"
+     ],
+     "at": 3.6
+    }
+   ],
+   "mascot": {
+    "claude": "ask",
+    "codex": "ask",
+    "agy": "alert"
+   }
+  },
+  {
+   "id": "silent",
+   "min": 7.2,
+   "hed": [
+    "Without a board,",
+    "silence."
+   ],
+   "sub": "Questions rot in terminals.",
+   "log": "> silent",
+   "text": "Without a board, those questions sit silently in three different terminals, and nobody ever sees them.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> claude: rename the table?",
+       "y"
+      ],
+      [
+       "> codex: delete the branch?",
+       "y"
+      ],
+      [
+       "> agy: credentials expired",
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "ask",
+    "codex": "ask",
+    "agy": "alert"
+   }
+  },
+  {
+   "id": "cost",
+   "min": 7.2,
+   "hed": [
+    "Hours of",
+    "idle agents."
+   ],
+   "sub": "All night long.",
+   "log": "> cost",
+   "text": "So all three agents sit idle all night, and your backlog barely moves.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "8 hours",
+     "sub": "of idle agents",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "ask",
+    "codex": "ask",
+    "agy": "alert"
+   }
+  },
+  {
+   "id": "board",
+   "min": 7.2,
+   "hed": [
+    "One board",
+    "for all of it."
+   ],
+   "sub": "In order, with context.",
+   "log": "> board",
+   "text": "In Agent R Q, every question lands on one board, in order, with the full context attached.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Refactor checkout",
+     "sub": "Claude Code",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 0.8
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Rename the users table?",
+     "sub": "Claude Code",
+     "chip": [
+      "Waiting",
+      "y"
+     ],
+     "at": 2
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Delete the old branch?",
+     "sub": "Codex",
+     "chip": [
+      "Waiting",
+      "y"
+     ],
+     "at": 3.2
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Credentials expired",
+     "sub": "Antigravity",
+     "chip": [
+      "Blocked",
+      "r"
+     ],
+     "at": 4.4
+    }
+   ]
+  },
+  {
+   "id": "context",
+   "min": 7.2,
+   "hed": [
+    "Full context,",
+    "every card."
+   ],
+   "sub": "No guessing.",
+   "log": "> context",
+   "text": "Each card carries who asked, what they asked, and why, so you never have to guess.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Rename the users table?",
+     "sub": "Claude Code, migration 0042",
+     "chip": [
+      "Needs you",
+      "y"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Old name breaks two reports.",
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "wake",
+   "min": 7.2,
+   "hed": [
+    "You wake up.",
+    "Phone in hand."
+   ],
+   "sub": "Over coffee.",
+   "log": "> wake",
+   "text": "You wake up, grab your phone, and open the board over coffee.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "3 requests waiting",
+     "sub": "Opened at 7:02 am",
+     "chip": [
+      "Needs you",
+      "y"
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "answer",
+   "min": 7.2,
+   "hed": [
+    "Answer,",
+    "allow, deny."
+   ],
+   "sub": "Two minutes.",
+   "log": "> answer",
+   "text": "Answer the question, allow the command, deny the risky one. All of it takes two minutes.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "You, over coffee",
+     "text": "Yes, rename it. Delete the branch.",
+     "at": 1.2
+    },
+    {
+     "k": "btns",
+     "chip": [
+      "Authorization required",
+      "y"
+     ],
+     "code": "Bash  git branch -D old-feature",
+     "buttons": [
+      "Allow Once",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 3.8,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "id": "carry",
+   "min": 7.2,
+   "hed": [
+    "The agents",
+    "carry on."
+   ],
+   "sub": "Instantly.",
+   "log": "> carry",
+   "text": "The agents pick up your replies instantly, and carry on with the work.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Renaming now.",
+     "at": 1
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Update the README",
+     "sub": "Codex resumed",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work",
+    "agy": "work"
+   }
+  },
+  {
+   "id": "cleared",
+   "min": 7.2,
+   "hed": [
+    "Queue",
+    "cleared."
+   ],
+   "sub": "Three answers.",
+   "log": "> cleared",
+   "text": "Three answers, two minutes, and the whole queue is cleared before breakfast.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Queue cleared",
+     "sub": "3 answers in 2 minutes",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  },
+  {
+   "id": "minutes",
+   "min": 7.2,
+   "hed": [
+    "Minutes,",
+    "not hours."
+   ],
+   "sub": "What a board gives you.",
+   "log": "> minutes",
+   "text": "Instead of idling all night, the agents lost minutes, not hours.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Minutes,|not hours.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work",
+    "agy": "work"
+   }
+  },
+  {
+   "id": "prod",
+   "min": 7.2,
+   "hed": [
+    "More done",
+    "by morning."
+   ],
+   "sub": "Same backlog.",
+   "log": "> prod",
+   "text": "That is how a backlog gets finished while the humans are still asleep.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Working",
+       80,
+       "g"
+      ],
+      [
+       "Waiting",
+       20,
+       "y"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work",
+    "agy": "work"
+   }
+  },
+  {
+   "id": "close",
+   "min": 7.2,
+   "hed": [
+    "Longest night",
+    "wait?"
+   ],
+   "sub": "agentrq.com",
+   "log": "> close",
+   "text": "What was the longest an agent ever waited on you overnight? Tell us below, or try it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Longest night|wait?",
+     "sub": "comment below",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

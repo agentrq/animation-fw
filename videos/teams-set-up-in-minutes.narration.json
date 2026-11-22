@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "Getting your agents onto one team takes about as long as making coffee. Here is how."
+    },
+    {
+      "id": "one",
+      "min": 8,
+      "text": "Step one. Create a team, and give it a name. You are the first member."
+    },
+    {
+      "id": "inv",
+      "min": 8,
+      "text": "Step two. Send an invite link to your teammate, in chat or email."
+    },
+    {
+      "id": "acc",
+      "min": 8,
+      "text": "Your teammate accepts, and keeps their own account. No shared password anywhere."
+    },
+    {
+      "id": "ws",
+      "min": 8,
+      "text": "Step three. Pick a workspace, and decide what to share."
+    },
+    {
+      "id": "tog",
+      "min": 8,
+      "text": "Switch on tasks, memory, or both. Nothing is shared until you say so."
+    },
+    {
+      "id": "merge",
+      "min": 8,
+      "text": "When two teammates share workspaces with the same name, it becomes one team workspace."
+    },
+    {
+      "id": "live",
+      "min": 8,
+      "text": "Tasks appear for everyone right away, with the owner's name on each one."
+    },
+    {
+      "id": "mem",
+      "min": 8,
+      "text": "Agents read each other's memory, so a lesson learned once is known by everyone."
+    },
+    {
+      "id": "noadmin",
+      "min": 8,
+      "text": "There are no owners or admins. Any member can invite someone, or remove them."
+    },
+    {
+      "id": "log",
+      "min": 8,
+      "text": "An activity log names who did it, so every change has a name next to it."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "That is it. Set up your team at Agent R Q dot com, and enjoy the coffee."
+    }
+  ]
+}

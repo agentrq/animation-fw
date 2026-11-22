@@ -1,0 +1,411 @@
+{
+ "title": "Memory: gotchas",
+ "kicker": "workspace memory gotchas",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "The same",
+    "trap, again."
+   ],
+   "sub": "Tuesday, an hour lost.",
+   "log": "> port 3000: taken",
+   "text": "Tuesday, an agent loses an hour. The app will not start, because another stack is squatting on port three thousand.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude",
+     "text": "Port 3000 is taken. Why?",
+     "at": 1.4
+    },
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> npm start",
+       "p"
+      ],
+      [
+       "> error: address in use",
+       "p"
+      ]
+     ],
+     "at": 3.6
+    }
+   ],
+   "mascot": {
+    "claude": "alert"
+   }
+  },
+  {
+   "id": "find",
+   "min": 8,
+   "hed": [
+    "It finds",
+    "the cause."
+   ],
+   "sub": "Use 3300 instead.",
+   "log": "> use port 3300",
+   "text": "Finally it works out the fix. Use port three thousand three hundred, and the whole thing runs.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude",
+     "text": "Use 3300, not 3000.",
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "App is running",
+     "sub": "Port 3300",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 3.4
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "lose",
+   "min": 8,
+   "hed": [
+    "Then the",
+    "lesson dies."
+   ],
+   "sub": "Next chat, a blank slate.",
+   "log": "> memory: none",
+   "text": "But the chat ends, and so does the lesson. Tomorrow another agent will have to find it all out again.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Lesson lost",
+     "sub": "Nobody wrote it down",
+     "chip": [
+      "Gone",
+      "r"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Tomorrow",
+     "sub": "The same hour, again",
+     "chip": [
+      "Waiting",
+      "z"
+     ],
+     "at": 3.2
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "save",
+   "min": 8,
+   "hed": [
+    "Save the",
+    "gotcha."
+   ],
+   "sub": "One line, in the workspace.",
+   "log": "> memory save port-gotcha",
+   "text": "Agent R Q has workspace memory. Before it finishes, the agent saves that one line, and moves on.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "memory save port-gotcha",
+       "p"
+      ],
+      [
+       "saved to the workspace",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "port-gotcha",
+     "sub": "Use 3300, not 3000",
+     "chip": [
+      "Memory",
+      "g"
+     ],
+     "at": 3.8
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "index",
+   "min": 8,
+   "hed": [
+    "An index",
+    "of traps."
+   ],
+   "sub": "Short, linked, easy to scan.",
+   "log": "> memory.md",
+   "text": "Memory is a small index with links to short entries. Every gotcha gets its own page, so nothing gets buried.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "port-gotcha",
+     "sub": "Use 3300, not 3000",
+     "chip": [
+      "Memory",
+      "b"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "vpn-staging",
+     "sub": "Staging needs the VPN",
+     "chip": [
+      "Memory",
+      "b"
+     ],
+     "at": 2.6
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "seed-db",
+     "sub": "Run seed before tests",
+     "chip": [
+      "Memory",
+      "b"
+     ],
+     "at": 4
+    }
+   ]
+  },
+  {
+   "id": "read",
+   "min": 8,
+   "hed": [
+    "Read it",
+    "first."
+   ],
+   "sub": "Every task starts with it.",
+   "log": "> memory load",
+   "text": "On the next task, any agent reads the index first. That is the rule, and agents follow it before they touch code.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "memory load",
+       "p"
+      ],
+      [
+       "port-gotcha",
+       "p"
+      ],
+      [
+       "vpn-staging",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "codex": "work"
+   }
+  },
+  {
+   "id": "skip",
+   "min": 8,
+   "hed": [
+    "Straight to",
+    "3300."
+   ],
+   "sub": "No detour.",
+   "log": "> starts on 3300",
+   "text": "Wednesday, a different agent in a different tool reads it, and goes straight to port three thousand three hundred.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Codex",
+     "text": "Memory says 3300. Starting there.",
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "No detour",
+     "sub": "Saved an hour",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 3.6
+    }
+   ],
+   "mascot": {
+    "codex": "done"
+   }
+  },
+  {
+   "id": "any",
+   "min": 8,
+   "hed": [
+    "Any agent,",
+    "any machine."
+   ],
+   "sub": "Nothing to sync.",
+   "log": "> claude codex gemini",
+   "text": "It works for Claude, Codex and Gemini alike, on any machine, because the memory lives in the workspace, not on a laptop.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "Claude",
+      "Codex",
+      "Gemini"
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  },
+  {
+   "id": "own",
+   "min": 8,
+   "hed": [
+    "You can",
+    "edit it."
+   ],
+   "sub": "Memory is plain text.",
+   "log": "> edit gotcha",
+   "text": "And you can read and edit it yourself. If a gotcha goes stale, fix the entry or delete it, like any other note.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "port-gotcha",
+     "sub": "Edit or delete any time",
+     "chip": [
+      "Yours",
+      "y"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "kbd",
+     "keys": [
+      "Edit",
+      "Save"
+     ],
+     "label": "plain text, plain control",
+     "at": 3.4
+    }
+   ]
+  },
+  {
+   "id": "grow",
+   "min": 8,
+   "hed": [
+    "It grows",
+    "with you."
+   ],
+   "sub": "Each trap is hit once.",
+   "log": "> gotchas: 12",
+   "text": "Over a few weeks, the list grows. Every trap you hit once becomes a signpost for every agent after.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Week 1",
+       15,
+       "z"
+      ],
+      [
+       "Week 2",
+       25,
+       "b"
+      ],
+      [
+       "Week 3",
+       60,
+       "g"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "safe",
+   "min": 8,
+   "hed": [
+    "Small and",
+    "sharp."
+   ],
+   "sub": "One line each.",
+   "log": "> keep it short",
+   "text": "Keep each gotcha to a line or two. Short entries get read, long ones get skipped.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Short entries|get read.",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Hit a trap",
+    "once."
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "Hit a trap once, and never again. Try workspace memory at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Hit a trap once.",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

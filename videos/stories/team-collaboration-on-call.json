@@ -1,0 +1,404 @@
+{
+ "title": "Team Collaboration On Call",
+ "kicker": "on call",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "It is 2 a.m.",
+    "You are on call."
+   ],
+   "sub": "The agent needs a yes.",
+   "log": "> 02:03 agent: needs approval",
+   "text": "It is two in the morning, and you are on call. An agent needs a risky command approved.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Authorization required",
+      "y"
+     ],
+     "code": "Bash  kubectl rollout restart",
+     "buttons": [
+      "Allow Once",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 6.0,
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "alone",
+   "min": 8,
+   "hed": [
+    "If you sleep,",
+    "it waits."
+   ],
+   "sub": "One person, one phone.",
+   "log": "> only you can approve",
+   "text": "Normally only one person can answer. If your phone is silent, the agent and the outage both wait.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Production restart",
+     "sub": "Waiting for one person",
+     "at": 1.2,
+     "chip": [
+      "Waiting",
+      "y"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Your phone",
+     "sub": "Silent mode, asleep",
+     "at": 3.2,
+     "chip": [
+      "Asleep",
+      "z"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "slack",
+   "min": 8,
+   "hed": [
+    "The request lands",
+    "in Slack."
+   ],
+   "sub": "A private channel per workspace.",
+   "log": "> slack: #prod-agent",
+   "text": "Each workspace has its own private Slack channel, and the approval request lands right there.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "AgentRQ",
+     "text": "Claude Code needs approval: kubectl rollout restart.",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "#prod-agent",
+     "sub": "Private channel",
+     "at": 3.2,
+     "chip": [
+      "Slack",
+      "b"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "any",
+   "min": 8,
+   "hed": [
+    "Any teammate",
+    "can answer."
+   ],
+   "sub": "Nobody is a single point.",
+   "log": "> channel: 3 members online",
+   "text": "Any teammate in that channel can approve or deny. It no longer depends on one person.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "Maya",
+      "Sam",
+      "Ben"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Sam is online",
+     "sub": "Sees the request",
+     "at": 3.2,
+     "chip": [
+      "Online",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sam",
+   "min": 8,
+   "hed": [
+    "Sam wakes up",
+    "and reads it."
+   ],
+   "sub": "The full command, not a summary.",
+   "log": "> sam: reading the request",
+   "text": "Sam wakes up and reads the exact command, not a vague summary.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> kubectl rollout restart",
+       "y"
+      ],
+      [
+       "> deployment/web-api",
+       "p"
+      ],
+      [
+       "> namespace: production",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "tap",
+   "min": 8,
+   "hed": [
+    "One tap.",
+    "Allow once."
+   ],
+   "sub": "Scoped to this command.",
+   "log": "> sam: allow once",
+   "text": "Sam taps allow once. That covers this single command only.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Authorization required",
+      "y"
+     ],
+     "code": "Bash  kubectl rollout restart",
+     "buttons": [
+      "Allow Once",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 3.6,
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "run",
+   "min": 8,
+   "hed": [
+    "The agent",
+    "carries on."
+   ],
+   "sub": "Back to work in seconds.",
+   "log": "> agent: restarting",
+   "text": "The agent carries on. The restart goes out, and the service recovers.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Restarting the rollout now.",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "web-api",
+     "sub": "Healthy again",
+     "at": 3.0,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "log",
+   "min": 8,
+   "hed": [
+    "Agent R Q records",
+    "who clicked."
+   ],
+   "sub": "A clear trail.",
+   "log": "> log: approved by Sam",
+   "text": "Agent R Q records who clicked. Approved by Sam, at seven minutes past two. No shared login.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Approved by Sam",
+     "sub": "2:07 a.m., allow once",
+     "at": 1.2,
+     "chip": [
+      "Logged",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Command",
+     "sub": "kubectl rollout restart",
+     "at": 3.0
+    }
+   ]
+  },
+  {
+   "id": "deny",
+   "min": 8,
+   "hed": [
+    "Denying is just",
+    "as easy."
+   ],
+   "sub": "Say no, with a name on it.",
+   "log": "> maya: denied rm -rf",
+   "text": "Denying is just as easy. Maya denied a delete command, and her name is on it too.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Maya denied rm -rf",
+     "sub": "2:19 a.m.",
+     "at": 1.2,
+     "chip": [
+      "Denied",
+      "r"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Agent told no",
+     "sub": "Waiting for a safer plan",
+     "at": 3.0,
+     "chip": [
+      "Blocked",
+      "y"
+     ]
+    }
+   ],
+   "mascot": {
+    "agy": "alert"
+   }
+  },
+  {
+   "id": "share",
+   "min": 8,
+   "hed": [
+    "The team shares",
+    "the load."
+   ],
+   "sub": "Rotations get lighter.",
+   "log": "> rotation: shared",
+   "text": "The team shares the load, so nobody carries every alert alone.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Approvals",
+     "sub": "Spread across the team",
+     "at": 3.0,
+     "chip": [
+      "Shared",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "morn",
+   "min": 8,
+   "hed": [
+    "In the morning,",
+    "read the log."
+   ],
+   "sub": "The log tells the story.",
+   "log": "> morning: review log",
+   "text": "In the morning, the log tells the story. What was asked, who answered, and when.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> 02:03 requested",
+       "p"
+      ],
+      [
+       "> 02:07 approved by Sam",
+       "g"
+      ],
+      [
+       "> 02:19 denied by Maya",
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "A signed trail,",
+    "a shared load."
+   ],
+   "sub": "ag// Try it with your team",
+   "log": "> agentrq.com",
+   "text": "Share the on call load, and keep a signed trail. Try it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "A signed|trail.",
+     "at": 1.4,
+     "sub": "agentrq.com"
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

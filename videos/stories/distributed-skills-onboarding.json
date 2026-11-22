@@ -1,0 +1,332 @@
+{
+ "title": "Distributed Skills Onboarding",
+ "kicker": "distributed skills",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "b1",
+   "min": 5,
+   "hed": [
+    "A new agent",
+    "joins Monday."
+   ],
+   "sub": "Fresh and eager.",
+   "log": "> agent: day one",
+   "text": "A brand new agent joins the project on Monday. It is eager, and it knows nothing.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "New agent",
+     "sub": "Day one",
+     "at": 1.2,
+     "chip": [
+      "Rookie",
+      "b"
+     ]
+    }
+   ],
+   "mascot": {
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "b2",
+   "min": 5,
+   "hed": [
+    "It does not",
+    "know your way."
+   ],
+   "sub": "How your team ships.",
+   "log": "> context: none",
+   "text": "It does not know how your team deploys, triages bugs, or writes release notes.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "How we deploy",
+     "sub": "Unknown",
+     "at": 1.2,
+     "chip": [
+      "Missing",
+      "r"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "How we triage",
+     "sub": "Unknown",
+     "at": 3.2,
+     "chip": [
+      "Missing",
+      "r"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "min": 5,
+   "hed": [
+    "The old way:",
+    "an onboarding doc."
+   ],
+   "sub": "Written once.",
+   "log": "> doc: stale",
+   "text": "Usually you write an onboarding doc. Then it goes stale, and nobody trusts it.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "onboarding.md",
+     "sub": "Last edited eight months ago",
+     "at": 1.2,
+     "chip": [
+      "Stale",
+      "z"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b4",
+   "min": 5,
+   "hed": [
+    "Or copy a",
+    "skills folder."
+   ],
+   "sub": "Machine by machine.",
+   "log": "> copy: manual",
+   "text": "Or you copy a skills folder onto the new machine, and hope it is the latest version.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "scp -r ~/skills new-box:",
+       "r"
+      ],
+      [
+       "which version was this?",
+       "r"
+      ]
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b5",
+   "min": 5,
+   "hed": [
+    "Agent R Q",
+    "has it already."
+   ],
+   "sub": "Skills in the workspace.",
+   "log": "> skills: shared",
+   "text": "With Agent R Q the skills are already in the workspace, shared by every agent that joins.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Workspace skills",
+     "sub": "deploy  \u00b7  triage  \u00b7  release notes",
+     "at": 1.2,
+     "chip": [
+      "Shared",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b6",
+   "min": 5,
+   "hed": [
+    "It searches",
+    "for what it needs."
+   ],
+   "sub": "Over M C P.",
+   "log": "> skills search",
+   "text": "On day one, the agent searches the workspace skills, and finds the deploy, triage and release playbooks.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "skills search",
+       "p"
+      ],
+      [
+       "deploy-staging",
+       "p"
+      ],
+      [
+       "triage-bugs",
+       "p"
+      ],
+      [
+       "release-notes",
+       "p"
+      ]
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "agy": "work"
+   }
+  },
+  {
+   "id": "b7",
+   "min": 5,
+   "hed": [
+    "It loads",
+    "the playbook."
+   ],
+   "sub": "Then follows it.",
+   "log": "> skills load",
+   "text": "It loads the deploy skill and reads every step, including the ones nobody remembers to mention.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "skills load deploy-staging",
+       "p"
+      ],
+      [
+       "step 1: connect to the VPN",
+       "g"
+      ]
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "agy": "work"
+   }
+  },
+  {
+   "id": "b8",
+   "min": 5,
+   "hed": [
+    "Even the VPN",
+    "step."
+   ],
+   "sub": "The one people forget.",
+   "log": "> vpn: connecting",
+   "text": "Even the VPN step. The new agent knows staging needs it first, so it connects before anything else.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "New agent",
+     "text": "Staging needs the VPN first. Connecting.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "agy": "work"
+   }
+  },
+  {
+   "id": "b9",
+   "min": 5,
+   "hed": [
+    "By lunch,",
+    "it ships."
+   ],
+   "sub": "Like your best agent.",
+   "log": "> deploy: staging",
+   "text": "By lunch, it deploys to staging exactly the way your best agent does.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Deployed to staging",
+     "sub": "Followed the shared skill",
+     "at": 1.2,
+     "chip": [
+      "Done",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "agy": "done"
+   }
+  },
+  {
+   "id": "b10",
+   "min": 5,
+   "hed": [
+    "No copying,",
+    "no doc."
+   ],
+   "sub": "Nothing to maintain.",
+   "log": "> setup: zero",
+   "text": "No copying folders, and no onboarding doc to keep up to date. The skills were already there.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "0 steps",
+     "sub": "to onboard an agent",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b11",
+   "min": 5,
+   "hed": [
+    "Day one,",
+    "up to speed."
+   ],
+   "sub": "Any agent, any machine.",
+   "log": "> day one: ready",
+   "text": "Claude, Codex, Gemini, or Cursor, any new agent is up to speed on day one.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "Claude",
+      "Codex",
+      "Gemini",
+      "Cursor"
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  },
+  {
+   "id": "b12",
+   "min": 5,
+   "hed": [
+    "First thing",
+    "you would teach?"
+   ],
+   "sub": "Tell us below.",
+   "log": "> agentrq.com",
+   "text": "What is the first thing you would teach a new agent? Tell us in the comments, and try it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "First thing you|would teach?",
+     "sub": "comment below",
+     "at": 1.2
+    }
+   ]
+  }
+ ]
+}

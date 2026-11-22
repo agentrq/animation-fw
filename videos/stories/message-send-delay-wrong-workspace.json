@@ -1,0 +1,375 @@
+{
+ "title": "Send delay: wrong workspace",
+ "kicker": "send delay",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "Two agents.",
+    "Two workspaces."
+   ],
+   "sub": "Easy to mix up.",
+   "log": "> workspaces: billing, prod",
+   "text": "You have a billing agent and a production agent, and both sit one tab apart.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Billing workspace",
+     "sub": "Agent for invoices",
+     "at": 1.2,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Production workspace",
+     "sub": "Agent with real access",
+     "at": 3.0,
+     "chip": [
+      "Careful",
+      "y"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work"
+   }
+  },
+  {
+   "id": "type",
+   "min": 8,
+   "hed": [
+    "A careful",
+    "instruction."
+   ],
+   "sub": "Written for billing.",
+   "log": "> you: typing",
+   "text": "You type a careful instruction. Refund the duplicate invoice, and nothing else.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Refund the duplicate invoice 4821 only.",
+     "at": 1.6
+    },
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Do not touch other customers.",
+     "at": 3.4
+    }
+   ]
+  },
+  {
+   "id": "oops",
+   "min": 8,
+   "hed": [
+    "Wrong tab.",
+    "Send."
+   ],
+   "sub": "Production, not billing.",
+   "log": "> sent to: production",
+   "text": "And you send it to the production agent, because the wrong tab was still open.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Production workspace",
+     "sub": "Message heading here",
+     "at": 1.2,
+     "chip": [
+      "Wrong",
+      "r"
+     ]
+    },
+    {
+     "k": "kbd",
+     "keys": [
+      "Enter"
+     ],
+     "label": "send",
+     "at": 3.0
+    }
+   ],
+   "mascot": {
+    "codex": "alert"
+   }
+  },
+  {
+   "id": "without",
+   "min": 8,
+   "hed": [
+    "Without a delay,",
+    "it is gone."
+   ],
+   "sub": "Instant delivery.",
+   "log": "> no delay: delivered",
+   "text": "With no delay, the agent reads it instantly and starts looking for invoice four eight two one.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> prod agent: reading message",
+       "r"
+      ],
+      [
+       "> prod agent: searching invoices",
+       "r"
+      ],
+      [
+       "> prod agent: has database access",
+       "r"
+      ]
+     ],
+     "at": 1.6
+    }
+   ],
+   "mascot": {
+    "codex": "work"
+   }
+  },
+  {
+   "id": "delay",
+   "min": 8,
+   "hed": [
+    "Now add",
+    "a countdown."
+   ],
+   "sub": "Held before delivery.",
+   "log": "> send delay: on",
+   "text": "With a send delay, the message is held for a countdown before it reaches any agent.",
+   "scene": [
+    {
+     "k": "count",
+     "from": 5,
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Message held",
+     "sub": "Waiting for the countdown",
+     "at": 3.2,
+     "chip": [
+      "Held",
+      "y"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "name",
+   "min": 8,
+   "hed": [
+    "Look at",
+    "the name."
+   ],
+   "sub": "Top of the screen.",
+   "log": "> header: Production",
+   "text": "In that window, you glance up and see the wrong workspace name at the top.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Production workspace",
+     "sub": "You meant Billing",
+     "at": 1.2,
+     "chip": [
+      "Wrong",
+      "r"
+     ]
+    },
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Refund the duplicate invoice 4821 only.",
+     "at": 3.4
+    }
+   ]
+  },
+  {
+   "id": "choose",
+   "min": 8,
+   "hed": [
+    "Send Now",
+    "or Cancel."
+   ],
+   "sub": "You decide.",
+   "log": "> choices: send now | cancel",
+   "text": "Send Now and Cancel are right on the message, so the choice stays in your hands.",
+   "scene": [
+    {
+     "k": "btns",
+     "code": "hold: Refund the duplicate invoice 4821 only.",
+     "buttons": [
+      "Send Now",
+      "Cancel"
+     ],
+     "press": 1,
+     "tap": 5.0,
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "cancel",
+   "min": 8,
+   "hed": [
+    "Cancel pulls",
+    "it back."
+   ],
+   "sub": "Nothing is sent.",
+   "log": "> cancel: pulled back",
+   "text": "Cancel pulls it back. Nothing is sent, and the production agent never sees a word.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Message to production",
+     "sub": "Pulled back",
+     "at": 1.2,
+     "chip": [
+      "Cancelled",
+      "z"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Production workspace",
+     "sub": "Untouched",
+     "at": 3.2,
+     "chip": [
+      "Safe",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "codex": "done"
+   }
+  },
+  {
+   "id": "switch",
+   "min": 8,
+   "hed": [
+    "Switch to",
+    "billing."
+   ],
+   "sub": "Right place now.",
+   "log": "> switch: Billing",
+   "text": "You switch to the billing workspace and paste the same message into the right place.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Message",
+       "paste"
+      ],
+      [
+       "Billing workspace",
+       "right place"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "deliver",
+   "min": 8,
+   "hed": [
+    "Delivered",
+    "correctly."
+   ],
+   "sub": "The agent refunds it.",
+   "log": "> billing: working",
+   "text": "The countdown runs out, the billing agent gets it, and the refund goes through.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Refund invoice 4821",
+     "sub": "Billing agent",
+     "at": 1.2,
+     "chip": [
+      "Done",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Production workspace",
+     "sub": "Still untouched",
+     "at": 3.2,
+     "chip": [
+      "Safe",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "cost",
+   "min": 8,
+   "hed": [
+    "Cheap pause,",
+    "big save."
+   ],
+   "sub": "A few seconds.",
+   "log": "> cost: 5 seconds",
+   "text": "A tiny pause is a cheap way to avoid a big mistake, and it costs you a few seconds.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "5 seconds",
+     "at": 1.4,
+     "sub": "versus one wrong workspace"
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "min": 8,
+   "hed": [
+    "Worst message",
+    "ever sent?"
+   ],
+   "sub": "Tell us below.",
+   "log": "> comments: open",
+   "text": "What is the worst message you ever sent to the wrong place? Tell us in the comments, and try the send delay at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Wrong place?",
+     "at": 1.4,
+     "sub": "tell us in the comments"
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done"
+   }
+  }
+ ]
+}

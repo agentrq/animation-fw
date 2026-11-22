@@ -1,0 +1,351 @@
+{
+ "title": "Real-Time Notifications",
+ "kicker": "notifications",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "Is there",
+    "a reply yet?"
+   ],
+   "sub": "Again and again.",
+   "log": "> agent: polling",
+   "text": "Most setups make the agent check for news over and over. Is there a reply yet?",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> is there a reply yet?",
+       "y"
+      ],
+      [
+       "> no",
+       "r"
+      ],
+      [
+       "> is there a reply yet?",
+       "y"
+      ],
+      [
+       "> no",
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "cost",
+   "min": 8,
+   "hed": [
+    "Checking",
+    "is not free."
+   ],
+   "sub": "It costs time.",
+   "log": "> polling: cost",
+   "text": "Every check costs time and tokens, and most of them come back empty.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Empty",
+       85,
+       "z"
+      ],
+      [
+       "News",
+       15,
+       "g"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "lag",
+   "min": 8,
+   "hed": [
+    "A slow timer",
+    "means lag."
+   ],
+   "sub": "You wait.",
+   "log": "> timer: 60s",
+   "text": "Slow the timer down to save effort, and you answer in seconds but wait a minute for the agent.",
+   "scene": [
+    {
+     "k": "count",
+     "from": 3,
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Your reply",
+     "sub": "Waiting to be noticed",
+     "at": 3.0,
+     "chip": [
+      "Late",
+      "y"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fast",
+   "min": 8,
+   "hed": [
+    "A fast timer",
+    "means noise."
+   ],
+   "sub": "Always busy.",
+   "log": "> timer: 1s",
+   "text": "Speed the timer up, and the agent spends its day asking, instead of doing the work you gave it.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> check, check, check",
+       "r"
+      ],
+      [
+       "> check, check, check",
+       "r"
+      ],
+      [
+       "> work: nothing done",
+       "r"
+      ]
+     ],
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "id": "flip",
+   "min": 8,
+   "hed": [
+    "Flip it",
+    "around."
+   ],
+   "sub": "Do not ask. Tell.",
+   "log": "> idea: push",
+   "text": "The better idea is to flip it around, so the agent stops asking and gets told instead.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "push",
+     "at": 1.4,
+     "sub": "do not ask, be told"
+    }
+   ]
+  },
+  {
+   "id": "push",
+   "min": 8,
+   "hed": [
+    "Agent R Q",
+    "pushes updates."
+   ],
+   "sub": "The moment they happen.",
+   "log": "> agent r q: push",
+   "text": "Agent R Q pushes updates the moment they happen, so there is nothing for the agent to check.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Something happens",
+       "reply, approval"
+      ],
+      [
+       "Agent R Q",
+       "push"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "stream",
+   "min": 8,
+   "hed": [
+    "Over a",
+    "live stream."
+   ],
+   "sub": "Always open.",
+   "log": "> stream: open",
+   "text": "They travel over a live stream that stays open for the whole session, between you and the agent.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Live stream",
+     "sub": "Open to Claude Code",
+     "at": 1.2,
+     "chip": [
+      "Connected",
+      "g"
+     ]
+    },
+    {
+     "k": "wave",
+     "at": 3.0
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "channel",
+   "min": 8,
+   "hed": [
+    "Into Claude Code's",
+    "own channel."
+   ],
+   "sub": "Native.",
+   "log": "> channel: claude code",
+   "text": "The stream feeds straight into Claude Code's own notification channel, so it feels like a built in feature.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Agent R Q",
+       "live stream"
+      ],
+      [
+       "Notification channel",
+       "built in"
+      ],
+      [
+       "Claude Code",
+       "hears it"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "answer",
+   "min": 8,
+   "hed": [
+    "You answer."
+   ],
+   "sub": "The agent hears.",
+   "log": "> you: reply",
+   "text": "You answer a question, and the agent hears it instantly, within the same second.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Yes, use the new endpoint.",
+     "at": 1.6
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Claude Code",
+     "sub": "Heard your reply",
+     "at": 3.0,
+     "chip": [
+      "Instant",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "none",
+   "min": 8,
+   "hed": [
+    "No next",
+    "check."
+   ],
+   "sub": "Nothing to wait for.",
+   "log": "> waiting: none",
+   "text": "There is no waiting for the next check, because there is no next check to wait for.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "0 seconds",
+     "at": 1.4,
+     "sub": "waiting for the next check"
+    }
+   ]
+  },
+  {
+   "id": "what",
+   "min": 8,
+   "hed": [
+    "Replies, approvals,",
+    "tasks."
+   ],
+   "sub": "All of it.",
+   "log": "> events: pushed",
+   "text": "Replies, approvals, and new tasks all arrive the same way, live, the moment they exist.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "Replies",
+      "Approvals",
+      "Tasks"
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "cta",
+   "min": 8,
+   "hed": [
+    "How long does it",
+    "wait on you?"
+   ],
+   "sub": "Be honest.",
+   "log": "> comments: open",
+   "text": "How long does your agent sit waiting on you? Be honest, tell us in the comments, and try Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Be honest",
+     "at": 1.4,
+     "sub": "how long does it wait?"
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  }
+ ]
+}

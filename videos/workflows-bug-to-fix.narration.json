@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "A bug report comes in. Checkout fails on Safari, and someone has to deal with it."
+    },
+    {
+      "id": "chase",
+      "min": 8,
+      "text": "Someone has to triage it, pick an agent, and then chase the fix, step by step."
+    },
+    {
+      "id": "idea",
+      "min": 8,
+      "text": "Workflows chain agents with events. An event is a named signal, like bug triaged."
+    },
+    {
+      "id": "triage",
+      "min": 8,
+      "text": "The triage workspace finishes its work, and emits the event, saying what happened."
+    },
+    {
+      "id": "wire",
+      "min": 8,
+      "text": "That event is wired to the fixer workspace, and a new task appears there on its own."
+    },
+    {
+      "id": "graph",
+      "min": 8,
+      "text": "Drag the workspaces onto events, and the graph draws itself. Triage, then fixer, then review."
+    },
+    {
+      "id": "fix",
+      "min": 8,
+      "text": "The fixer is already listening, so it picks up the task the moment the signal arrives."
+    },
+    {
+      "id": "review",
+      "min": 8,
+      "text": "When the fix is ready, it emits its own event, and the review workspace wakes up."
+    },
+    {
+      "id": "visible",
+      "min": 8,
+      "text": "All of it is visible on the graph, so you can see what fired what, and when."
+    },
+    {
+      "id": "human",
+      "min": 8,
+      "text": "Every workspace keeps its approvals, so a person still decides on the risky steps, like a merge."
+    },
+    {
+      "id": "done",
+      "min": 8,
+      "text": "Bug in, fix out. You only step in when a decision really needs you."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "How many steps sit between a bug report and a fix on your team? Tell us below, then try Workflows at Agent R Q dot com."
+    }
+  ]
+}

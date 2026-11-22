@@ -1,0 +1,361 @@
+{
+ "title": "Set Up Teams",
+ "kicker": "set up teams",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "Teams take",
+    "as long as coffee."
+   ],
+   "sub": "About five minutes.",
+   "log": "> setup: 5 minutes",
+   "text": "Getting your agents onto one team takes about as long as making coffee. Here is how.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Create a team",
+       "1"
+      ],
+      [
+       "Invite a teammate",
+       "2"
+      ],
+      [
+       "Share a workspace",
+       "3"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "one",
+   "min": 8,
+   "hed": [
+    "Step one:",
+    "create a team."
+   ],
+   "sub": "Name it, you are in.",
+   "log": "> team: created",
+   "text": "Step one. Create a team, and give it a name. You are the first member.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Platform team",
+     "sub": "You are the first member",
+     "at": 1.2,
+     "chip": [
+      "New",
+      "b"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "inv",
+   "min": 8,
+   "hed": [
+    "Step two:",
+    "send an invite link."
+   ],
+   "sub": "One link, any number.",
+   "log": "> invite: link",
+   "text": "Step two. Send an invite link to your teammate, in chat or email.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "Your invite link",
+     "text": "Join the Platform team",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "acc",
+   "min": 8,
+   "hed": [
+    "They accept."
+   ],
+   "sub": "And keep their own account.",
+   "log": "> ada: joined",
+   "text": "Your teammate accepts, and keeps their own account. No shared password anywhere.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Platform team",
+     "sub": "Ada accepted",
+     "at": 1.2,
+     "chip": [
+      "Joined",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Accounts",
+     "sub": "Everyone keeps their own",
+     "at": 3.0
+    }
+   ]
+  },
+  {
+   "id": "ws",
+   "min": 8,
+   "hed": [
+    "Step three:",
+    "share a workspace."
+   ],
+   "sub": "Pick one to start.",
+   "log": "> pick a workspace",
+   "text": "Step three. Pick a workspace, and decide what to share.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "storefront-api",
+     "sub": "Your workspace",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "tog",
+   "min": 8,
+   "hed": [
+    "Tasks, memory,",
+    "or both."
+   ],
+   "sub": "You choose.",
+   "log": "> tasks on, memory on",
+   "text": "Switch on tasks, memory, or both. Nothing is shared until you say so.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Tasks",
+     "sub": "Teammates see them live",
+     "at": 1.2,
+     "chip": [
+      "On",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Memory",
+     "sub": "Agents read each other's",
+     "at": 3.0,
+     "chip": [
+      "On",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "merge",
+   "min": 8,
+   "hed": [
+    "Same name,",
+    "one workspace."
+   ],
+   "sub": "Merged automatically.",
+   "log": "> same name: merged",
+   "text": "When two teammates share workspaces with the same name, it becomes one team workspace.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "storefront-api, you",
+     "sub": "Tasks on, memory on",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "storefront-api, Ada",
+     "sub": "Tasks on, memory on",
+     "at": 2.6
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "storefront-api",
+     "sub": "One team workspace",
+     "at": 4.0,
+     "chip": [
+      "Merged",
+      "b"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work"
+   }
+  },
+  {
+   "id": "live",
+   "min": 8,
+   "hed": [
+    "Tasks show up",
+    "right away."
+   ],
+   "sub": "Live, with names.",
+   "log": "> tasks: live",
+   "text": "Tasks appear for everyone right away, with the owner's name on each one.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix cart bug",
+     "sub": "You",
+     "at": 1.2,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Fix signup email",
+     "sub": "Ada",
+     "at": 2.8,
+     "chip": [
+      "Needs Ada",
+      "y"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "mem",
+   "min": 8,
+   "hed": [
+    "Agents share",
+    "what they learn."
+   ],
+   "sub": "Memory and skills.",
+   "log": "> memory: team",
+   "text": "Agents read each other's memory, so a lesson learned once is known by everyone.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Memory index",
+     "sub": "yours, ada",
+     "at": 1.2,
+     "chip": [
+      "Team",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "noadmin",
+   "min": 8,
+   "hed": [
+    "No owners.",
+    "No admins."
+   ],
+   "sub": "Any member can invite.",
+   "log": "> no admins",
+   "text": "There are no owners or admins. Any member can invite someone, or remove them.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> owners: 0",
+       "g"
+      ],
+      [
+       "> admins: 0",
+       "g"
+      ],
+      [
+       "> any member: invite or remove",
+       "g"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "log",
+   "min": 8,
+   "hed": [
+    "An activity log",
+    "names who did it."
+   ],
+   "sub": "Nothing happens silently.",
+   "log": "> activity log",
+   "text": "An activity log names who did it, so every change has a name next to it.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Activity log",
+     "sub": "Ada invited Chen, Ben renamed the team",
+     "at": 1.2,
+     "chip": [
+      "Logged",
+      "b"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Done.",
+    "Time for coffee."
+   ],
+   "sub": "ag// Teams in Agent R Q",
+   "log": "> agentrq.com",
+   "text": "That is it. Set up your team at Agent R Q dot com, and enjoy the coffee.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "First one|to share?",
+     "at": 1.4,
+     "sub": "agentrq.com"
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

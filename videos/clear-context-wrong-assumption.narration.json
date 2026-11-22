@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "b1",
+      "min": 5,
+      "text": "Task two was about the billing service. The agent spent the whole job inside invoices."
+    },
+    {
+      "id": "b2",
+      "min": 5,
+      "text": "Task three is about the signup form. A different part of the product, and a different job."
+    },
+    {
+      "id": "b3",
+      "min": 5,
+      "text": "But the agent keeps talking about invoices, as if the last job never ended."
+    },
+    {
+      "id": "b4",
+      "min": 5,
+      "text": "That is context bleed. Leftover assumptions from the last task creep into the new one."
+    },
+    {
+      "id": "b5",
+      "min": 5,
+      "text": "And the mistakes look plausible, so you may not catch them until much later."
+    },
+    {
+      "id": "b6",
+      "min": 5,
+      "text": "You could clear the context by hand between tasks, if you remember every single time."
+    },
+    {
+      "id": "b7",
+      "min": 5,
+      "text": "Agent R Q sends slash clear to a Claude Code agent right before it picks up a task."
+    },
+    {
+      "id": "b8",
+      "min": 5,
+      "text": "The agent reads only the new task, and its own notes saved in workspace memory."
+    },
+    {
+      "id": "b9",
+      "min": 5,
+      "text": "Now the answer matches the job. Signup form, got it, starting."
+    },
+    {
+      "id": "b10",
+      "min": 5,
+      "text": "Lessons that help still carry over, because the notes live in memory, not in the chat."
+    },
+    {
+      "id": "b11",
+      "min": 5,
+      "text": "Clean context means fewer confident mistakes, and fewer surprises in review."
+    },
+    {
+      "id": "b12",
+      "min": 5,
+      "text": "What is the most confidently wrong thing an agent ever told you? Share it below, and try clear context at Agent R Q dot com."
+    }
+  ]
+}

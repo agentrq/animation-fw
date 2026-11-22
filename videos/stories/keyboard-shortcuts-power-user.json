@@ -1,0 +1,346 @@
+{
+ "title": "Shortcuts: power user",
+ "kicker": "keyboard",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 5,
+   "hed": [
+    "A day without",
+    "the mouse."
+   ],
+   "sub": "Keys only.",
+   "log": "> mouse: unplugged",
+   "text": "Here is a day with Agent R Q without touching the mouse once. Imagine the cable is unplugged.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "No mouse.",
+     "sub": "keys only",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "new",
+   "min": 5,
+   "hed": [
+    "Start with",
+    "N."
+   ],
+   "sub": "File a new task.",
+   "log": "> key: N",
+   "text": "The day starts with the letter N. It opens a new task, so you can file an idea before you forget it.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "N"
+     ],
+     "label": "File a new task",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "type",
+   "min": 5,
+   "hed": [
+    "Type it,",
+    "send it."
+   ],
+   "sub": "Straight from the keys.",
+   "log": "> task: fix the invoice bug",
+   "text": "Type the title, add a line of detail, and send it. The agent has its work before your coffee cools.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Fix the invoice rounding bug.",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Fix the invoice rounding bug",
+     "sub": "Not started",
+     "chip": [
+      "New",
+      "b"
+     ],
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "ws",
+   "min": 5,
+   "hed": [
+    "Jump to",
+    "a workspace."
+   ],
+   "sub": "W and a few letters.",
+   "log": "> key: W",
+   "text": "W jumps to a workspace. It opens a quick search, so you type a few letters and press enter.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "W"
+     ],
+     "label": "Jump to a workspace",
+     "at": 1.2
+    },
+    {
+     "k": "grid",
+     "cells": [
+      "api",
+      "web",
+      "docs"
+     ],
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "mc",
+   "min": 5,
+   "hed": [
+    "Jump to",
+    "a machine."
+   ],
+   "sub": "M does the same.",
+   "log": "> key: M",
+   "text": "M jumps to a machine the same way. Type a few letters of its name, and you are looking at its terminal.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "M"
+     ],
+     "label": "Jump to a machine",
+     "at": 1.2
+    },
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> machine: gpu-box",
+       "g"
+      ],
+      [
+       "> connected",
+       "g"
+      ]
+     ],
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "search",
+   "min": 5,
+   "hed": [
+    "Find",
+    "anything."
+   ],
+   "sub": "Command K.",
+   "log": "> key: cmd+K",
+   "text": "Command K finds any task by title or description, instantly, and it runs straight from your device.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "⌘",
+      "K"
+     ],
+     "label": "Search every task",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "word",
+   "min": 5,
+   "hed": [
+    "One word",
+    "is enough."
+   ],
+   "sub": "Results as you type.",
+   "log": "> search: migration",
+   "text": "You only remember one word, migration. Type it, and the matching tasks appear while you are still typing.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "migration",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Database migration",
+     "sub": "Done last month",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 2.8
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Migration rollback plan",
+     "sub": "Docs",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 4
+    }
+   ]
+  },
+  {
+   "id": "pick",
+   "min": 5,
+   "hed": [
+    "Enter opens",
+    "the task."
+   ],
+   "sub": "No scrolling.",
+   "log": "> key: enter",
+   "text": "Arrow to the one you want and press enter. No scrolling through two hundred old tasks.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Database migration",
+     "sub": "Done last month",
+     "chip": [
+      "Open",
+      "b"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "kbd",
+     "keys": [
+      "↵"
+     ],
+     "label": "Open the task",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "ask",
+   "min": 5,
+   "hed": [
+    "Approve",
+    "from the keys."
+   ],
+   "sub": "Allow in one press.",
+   "log": "> approval: git push",
+   "text": "When an agent asks for permission, the keys handle that too, so a quick decision never needs the mouse.",
+   "scene": [
+    {
+     "k": "btns",
+     "code": "Bash  git push origin main",
+     "buttons": [
+      "Allow",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 4,
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "help",
+   "min": 5,
+   "hed": [
+    "Forget one?",
+    "Press ?"
+   ],
+   "sub": "Every shortcut, listed.",
+   "log": "> key: ?",
+   "text": "And if you forget a shortcut, question mark lists every one of them in a single panel.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "?"
+     ],
+     "label": "List every shortcut",
+     "at": 1.2
+    },
+    {
+     "k": "grid",
+     "cells": [
+      "N",
+      "W",
+      "M",
+      "⌘K"
+     ],
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "fast",
+   "min": 5,
+   "hed": [
+    "Faster than",
+    "any menu."
+   ],
+   "sub": "Hands never leave.",
+   "log": "> hands: on home row",
+   "text": "Your hands never leave the keyboard, so you stay faster than any menu, and your focus stays on the work.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Hands stay|on the keys.",
+     "sub": "faster than any menu",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "min": 5,
+   "hed": [
+    "Try a day",
+    "without it."
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "Learn the five keys today, and try it all at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "N W M ⌘K ?",
+     "sub": "five keys",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done"
+   }
+  }
+ ]
+}

@@ -1,0 +1,413 @@
+{
+ "title": "Timeline: sprint review",
+ "kicker": "task timeline",
+ "mascots": [
+  "claude",
+  "codex"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 7.2,
+   "hed": [
+    "The sprint",
+    "is over."
+   ],
+   "sub": "Time for the retro.",
+   "log": "> hook",
+   "text": "The sprint is over, and the retro starts in ten minutes.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "12 tasks completed",
+     "sub": "This sprint",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done"
+   }
+  },
+  {
+   "id": "where",
+   "min": 7.2,
+   "hed": [
+    "Where did",
+    "the time go?"
+   ],
+   "sub": "Task by task.",
+   "log": "> where",
+   "text": "You want to know where the time actually went, task by task.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Where did|the time go?",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "guess",
+   "min": 7.2,
+   "hed": [
+    "Memory is",
+    "not data."
+   ],
+   "sub": "Everyone remembers differently.",
+   "log": "> guess",
+   "text": "Everyone remembers the sprint differently, and memory is not data.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "\"It felt slow\"",
+     "sub": "Says one teammate",
+     "chip": [
+      "Opinion",
+      "z"
+     ],
+     "at": 1
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "\"It felt fine\"",
+     "sub": "Says another",
+     "chip": [
+      "Opinion",
+      "z"
+     ],
+     "at": 2.2
+    }
+   ]
+  },
+  {
+   "id": "line",
+   "min": 7.2,
+   "hed": [
+    "Every task",
+    "has a timeline."
+   ],
+   "sub": "Automatic.",
+   "log": "> line",
+   "text": "In Agent R Q, every task has its own timeline, recorded automatically.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Task A",
+     "sub": "Timeline recorded",
+     "chip": [
+      "Recorded",
+      "g"
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "states",
+   "min": 7.2,
+   "hed": [
+    "Working,",
+    "blocked, waiting."
+   ],
+   "sub": "Start to close.",
+   "log": "> states",
+   "text": "Start to close, you see time spent working, time blocked, and time waiting on a human.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Task A",
+       60,
+       "g"
+      ],
+      [
+       "Task A wait",
+       25,
+       "y"
+      ],
+      [
+       "Task A blocked",
+       15,
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "twelve",
+   "min": 7.2,
+   "hed": [
+    "All twelve,",
+    "side by side."
+   ],
+   "sub": "Compare them.",
+   "log": "> twelve",
+   "text": "Open all twelve, and compare them side by side.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Task A",
+       60,
+       "g"
+      ],
+      [
+       "Wait",
+       25,
+       "y"
+      ],
+      [
+       "Blocked",
+       15,
+       "r"
+      ]
+     ],
+     "at": 0.6
+    },
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Task B",
+       50,
+       "g"
+      ],
+      [
+       "Wait",
+       40,
+       "y"
+      ],
+      [
+       "Blocked",
+       10,
+       "r"
+      ]
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Task C",
+       70,
+       "g"
+      ],
+      [
+       "Wait",
+       20,
+       "y"
+      ],
+      [
+       "Blocked",
+       10,
+       "r"
+      ]
+     ],
+     "at": 2.2
+    }
+   ]
+  },
+  {
+   "id": "pattern",
+   "min": 7.2,
+   "hed": [
+    "A pattern",
+    "appears."
+   ],
+   "sub": "Look at Friday.",
+   "log": "> pattern",
+   "text": "Then a pattern appears. Approvals always wait the longest on Fridays.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Friday approvals",
+     "sub": "Slowest of the week",
+     "chip": [
+      "Pattern",
+      "y"
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "ask",
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "habit",
+   "min": 7.2,
+   "hed": [
+    "A team habit.",
+    "Not a bug."
+   ],
+   "sub": "Humans, not agents.",
+   "log": "> habit",
+   "text": "That is a team habit, not an agent problem, and habits can be changed.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "A habit,|not a bug.",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "change",
+   "min": 7.2,
+   "hed": [
+    "Change it.",
+    "Together."
+   ],
+   "sub": "One small rule.",
+   "log": "> change",
+   "text": "Maybe approvals get batched on Thursday afternoon, before the weekend rush.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Batch approvals",
+     "sub": "Thursday, 3 pm",
+     "chip": [
+      "Proposal",
+      "b"
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "retro",
+   "min": 7.2,
+   "hed": [
+    "Retro with",
+    "real data."
+   ],
+   "sub": "Not a gut feeling.",
+   "log": "> retro",
+   "text": "Bring real data to your retro, instead of a gut feeling.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Working",
+       55,
+       "g"
+      ],
+      [
+       "Wait",
+       30,
+       "y"
+      ],
+      [
+       "Blocked",
+       15,
+       "r"
+      ]
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Sprint review",
+     "sub": "12 tasks, all measured",
+     "chip": [
+      "Ready",
+      "g"
+     ],
+     "at": 2.6
+    }
+   ]
+  },
+  {
+   "id": "next",
+   "min": 7.2,
+   "hed": [
+    "Next sprint,",
+    "measure again."
+   ],
+   "sub": "See the change.",
+   "log": "> next",
+   "text": "Next sprint, check the same timelines again and see whether the habit changed.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Friday approvals",
+     "sub": "Down by half",
+     "chip": [
+      "Better",
+      "g"
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work"
+   }
+  },
+  {
+   "id": "end",
+   "min": 7.2,
+   "hed": [
+    "Know where",
+    "the time goes."
+   ],
+   "sub": "Every sprint.",
+   "log": "> end",
+   "text": "Know exactly where the time goes, every single sprint.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Retro with|real data.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done"
+   }
+  },
+  {
+   "id": "close",
+   "min": 7.2,
+   "hed": [
+    "Your slowest",
+    "day?"
+   ],
+   "sub": "agentrq.com",
+   "log": "> close",
+   "text": "When do your agents wait longest for you? Tell us your day of the week, or try it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Your slowest|day?",
+     "sub": "comment below",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done"
+   }
+  }
+ ]
+}

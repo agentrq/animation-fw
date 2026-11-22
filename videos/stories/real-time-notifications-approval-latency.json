@@ -1,0 +1,380 @@
+{
+ "title": "Notifications: approval latency",
+ "kicker": "notifications",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "Permission",
+    "please."
+   ],
+   "sub": "Agent asks to run.",
+   "log": "> agent: needs approval",
+   "text": "Your agent stops and asks permission to run a command, and waits for you to say yes.",
+   "scene": [
+    {
+     "k": "btns",
+     "code": "run: npm run migrate",
+     "buttons": [
+      "Allow",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 4.6,
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "yes",
+   "min": 8,
+   "hed": [
+    "You say",
+    "yes."
+   ],
+   "sub": "Right away.",
+   "log": "> you: allow",
+   "text": "You see the request and you tap Allow, within seconds of the question appearing.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Command approved",
+     "sub": "npm run migrate",
+     "at": 1.2,
+     "chip": [
+      "Allowed",
+      "g"
+     ]
+    },
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Allow it.",
+     "at": 3.0
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "sit",
+   "min": 8,
+   "hed": [
+    "And it",
+    "sits there."
+   ],
+   "sub": "Nothing happens.",
+   "log": "> agent: idle",
+   "text": "Then nothing happens. The agent sits there, as if you had never answered.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Run the migration",
+     "sub": "Claude Code",
+     "at": 1.2,
+     "chip": [
+      "Waiting",
+      "z"
+     ]
+    },
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> waiting for a reply...",
+       "y"
+      ]
+     ],
+     "at": 3.0
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "minute",
+   "min": 8,
+   "hed": [
+    "Another minute",
+    "goes by."
+   ],
+   "sub": "Still not noticed.",
+   "log": "> wait: 60s",
+   "text": "A full minute passes before it finally notices, and you wonder if something has crashed.",
+   "scene": [
+    {
+     "k": "count",
+     "from": 3,
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Approval granted",
+     "sub": "Agent has not noticed",
+     "at": 3.0,
+     "chip": [
+      "Late",
+      "y"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "poll",
+   "min": 8,
+   "hed": [
+    "It checks",
+    "on a timer."
+   ],
+   "sub": "That is why.",
+   "log": "> agent: polling",
+   "text": "The reason is that the agent only checks for replies on a timer, and the timer had not fired yet.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> check for reply: none",
+       "r"
+      ],
+      [
+       "> sleep 60",
+       "r"
+      ],
+      [
+       "> check for reply: none",
+       "r"
+      ],
+      [
+       "> sleep 60",
+       "r"
+      ]
+     ],
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "id": "tradeoff",
+   "min": 8,
+   "hed": [
+    "Longer timer,",
+    "longer wait."
+   ],
+   "sub": "Always a delay.",
+   "log": "> timer: trade-off",
+   "text": "Agents that check for replies on a timer always have a delay. The longer the timer, the longer you wait.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "10s",
+       20,
+       "g"
+      ],
+      [
+       "30s",
+       30,
+       "y"
+      ],
+      [
+       "60s",
+       50,
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "fast",
+   "min": 8,
+   "hed": [
+    "Short timer,",
+    "busy agent."
+   ],
+   "sub": "No good answer.",
+   "log": "> timer: no winner",
+   "text": "A shorter timer wastes work asking over and over, so you get lag or noise, never neither.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "lag or noise",
+     "at": 1.4,
+     "sub": "a timer gives you one of them"
+    }
+   ]
+  },
+  {
+   "id": "push",
+   "min": 8,
+   "hed": [
+    "Push the",
+    "reply instead."
+   ],
+   "sub": "Live stream.",
+   "log": "> agent r q: push",
+   "text": "Agent R Q pushes your reply to Claude Code over a live stream, the moment you send it.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Your reply",
+       "Allow"
+      ],
+      [
+       "Live stream",
+       "push"
+      ],
+      [
+       "Claude Code",
+       "hears it"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "channel",
+   "min": 8,
+   "hed": [
+    "Through its own",
+    "channel."
+   ],
+   "sub": "Built for this.",
+   "log": "> notification channel",
+   "text": "It arrives through Claude Code's own notification channel, so the agent does not poll at all.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Notification channel",
+     "sub": "Claude Code, live",
+     "at": 1.2,
+     "chip": [
+      "Open",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Your reply",
+     "sub": "Pushed straight in",
+     "at": 3.2,
+     "chip": [
+      "Sent",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "instant",
+   "min": 8,
+   "hed": [
+    "Answer,",
+    "and it moves."
+   ],
+   "sub": "No waiting.",
+   "log": "> agent: moving",
+   "text": "The moment you answer, the agent moves. The migration starts in the same second.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Run the migration",
+     "sub": "Claude Code",
+     "at": 1.2,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    },
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> npm run migrate",
+       "g"
+      ],
+      [
+       "> applied 14 changes",
+       "g"
+      ]
+     ],
+     "at": 3.2
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "calm",
+   "min": 8,
+   "hed": [
+    "No more",
+    "wondering."
+   ],
+   "sub": "It just responds.",
+   "log": "> latency: gone",
+   "text": "You stop wondering if it crashed, because every answer gets a response straight away.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "no more waiting",
+     "at": 1.4,
+     "sub": "every answer lands now"
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "cta",
+   "min": 8,
+   "hed": [
+    "Your agent",
+    "wait record?"
+   ],
+   "sub": "Tell us below.",
+   "log": "> comments: open",
+   "text": "How long does your agent usually wait on you? Tell us your record below, and try live notifications at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Your record?",
+     "at": 1.4,
+     "sub": "tell us in the comments"
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  }
+ ]
+}

@@ -1,0 +1,366 @@
+{
+ "title": "Auto-Title Inbox",
+ "kicker": "auto titles",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "b1",
+   "min": 5,
+   "hed": [
+    "You file tasks",
+    "all day."
+   ],
+   "sub": "Fast, and messy.",
+   "log": "> inbox: 12 new today",
+   "text": "You file tasks fast, all day long. Quick thought, quick description, send it, next one.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "the checkout button does nothing on firefox",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b2",
+   "min": 5,
+   "hed": [
+    "Names take",
+    "a moment."
+   ],
+   "sub": "Nobody has one.",
+   "log": "> title: skipped",
+   "text": "But naming each one takes a moment you do not have. So you skip it, every single time.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Title",
+     "sub": "Skipped again",
+     "at": 1.2,
+     "chip": [
+      "Empty",
+      "z"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "min": 5,
+   "hed": [
+    "By Friday,",
+    "fifty cards."
+   ],
+   "sub": "All called new task.",
+   "log": "> board: 50 untitled",
+   "text": "By Friday your board is fifty cards called new task, and nobody knows which is which.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "New task",
+     "sub": "?",
+     "at": 1.2,
+     "chip": [
+      "Untitled",
+      "z"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "New task",
+     "sub": "?",
+     "at": 3.2,
+     "chip": [
+      "Untitled",
+      "z"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "New task",
+     "sub": "?",
+     "at": 5.2,
+     "chip": [
+      "Untitled",
+      "z"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b4",
+   "min": 5,
+   "hed": [
+    "Open one",
+    "to find out."
+   ],
+   "sub": "Every card, one by one.",
+   "log": "> you: open, read, close",
+   "text": "So you open each card to learn what it is. Open, read, close. Then do it again.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "open card 1: ???",
+       "r"
+      ],
+      [
+       "open card 2: ???",
+       "r"
+      ],
+      [
+       "open card 3: ???",
+       "r"
+      ]
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b5",
+   "min": 5,
+   "hed": [
+    "Titles write",
+    "themselves."
+   ],
+   "sub": "From the description.",
+   "log": "> title: auto",
+   "text": "With auto titles, each task is named from its description the moment you create it.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "the checkout button does nothing on firefox",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Fix checkout button on Firefox",
+     "sub": "Titled automatically",
+     "at": 3.2,
+     "chip": [
+      "New",
+      "b"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b6",
+   "min": 5,
+   "hed": [
+    "No extra",
+    "step."
+   ],
+   "sub": "You never see a field.",
+   "log": "> steps: 0 extra",
+   "text": "There is no extra step. No field to fill, no button to press. You describe the work and move on.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "0 extra steps",
+     "sub": "describe it, done",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b7",
+   "min": 5,
+   "hed": [
+    "Small model,",
+    "your browser."
+   ],
+   "sub": "Nothing leaves.",
+   "log": "> model: local",
+   "text": "A small language model does it inside your browser, so the text never leaves your device.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "On-device model",
+     "sub": "No server round-trip",
+     "at": 1.2,
+     "chip": [
+      "Private",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b8",
+   "min": 5,
+   "hed": [
+    "Your board",
+    "makes sense."
+   ],
+   "sub": "Scan it in seconds.",
+   "log": "> board: readable",
+   "text": "Now your board makes sense. Every card names its job, and you can scan it in seconds.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Fix checkout button on Firefox",
+     "sub": "Claude Code",
+     "at": 1.2,
+     "chip": [
+      "New",
+      "b"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Update the pricing page copy",
+     "sub": "Codex",
+     "at": 3.2,
+     "chip": [
+      "Queued",
+      "z"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Speed up the image build",
+     "sub": "Gemini",
+     "at": 5.2,
+     "chip": [
+      "Queued",
+      "z"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "ask",
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "b9",
+   "min": 5,
+   "hed": [
+    "Find any task",
+    "by title."
+   ],
+   "sub": "Search just works.",
+   "log": "> search: checkout",
+   "text": "Search works too, because the words are there. Type checkout, and your task is found.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "\u2318",
+      "K"
+     ],
+     "label": "Search: checkout",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix checkout button on Firefox",
+     "sub": "Found",
+     "at": 3.2,
+     "chip": [
+      "Match",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b10",
+   "min": 5,
+   "hed": [
+    "Agents see",
+    "the names."
+   ],
+   "sub": "Context from the start.",
+   "log": "> agent: picks up",
+   "text": "Your agents pick up a task that already says what the job is.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Picked up: Fix checkout button on Firefox.",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix checkout button on Firefox",
+     "sub": "Claude Code is on it",
+     "at": 3.2,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "b11",
+   "min": 5,
+   "hed": [
+    "A board you",
+    "can read."
+   ],
+   "sub": "Without lifting a finger.",
+   "log": "> board: tidy",
+   "text": "A readable board, without lifting a finger. That is the whole feature.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "A board|you can read.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  },
+  {
+   "id": "b12",
+   "min": 5,
+   "hed": [
+    "How messy",
+    "is yours?"
+   ],
+   "sub": "Tell us below.",
+   "log": "> agentrq.com",
+   "text": "How messy is your task list right now? Be honest in the comments, and try auto titles at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "How messy|is yours?",
+     "sub": "comment below",
+     "at": 1.2
+    }
+   ]
+  }
+ ]
+}

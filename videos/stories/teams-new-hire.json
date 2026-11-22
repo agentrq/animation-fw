@@ -1,0 +1,361 @@
+{
+ "title": "New Hire Ramp Up",
+ "kicker": "new hire",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "A new teammate",
+    "joins Monday."
+   ],
+   "sub": "Day one.",
+   "log": "> chen: day one",
+   "text": "A new teammate joins on Monday. Chen is smart, but has never seen your project.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Chen joins the team",
+     "sub": "Day one",
+     "at": 1.2,
+     "chip": [
+      "New",
+      "b"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "knows",
+   "min": 8,
+   "hed": [
+    "Their agent",
+    "knows nothing."
+   ],
+   "sub": "Not your repo's odd traps.",
+   "log": "> agent: blank slate",
+   "text": "Chen's agent knows nothing either. Not your conventions, and not the odd traps in your setup.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Chen's agent",
+     "text": "Where do I start? I have no context.",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Context",
+     "sub": "Empty",
+     "at": 3.0,
+     "chip": [
+      "Blank",
+      "z"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "old",
+   "min": 8,
+   "hed": [
+    "Normally,",
+    "people explain it."
+   ],
+   "sub": "Slowly, over weeks.",
+   "log": "> onboarding: weeks",
+   "text": "Normally, teammates spend weeks explaining it, one question at a time, in chat.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "Chen",
+     "text": "Why is staging down?",
+     "at": 1.2
+    },
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "Sam",
+     "text": "Oh, you need the VPN.",
+     "at": 2.8
+    }
+   ],
+   "mascot": {
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "inv",
+   "min": 8,
+   "hed": [
+    "Chen accepts",
+    "an invite link."
+   ],
+   "sub": "Keeps their own account.",
+   "log": "> invite: accepted",
+   "text": "Instead, Chen accepts an invite link, and keeps their own account the whole time.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "Invite link",
+     "text": "Join the Platform team",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Platform team",
+     "sub": "Chen accepted",
+     "at": 3.0,
+     "chip": [
+      "Joined",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "share",
+   "min": 8,
+   "hed": [
+    "Chen shares",
+    "a workspace."
+   ],
+   "sub": "By choice only.",
+   "log": "> workspace: shared",
+   "text": "Then Chen shares a workspace with the team. Nothing is shared until each person chooses it.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "storefront-api",
+     "sub": "Tasks on, memory on",
+     "at": 1.2,
+     "chip": [
+      "Shared",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mem",
+   "min": 8,
+   "hed": [
+    "The agent reads",
+    "team memory."
+   ],
+   "sub": "Without asking anyone.",
+   "log": "> memory: read",
+   "text": "Chen's agent reads the team memory, and learns, for example, that staging needs the VPN.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Chen's agent",
+     "text": "Team memory says: staging needs the VPN.",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "platform / staging-notes",
+     "sub": "Read-only",
+     "at": 3.0,
+     "chip": [
+      "Read",
+      "b"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "trap",
+   "min": 8,
+   "hed": [
+    "It dodges the",
+    "traps already."
+   ],
+   "sub": "Before they bite.",
+   "log": "> trap avoided",
+   "text": "So it connects first, and skips the failure that has caught everyone else.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> connect vpn",
+       "g"
+      ],
+      [
+       "> deploy staging",
+       "g"
+      ],
+      [
+       "> ok",
+       "g"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "skills",
+   "min": 8,
+   "hed": [
+    "It picks up",
+    "the team skills."
+   ],
+   "sub": "Release, deploy, review.",
+   "log": "> skills: opted in",
+   "text": "It picks up the team's skills, like release and deploy, wherever teammates chose to share them.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Skills opted in",
+     "sub": "release, deploy, review",
+     "at": 1.2,
+     "chip": [
+      "Ready",
+      "g"
+     ]
+    },
+    {
+     "k": "grid",
+     "cells": [
+      "release",
+      "deploy",
+      "review"
+     ],
+     "at": 3.0
+    }
+   ],
+   "mascot": {
+    "codex": "done"
+   }
+  },
+  {
+   "id": "task",
+   "min": 8,
+   "hed": [
+    "A real task,",
+    "before lunch."
+   ],
+   "sub": "Not a tutorial.",
+   "log": "> first task: shipped",
+   "text": "So Chen's first real task goes out before lunch, not after weeks of questions.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix the footer links",
+     "sub": "Chen and the agent",
+     "at": 1.2,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Ready to review",
+     "sub": "Before lunch",
+     "at": 3.0,
+     "chip": [
+      "Done",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "see",
+   "min": 8,
+   "hed": [
+    "The team sees it,",
+    "live."
+   ],
+   "sub": "Read-only, with a name.",
+   "log": "> team sees tasks",
+   "text": "The team sees Chen's tasks as they happen, read-only, with Chen's name on each one.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix the footer links",
+     "sub": "Chen",
+     "at": 1.2,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wait",
+   "min": 8,
+   "hed": [
+    "The knowledge",
+    "was waiting."
+   ],
+   "sub": "Written down by others.",
+   "log": "> knowledge: waiting",
+   "text": "The knowledge was already waiting for them, written down by the teammates who came before.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Ramped up|by lunch.",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Onboard the agent."
+   ],
+   "sub": "ag// Teams in Agent R Q",
+   "log": "> agentrq.com",
+   "text": "Onboard the agent with the team. Try it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Day one,|not week four.",
+     "at": 1.4,
+     "sub": "agentrq.com"
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

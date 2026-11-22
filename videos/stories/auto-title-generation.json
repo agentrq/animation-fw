@@ -1,0 +1,390 @@
+{
+ "title": "Auto-Title Generation",
+ "kicker": "auto titles",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "b1",
+   "min": 5,
+   "hed": [
+    "A long, messy",
+    "description."
+   ],
+   "sub": "You just want it done.",
+   "log": "> new task: 22 words",
+   "text": "You type a long, messy description of what you need. The login page flickers on Safari.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "New task",
+     "text": "login flickers on safari when the token refreshes, probably the redirect",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b2",
+   "min": 5,
+   "hed": [
+    "Then the app",
+    "asks for a title."
+   ],
+   "sub": "Ugh.",
+   "log": "> title: required",
+   "text": "Then the app asks for a title. A required field, after you already explained everything once.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Title",
+     "sub": "Required field",
+     "at": 1.2,
+     "chip": [
+      "Empty",
+      "z"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Create task",
+     "sub": "Disabled until named",
+     "at": 3.2,
+     "chip": [
+      "Blocked",
+      "r"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "min": 5,
+   "hed": [
+    "Nobody names",
+    "their tasks."
+   ],
+   "sub": "So they do not.",
+   "log": "> board: 50 x new task",
+   "text": "So nobody names anything. By Friday your board is fifty cards called new task.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "New task",
+     "sub": "?",
+     "at": 1.2,
+     "chip": [
+      "Untitled",
+      "z"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "New task",
+     "sub": "?",
+     "at": 3.2,
+     "chip": [
+      "Untitled",
+      "z"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "New task",
+     "sub": "?",
+     "at": 5.2,
+     "chip": [
+      "Untitled",
+      "z"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b4",
+   "min": 5,
+   "hed": [
+    "Let the app",
+    "write it."
+   ],
+   "sub": "A small model.",
+   "log": "> model: local",
+   "text": "So Agent R Q writes the title for you. The moment you create a task, it reads your description.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "reading description",
+       "p"
+      ],
+      [
+       "writing title",
+       "p"
+      ]
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b5",
+   "min": 5,
+   "hed": [
+    "It runs in",
+    "your browser."
+   ],
+   "sub": "No server involved.",
+   "log": "> model: in-browser",
+   "text": "A small language model runs right inside your browser tab. No server call, and no network wait.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Small language model",
+     "sub": "Loaded in this tab",
+     "at": 1.2,
+     "chip": [
+      "Local",
+      "g"
+     ]
+    },
+    {
+     "k": "big",
+     "text": "0 requests",
+     "sub": "sent to a server",
+     "at": 3.2
+    }
+   ]
+  },
+  {
+   "id": "b6",
+   "min": 5,
+   "hed": [
+    "Your text",
+    "stays put."
+   ],
+   "sub": "Private by design.",
+   "log": "> data: never leaves",
+   "text": "Your description never leaves your device. Customer names, secret paths, half finished ideas, all stay with you.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix the Acme invoice export",
+     "sub": "Description stays on device",
+     "at": 1.2,
+     "chip": [
+      "Private",
+      "g"
+     ]
+    },
+    {
+     "k": "big",
+     "text": "Yours,|always.",
+     "at": 3.2
+    }
+   ]
+  },
+  {
+   "id": "b7",
+   "min": 5,
+   "hed": [
+    "A clear title,",
+    "instantly."
+   ],
+   "sub": "About a second.",
+   "log": "> title: ready",
+   "text": "A second later the task has a clear name: fix Safari login flicker on token refresh.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Fix Safari login flicker",
+     "sub": "on token refresh",
+     "at": 1.2,
+     "chip": [
+      "New",
+      "b"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "b8",
+   "min": 5,
+   "hed": [
+    "A board you",
+    "can read."
+   ],
+   "sub": "Every card says what.",
+   "log": "> board: readable",
+   "text": "Your board stays readable. Every card says what it is, so you can scan it at a glance.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Fix Safari login flicker",
+     "sub": "Claude Code",
+     "at": 1.2,
+     "chip": [
+      "New",
+      "b"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Add dark mode to settings",
+     "sub": "Codex",
+     "at": 3.2,
+     "chip": [
+      "Queued",
+      "z"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Write the release notes",
+     "sub": "Gemini",
+     "at": 5.2,
+     "chip": [
+      "Queued",
+      "z"
+     ]
+    }
+   ],
+   "mascot": {
+    "codex": "ask",
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "b9",
+   "min": 5,
+   "hed": [
+    "Agents get",
+    "better names."
+   ],
+   "sub": "Titles carry intent.",
+   "log": "> agent: reads title",
+   "text": "Your agents read those titles too, so the task they pick up already tells them the job.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Picked up: Fix Safari login flicker.",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix Safari login flicker",
+     "sub": "Claude Code is on it",
+     "at": 3.2,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "b10",
+   "min": 5,
+   "hed": [
+    "Find any task",
+    "in seconds."
+   ],
+   "sub": "Search by title.",
+   "log": "> search: login",
+   "text": "And when you need an old task, search by its title. Type login, and there it is.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "\u2318",
+      "K"
+     ],
+     "label": "Search: login",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix Safari login flicker",
+     "sub": "Found",
+     "at": 3.2,
+     "chip": [
+      "Match",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b11",
+   "min": 5,
+   "hed": [
+    "Edit it",
+    "if you like."
+   ],
+   "sub": "You are in charge.",
+   "log": "> title: editable",
+   "text": "The title is only a suggestion. If you want different words, edit it. Otherwise it simply works.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Fix Safari login flicker",
+     "sub": "Click to rename",
+     "at": 1.2,
+     "chip": [
+      "Editable",
+      "b"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b12",
+   "min": 5,
+   "hed": [
+    "Auto titles",
+    "for everyone."
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "Tell me below, what is the worst task name your agents ever left behind? Try it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Worst task|name?",
+     "sub": "comment below",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

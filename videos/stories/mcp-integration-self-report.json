@@ -1,0 +1,352 @@
+{
+ "title": "MCP: self report",
+ "kicker": "mcp",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 5,
+   "hed": [
+    "Done,",
+    "but silent."
+   ],
+   "sub": "You only find out later.",
+   "log": "> agent: finished, quietly",
+   "text": "Your agent finishes its job, then sits there in a terminal. You only find out when you look.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix the login bug",
+     "sub": "Claude Code, in a terminal",
+     "chip": [
+      "Done?",
+      "z"
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "look",
+   "min": 5,
+   "hed": [
+    "So you",
+    "keep checking."
+   ],
+   "sub": "Tab after tab.",
+   "log": "> you: checking again",
+   "text": "So you keep checking. Another tab, another terminal, another look at the output.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> check terminal 1",
+       "r"
+      ],
+      [
+       "> check terminal 2",
+       "r"
+      ],
+      [
+       "> check terminal 3",
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "mcp",
+   "min": 5,
+   "hed": [
+    "Connect over",
+    "M C P."
+   ],
+   "sub": "One line of config.",
+   "log": "> mcp: connected",
+   "text": "With the Agent R Q M C P tools, the agent can report on its own work, without you asking.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Agent",
+       "M C P"
+      ],
+      [
+       "Agent R Q",
+       "board"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "start",
+   "min": 5,
+   "hed": [
+    "Mark it",
+    "ongoing."
+   ],
+   "sub": "When work starts.",
+   "log": "> task: ongoing",
+   "text": "When it starts, the agent marks its own task ongoing, so the board shows that someone has it.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix the login bug",
+     "sub": "Claude took it",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "move",
+   "min": 5,
+   "hed": [
+    "The card",
+    "moves itself."
+   ],
+   "sub": "On your board.",
+   "log": "> card: moved",
+   "text": "On your board the card moves by itself, from not started to ongoing, with no one dragging it.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Not started",
+       30,
+       "z"
+      ],
+      [
+       "Ongoing",
+       40,
+       "g"
+      ],
+      [
+       "Done",
+       30,
+       "z"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "stuck",
+   "min": 5,
+   "hed": [
+    "Stuck? It",
+    "says so."
+   ],
+   "sub": "A question, not silence.",
+   "log": "> agent: need the key",
+   "text": "If it gets stuck, it asks, with a real question, instead of staring at a terminal in silence.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude",
+     "text": "Which auth provider should I use?",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "answer",
+   "min": 5,
+   "hed": [
+    "You answer",
+    "from anywhere."
+   ],
+   "sub": "In one line.",
+   "log": "> you: use oauth",
+   "text": "You answer from your phone, in one line, and the agent carries on.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Use the OAuth provider.",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix the login bug",
+     "sub": "Back to work",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "end",
+   "min": 5,
+   "hed": [
+    "It replies",
+    "when it ends."
+   ],
+   "sub": "With a summary.",
+   "log": "> task: reply sent",
+   "text": "When it ends, it replies with a summary of what changed, so you read one note, not a diff.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude",
+     "text": "Fixed login. Two files changed, tests pass.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "done",
+   "min": 5,
+   "hed": [
+    "Then it marks",
+    "it done."
+   ],
+   "sub": "You are told.",
+   "log": "> task: completed",
+   "text": "Then it marks the task completed, and you get a notification that it is finished.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix the login bug",
+     "sub": "Two files changed",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "poll",
+   "min": 5,
+   "hed": [
+    "No polling,",
+    "no guessing."
+   ],
+   "sub": "The loop is closed.",
+   "log": "> polling: none",
+   "text": "No polling, no guessing. You are in the loop without ever watching a terminal.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> polling: off",
+       "g"
+      ],
+      [
+       "> guessing: off",
+       "g"
+      ],
+      [
+       "> updates: automatic",
+       "g"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "many",
+   "min": 5,
+   "hed": [
+    "Every agent",
+    "does it."
+   ],
+   "sub": "Any M C P client.",
+   "log": "> 3 agents reporting",
+   "text": "Claude, Codex, Gemini, any agent that speaks M C P can report in the same way.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "Claude",
+      "Codex",
+      "Gemini"
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  },
+  {
+   "id": "close",
+   "min": 5,
+   "hed": [
+    "Agents that",
+    "report in."
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "How do your agents tell you they are done today? Share it, or try this at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Report in.",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

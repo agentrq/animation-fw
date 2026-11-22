@@ -1,0 +1,348 @@
+{
+ "title": "Keyboard shortcuts",
+ "kicker": "keyboard",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 5,
+   "hed": [
+    "Two hundred",
+    "tasks."
+   ],
+   "sub": "Five workspaces.",
+   "log": "> tasks: 200",
+   "text": "Two hundred tasks, five workspaces, and you need the one about the invoice bug.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "200 tasks",
+     "sub": "5 workspaces",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "scroll",
+   "min": 5,
+   "hed": [
+    "Scroll,",
+    "scroll, scroll."
+   ],
+   "sub": "There has to be a better way.",
+   "log": "> scroll...",
+   "text": "So you scroll. Open a workspace, scan the titles, give up, and open the next workspace.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> open workspace 1",
+       "r"
+      ],
+      [
+       "> scroll, scroll, scroll",
+       "r"
+      ],
+      [
+       "> open workspace 2",
+       "r"
+      ],
+      [
+       "> still scrolling",
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "cmdk",
+   "min": 5,
+   "hed": [
+    "Press",
+    "Command K."
+   ],
+   "sub": "Or Control K.",
+   "log": "> key: cmd+K",
+   "text": "Press Command K, or Control K on Windows, and a search box opens over everything.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "⌘",
+      "K"
+     ],
+     "label": "Search every task",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "type",
+   "min": 5,
+   "hed": [
+    "Type",
+    "and find."
+   ],
+   "sub": "Titles and descriptions.",
+   "log": "> search: invoice",
+   "text": "Type the word invoice. It searches titles and descriptions, right from your device.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "invoice",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix the invoice bug",
+     "sub": "Billing workspace",
+     "chip": [
+      "Found",
+      "g"
+     ],
+     "at": 2.8
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "n",
+   "min": 5,
+   "hed": [
+    "N files",
+    "a new task."
+   ],
+   "sub": "From anywhere.",
+   "log": "> key: N",
+   "text": "N files a new task, from anywhere in the app, without hunting for a plus button.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "N"
+     ],
+     "label": "File a new task",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Fix the invoice bug",
+     "sub": "Not started",
+     "chip": [
+      "New",
+      "b"
+     ],
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "w",
+   "min": 5,
+   "hed": [
+    "W jumps to",
+    "a workspace."
+   ],
+   "sub": "A quick picker.",
+   "log": "> key: W",
+   "text": "W jumps to a workspace. A quick picker opens, so you type a few letters and press enter.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "W"
+     ],
+     "label": "Jump to a workspace",
+     "at": 1.2
+    },
+    {
+     "k": "grid",
+     "cells": [
+      "billing",
+      "api",
+      "docs"
+     ],
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "m",
+   "min": 5,
+   "hed": [
+    "M jumps to",
+    "a machine."
+   ],
+   "sub": "Same picker.",
+   "log": "> key: M",
+   "text": "M jumps to a machine the same way, so a remote terminal is only a few keystrokes away.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "M"
+     ],
+     "label": "Jump to a machine",
+     "at": 1.2
+    },
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> machine: home-server",
+       "g"
+      ],
+      [
+       "> connected",
+       "g"
+      ]
+     ],
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "q",
+   "min": 5,
+   "hed": [
+    "Press ?",
+    "for the list."
+   ],
+   "sub": "Every shortcut.",
+   "log": "> key: ?",
+   "text": "And question mark lists every shortcut, so you never need to memorize the lot at once.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "?"
+     ],
+     "label": "List every shortcut",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "gap",
+   "min": 5,
+   "hed": [
+    "Combine them",
+    "in a flow."
+   ],
+   "sub": "Four keys, one task.",
+   "log": "> W, N, type, enter",
+   "text": "Press W for the workspace, N for a new task, type the title, and enter files it. Four keys.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "W",
+       "workspace"
+      ],
+      [
+       "N",
+       "new task"
+      ],
+      [
+       "type",
+       "title"
+      ],
+      [
+       "enter",
+       "filed"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "ask",
+   "min": 5,
+   "hed": [
+    "Approvals",
+    "too."
+   ],
+   "sub": "Decide fast.",
+   "log": "> approval waiting",
+   "text": "When an agent asks for permission, you can decide without hunting the mouse for the button.",
+   "scene": [
+    {
+     "k": "btns",
+     "code": "Bash  npm run deploy",
+     "buttons": [
+      "Allow",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 4,
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "calm",
+   "min": 5,
+   "hed": [
+    "Less hunting,",
+    "more doing."
+   ],
+   "sub": "Your focus stays.",
+   "log": "> focus: kept",
+   "text": "Less hunting through lists, more time on the work that matters.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Less hunting.|More doing.",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "min": 5,
+   "hed": [
+    "Keys beat",
+    "scrolling."
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "What is the one thing you always lose track of with agents? Tell us, or try the keys at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Command K.",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done"
+   }
+  }
+ ]
+}

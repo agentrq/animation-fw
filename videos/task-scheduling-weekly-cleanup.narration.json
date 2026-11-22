@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 7.2,
+      "text": "Cleaning stale branches, updating dependencies, trimming logs. Important, boring, and always skipped."
+    },
+    {
+      "id": "grow",
+      "min": 7.2,
+      "text": "Every week you promise yourself you will get to it, and every week the pile gets bigger."
+    },
+    {
+      "id": "agent",
+      "min": 7.2,
+      "text": "This is exactly the kind of work an agent is good at, as long as someone starts it."
+    },
+    {
+      "id": "cron",
+      "min": 7.2,
+      "text": "So schedule it to run every Sunday night, on a cron."
+    },
+    {
+      "id": "spawn",
+      "min": 7.2,
+      "text": "Agent R Q creates the task by itself, and starts the agent at ten o clock."
+    },
+    {
+      "id": "work",
+      "min": 7.2,
+      "text": "The agent prunes the old branches, bumps the dependencies, and trims the logs."
+    },
+    {
+      "id": "risky",
+      "min": 7.2,
+      "text": "But a risky step stops and waits for your approval first."
+    },
+    {
+      "id": "decide",
+      "min": 7.2,
+      "text": "You see the exact command, and you allow it or deny it from your phone."
+    },
+    {
+      "id": "mon",
+      "min": 7.2,
+      "text": "By Monday morning, the cleanup is finished and the repository is tidy."
+    },
+    {
+      "id": "week",
+      "min": 7.2,
+      "text": "And next Sunday, it simply happens all over again."
+    },
+    {
+      "id": "control",
+      "min": 7.2,
+      "text": "The boring work gets done, and you stay in charge of everything risky."
+    },
+    {
+      "id": "close",
+      "min": 7.2,
+      "text": "What chore would you give an agent forever? Tell us in the comments, or try it at Agent R Q dot com."
+    }
+  ]
+}

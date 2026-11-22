@@ -1,0 +1,69 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 7.2,
+      "text": "Every Monday morning you ask an agent to audit your dependencies."
+    },
+    {
+      "id": "forget",
+      "min": 7.2,
+      "text": "And every Monday, you remember late, or you forget the whole thing."
+    },
+    {
+      "id": "why",
+      "min": 7.2,
+      "text": "An agent never reminds you. It waits to be asked, and then it does the work."
+    },
+    {
+      "id": "schedule",
+      "min": 7.2,
+      "text": "With Agent R Q, you can schedule a task to run at exactly the time you choose."
+    },
+    {
+      "id": "once",
+      "min": 7.2,
+      "text": "Run it just once, tonight at two a.m., while you sleep."
+    },
+    {
+      "id": "repeat",
+      "min": 7.2,
+      "text": "Or make it repeat, on a cron schedule."
+    },
+    {
+      "id": "weekday",
+      "min": 7.2,
+      "text": "Every weekday at nine, the dependency audit starts all by itself."
+    },
+    {
+      "id": "runs",
+      "min": 7.2,
+      "text": "Each run lands on your dashboard as a normal task, with its own history."
+    },
+    {
+      "id": "review",
+      "min": 7.2,
+      "text": "You can review a run, reply to it, or ask the agent a follow up question."
+    },
+    {
+      "id": "approve",
+      "min": 7.2,
+      "text": "And when it needs permission, it asks you first, even at two in the morning."
+    },
+    {
+      "id": "free",
+      "min": 7.2,
+      "text": "You stop remembering, and the schedule does the remembering for you."
+    },
+    {
+      "id": "every",
+      "min": 7.2,
+      "text": "Tests, audits, reports, cleanups. Anything you do every week can run on a clock."
+    },
+    {
+      "id": "close",
+      "min": 7.2,
+      "text": "What chore would you hand your agents every single week? Drop it in the comments, or try it at Agent R Q dot com."
+    }
+  ]
+}

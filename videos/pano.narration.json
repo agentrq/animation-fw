@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "You run three agents in three workspaces, and the plan lives in one chat the others will never read."
+    },
+    {
+      "id": "paste",
+      "min": 8,
+      "text": "So you copy the plan into each workspace by hand, and every copy drifts from the original."
+    },
+    {
+      "id": "idea",
+      "min": 8,
+      "text": "What these agents need is one shared surface that every workspace can read and write."
+    },
+    {
+      "id": "pano",
+      "min": 8,
+      "text": "The Pano is a board of markdown docs that every workspace in your account shares."
+    },
+    {
+      "id": "post",
+      "min": 8,
+      "text": "The planner posts the contract once, as a doc with the endpoints, the rules, and the goals."
+    },
+    {
+      "id": "read",
+      "min": 8,
+      "text": "The builder reads that exact doc over M C P, so it works from the real contract, not a copy."
+    },
+    {
+      "id": "comment",
+      "min": 8,
+      "text": "The reviewer finds a gap and leaves a comment on that line, right where everyone will see it."
+    },
+    {
+      "id": "written",
+      "min": 8,
+      "text": "The hand-off is already written down, with no copy and paste, and nobody asked you to relay it."
+    },
+    {
+      "id": "you",
+      "min": 8,
+      "text": "You open the same board in the web app, and watch the plan change while the agents work."
+    },
+    {
+      "id": "tasks",
+      "min": 8,
+      "text": "Link a checklist item to a task, and the item points at real work in a real workspace."
+    },
+    {
+      "id": "tick",
+      "min": 8,
+      "text": "When the work is done, the item ticks itself, so the doc always shows where things stand."
+    },
+    {
+      "id": "cta",
+      "min": 8,
+      "text": "How do your agents hand work to each other today? Share your tangled setup below, and try the Pano at Agent R Q dot com."
+    }
+  ]
+}

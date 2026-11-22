@@ -1,0 +1,365 @@
+{
+ "title": "Scheduling: weekly cleanup",
+ "kicker": "scheduling",
+ "mascots": [
+  "claude",
+  "codex"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 7.2,
+   "hed": [
+    "Important.",
+    "Boring."
+   ],
+   "sub": "Always skipped.",
+   "log": "> hook",
+   "text": "Cleaning stale branches, updating dependencies, trimming logs. Important, boring, and always skipped.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Stale branches",
+     "sub": "47 and growing",
+     "chip": [
+      "Overdue",
+      "r"
+     ],
+     "at": 1
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Old dependencies",
+     "sub": "11 outdated",
+     "chip": [
+      "Overdue",
+      "r"
+     ],
+     "at": 2.2
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Giant log files",
+     "sub": "Eating disk",
+     "chip": [
+      "Overdue",
+      "r"
+     ],
+     "at": 3.4
+    }
+   ]
+  },
+  {
+   "id": "grow",
+   "min": 7.2,
+   "hed": [
+    "The pile",
+    "keeps growing."
+   ],
+   "sub": "Week after week.",
+   "log": "> grow",
+   "text": "Every week you promise yourself you will get to it, and every week the pile gets bigger.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "47 branches",
+     "sub": "and growing",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "agent",
+   "min": 7.2,
+   "hed": [
+    "Perfect for",
+    "an agent."
+   ],
+   "sub": "Boring is its strength.",
+   "log": "> agent",
+   "text": "This is exactly the kind of work an agent is good at, as long as someone starts it.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Weekly cleanup",
+     "sub": "Perfect for an agent",
+     "chip": [
+      "Idea",
+      "b"
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "cron",
+   "min": 7.2,
+   "hed": [
+    "Schedule it",
+    "for Sunday."
+   ],
+   "sub": "Every week.",
+   "log": "> cron",
+   "text": "So schedule it to run every Sunday night, on a cron.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "c",
+     "title": "Weekly cleanup",
+     "sub": "0 22 * * 0",
+     "chip": [
+      "Cron",
+      "c"
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "spawn",
+   "min": 7.2,
+   "hed": [
+    "The task",
+    "creates itself."
+   ],
+   "sub": "No reminder needed.",
+   "log": "> spawn",
+   "text": "Agent R Q creates the task by itself, and starts the agent at ten o clock.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Sunday 22:00",
+       "cron"
+      ],
+      [
+       "Task",
+       "created"
+      ],
+      [
+       "Agent",
+       "starts"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "work",
+   "min": 7.2,
+   "hed": [
+    "Branches,",
+    "deps, logs."
+   ],
+   "sub": "All of it.",
+   "log": "> work",
+   "text": "The agent prunes the old branches, bumps the dependencies, and trims the logs.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> prune 47 stale branches",
+       "g"
+      ],
+      [
+       "> update 11 dependencies",
+       "g"
+      ],
+      [
+       "> trim old logs",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "risky",
+   "min": 7.2,
+   "hed": [
+    "A risky step?",
+    "It asks."
+   ],
+   "sub": "Approval required.",
+   "log": "> risky",
+   "text": "But a risky step stops and waits for your approval first.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Authorization required",
+      "y"
+     ],
+     "code": "git branch -D feature/old-12",
+     "buttons": [
+      "Allow Once",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 3.8,
+     "at": 1
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "decide",
+   "min": 7.2,
+   "hed": [
+    "You decide.",
+    "Allow or deny."
+   ],
+   "sub": "From your phone.",
+   "log": "> decide",
+   "text": "You see the exact command, and you allow it or deny it from your phone.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Delete feature/old-12?",
+     "at": 1
+    },
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "You",
+     "text": "Allow. It was merged.",
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "mon",
+   "min": 7.2,
+   "hed": [
+    "Monday:",
+    "all done."
+   ],
+   "sub": "Nothing waiting.",
+   "log": "> mon",
+   "text": "By Monday morning, the cleanup is finished and the repository is tidy.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Weekly cleanup",
+     "sub": "Finished overnight",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "47 branches pruned",
+     "sub": "11 dependencies updated",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 2.8
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "week",
+   "min": 7.2,
+   "hed": [
+    "Every week,",
+    "again."
+   ],
+   "sub": "On its own.",
+   "log": "> week",
+   "text": "And next Sunday, it simply happens all over again.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "c",
+     "title": "Weekly cleanup",
+     "sub": "Next run: Sunday 22:00",
+     "chip": [
+      "Cron",
+      "c"
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "control",
+   "min": 7.2,
+   "hed": [
+    "You stay",
+    "in charge."
+   ],
+   "sub": "Always.",
+   "log": "> control",
+   "text": "The boring work gets done, and you stay in charge of everything risky.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Boring work,|handled.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done"
+   }
+  },
+  {
+   "id": "close",
+   "min": 7.2,
+   "hed": [
+    "Your forever",
+    "chore?"
+   ],
+   "sub": "agentrq.com",
+   "log": "> close",
+   "text": "What chore would you give an agent forever? Tell us in the comments, or try it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Your forever|chore?",
+     "sub": "comment below",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done"
+   }
+  }
+ ]
+}

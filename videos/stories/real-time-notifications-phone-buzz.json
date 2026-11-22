@@ -1,0 +1,384 @@
+{
+ "title": "Notifications: phone buzz",
+ "kicker": "notifications",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "Making",
+    "lunch."
+   ],
+   "sub": "Hands full.",
+   "log": "> you: cooking",
+   "text": "You are in the kitchen, making lunch, and your agent is somewhere deep in a refactor.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Refactor the auth module",
+     "sub": "Claude Code",
+     "at": 1.2,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "You",
+     "sub": "In the kitchen",
+     "at": 3.0,
+     "chip": [
+      "Away",
+      "y"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "stuck",
+   "min": 8,
+   "hed": [
+    "The agent",
+    "gets stuck."
+   ],
+   "sub": "A real question.",
+   "log": "> agent: needs input",
+   "text": "Then it hits a decision it cannot make alone, and stops, waiting on a question for you.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Keep the old session format?",
+     "sub": "Claude Code needs an answer",
+     "at": 1.2,
+     "chip": [
+      "Needs input",
+      "y"
+     ]
+    },
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> blocked: waiting for you",
+       "y"
+      ]
+     ],
+     "at": 3.0
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "unknown",
+   "min": 8,
+   "hed": [
+    "You would",
+    "never know."
+   ],
+   "sub": "No alert.",
+   "log": "> you: no idea",
+   "text": "And you would never know. Your laptop is closed, and your phone stays silent on the counter.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "silence",
+     "at": 1.4,
+     "sub": "no alert, no idea"
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "cost",
+   "min": 8,
+   "hed": [
+    "The clock",
+    "keeps ticking."
+   ],
+   "sub": "Work is stalled.",
+   "log": "> stalled: 40 min",
+   "text": "An hour later the agent is still waiting, the whole refactor stalled over one simple question.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Working",
+       30,
+       "g"
+      ],
+      [
+       "Waiting for you",
+       70,
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "push",
+   "min": 8,
+   "hed": [
+    "Push it",
+    "to you."
+   ],
+   "sub": "The moment it appears.",
+   "log": "> agent r q: push",
+   "text": "Agent R Q pushes the request to your phone the moment it appears, instead of waiting for you to look.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Agent asks",
+       "question"
+      ],
+      [
+       "Agent R Q",
+       "push"
+      ],
+      [
+       "Your phone",
+       "buzz"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "buzz",
+   "min": 8,
+   "hed": [
+    "Your phone",
+    "buzzes."
+   ],
+   "sub": "In your pocket.",
+   "log": "> phone: buzz",
+   "text": "Your phone buzzes on the counter, and the question is right there on the lock screen.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Agent R Q",
+     "text": "Claude Code asks: Keep the old session format?",
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "New request",
+     "sub": "Tap to reply",
+     "at": 3.2,
+     "chip": [
+      "Needs input",
+      "y"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tap",
+   "min": 8,
+   "hed": [
+    "Tap a reply."
+   ],
+   "sub": "One finger.",
+   "log": "> you: tap yes",
+   "text": "You wipe your hands, and tap a reply, with one finger, without opening a laptop.",
+   "scene": [
+    {
+     "k": "btns",
+     "code": "Keep the old session format?",
+     "buttons": [
+      "Yes",
+      "No"
+     ],
+     "press": 0,
+     "tap": 4.2,
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "hears",
+   "min": 8,
+   "hed": [
+    "The agent",
+    "hears it."
+   ],
+   "sub": "Instantly.",
+   "log": "> agent: got reply",
+   "text": "The agent hears it instantly, over a live stream, with no timer and no check in between.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Your tap",
+       "Yes"
+      ],
+      [
+       "Live stream",
+       "instant"
+      ],
+      [
+       "Claude Code",
+       "got it"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "carry",
+   "min": 8,
+   "hed": [
+    "It carries",
+    "on."
+   ],
+   "sub": "Same session.",
+   "log": "> refactor: resumed",
+   "text": "It carries on with the refactor, exactly where it paused, and keeps the old session format.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Refactor the auth module",
+     "sub": "Claude Code",
+     "at": 1.2,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    },
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Done",
+       60,
+       "g"
+      ],
+      [
+       "Left",
+       40,
+       "z"
+      ]
+     ],
+     "at": 3.2
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "lunch",
+   "min": 8,
+   "hed": [
+    "Lunch",
+    "is saved."
+   ],
+   "sub": "Still hot.",
+   "log": "> lunch: saved",
+   "text": "And lunch is saved, because the whole interruption cost you about ten seconds.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "10 seconds",
+     "at": 1.4,
+     "sub": "and lunch is saved"
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "control",
+   "min": 8,
+   "hed": [
+    "In control,",
+    "not chained."
+   ],
+   "sub": "Away from the screen.",
+   "log": "> control: kept",
+   "text": "You stay in control without being chained to a screen, because the agent finds you when it matters.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Approvals and questions",
+     "sub": "Reach you anywhere",
+     "at": 1.2,
+     "chip": [
+      "Live",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "You",
+     "sub": "Free to live your day",
+     "at": 3.2,
+     "chip": [
+      "Free",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "cta",
+   "min": 8,
+   "hed": [
+    "Where were",
+    "you?"
+   ],
+   "sub": "The funniest place.",
+   "log": "> comments: open",
+   "text": "Where were you the last time an agent needed you? Tell us the funniest place, and try Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Where were you?",
+     "at": 1.4,
+     "sub": "tell us the funniest place"
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  }
+ ]
+}

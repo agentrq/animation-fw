@@ -1,0 +1,375 @@
+{
+ "title": "Shortcuts: search",
+ "kicker": "keyboard",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 5,
+   "hed": [
+    "One word",
+    "is all you have."
+   ],
+   "sub": "From last month.",
+   "log": "> memory: migration",
+   "text": "You remember one word from a task you made last month. Just the word migration. That is all you have.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "migration",
+     "sub": "all you remember",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "scroll",
+   "min": 5,
+   "hed": [
+    "Scrolling",
+    "will not help."
+   ],
+   "sub": "Two hundred tasks.",
+   "log": "> scroll: 200 tasks",
+   "text": "Two hundred tasks, five workspaces. Scrolling means opening each one and squinting at titles.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> open workspace 1",
+       "r"
+      ],
+      [
+       "> scroll, scroll, scroll",
+       "r"
+      ],
+      [
+       "> open workspace 2",
+       "r"
+      ]
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "grid",
+     "cells": [
+      "200",
+      "tasks"
+     ],
+     "at": 3.6
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "open",
+   "min": 5,
+   "hed": [
+    "Press",
+    "Command K."
+   ],
+   "sub": "Control K on Windows.",
+   "log": "> key: cmd+K",
+   "text": "Press Command K, or Control K on Windows. A search box opens over whatever you are doing.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "⌘",
+      "K"
+     ],
+     "label": "Open the search",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "type",
+   "min": 5,
+   "hed": [
+    "Type the",
+    "one word."
+   ],
+   "sub": "Titles and descriptions.",
+   "log": "> search: migration",
+   "text": "Type your one word. It searches titles and descriptions, so a single remembered word is enough.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "migration",
+     "at": 1.2
+    },
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Titles",
+       "searched"
+      ],
+      [
+       "Descriptions",
+       "searched"
+      ]
+     ],
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "local",
+   "min": 5,
+   "hed": [
+    "It runs on",
+    "your device."
+   ],
+   "sub": "Nothing leaves.",
+   "log": "> local search",
+   "text": "The search runs straight from your device, with no round trip to a server, so it feels instant.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Your device",
+       "search"
+      ],
+      [
+       "Results",
+       "instant"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "live",
+   "min": 5,
+   "hed": [
+    "Results appear",
+    "as you type."
+   ],
+   "sub": "No enter needed.",
+   "log": "> 3 results",
+   "text": "Results appear as you type, and the list narrows with every letter you add.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Database migration",
+     "sub": "Billing workspace",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 1
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Migration rollback plan",
+     "sub": "Docs workspace",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 2.4
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Migration test run",
+     "sub": "API workspace",
+     "chip": [
+      "Review",
+      "y"
+     ],
+     "at": 3.8
+    }
+   ]
+  },
+  {
+   "id": "arrow",
+   "min": 5,
+   "hed": [
+    "Arrow keys",
+    "pick one."
+   ],
+   "sub": "Enter to open.",
+   "log": "> key: down, enter",
+   "text": "Arrow down to the one you want, and press enter. The task opens right where you left off.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "↓"
+     ],
+     "label": "Move down",
+     "at": 1.2
+    },
+    {
+     "k": "kbd",
+     "keys": [
+      "↵"
+     ],
+     "label": "Open the task",
+     "at": 3.2
+    }
+   ]
+  },
+  {
+   "id": "status",
+   "min": 5,
+   "hed": [
+    "Status shows",
+    "right there."
+   ],
+   "sub": "Done, ongoing, blocked.",
+   "log": "> status chips",
+   "text": "Each result carries its status, so you can tell a finished task from one still running at a glance.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Database migration",
+     "sub": "Done last month",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 1
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Migration test run",
+     "sub": "Running now",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 2.4
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Migration rollback",
+     "sub": "Needs a fix",
+     "chip": [
+      "Blocked",
+      "r"
+     ],
+     "at": 3.8
+    }
+   ]
+  },
+  {
+   "id": "desc",
+   "min": 5,
+   "hed": [
+    "Search the",
+    "description."
+   ],
+   "sub": "Not just titles.",
+   "log": "> match: description",
+   "text": "Even a word buried in the description counts, so the detail you wrote last month is findable.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Fix the billing job",
+     "sub": "...runs the migration first...",
+     "chip": [
+      "Match",
+      "b"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "big",
+     "text": "description",
+     "sub": "matched too",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "old",
+   "min": 5,
+   "hed": [
+    "Old tasks",
+    "are not lost."
+   ],
+   "sub": "Every task is findable.",
+   "log": "> history: kept",
+   "text": "Every old task is one keystroke away. Nothing you filed ever gets lost in the scroll.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "One keystroke",
+     "sub": "from any old task",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "esc",
+   "min": 5,
+   "hed": [
+    "Escape",
+    "closes it."
+   ],
+   "sub": "Back to work.",
+   "log": "> key: esc",
+   "text": "Press escape, and you are straight back to what you were doing.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "esc"
+     ],
+     "label": "Close the search",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "min": 5,
+   "hed": [
+    "Find",
+    "anything."
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "What is the oldest task you wish you could find right now? Search it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Command K.",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done"
+   }
+  }
+ ]
+}

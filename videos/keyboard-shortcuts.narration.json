@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 5,
+      "text": "Two hundred tasks, five workspaces, and you need the one about the invoice bug."
+    },
+    {
+      "id": "scroll",
+      "min": 5,
+      "text": "So you scroll. Open a workspace, scan the titles, give up, and open the next workspace."
+    },
+    {
+      "id": "cmdk",
+      "min": 5,
+      "text": "Press Command K, or Control K on Windows, and a search box opens over everything."
+    },
+    {
+      "id": "type",
+      "min": 5,
+      "text": "Type the word invoice. It searches titles and descriptions, right from your device."
+    },
+    {
+      "id": "n",
+      "min": 5,
+      "text": "N files a new task, from anywhere in the app, without hunting for a plus button."
+    },
+    {
+      "id": "w",
+      "min": 5,
+      "text": "W jumps to a workspace. A quick picker opens, so you type a few letters and press enter."
+    },
+    {
+      "id": "m",
+      "min": 5,
+      "text": "M jumps to a machine the same way, so a remote terminal is only a few keystrokes away."
+    },
+    {
+      "id": "q",
+      "min": 5,
+      "text": "And question mark lists every shortcut, so you never need to memorize the lot at once."
+    },
+    {
+      "id": "gap",
+      "min": 5,
+      "text": "Press W for the workspace, N for a new task, type the title, and enter files it. Four keys."
+    },
+    {
+      "id": "ask",
+      "min": 5,
+      "text": "When an agent asks for permission, you can decide without hunting the mouse for the button."
+    },
+    {
+      "id": "calm",
+      "min": 5,
+      "text": "Less hunting through lists, more time on the work that matters."
+    },
+    {
+      "id": "close",
+      "min": 5,
+      "text": "What is the one thing you always lose track of with agents? Tell us, or try the keys at Agent R Q dot com."
+    }
+  ]
+}
