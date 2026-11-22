@@ -104,7 +104,14 @@ const s = videoScene({ tl, thumbnail: tl.at(1, 0.75), description: '...' }); // 
 
 Say the brand as `Agent R Q` in a script (and `Agent R Q dot com`): the voice reads "agentrq" as "agentek". The captions put
 `AgentRQ` and `agentrq.com` back; a script with the lowercase name is refused. More caption spellings go in a `"captions"`
-object beside `"lines"`.
+object beside `"lines"`. The voice reads "Pano" as "PAH-no", so write `Panno` in the script ("PAN-oh", as in panoramic) and
+map it back with `"captions": { "Panno": "Pano" }`. To see how the voice reads a word without speaking a whole script,
+phonemize it with the bundled tool:
+
+```sh
+P=~/.cache/animfw/voice/piper
+echo "Pano Panno" | LD_LIBRARY_PATH=$P $P/piper_phonemize -l en-us --espeak_data $P/espeak-ng-data   # pˈɑːnoʊ pˈænoʊ
+```
 
 **What it needs.** ffmpeg (on the PATH, `FFMPEG=/path/to/ffmpeg`, or the optional `ffmpeg-static` package), Chromium
 (`npx playwright install chromium`), and the voice: `node bin/video.js setup` downloads Piper (MIT) and the `en_US-bryce-medium` (public domain, free for commercial use; avoid the `ryan` voices, whose data is CC BY-NC-SA)
