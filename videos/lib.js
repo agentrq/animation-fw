@@ -30,7 +30,8 @@ export function loadTimeline() {
 // `thumbnail` is the second the posters are taken at: pick a moment with the
 // caption showing and the stage full (tl.at(beat, 0.7)). `poster` is the still
 // the loop stops on for reduced motion, as in any scene.
-export function videoScene({ description, tl, poster, thumbnail }) {
+// `ground: false` leaves the ground out, for a video that places its own.
+export function videoScene({ description, tl, poster, thumbnail, ground: withGround = true }) {
   const s = new Scene({ width: VW, height: VH, loop: tl.loop, background: C.bg, poster, description })
     .font('pixel', FONTS.silkscreen, { fallback: 'monospace' })
     .font('bold', FONTS.inter, { axes: { wght: 700, opsz: 32 } })
@@ -40,7 +41,7 @@ export function videoScene({ description, tl, poster, thumbnail }) {
   s.videoEnd = tl.end;
   s.thumbnail = thumbnail;
   sky(s);
-  ground(s);
+  if (withGround) ground(s);
   return s;
 }
 
@@ -49,6 +50,17 @@ export const showDuring = (s, node, spans) => during(s, node, spans);
 
 // A beat's whole span, or the spans of several beats.
 export const beatSpan = (tl, b0, b1 = b0) => [tl.S[b0], tl.beatEnd(b1)];
+
+// Beats named by their narration line ids instead of counted, for a long video:
+// at(id, offset) as tl.T, start(id) and end(id). `ids` are the lines' ids in order.
+export function beatsById(tl, ids) {
+  const b = (id) => {
+    const i = ids.indexOf(id);
+    if (i < 0) throw new Error(`no beat "${id}" in the narration`);
+    return i;
+  };
+  return { at: (id, o = 0) => tl.T(b(id), o), start: (id) => tl.S[b(id)], end: (id) => tl.beatEnd(b(id)) };
+}
 
 function wrap(text, max) {
   const lines = [];
@@ -60,17 +72,19 @@ function wrap(text, max) {
   return lines;
 }
 
-// The narration as captions, one sentence at a time while it is spoken.
-export function captions(s, tl) {
+// The narration as captions, one sentence at a time while it is spoken. The
+// band starts at `band` (the house stage ends at 440); a screen video gives the
+// app more room with a lower band and smaller type.
+export function captions(s, tl, { band = BAND, size = 40, chars = 50, lineGap = 50, baseline = 118 } = {}) {
   s.add(
-    el('rect', { x: 0, y: BAND, width: VW, height: VH - BAND, fill: '#0c0c0f', class: 'px' }),
-    el('rect', { x: 0, y: BAND, width: VW, height: 4, fill: C.line, class: 'px' }),
+    el('rect', { x: 0, y: band, width: VW, height: VH - band, fill: '#0c0c0f', class: 'px' }),
+    el('rect', { x: 0, y: band, width: VW, height: 4, fill: C.line, class: 'px' }),
   );
   for (const beat of tl.sentences) {
     for (const { text, from, to } of beat) {
-      const lines = wrap(text, 50);
-      const top = BAND + 118 - (lines.length - 1) * 24;
-      const node = g({}, lines.map((l, i) => s.text(l, { x: VW / 2, y: top + i * 50, font: 'bold', size: 40, fill: C.text, anchor: 'middle', spacing: -0.5 })));
+      const lines = wrap(text, chars);
+      const top = band + baseline - (lines.length - 1) * (lineGap / 2 - 1);
+      const node = g({}, lines.map((l, i) => s.text(l, { x: VW / 2, y: top + i * lineGap, font: 'bold', size, fill: C.text, anchor: 'middle', spacing: -0.5 })));
       s.add(showDuring(s, node, [[from, to]]));
     }
   }

@@ -42,3 +42,44 @@ test('without a timeline a video scene says what to set', async () => {
   assert.throws(() => loadTimeline(), /VIDEO_TIMELINE/);
   process.env.VIDEO_TIMELINE = saved;
 });
+
+test('pano-collaboration builds on real screens, with its own ground and caption band', async () => {
+  // One beat per narration line, 11 s each, so every stage event lands inside its beat.
+  const ids = JSON.parse(fs.readFileSync('videos/pano-collaboration.narration.json', 'utf8')).lines.map((l) => l.id);
+  const beats = ids.map((_, i) => i * 11);
+  const long = {
+    starts: beats,
+    end: ids.length * 11,
+    nominal: ids.map(() => 10),
+    sentences: beats.map((s, i) => [{ text: `Line ${ids[i]}.`, from: s + 0.5, to: s + 10 }]),
+  };
+  const saved = process.env.VIDEO_TIMELINE;
+  const own = path.join(path.dirname(file), 'pano-timeline.json');
+  fs.writeFileSync(own, JSON.stringify(long));
+  process.env.VIDEO_TIMELINE = own;
+  try {
+    const { default: make, SHOTS } = await import(pathToFileURL(path.resolve('videos/pano-collaboration.js')).href);
+    const scene = make();
+    assert.equal(scene.loop % 12, 0);
+    const svg = scene.toSVG();
+    const shots = JSON.parse(fs.readFileSync(path.join(SHOTS, 'manifest.json'), 'utf8')).shots;
+    for (const name of Object.keys(shots)) assert.match(svg, new RegExp(`<image id="shot-${name}" `), `shot ${name} is used`);
+    assert.match(svg, />Line kanban\.</, 'captions');
+    assert.match(svg, /<rect x="0" y="595" width="1200" height="80"/, 'the caption band sits under the screens');
+    assert.match(svg, />05 \/ STATUS</, 'the chapter chip');
+    assert.deepEqual(check(svg, { maxBytes: 12_000_000 }), []);
+  } finally {
+    process.env.VIDEO_TIMELINE = saved;
+  }
+});
+
+test('beatsById names beats by their narration ids', async () => {
+  const { loadTimeline, beatsById } = await import('../videos/lib.js');
+  const tl = loadTimeline();
+  const { at, start, end } = beatsById(tl, ['intro', 'middle']);
+  assert.equal(start('middle'), 7);
+  assert.equal(end('intro'), 7);
+  assert.equal(at('middle'), 7);
+  assert.equal(at('middle', 2), tl.T(1, 2));
+  assert.throws(() => at('outro'), /no beat "outro" in the narration/);
+});
