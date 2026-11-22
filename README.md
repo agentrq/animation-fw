@@ -104,9 +104,53 @@ const s = videoScene({ tl, thumbnail: tl.at(1, 0.75), description: '...' }); // 
 
 Say the brand as `Agent R Q` in a script (and `Agent R Q dot com`): the voice reads "agentrq" as "agentek". The captions put
 `AgentRQ` and `agentrq.com` back; a script with the lowercase name is refused. More caption spellings go in a `"captions"`
-object beside `"lines"`.
+object beside `"lines"`. The voice reads "Pano" as "PAH-no", so write `Panno` in the script ("PAN-oh", as in panoramic) and
+map it back with `"captions": { "Panno": "Pano" }`. To see how the voice reads a word without speaking a whole script,
+phonemize it with the bundled tool:
+
+```sh
+P=~/.cache/animfw/voice/piper
+echo "Pano Panno" | LD_LIBRARY_PATH=$P $P/piper_phonemize -l en-us --espeak_data $P/espeak-ng-data   # pˈɑːnoʊ pˈænoʊ
+```
 
 **What it needs.** ffmpeg (on the PATH, `FFMPEG=/path/to/ffmpeg`, or the optional `ffmpeg-static` package), Chromium
 (`npx playwright install chromium`), and the voice: `node bin/video.js setup` downloads Piper (MIT) and the `en_US-bryce-medium` (public domain, free for commercial use; avoid the `ryan` voices, whose data is CC BY-NC-SA)
 voice into `~/.cache/animfw/voice` (`ANIMFW_VOICE_HOME` moves it; `PIPER` and `PIPER_VOICE` point at your own). Fonts need
 Python's `fonttools` and `brotli`; if they are installed with `pip install --target DIR`, set `ANIMFW_PYLIB=DIR`.
+
+### Real screens in a video
+
+A video can show the product itself, not a drawing of it. `videos/pano-collaboration.js` (about 7 minutes) is the
+example: each chapter opens on a pain in the house style, then shows the fix on screenshots of the real app.
+
+**Capture** with `src/capture.js`: one browser page drives the app through a run of states. Each shot is saved as a lossless
+WebP, along with the boxes of the parts the video points at, its *regions*, named and measured in CSS pixels:
+
+```js
+const shooter = await openShooter({ baseURL, outDir: 'videos/screens/my-video', scale: 3, cookies, storage: { theme: 'dark' } });
+await shooter.shoot({
+  name: 'board', route: '/pano',
+  actions: [{ click: 'text=New note' }, { type: 'textarea', text: '- [ ] ship it' }],  // also fill, hover, press, eval, waitFor, wait, goto
+  regions: { card0: { sel: '.card', nth: 0 }, menu: { sel: '[role=menu]', optional: true }, toasts: [1016, 214, 400, 572] },
+});
+await shooter.close(); // writes manifest.json, merged into the one already there
+```
+
+At 1440x810 with `scale: 3`, a shot stays sharp at 4K under a 2.4x zoom. A missing region fails the shot unless it is
+`optional`.
+
+**Show** them with `videos/screen.js`. A `Screen` puts the shots in an app window with a camera. It crossfades or wipes
+from one state to the next, draws green callouts on regions by name, and moves a pointer that clicks:
+
+```js
+const sc = new Screen(s, loadShots('videos/screens/my-video'), { safe: { x: 0, y: 0, w: 1200, h: 595 } });
+sc.show('board', at('board')).cut(at('board'), 'window').look(at('board', 2), 'card0');   // the camera eases in
+sc.callout(at('board', 3.5), end('board') - 0.3, 'foot0', { label: 'who wrote it' });     // the camera must hold still
+sc.click(at('post', 1.6), 'save').show('posted', at('post', 1.9)).show('typed', at('post', 3), { wipe: 1.2 });
+sc.visible([[at('board'), end('post')]]).build();
+```
+
+A focus is `'window'`, a region name, `[x, y, w, h]`, or `{ region, shot?, by?, x?, y?, w?, h? }` for a part of a region.
+After a re-shoot, the camera and the callouts follow the regions' new places. For a long script, `beatsById(tl, ids)` (in
+`videos/lib.js`) gives `at(id, offset)`, `start(id)` and `end(id)` by line id instead of beat number. `captions(s, tl,
+{ band, size, chars, lineGap, baseline })` sets the caption band, and `videoScene({ ground: false })` leaves the ground out.
