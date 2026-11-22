@@ -1,0 +1,50 @@
+{
+  "captions": { "A P I": "API", "Panno": "Pano" },
+  "lines": [
+    { "id": "hook", "min": 8, "text": "Monday, Ben's agent spends two hours on a flaky build, and finally cracks it. Tuesday, Ada's agent hits the same build, and starts from zero." },
+    { "id": "pain", "min": 8, "text": "The fix lived in one chat, on one laptop. Multiply that by every teammate and every lesson, and hours go to rediscovering what somebody already knows." },
+    { "id": "promise", "min": 9, "text": "Agent R Q Teams fixes that. You share workspaces with your teammates, and you choose how much of each one: tasks, memory, skills, and Panno docs." },
+
+    { "id": "setup-pain", "min": 8, "text": "First, getting everyone on board. Usually that means a shared login, or an admin setting things up for days." },
+    { "id": "create", "min": 7, "text": "Here, you create a team in one step. Type a name, like Platform, and you are its first member." },
+    { "id": "invite", "min": 8, "text": "Then invite a teammate by email address. Agent R Q gives you a link to send, in chat or by email." },
+    { "id": "accept", "min": 8, "text": "Ben opens the link and joins. He keeps his own account, his own agents, and his own workspaces. No shared password anywhere." },
+    { "id": "members", "min": 7, "text": "Now the team has two members. There are no owners or admins: any member can invite someone, or remove them." },
+    { "id": "activity", "min": 6, "text": "And the activity log names who did what, so every change has a name next to it." },
+
+    { "id": "tasks-pain", "min": 8, "text": "Next, standup. What are Ben's agents doing right now? Normally everyone asks, and everyone scrolls back through old chats." },
+    { "id": "share", "min": 9, "text": "Ada opens the team settings, and switches on one workspace, the storefront. Sharing is decided per workspace, never for the whole account." },
+    { "id": "merge", "min": 10, "text": "Ben shares his storefront too. Same name, so the two become one team workspace. There is nothing to configure, and each of them still runs their own agents." },
+    { "id": "team-tasks", "min": 9, "text": "Now both see every storefront task live, with the owner's name on each one. Ada sees Ben is already fixing the signup email, so she picks something else." },
+    { "id": "filter", "min": 6, "text": "Filter by member to see only Ben's work, or open the team board." },
+    { "id": "analytics", "min": 6, "text": "Team analytics count what got done this week, across everyone." },
+    { "id": "readonly", "min": 10, "text": "It is all read-only. Ada cannot reply to Ben's agent, or approve anything for him. But if a task is useful, she can clone it into her own workspace, run by her own agent." },
+
+    { "id": "memory-pain", "min": 8, "text": "Now, the Monday fix. Agents learn something every day, and the lesson stays in one session." },
+    { "id": "memory-index", "min": 8, "text": "With memory shared, each agent's memory lists every teammate's memory next to its own." },
+    { "id": "memory-save", "min": 9, "text": "So on Monday, Ben's agent saves what it learned as a short note: clear the build cache, then run the end-to-end tests." },
+    { "id": "memory-read", "min": 10, "text": "On Tuesday, Ada's agent loads its memory, finds Ben's note, and reads it first. It clears the cache, the build goes green, and two hours become two minutes." },
+    { "id": "memory-own", "min": 7, "text": "An agent only ever writes to its own memory. Teammates can read Ben's note, but nobody can overwrite it." },
+
+    { "id": "skills-pain", "min": 8, "text": "Then the playbooks. Ada, Ben and Chen each keep a release skill, and every copy has quietly drifted." },
+    { "id": "skills-team", "min": 9, "text": "In a team workspace, the team owns its skills. Every member's agent can use them and improve them, and each workspace opts in." },
+    { "id": "skills-edit", "min": 10, "text": "Ben's agent adds the missing tagging step. One edit, in one place. The file goes from version one to version two, so nothing is overwritten by accident." },
+    { "id": "skills-next", "min": 8, "text": "On the next release, Ada's agent loads the skill and follows every step, including the one it never knew." },
+
+    { "id": "docs-pain", "min": 8, "text": "And plans. Ada wrote the launch plan, and the team needs it. But her other drafts are not ready for anyone." },
+    { "id": "docs-share", "min": 9, "text": "So she opens the plan on her Panno, and the share switch sits right on the doc. She shares it with Platform. Only that doc moves." },
+    { "id": "docs-team", "min": 8, "text": "Ben reads it on the team Panno. He cannot edit it, so nobody changes the plan behind Ada's back." },
+    { "id": "docs-agent", "min": 8, "text": "His agent can read it too, and picks up the checklist." },
+    { "id": "docs-unshare", "min": 6, "text": "Ada can unshare it whenever she likes, and the team loses access at once." },
+
+    { "id": "hire-pain", "min": 7, "text": "Then Chen joins on Monday, and Chen's agent knows nothing about the project." },
+    { "id": "hire-join", "min": 8, "text": "Chen accepts the invite, and shares a storefront workspace. It joins the team workspace on its own." },
+    { "id": "hire-first", "min": 10, "text": "On the first task, Chen's agent loads the team's memory and the release skill, and gets it right the first time. No weeks of questions in chat." },
+
+    { "id": "control", "min": 10, "text": "And you stay in control. Nothing is shared just because you joined. Tasks, memory and skills each have their own switch, per workspace." },
+    { "id": "leave", "min": 8, "text": "Turn one off, and the team stops seeing it right away. Leave the team, and every share stops with you." },
+    { "id": "obey", "min": 6, "text": "Agents obey the same switches. A teammate's agent reads only what you chose to share." },
+    { "id": "recap", "min": 10, "text": "Solve it once, and the whole team keeps it. Live tasks, shared memory, one playbook, and the docs you choose." },
+    { "id": "cta", "min": 8, "text": "What has one of your agents learned that the rest of your team still does not know? Tell us in the comments, and try Teams at Agent R Q dot com." }
+  ]
+}

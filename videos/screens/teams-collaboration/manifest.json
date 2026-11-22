@@ -1,0 +1,468 @@
+{
+ "shots": {
+  "team-new": {
+   "file": "team-new.webp",
+   "route": "/team/new",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "form": [97, 121, 544, 222],
+    "name": [130, 213, 478, 46],
+    "create": [499, 275, 109, 35]
+   }
+  },
+  "team-created": {
+   "file": "team-created.webp",
+   "route": "/teams/0mRw6l3N7YL/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "tabs": [97, 121, 192, 233],
+    "panel": [64, 0, 1376, 810],
+    "rows": [354, 154, 1004, 56.5]
+   }
+  },
+  "invite-typed": {
+   "file": "invite-typed.webp",
+   "route": "/teams/0mRw6l3N7YL/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "form": [354, 154, 1004, 61],
+    "email": [354, 177, 924, 38],
+    "send": [1286, 177, 72, 38]
+   }
+  },
+  "invite-link": {
+   "file": "invite-link.webp",
+   "route": "/teams/0mRw6l3N7YL/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "modal": [0, 0, 1440, 810],
+    "link": [529, 414.3, 382, 38],
+    "copy": [871, 414.3, 40, 38]
+   }
+  },
+  "invite-accept": {
+   "file": "invite-accept.webp",
+   "route": "/invite",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "card": [496, 280.3, 448, 249.5],
+    "accept": [634.7, 462.3, 100.6, 34.5]
+   }
+  },
+  "ben-joined": {
+   "file": "ben-joined.webp",
+   "route": "/teams/0mRw6l3N7YL/tasks/active",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "banner": [65, 728.5, 1358, 35],
+    "bar": [65, 728.5, 1358, 64.5]
+   }
+  },
+  "members": {
+   "file": "members.webp",
+   "route": "/teams/0mRw6l3N7YL/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "tabs": [97, 121, 192, 233],
+    "panel": [64, 0, 1376, 810],
+    "ada": [354, 154, 1004, 57.5],
+    "ben": [354, 211.5, 1004, 56.5],
+    "remove": [1309, 232.3, 49, 15]
+   }
+  },
+  "activity": {
+   "file": "activity.webp",
+   "route": "/teams/0mRw6l3N7YL/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "tabs": [97, 121, 192, 233],
+    "panel": [64, 0, 1376, 810],
+    "rows": [354, 154, 1004, 33],
+    "list": [354, 154, 1004, 123]
+   }
+  },
+  "share-off": {
+   "file": "share-off.webp",
+   "route": "/teams/0mRw6l3N7YL/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "tabs": [97, 121, 192, 233],
+    "panel": [64, 0, 1376, 810],
+    "list": [354, 182.5, 1004, 195]
+   }
+  },
+  "share-on": {
+   "file": "share-on.webp",
+   "route": "/teams/0mRw6l3N7YL/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "tabs": [97, 121, 192, 233],
+    "panel": [64, 0, 1376, 810],
+    "list": [354, 182.5, 1004, 195]
+   }
+  },
+  "activity-merged": {
+   "file": "activity-merged.webp",
+   "route": "/teams/0mRw6l3N7YL/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "tabs": [97, 121, 192, 233],
+    "panel": [64, 0, 1376, 810],
+    "list": [354, 154, 1004, 258],
+    "top": [354, 154, 1004, 33],
+    "second": [354, 199, 1004, 33]
+   }
+  },
+  "team-tasks": {
+   "file": "team-tasks.webp",
+   "route": "/teams/0mRw6l3N7YL/tasks/active",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "owner0": [113, 212.6, 78, 16],
+    "owner1": [113, 322.8, 66, 16],
+    "owner2": [113, 474.4, 78, 16],
+    "owner3": [113, 584.5, 66, 16],
+    "list": [81, 96, 392, 660],
+    "bar": [65, 763.5, 1358, 29.5],
+    "filters": [1154, 41, 237, 38]
+   }
+  },
+  "team-task": {
+   "file": "team-task.webp",
+   "route": "/teams/0mRw6l3N7YL/tasks/active/0mRsn9fH2cX/0mRsrbhtRET",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "clone": [1094.7, 115, 186.9, 28],
+    "bar": [65, 763.5, 1358, 29.5],
+    "msg1": [477, 251, 918, 51],
+    "msg2": [477, 349, 918, 29]
+   }
+  },
+  "clone-modal": {
+   "file": "clone-modal.webp",
+   "route": "/teams/0mRw6l3N7YL/tasks/active/0mRsn9fH2cX/0mRsrbhtRET",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "modal": [0, 0, 1440, 810],
+    "confirm": [823, 510.8, 88, 37]
+   }
+  },
+  "team-filter-open": {
+   "file": "team-filter-open.webp",
+   "route": "/teams/0mRw6l3N7YL/tasks/active",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "picker": [1154, 41, 107, 38]
+   }
+  },
+  "team-filter-ben": {
+   "file": "team-filter-ben.webp",
+   "route": "/teams/0mRw6l3N7YL/tasks/active",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "picker": [1139, 41, 122, 38],
+    "owner0": [113, 212.6, 78, 16],
+    "owner1": [113, 364.3, 78, 16],
+    "list": [81, 96, 392, 660]
+   }
+  },
+  "team-kanban": {
+   "file": "team-kanban.webp",
+   "route": "/teams/0mRw6l3N7YL/kanban",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "bar": [65, 763.5, 1358, 29.5]
+   }
+  },
+  "team-analytics": {
+   "file": "team-analytics.webp",
+   "route": "/teams/0mRw6l3N7YL/analytics",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "bar": [65, 763.5, 1358, 29.5]
+   }
+  },
+  "ben-saved": {
+   "file": "ben-saved.webp",
+   "route": "/workspaces/0mRsn9fH2cX/tasks/0mRst5aFbXB",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "main": [64, 0, 1376, 810],
+    "msg1": [477, 225, 918, 51],
+    "msg2": [477, 323, 918, 29]
+   }
+  },
+  "ws-sharing": {
+   "file": "ws-sharing.webp",
+   "route": "/workspaces/0mRseHVFm1l/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "sharing": [354, 189.5, 1004, 112],
+    "parts": [354, 229.5, 944, 16.5],
+    "mates": [354, 317.5, 1004, 128],
+    "benRow": [354, 385, 1004, 60.5],
+    "benSwitch": [1314, 403.3, 44, 24]
+   }
+  },
+  "ada-fixed": {
+   "file": "ada-fixed.webp",
+   "route": "/workspaces/0mRseHVFm1l/tasks/0mRwEwWkVLZ",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "main": [64, 0, 1376, 810],
+    "msg": [477, 253, 918, 51]
+   }
+  },
+  "team-skills": {
+   "file": "team-skills.webp",
+   "route": "/teams/0mRw6l3N7YL/skills",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "bar": [65, 763.5, 1358, 29.5]
+   }
+  },
+  "skill-v1": {
+   "file": "skill-v1.webp",
+   "route": "/teams/0mRw6l3N7YL/skills",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "bar": [65, 763.5, 1358, 29.5],
+    "editor": [97, 317.5, 1294, 274]
+   }
+  },
+  "ben-skill-v2": {
+   "file": "ben-skill-v2.webp",
+   "route": "/workspaces/0mRsn9fH2cX/tasks/0mRwGPtJb53",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "main": [64, 0, 1376, 810],
+    "msg": [477, 253, 918, 51]
+   }
+  },
+  "skill-v2": {
+   "file": "skill-v2.webp",
+   "route": "/teams/0mRw6l3N7YL/skills",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "bar": [65, 763.5, 1358, 29.5],
+    "editor": [97, 317.5, 1294, 274]
+   }
+  },
+  "ws-team-skills": {
+   "file": "ws-team-skills.webp",
+   "route": "/workspaces/0mRseHVFm1l/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "list": [354, 362, 1004, 108.6],
+    "item": [354, 410.5, 1004, 59.1],
+    "sw": [1314, 422.5, 44, 24]
+   }
+  },
+  "ada-release": {
+   "file": "ada-release.webp",
+   "route": "/workspaces/0mRseHVFm1l/tasks/0mRwHtat0RJ",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "main": [64, 0, 1376, 810],
+    "msg": [477, 253, 918, 51]
+   }
+  },
+  "ada-pano": {
+   "file": "ada-pano.webp",
+   "route": "/pano",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "card0": [420.8, 170, 317.9, 298.1],
+    "card1": [750.8, 171.5, 315, 294.9],
+    "card2": [1079, 171.3, 315.4, 295.5],
+    "chat": [81, 677, 1326, 100]
+   }
+  },
+  "doc-share-off": {
+   "file": "doc-share-off.webp",
+   "route": "/pano/0mRtZL7j5Jl",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "row": [1071, 230.5, 320, 36],
+    "sw": [1355, 238.5, 36, 20],
+    "title": [138, 154, 860, 37.5],
+    "body": [138, 302, 860, 160.3]
+   }
+  },
+  "doc-share-on": {
+   "file": "doc-share-on.webp",
+   "route": "/pano/0mRtZL7j5Jl",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "row": [1071, 230.5, 320, 36],
+    "sw": [1355, 238.5, 36, 20],
+    "title": [138, 154, 860, 37.5],
+    "body": [138, 302, 860, 160.3]
+   }
+  },
+  "team-pano": {
+   "file": "team-pano.webp",
+   "route": "/teams/0mRw6l3N7YL/pano",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "card": [93.5, 117.3, 315.4, 295.5],
+    "bar": [65, 763.5, 1358, 29.5]
+   }
+  },
+  "team-doc": {
+   "file": "team-doc.webp",
+   "route": "/teams/0mRw6l3N7YL/pano/0mRtZL7j5Jl",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "title": [138, 142, 860, 37.5],
+    "meta": [138, 183.5, 860, 24],
+    "body": [138, 297.5, 860, 160.3],
+    "bar": [65, 763.5, 1358, 29.5]
+   }
+  },
+  "ben-agent-doc": {
+   "file": "ben-agent-doc.webp",
+   "route": "/workspaces/0mRsn9fH2cX/tasks/0mRwKLA7GdB",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "main": [64, 0, 1376, 810],
+    "msg": [477, 253, 918, 51]
+   }
+  },
+  "doc-unshare": {
+   "file": "doc-unshare.webp",
+   "route": "/pano/0mRtZL7j5Jl",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "row": [1071, 230.5, 320, 36],
+    "sw": [1355, 238.5, 36, 20],
+    "title": [138, 154, 860, 37.5],
+    "body": [138, 302, 860, 160.3],
+    "modal": [0, 0, 1440, 810]
+   }
+  },
+  "team-pano-empty": {
+   "file": "team-pano-empty.webp",
+   "route": "/teams/0mRw6l3N7YL/pano",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "empty": [97, 113, 1294, 16.5],
+    "bar": [65, 763.5, 1358, 29.5]
+   }
+  },
+  "chen-accept": {
+   "file": "chen-accept.webp",
+   "route": "/invite",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "card": [496, 280.3, 448, 249.5],
+    "accept": [634.7, 462.3, 100.6, 34.5]
+   }
+  },
+  "chen-share": {
+   "file": "chen-share.webp",
+   "route": "/teams/0mRw6l3N7YL/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "tabs": [97, 121, 192, 233],
+    "panel": [64, 0, 1376, 810],
+    "list": [354, 182.5, 1004, 48]
+   }
+  },
+  "members-3": {
+   "file": "members-3.webp",
+   "route": "/teams/0mRw6l3N7YL/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "tabs": [97, 121, 192, 233],
+    "panel": [64, 0, 1376, 810],
+    "chen": [354, 269, 1004, 56.5]
+   }
+  },
+  "chen-task": {
+   "file": "chen-task.webp",
+   "route": "/workspaces/0mRwMl9hW4r/tasks/0mRwOPeb49F",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "main": [64, 0, 1376, 810],
+    "msg": [477, 253, 918, 51]
+   }
+  },
+  "control-sharing": {
+   "file": "control-sharing.webp",
+   "route": "/workspaces/0mRseHVFm1l/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "sharing": [354, 189.5, 1004, 112],
+    "parts": [354, 229.5, 944, 16.5],
+    "sw": [1314, 233.5, 44, 24],
+    "mates": [354, 317.5, 1004, 189.5]
+   }
+  },
+  "stop-sharing": {
+   "file": "stop-sharing.webp",
+   "route": "/workspaces/0mRseHVFm1l/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "modal": [0, 0, 1440, 810]
+   }
+  },
+  "danger": {
+   "file": "danger.webp",
+   "route": "/teams/0mRw6l3N7YL/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "tabs": [97, 121, 192, 233],
+    "panel": [64, 0, 1376, 810],
+    "leave": [1211, 180.8, 122, 37]
+   }
+  }
+ },
+ "viewport": {
+  "width": 1440,
+  "height": 810
+ },
+ "scale": 3
+}
