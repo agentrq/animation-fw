@@ -120,8 +120,11 @@ Python's `fonttools` and `brotli`; if they are installed with `pip install --tar
 
 ### Real screens in a video
 
-A video can show the product itself, not a drawing of it. `videos/pano-collaboration.js` (about 7 minutes) is the
-example: each chapter opens on a pain in the house style, then shows the fix on screenshots of the real app.
+A video can show the product itself, not a drawing of it. `videos/pano-collaboration.js` (about 7 minutes) and
+`videos/teams-collaboration.js` (about 6.5 minutes, three people sharing workspaces in a team) are the examples: each
+chapter opens on a pain in the house style, then shows the fix on screenshots of the real app. The pieces they share
+are in `videos/house.js`: the pain card (kicker, headline, a line under it, art on the right), the logo, the ground, and
+the chapter chip over the screens.
 
 **Capture** with `src/capture.js`: one browser page drives the app through a run of states. Each shot is saved as a lossless
 WebP, along with the boxes of the parts the video points at, its *regions*, named and measured in CSS pixels:
