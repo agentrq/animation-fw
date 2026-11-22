@@ -1,0 +1,59 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 5,
+      "text": "Your first agent finishes the code. Then everything stops, because somebody has to start the reviewer."
+    },
+    {
+      "id": "cost",
+      "min": 5,
+      "text": "That somebody is you. You check the board, copy the context, and open a new task. Every handoff."
+    },
+    {
+      "id": "idea",
+      "min": 5,
+      "text": "Events close that gap. An event is just a named signal, like code changed."
+    },
+    {
+      "id": "emit",
+      "min": 5,
+      "text": "When a task completes, it can emit that signal. The agent calls nothing. It just says what happened."
+    },
+    {
+      "id": "wire",
+      "min": 5,
+      "text": "Wire the event to a workspace, and Agent R Q creates a task there on its own."
+    },
+    {
+      "id": "pickup",
+      "min": 5,
+      "text": "The reviewer is already listening. The moment the signal lands, it picks the task up and starts."
+    },
+    {
+      "id": "chain",
+      "min": 5,
+      "text": "It chains. The reviewer emits its own event, then testing wakes up, then deploy."
+    },
+    {
+      "id": "guard",
+      "min": 5,
+      "text": "You stay in control. Every workspace keeps its approvals, so a chain never skips a human."
+    },
+    {
+      "id": "night",
+      "min": 5,
+      "text": "Add a schedule, and a nightly build runs the whole release train while you sleep."
+    },
+    {
+      "id": "see",
+      "min": 5,
+      "text": "Every handoff shows up in the task timeline, so you can see what fired what, and when."
+    },
+    {
+      "id": "close",
+      "min": 5,
+      "text": "No glue code, no copy and paste. Try events at Agent R Q dot com."
+    }
+  ]
+}
