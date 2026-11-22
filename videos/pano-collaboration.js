@@ -261,7 +261,7 @@ export default () => {
     ground: false,
     poster: at('chips', 4),
     thumbnail: at('assign', 4),
-    description: 'Agent collaboration on the AgentRQ Pano, narrated over real screens of the app: you write meeting notes on the shared board, the supervisor splits them across five workspaces and starts four agents in parallel, the API agent posts a contract the web agent reads and questions in comments, and each checklist item ticks itself as its task completes, until five of five are done.',
+    description: 'Agent collaboration on the AgentRQ Pano, narrated over real screens of the app: you ask a workspace agent or the supervisor to post a doc, or write meeting notes yourself on the shared board, the supervisor splits them across five workspaces and starts four agents in parallel, the API agent posts a contract the web agent reads and questions in comments, and each checklist item ticks itself as its task completes, until five of five are done.',
   });
   groundStrip(s);
 
@@ -319,12 +319,28 @@ export default () => {
   sc.look(start('chatbox'), [81, 540, 1326, 240]);
   sc.callout(at('chatbox', 1.5), end('chatbox') - 0.3, 'chat', { label: 'chat with your supervisor', side: 'above' });
 
-  // 02 Meeting notes
-  sc.cut(start('new-note'), 'newCard');
-  sc.click(at('new-note', 3.6), { region: 'newCard', x: 0.2, y: 0.68, w: 0.08, h: 0.09 });
-  sc.show('note-empty', at('new-note', 3.9), { fade: 0.25 }).away(at('new-note', 4.1));
-  sc.look(at('new-note', 4.2), [238, 150, 1150, 540], { dur: 1.0 });
-  sc.look(at('new-note', 5.6), 'paper', { dur: 1.0 });
+  // 02 Meeting notes. First the two ways to delegate a doc: ask a workspace's
+  // agent from its new-task box, or the supervisor in the board's chat box.
+  sc.show('ws-ask', start('ways-agent'), { fade: 0 }).cut(start('ways-agent'), { region: 'composer', by: 40 });
+  sc.callout(at('ways-agent', 5.0), at('ways-agent', 6.6), { region: 'body', h: 0.3 }, { label: 'ask the docs agent', side: 'above' });
+  sc.click(at('ways-agent', 6.8), 'send');
+  sc.show('ws-reply', at('ways-agent', 7.1), { fade: 0.3 }).away(at('ways-agent', 7.3));
+  sc.look(at('ways-agent', 7.1), [440, 96, 980, 210], { dur: 0.7 });
+  sc.callout(at('ways-agent', 7.9), end('ways-agent') - 0.3, [474, 234, 912, 48], { label: 'it posted the doc', side: 'below' });
+  sc.show('sup-ask', start('ways-supervisor'), { fade: 0.3 }).cut(start('ways-supervisor'), [81, 470, 1326, 310]);
+  sc.callout(at('ways-supervisor', 1.0), at('ways-supervisor', 3.6), 'chat', { label: 'ask the supervisor', side: 'above' });
+  sc.click(at('ways-supervisor', 3.9), [1352, 742, 26, 26]);
+  sc.show('sup-reply', at('ways-supervisor', 4.2), { fade: 0.3 }).away(at('ways-supervisor', 4.4));
+  sc.look(at('ways-supervisor', 4.3), [64, 96, 560, 190], { dur: 0.8 });
+  sc.callout(at('ways-supervisor', 5.2), at('ways-supervisor', 7.0), [80, 155, 404, 66], { label: 'the supervisor posted it', side: 'below' });
+  sc.look(at('ways-supervisor', 7.1), [940, 180, 480, 340], { dur: 0.8 });
+  sc.callout(at('ways-supervisor', 8.0), end('ways-supervisor') - 0.3, 'card0', { label: 'on the board, just now', side: 'left' });
+
+  // Or write it yourself.
+  sc.show('board', start('new-note'), { fade: 0.3 }).cut(start('new-note'), 'newCard');
+  sc.click(at('new-note', 4.4), { region: 'newCard', x: 0.2, y: 0.68, w: 0.08, h: 0.09 });
+  sc.show('note-empty', at('new-note', 4.7), { fade: 0.25 }).away(at('new-note', 4.9));
+  sc.look(at('new-note', 4.9), 'paper', { dur: 1.2 });
   sc.show('note-title', at('typing', 0.4), { wipe: 0.5 });
   sc.show('note-typed-1', at('typing', 1.6), { wipe: 0.8 });
   sc.show('note-typed-2', at('typing', 3.4), { wipe: 1.6 });
@@ -417,14 +433,14 @@ export default () => {
 
   sc.visible([
     [start('board'), end('chatbox')],
-    [start('new-note'), end('post')],
+    [start('ways-agent'), end('post')],
     [start('hash'), end('isolation')],
     [start('contract-card'), end('watched')],
     [start('tick1'), end('recap')],
   ]).build();
 
   // The chapter, in a corner, while its screens show.
-  const CHAPTERS = [['01 / THE PANO', 'board', 'chatbox'], ['02 / MEETING NOTES', 'new-note', 'post'], ['03 / THE SUPERVISOR', 'hash', 'isolation'],
+  const CHAPTERS = [['01 / THE PANO', 'board', 'chatbox'], ['02 / MEETING NOTES', 'ways-agent', 'post'], ['03 / THE SUPERVISOR', 'hash', 'isolation'],
     ['04 / HAND-OFFS', 'contract-card', 'watched'], ['05 / STATUS', 'tick1', 'done'], ['06 / YOU STAY IN CHARGE', 'menu', 'related']];
   for (const [label, from, to] of CHAPTERS) {
     const w = Math.round(label.length * 11 + 28);
