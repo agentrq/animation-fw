@@ -1,0 +1,404 @@
+{
+ "title": "MCP integration",
+ "kicker": "mcp",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 5,
+   "hed": [
+    "Great at code.",
+    "Blind to the rest."
+   ],
+   "sub": "No idea you exist.",
+   "log": "> agent: blind",
+   "text": "Your agent is great at code. But it has no idea your task list, your notes, or your teammates exist.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Coding agent",
+     "sub": "Writes great code",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 1
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Your task list",
+     "sub": "Invisible to it",
+     "chip": [
+      "Unseen",
+      "z"
+     ],
+     "at": 2.6
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Your notes",
+     "sub": "Invisible to it",
+     "chip": [
+      "Unseen",
+      "z"
+     ],
+     "at": 4.2
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "paste",
+   "min": 5,
+   "hed": [
+    "So you",
+    "paste context."
+   ],
+   "sub": "Every time.",
+   "log": "> you: paste, paste",
+   "text": "So you paste the task, paste the notes, and paste the rules, again and again, every session.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> paste the task",
+       "r"
+      ],
+      [
+       "> paste the notes",
+       "r"
+      ],
+      [
+       "> paste the rules",
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "line",
+   "min": 5,
+   "hed": [
+    "Add one line",
+    "of config."
+   ],
+   "sub": "That is the whole setup.",
+   "log": "> config: 1 line",
+   "text": "Add one line of config, and Agent R Q plugs into the agent over M C P, the Model Context Protocol.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "\"agentrq\": { \"url\": \"...\" }",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "big",
+     "text": "M C P",
+     "sub": "Model Context Protocol",
+     "at": 2.4
+    }
+   ]
+  },
+  {
+   "id": "seven",
+   "min": 5,
+   "hed": [
+    "Seven native",
+    "tools."
+   ],
+   "sub": "Not a plugin hack.",
+   "log": "> tools: 7",
+   "text": "The agent gets seven native tools, which show up beside the ones it already has.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "task",
+      "memory",
+      "skills",
+      "pano"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "grid",
+     "cells": [
+      "site",
+      "workspace",
+      "help"
+     ],
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "task",
+   "min": 5,
+   "hed": [
+    "Tasks and",
+    "replies."
+   ],
+   "sub": "It picks up work.",
+   "log": "> tool: task",
+   "text": "Tasks and replies. The agent picks up its own work, and answers you when it is done.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix the login bug",
+     "sub": "Picked up by Claude",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude",
+     "text": "Done. Tests pass.",
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "mem",
+   "min": 5,
+   "hed": [
+    "Memory and",
+    "skills."
+   ],
+   "sub": "It remembers.",
+   "log": "> tool: memory, skills",
+   "text": "Memory keeps what it learned, and skills hold the playbooks, so lessons stick between sessions.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "memory.md",
+     "sub": "Use pnpm, not npm",
+     "chip": [
+      "Saved",
+      "b"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "release-checklist",
+     "sub": "Skill, 6 steps",
+     "chip": [
+      "Skill",
+      "c"
+     ],
+     "at": 2.6
+    }
+   ]
+  },
+  {
+   "id": "pano",
+   "min": 5,
+   "hed": [
+    "Docs and",
+    "websites."
+   ],
+   "sub": "Shared context.",
+   "log": "> tool: pano, siteTools",
+   "text": "Pano docs and shared websites give it the same pages your team reads.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Pano docs",
+       "shared"
+      ],
+      [
+       "Shared sites",
+       "reachable"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "agy": "work"
+   }
+  },
+  {
+   "id": "help",
+   "min": 5,
+   "hed": [
+    "A help tool",
+    "explains the rest."
+   ],
+   "sub": "Self explaining.",
+   "log": "> tool: help",
+   "text": "Even a help tool that explains every action, so nobody has to write a manual.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude",
+     "text": "help: what can memory do?",
+     "at": 1.2
+    },
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "Agent R Q",
+     "text": "load, save, search.",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "alone",
+   "min": 5,
+   "hed": [
+    "Now it",
+    "works alone."
+   ],
+   "sub": "Picks up, replies, saves.",
+   "log": "> agent: autonomous",
+   "text": "Now the agent picks up its own tasks, replies when it is stuck, and saves what it learned.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> picked up a task",
+       "g"
+      ],
+      [
+       "> asked a question",
+       "y"
+      ],
+      [
+       "> saved a note",
+       "g"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work"
+   }
+  },
+  {
+   "id": "you",
+   "min": 5,
+   "hed": [
+    "You just",
+    "watch."
+   ],
+   "sub": "And decide.",
+   "log": "> you: watching",
+   "text": "You just watch the board move, and step in only when it needs a human decision.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Not started",
+       20,
+       "z"
+      ],
+      [
+       "Ongoing",
+       50,
+       "g"
+      ],
+      [
+       "Done",
+       30,
+       "g"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "safe",
+   "min": 5,
+   "hed": [
+    "Approvals",
+    "stay yours."
+   ],
+   "sub": "Humans decide.",
+   "log": "> approval: required",
+   "text": "Risky actions still wait for your approval, so connecting an agent never costs you control.",
+   "scene": [
+    {
+     "k": "btns",
+     "code": "Bash  git push origin main",
+     "buttons": [
+      "Allow",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 4.2,
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "close",
+   "min": 5,
+   "hed": [
+    "Connect",
+    "everything."
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "What would you let your agents do on their own? Share it, or connect one at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "One line.",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

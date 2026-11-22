@@ -1,0 +1,377 @@
+{
+ "title": "Pano",
+ "kicker": "pano",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "Three agents.",
+    "Three workspaces."
+   ],
+   "sub": "Plan in one chat.",
+   "log": "> plan: in one chat",
+   "text": "You run three agents in three workspaces, and the plan lives in one chat the others will never read.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Planner",
+     "sub": "Holds the plan",
+     "at": 1.2,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Builder and reviewer",
+     "sub": "Cannot see it",
+     "at": 3.0,
+     "chip": [
+      "Blind",
+      "z"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "ask",
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "paste",
+   "min": 8,
+   "hed": [
+    "So you",
+    "paste."
+   ],
+   "sub": "Again and again.",
+   "log": "> you: copy, paste",
+   "text": "So you copy the plan into each workspace by hand, and every copy drifts from the original.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> copy the plan",
+       "r"
+      ],
+      [
+       "> paste to builder",
+       "r"
+      ],
+      [
+       "> paste to reviewer",
+       "r"
+      ],
+      [
+       "> paste again, it changed",
+       "r"
+      ]
+     ],
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "id": "idea",
+   "min": 8,
+   "hed": [
+    "One board",
+    "for all."
+   ],
+   "sub": "A shared surface.",
+   "log": "> idea: shared board",
+   "text": "What these agents need is one shared surface that every workspace can read and write.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "one shared board",
+     "at": 1.4,
+     "sub": "for every workspace"
+    }
+   ]
+  },
+  {
+   "id": "pano",
+   "min": 8,
+   "hed": [
+    "That is",
+    "the Pano."
+   ],
+   "sub": "Markdown docs.",
+   "log": "> pano: docs",
+   "text": "The Pano is a board of markdown docs that every workspace in your account shares.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Pano",
+     "at": 1.4,
+     "sub": "markdown docs, shared by all"
+    }
+   ]
+  },
+  {
+   "id": "post",
+   "min": 8,
+   "hed": [
+    "Post the",
+    "contract once."
+   ],
+   "sub": "The planner writes it.",
+   "log": "> planner: post",
+   "text": "The planner posts the contract once, as a doc with the endpoints, the rules, and the goals.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "contract.md",
+     "sub": "Posted by the planner",
+     "at": 1.2,
+     "chip": [
+      "Markdown",
+      "b"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Checkout API",
+     "sub": "Endpoints, rules, goals",
+     "at": 3.2,
+     "chip": [
+      "Version 1",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "read",
+   "min": 8,
+   "hed": [
+    "The builder",
+    "reads it."
+   ],
+   "sub": "Over M C P.",
+   "log": "> builder: pano read",
+   "text": "The builder reads that exact doc over M C P, so it works from the real contract, not a copy.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> pano read contract.md",
+       "g"
+      ],
+      [
+       "> loaded the contract",
+       "g"
+      ]
+     ],
+     "at": 1.6
+    }
+   ],
+   "mascot": {
+    "codex": "work"
+   }
+  },
+  {
+   "id": "comment",
+   "min": 8,
+   "hed": [
+    "The reviewer",
+    "comments."
+   ],
+   "sub": "On the line.",
+   "log": "> reviewer: comment",
+   "text": "The reviewer finds a gap and leaves a comment on that line, right where everyone will see it.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "contract.md line 12",
+     "sub": "Missing the refund error case",
+     "at": 1.2,
+     "chip": [
+      "Comment",
+      "y"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Planner and builder",
+     "sub": "See the comment",
+     "at": 3.2,
+     "chip": [
+      "Notified",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "written",
+   "min": 8,
+   "hed": [
+    "Hand-off",
+    "written down."
+   ],
+   "sub": "Without copy and paste.",
+   "log": "> handoff: documented",
+   "text": "The hand-off is already written down, with no copy and paste, and nobody asked you to relay it.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "Post",
+      "Read",
+      "Comment",
+      "Update"
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "work",
+    "agy": "done"
+   }
+  },
+  {
+   "id": "you",
+   "min": 8,
+   "hed": [
+    "You see it",
+    "all."
+   ],
+   "sub": "In the web app.",
+   "log": "> you: open pano",
+   "text": "You open the same board in the web app, and watch the plan change while the agents work.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "contract.md",
+     "sub": "You, the planner, the builder",
+     "at": 1.2,
+     "chip": [
+      "Shared",
+      "b"
+     ]
+    },
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Add the refund case, please.",
+     "at": 3.2
+    }
+   ]
+  },
+  {
+   "id": "tasks",
+   "min": 8,
+   "hed": [
+    "Link items",
+    "to tasks."
+   ],
+   "sub": "Checklist lines.",
+   "log": "> checklist: linked",
+   "text": "Link a checklist item to a task, and the item points at real work in a real workspace.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Add refund case",
+       "checklist item"
+      ],
+      [
+       "Refund task",
+       "linked task"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "tick",
+   "min": 8,
+   "hed": [
+    "It ticks",
+    "itself."
+   ],
+   "sub": "When work is done.",
+   "log": "> checklist: ticked",
+   "text": "When the work is done, the item ticks itself, so the doc always shows where things stand.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Add refund case",
+     "sub": "Builder",
+     "at": 1.2,
+     "chip": [
+      "Done",
+      "g"
+     ]
+    },
+    {
+     "k": "term",
+     "lines": [
+      [
+       "- [x] Add refund case",
+       "g"
+      ]
+     ],
+     "at": 3.2
+    }
+   ],
+   "mascot": {
+    "codex": "done"
+   }
+  },
+  {
+   "id": "cta",
+   "min": 8,
+   "hed": [
+    "Your tangled",
+    "setup?"
+   ],
+   "sub": "Share it below.",
+   "log": "> comments: open",
+   "text": "How do your agents hand work to each other today? Share your tangled setup below, and try the Pano at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Tangled setup?",
+     "at": 1.4,
+     "sub": "share it below"
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

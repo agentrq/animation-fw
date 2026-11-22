@@ -1,0 +1,368 @@
+{
+ "title": "Teams: you stay in control",
+ "kicker": "teams-you-stay-in-control",
+ "mascots": [
+  "claude",
+  "codex"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "Join a team,",
+    "share it all?"
+   ],
+   "sub": "A fair worry.",
+   "log": "> team: join?",
+   "text": "Joining a team sounds risky. Will everyone now see all my tasks, my notes, and my private docs?",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Wait, will they see my private stuff?",
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Private tasks, notes, docs",
+     "sub": "Everything?",
+     "chip": [
+      "Worried",
+      "y"
+     ],
+     "at": 3.2
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "nothing",
+   "min": 8,
+   "hed": [
+    "Joined.",
+    "Shared: nothing."
+   ],
+   "sub": "Not by default.",
+   "log": "> shared: 0",
+   "text": "The answer is no. Nothing is shared just because you joined, and everyone keeps their own account.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Joined.|Shared: nothing.",
+     "sub": "you decide, one by one",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "own",
+   "min": 8,
+   "hed": [
+    "Your account",
+    "stays yours."
+   ],
+   "sub": "Separate always.",
+   "log": "> account: yours",
+   "text": "Your account, your agents and your workspaces all stay yours. A team only links them if you ask it to.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Your account",
+     "sub": "Yours alone",
+     "chip": [
+      "Yours",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Platform team",
+     "sub": "You are a member",
+     "chip": [
+      "Member",
+      "b"
+     ],
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "pick",
+   "min": 8,
+   "hed": [
+    "Pick a",
+    "workspace."
+   ],
+   "sub": "One at a time.",
+   "log": "> workspace: Launch",
+   "text": "To share anything, first pick a workspace. Sharing is decided per workspace, never for the whole account.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Launch",
+     "sub": "Your workspace",
+     "chip": [
+      "Pick",
+      "b"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Personal",
+     "sub": "Not picked",
+     "chip": [
+      "Private",
+      "z"
+     ],
+     "at": 2.8
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Finance",
+     "sub": "Not picked",
+     "chip": [
+      "Private",
+      "z"
+     ],
+     "at": 4.4
+    }
+   ]
+  },
+  {
+   "id": "switch",
+   "min": 8,
+   "hed": [
+    "Three switches",
+    "per workspace."
+   ],
+   "sub": "Tasks, memory, skills.",
+   "log": "> switches: tasks, memory",
+   "text": "Then choose what to share. Tasks, memory, and skills each have their own switch.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Tasks",
+     "sub": "Teammates see them, read-only",
+     "chip": [
+      "On",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Memory",
+     "sub": "Their agents can read it",
+     "chip": [
+      "On",
+      "g"
+     ],
+     "at": 2.8
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Skills",
+     "sub": "Held back from the team",
+     "chip": [
+      "Off",
+      "z"
+     ],
+     "at": 4.4
+    }
+   ]
+  },
+  {
+   "id": "tasks",
+   "min": 8,
+   "hed": [
+    "Tasks are",
+    "read only."
+   ],
+   "sub": "Watch, never edit.",
+   "log": "> tasks: read-only",
+   "text": "Shared tasks are read only. Teammates can follow progress, but they cannot change what you asked for.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> mate opens your task",
+       "p"
+      ],
+      [
+       "status: ongoing",
+       "g"
+      ],
+      [
+       "edit: not allowed",
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "pano",
+   "min": 8,
+   "hed": [
+    "Share docs",
+    "one at a time."
+   ],
+   "sub": "Per doc, per team.",
+   "log": "> pano: share 1 doc",
+   "text": "For the Pano, share one doc at a time. The launch plan can go to the team while your private notes stay home.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Launch plan",
+     "sub": "Shared with Team",
+     "chip": [
+      "Shared",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Private notes",
+     "sub": "Never shared",
+     "chip": [
+      "Private",
+      "z"
+     ],
+     "at": 2.8
+    }
+   ]
+  },
+  {
+   "id": "unshare",
+   "min": 8,
+   "hed": [
+    "Unshare",
+    "whenever."
+   ],
+   "sub": "Instantly.",
+   "log": "> unshare: launch plan",
+   "text": "And changed your mind? Unshare it, and the team stops seeing it right away.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Launch plan",
+      "b"
+     ],
+     "code": "Unshare from Platform team",
+     "buttons": [
+      "Unshare",
+      "Keep"
+     ],
+     "press": 0,
+     "tap": 4.2,
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "leave",
+   "min": 8,
+   "hed": [
+    "Leave and",
+    "sharing stops."
+   ],
+   "sub": "A clean exit.",
+   "log": "> leave team",
+   "text": "If you leave the team, every share stops with you. Nothing stays behind in anyone else’s view.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "You",
+       "leave team"
+      ],
+      [
+       "Shares",
+       "all stop"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "min": 8,
+   "hed": [
+    "Agents follow",
+    "your switches."
+   ],
+   "sub": "Same rules.",
+   "log": "> agents: scoped",
+   "text": "Agents obey the same switches. A teammate agent can only read what you chose to share, and nothing more.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Sam’s agent",
+     "text": "Reading shared memory only.",
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Memory",
+     "sub": "Shared, read-only",
+     "chip": [
+      "Read",
+      "g"
+     ],
+     "at": 3.2
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Your turn.",
+    "What stays"
+   ],
+   "sub": "private?",
+   "log": "> agentrq.com",
+   "text": "What would you want to keep private from your team? Tell us in the comments, and try Teams at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "What stays|private?",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done"
+   }
+  }
+ ]
+}

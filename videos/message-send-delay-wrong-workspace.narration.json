@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "You have a billing agent and a production agent, and both sit one tab apart."
+    },
+    {
+      "id": "type",
+      "min": 8,
+      "text": "You type a careful instruction. Refund the duplicate invoice, and nothing else."
+    },
+    {
+      "id": "oops",
+      "min": 8,
+      "text": "And you send it to the production agent, because the wrong tab was still open."
+    },
+    {
+      "id": "without",
+      "min": 8,
+      "text": "With no delay, the agent reads it instantly and starts looking for invoice four eight two one."
+    },
+    {
+      "id": "delay",
+      "min": 8,
+      "text": "With a send delay, the message is held for a countdown before it reaches any agent."
+    },
+    {
+      "id": "name",
+      "min": 8,
+      "text": "In that window, you glance up and see the wrong workspace name at the top."
+    },
+    {
+      "id": "choose",
+      "min": 8,
+      "text": "Send Now and Cancel are right on the message, so the choice stays in your hands."
+    },
+    {
+      "id": "cancel",
+      "min": 8,
+      "text": "Cancel pulls it back. Nothing is sent, and the production agent never sees a word."
+    },
+    {
+      "id": "switch",
+      "min": 8,
+      "text": "You switch to the billing workspace and paste the same message into the right place."
+    },
+    {
+      "id": "deliver",
+      "min": 8,
+      "text": "The countdown runs out, the billing agent gets it, and the refund goes through."
+    },
+    {
+      "id": "cost",
+      "min": 8,
+      "text": "A tiny pause is a cheap way to avoid a big mistake, and it costs you a few seconds."
+    },
+    {
+      "id": "cta",
+      "min": 8,
+      "text": "What is the worst message you ever sent to the wrong place? Tell us in the comments, and try the send delay at Agent R Q dot com."
+    }
+  ]
+}

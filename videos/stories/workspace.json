@@ -1,0 +1,413 @@
+{
+ "title": "Workspaces",
+ "kicker": "workspace",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "One agent,",
+    "five projects."
+   ],
+   "sub": "One big pile of tasks.",
+   "log": "> projects: 5, board: 1",
+   "text": "One agent, five projects, and one big pile of tasks. Things start to leak into each other.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix storefront cart",
+     "sub": "web",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Rotate billing key",
+     "sub": "billing",
+     "at": 2.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Tune search ranking",
+     "sub": "search",
+     "at": 3.2
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Wrong repo!",
+     "sub": "Everything is mixed up",
+     "chip": [
+      "Mess",
+      "r"
+     ],
+     "at": 4.4
+    }
+   ],
+   "mascot": {
+    "claude": "alert"
+   }
+  },
+  {
+   "id": "cost",
+   "min": 8,
+   "hed": [
+    "Context",
+    "bleeds."
+   ],
+   "sub": "The agent guesses.",
+   "log": "> which project?",
+   "text": "The agent has to guess which project a task belongs to. Sooner or later it guesses wrong, and edits the wrong repo.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude",
+     "text": "Is this the billing repo?",
+     "at": 1.4
+    },
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> git push  (wrong repo)",
+       "p"
+      ]
+     ],
+     "at": 3.4
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "you",
+   "min": 8,
+   "hed": [
+    "You can not",
+    "see clearly."
+   ],
+   "sub": "One board, five jumbles.",
+   "log": "> board: noisy",
+   "text": "And you cannot see the state of any one project, because the board is a jumble of everything at once.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "web",
+       20,
+       "g"
+      ],
+      [
+       "billing",
+       20,
+       "y"
+      ],
+      [
+       "search",
+       20,
+       "g"
+      ],
+      [
+       "docs",
+       20,
+       "z"
+      ],
+      [
+       "api",
+       20,
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "idea",
+   "min": 8,
+   "hed": [
+    "One workspace",
+    "per project."
+   ],
+   "sub": "A room for each.",
+   "log": "> workspace per project",
+   "text": "Agent R Q gives each project its own workspace. A clean room, with only that project in it.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "One project.|One workspace.",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "own",
+   "min": 8,
+   "hed": [
+    "Its own",
+    "everything."
+   ],
+   "sub": "Tasks, history, live stream.",
+   "log": "> storefront billing docs",
+   "text": "Each workspace has its own tasks, its own history, and its own live event stream.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "storefront-api",
+     "sub": "3 tasks, history, live stream",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "billing-worker",
+     "sub": "1 task needs you",
+     "at": 2.6
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "docs-site",
+     "sub": "Idle",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "id": "token",
+   "min": 8,
+   "hed": [
+    "A token",
+    "for each."
+   ],
+   "sub": "Agents stay in lane.",
+   "log": "> token per workspace",
+   "text": "Each workspace also has its own M C P token, so an agent only sees the project it belongs to.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "storefront-api  token: ••••a91",
+       "p"
+      ],
+      [
+       "billing-worker   token: ••••c27",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Agents stay in their lane",
+     "sub": "No crossing between projects",
+     "chip": [
+      "Isolated",
+      "g"
+     ],
+     "at": 3.8
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work"
+   }
+  },
+  {
+   "id": "pick",
+   "min": 8,
+   "hed": [
+    "The right",
+    "agent."
+   ],
+   "sub": "Per project, your choice.",
+   "log": "> agent per workspace",
+   "text": "Pick a different agent for each project. Claude on the storefront, Codex on billing, Gemini on the docs.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "Claude",
+      "Codex",
+      "Gemini"
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work",
+    "agy": "work"
+   }
+  },
+  {
+   "id": "mem",
+   "min": 8,
+   "hed": [
+    "Memory",
+    "too."
+   ],
+   "sub": "Shared inside, sealed outside.",
+   "log": "> memory: per workspace",
+   "text": "Each workspace has its own memory and skills, shared by its agents, and invisible to the other projects.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "storefront-api",
+     "sub": "Memory: 6 entries",
+     "chip": [
+      "Memory",
+      "b"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "billing-worker",
+     "sub": "Memory: 4 entries",
+     "chip": [
+      "Memory",
+      "b"
+     ],
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "ask",
+   "min": 8,
+   "hed": [
+    "Questions find",
+    "you fast."
+   ],
+   "sub": "Per workspace.",
+   "log": "> billing needs input",
+   "text": "When an agent needs you, that one workspace lights up, so you know exactly where to look.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Needs input",
+      "y"
+     ],
+     "code": "Edit  billing/keys.ts",
+     "buttons": [
+      "Allow",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 5,
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "yolo",
+   "min": 8,
+   "hed": [
+    "Rules per",
+    "workspace."
+   ],
+   "sub": "Trust where it is earned.",
+   "log": "> docs: auto-approve on",
+   "text": "Settings follow the workspace too. Auto approve in the docs site, and stay strict in billing.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "docs-site",
+     "sub": "Auto approve on",
+     "chip": [
+      "Auto",
+      "g"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "billing-worker",
+     "sub": "Asks first",
+     "chip": [
+      "Asks",
+      "y"
+     ],
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "scale",
+   "min": 8,
+   "hed": [
+    "Add as",
+    "you grow."
+   ],
+   "sub": "A new project, a new room.",
+   "log": "> new workspace",
+   "text": "A new project means a new workspace. Ten projects do not feel messier than two.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "docs",
+       "ready"
+      ],
+      [
+       "api",
+       "ready"
+      ],
+      [
+       "mobile",
+       "new"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Every project,",
+    "its own room."
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "Every project, in its own room. Try workspaces at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Every project.|Its own room.",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

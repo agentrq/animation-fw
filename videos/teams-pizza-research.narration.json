@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "In the nineteen nineties, researchers studied thirty six pizza stores, to see how knowledge spread."
+    },
+    {
+      "id": "why",
+      "min": 8,
+      "text": "Pizza stores are a clean test. Same menu, same ovens, and each store making the same thing every day."
+    },
+    {
+      "id": "learn",
+      "min": 8,
+      "text": "Over time, every store learned its own little tricks. A better dough, a faster oven, a smarter way to box."
+    },
+    {
+      "id": "owner",
+      "min": 8,
+      "text": "The finding. Stores learned from each other only when the same franchisee owned them."
+    },
+    {
+      "id": "diff",
+      "min": 8,
+      "text": "Across different owners, the very same lessons never made the trip."
+    },
+    {
+      "id": "wall",
+      "min": 8,
+      "text": "The stores were not far apart. The wall was the boundary between owners."
+    },
+    {
+      "id": "agents",
+      "min": 8,
+      "text": "Agents are the same. Each learns something useful, then keeps it to itself."
+    },
+    {
+      "id": "desk",
+      "min": 8,
+      "text": "Two desks apart, and a world away. Same company, same repo, nothing shared."
+    },
+    {
+      "id": "teams",
+      "min": 8,
+      "text": "Teams in Agent R Q takes that boundary down. Agents read each other's memory."
+    },
+    {
+      "id": "skills",
+      "min": 8,
+      "text": "And they improve the same skills, so a fix by one agent lifts every agent."
+    },
+    {
+      "id": "flow",
+      "min": 8,
+      "text": "Ada's agent learns, the team memory holds it, and Ben's agent already knows."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "Where does knowledge get stuck on your team? Fix it at Agent R Q dot com."
+    }
+  ]
+}

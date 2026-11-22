@@ -1,0 +1,69 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 7.2,
+      "text": "You are cooking dinner, and your hands are covered in flour."
+    },
+    {
+      "id": "ping",
+      "min": 7.2,
+      "text": "Your phone buzzes. Your agent has stopped, and it just asked you a question."
+    },
+    {
+      "id": "stuck",
+      "min": 7.2,
+      "text": "It only wants to know whether to keep the old API. A simple question, but you cannot type."
+    },
+    {
+      "id": "cost",
+      "min": 7.2,
+      "text": "Washing your hands and typing a reply takes a minute. Meanwhile the agent just sits there, waiting."
+    },
+    {
+      "id": "mic",
+      "min": 7.2,
+      "text": "So tap the mic instead, and say your answer out loud, the way you would tell a teammate."
+    },
+    {
+      "id": "desktop",
+      "min": 7.2,
+      "text": "On a computer, a local Whisper model listens and transcribes right inside your browser."
+    },
+    {
+      "id": "phone",
+      "min": 7.2,
+      "text": "On a phone, it simply uses the dictation your phone already has, so there is nothing to set up."
+    },
+    {
+      "id": "private",
+      "min": 7.2,
+      "text": "On desktop, your audio never leaves your machine. Nothing is uploaded to anyone, anywhere."
+    },
+    {
+      "id": "review",
+      "min": 7.2,
+      "text": "Your words appear as text, so you can check them, and fix a word, before anything is sent."
+    },
+    {
+      "id": "send",
+      "min": 7.2,
+      "text": "Happy with it? Send. The agent reads your answer and carries on with its work."
+    },
+    {
+      "id": "other",
+      "min": 7.2,
+      "text": "It works just as well when you are holding a baby, or carrying boxes up the stairs."
+    },
+    {
+      "id": "moral",
+      "min": 7.2,
+      "text": "You can answer your agents without stopping whatever else you are doing."
+    },
+    {
+      "id": "close",
+      "min": 7.2,
+      "text": "What are you usually doing when an agent pings you? Tell us in the comments, or try it at Agent R Q dot com."
+    }
+  ]
+}

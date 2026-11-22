@@ -1,0 +1,434 @@
+{
+ "title": "Task Timeline",
+ "kicker": "task timeline",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "The task took",
+    "three hours."
+   ],
+   "sub": "Why so long?",
+   "log": "> task: 3h total",
+   "text": "The task took three hours. Was the agent slow, or was it waiting on you?",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Migrate the billing service",
+     "sub": "Started 09:00, closed 12:00",
+     "at": 1.2,
+     "chip": [
+      "3h total",
+      "z"
+     ]
+    },
+    {
+     "k": "big",
+     "text": "Why?",
+     "at": 3.4
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "guess",
+   "min": 8,
+   "hed": [
+    "Everyone has",
+    "a theory."
+   ],
+   "sub": "Nobody has data.",
+   "log": "> guess: agent is slow",
+   "text": "The usual guess is that the agent is slow, so maybe it needs a bigger model.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "Teammate",
+     "text": "The agent is just slow.",
+     "at": 1.2
+    },
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "Manager",
+     "text": "Try a bigger model?",
+     "at": 3.0
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "tl",
+   "min": 8,
+   "hed": [
+    "Every task keeps",
+    "a timeline."
+   ],
+   "sub": "Status, minute by minute.",
+   "log": "> timeline: recorded",
+   "text": "Every task in Agent R Q keeps a timeline of its status, recorded automatically.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Migrate the billing service",
+     "sub": "Timeline recorded",
+     "at": 1.2,
+     "chip": [
+      "Tracking",
+      "g"
+     ]
+    },
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> 09:00 ongoing",
+       "g"
+      ],
+      [
+       "> 10:10 blocked",
+       "r"
+      ],
+      [
+       "> 10:30 needs input",
+       "y"
+      ]
+     ],
+     "at": 3.0
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "bar",
+   "min": 8,
+   "hed": [
+    "See where",
+    "the time went."
+   ],
+   "sub": "Four colors, one story.",
+   "log": "> bar: working, blocked, waiting",
+   "text": "Open it, and you get a bar. Working in green, blocked in red, waiting on you in yellow.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Working 1h 10m",
+       38,
+       "g"
+      ],
+      [
+       "Blocked 20m",
+       11,
+       "r"
+      ],
+      [
+       "Waiting on you 1h 15m",
+       41,
+       "y"
+      ],
+      [
+       "Working 15m",
+       10,
+       "g"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "work",
+   "min": 8,
+   "hed": [
+    "The agent only",
+    "worked 85 minutes."
+   ],
+   "sub": "The rest was not its fault.",
+   "log": "> working: 1h 25m",
+   "text": "Add up the green, and the agent only worked for an hour and twenty five minutes.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Agent working",
+     "sub": "1h 25m of 3h",
+     "at": 1.2,
+     "chip": [
+      "48%",
+      "g"
+     ]
+    },
+    {
+     "k": "big",
+     "text": "85 min",
+     "at": 3.4
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "blocked",
+   "min": 8,
+   "hed": [
+    "Twenty minutes",
+    "blocked."
+   ],
+   "sub": "A wall, not a slowdown.",
+   "log": "> blocked: missing credentials",
+   "text": "Twenty minutes were blocked. The agent hit a wall, like a missing credential, and stopped.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Blocked",
+     "sub": "Needs the staging key",
+     "at": 1.2,
+     "chip": [
+      "20m",
+      "r"
+     ]
+    },
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> error: missing STAGING_KEY",
+       "r"
+      ]
+     ],
+     "at": 3.0
+    }
+   ],
+   "mascot": {
+    "codex": "alert"
+   }
+  },
+  {
+   "id": "wait",
+   "min": 8,
+   "hed": [
+    "The real culprit:",
+    "waiting on you."
+   ],
+   "sub": "Approvals sat unanswered.",
+   "log": "> waiting on you: 1h 15m",
+   "text": "The biggest slice is yellow. An hour and fifteen minutes of approvals, sitting unanswered.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Needs input",
+      "y"
+     ],
+     "code": "Bash  psql -f migrate.sql",
+     "buttons": [
+      "Allow",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 5.0,
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "pct",
+   "min": 8,
+   "hed": [
+    "Forty one percent",
+    "was you."
+   ],
+   "sub": "The numbers do not lie.",
+   "log": "> waiting: 41%",
+   "text": "Forty one percent of the task was waiting on a human. Now the bottleneck has a number.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Waiting on you",
+     "sub": "1h 15m of 3h",
+     "at": 1.2,
+     "chip": [
+      "41%",
+      "y"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Agent working",
+     "sub": "1h 25m of 3h",
+     "at": 3.2,
+     "chip": [
+      "48%",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fix",
+   "min": 8,
+   "hed": [
+    "Now you know",
+    "what to fix."
+   ],
+   "sub": "Not the agent. The queue.",
+   "log": "> fix: faster approvals",
+   "text": "So skip the faster model, and fix the queue instead. Faster approvals, or fewer interruptions.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Slow task",
+       "3h"
+      ],
+      [
+       "Find the gap",
+       "timeline"
+      ],
+      [
+       "Fix the queue",
+       "faster"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "rule",
+   "min": 8,
+   "hed": [
+    "Allow what is safe",
+    "in advance."
+   ],
+   "sub": "Fewer approvals to wait on.",
+   "log": "> rule: allow safe commands",
+   "text": "Pre approve the safe commands once, and that yellow slice shrinks on every task.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Allow rule saved",
+     "sub": "git status, npm test",
+     "at": 1.2,
+     "chip": [
+      "Saved",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Next task",
+     "sub": "No wait for safe commands",
+     "at": 3.2,
+     "chip": [
+      "Faster",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "codex": "done"
+   }
+  },
+  {
+   "id": "cmp",
+   "min": 8,
+   "hed": [
+    "Same task.",
+    "Less waiting."
+   ],
+   "sub": "Compare the next run.",
+   "log": "> next run: 1h 40m",
+   "text": "Next week, the timeline shows the change. One hour forty, with the agent barely waiting.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Working 1h 25m",
+       85,
+       "g"
+      ],
+      [
+       "Waiting 15m",
+       15,
+       "y"
+      ]
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Next week",
+     "sub": "Closed in 1h 40m",
+     "at": 3.4,
+     "chip": [
+      "Better",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Measure the wait,",
+    "then fix it."
+   ],
+   "sub": "ag// Try the task timeline",
+   "log": "> agentrq.com",
+   "text": "Stop guessing why a task was slow. Open the timeline. Try it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Your turn.",
+     "at": 1.4,
+     "sub": "agentrq.com"
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

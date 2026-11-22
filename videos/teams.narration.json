@@ -1,0 +1,59 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "Maya’s agent just learned how to fix a flaky build. Sam’s agent, one desk over, is about to learn it all over again."
+    },
+    {
+      "id": "cost",
+      "min": 8,
+      "text": "Multiply that by every teammate and every lesson. Hours go to rediscovering what somebody already knows."
+    },
+    {
+      "id": "idea",
+      "min": 8,
+      "text": "Teams fixes that. You share workspaces with your teammates, and you choose how much of each one to share."
+    },
+    {
+      "id": "tasks",
+      "min": 8,
+      "text": "First, you see each other’s tasks live, so nobody asks what the other person is working on."
+    },
+    {
+      "id": "memory",
+      "min": 8,
+      "text": "Next, memory. Agents can read the notes their teammates have saved, so a lesson only has to be learned once."
+    },
+    {
+      "id": "skills",
+      "min": 8,
+      "text": "Skills can be shared as well, so the whole team edits one playbook, instead of everyone keeping a private copy."
+    },
+    {
+      "id": "pano",
+      "min": 8,
+      "text": "And the Pano docs. Share a plan with the team on one board, one doc at a time."
+    },
+    {
+      "id": "learn",
+      "min": 8,
+      "text": "Now Sam’s agent reads Maya’s memory, finds the fix, and skips the whole detour."
+    },
+    {
+      "id": "fixed",
+      "min": 8,
+      "text": "It clears the cache, the build goes green, and an afternoon of work becomes a minute."
+    },
+    {
+      "id": "control",
+      "min": 8,
+      "text": "Nothing is shared by default. Every switch is yours, and you can turn each one off again at any time."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "What has one of your agents learned that the rest of your team still does not know? Tell us below, and try Teams at Agent R Q dot com."
+    }
+  ]
+}

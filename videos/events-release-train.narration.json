@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 5,
+      "text": "Shipping a release means build, then test, then docs, then deploy. Four agents, and a human nudging every single one."
+    },
+    {
+      "id": "cost",
+      "min": 5,
+      "text": "Each handoff waits for you. You check the board, copy the context, and start the next task by hand."
+    },
+    {
+      "id": "idea",
+      "min": 5,
+      "text": "Agent R Q events fix that. An event is a named signal that a task sends the moment it finishes."
+    },
+    {
+      "id": "emit",
+      "min": 5,
+      "text": "Build completes and emits built. Test completes and emits tested. The agent calls nothing, it only reports what happened."
+    },
+    {
+      "id": "wire",
+      "min": 5,
+      "text": "Wire each event to the next workspace, and the next task appears on its own. No glue code at all."
+    },
+    {
+      "id": "pickup",
+      "min": 5,
+      "text": "The tester is already listening. The moment built lands, it picks the task up and starts working."
+    },
+    {
+      "id": "fan",
+      "min": 5,
+      "text": "Events can fan out too. One built signal starts testing and docs at the same time, so they run in parallel."
+    },
+    {
+      "id": "guard",
+      "min": 5,
+      "text": "You stay in control. Deploy keeps its approval, so the train never ships without a human saying yes."
+    },
+    {
+      "id": "night",
+      "min": 5,
+      "text": "Add a schedule, and the whole train leaves at two in the morning while you sleep."
+    },
+    {
+      "id": "fail",
+      "min": 5,
+      "text": "If a step fails, the train stops right there, and you can see exactly which stop it was."
+    },
+    {
+      "id": "see",
+      "min": 5,
+      "text": "Every handoff lands in the task timeline, so you can always see what fired what, and when."
+    },
+    {
+      "id": "close",
+      "min": 5,
+      "text": "No glue code, no copy and paste. Try events at Agent R Q dot com."
+    }
+  ]
+}

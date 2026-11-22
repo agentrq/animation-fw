@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "Every new agent starts blank, and asks the same questions. Where are the tests? How do we deploy?"
+    },
+    {
+      "id": "cost",
+      "min": 8,
+      "text": "So you answer every time. You paste the same paragraph into every chat, and hope you did not leave a step out."
+    },
+    {
+      "id": "idea",
+      "min": 8,
+      "text": "Workspace memory fixes that. The first agent writes the answers down once, in the workspace."
+    },
+    {
+      "id": "save",
+      "min": 8,
+      "text": "So the first agent that works it out saves a short entry, with a name like how to run tests."
+    },
+    {
+      "id": "more",
+      "min": 8,
+      "text": "Then deploy steps, the port quirk, and the code style. Each gets its own entry, linked from one index."
+    },
+    {
+      "id": "load",
+      "min": 8,
+      "text": "Now a new agent loads the index before it starts. It reads the titles, and opens what it needs."
+    },
+    {
+      "id": "go",
+      "min": 8,
+      "text": "So it does not ask. It runs the tests the right way, the first time."
+    },
+    {
+      "id": "any",
+      "min": 8,
+      "text": "It does not matter which agent shows up, or on which machine, because the knowledge sits in the workspace."
+    },
+    {
+      "id": "skills",
+      "min": 8,
+      "text": "Memory holds facts about your project. Skills hold the steps to follow. Together, they onboard an agent in seconds."
+    },
+    {
+      "id": "update",
+      "min": 8,
+      "text": "When something changes, the next agent updates the entry, so the answer is always the latest one."
+    },
+    {
+      "id": "sync",
+      "min": 8,
+      "text": "There is no wiki to keep alive and no onboarding doc to chase. The workspace is the onboarding doc."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "Ask once, know always. Try workspace memory at Agent R Q dot com."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 7.2,
+      "text": "The sprint is over, and the retro starts in ten minutes."
+    },
+    {
+      "id": "where",
+      "min": 7.2,
+      "text": "You want to know where the time actually went, task by task."
+    },
+    {
+      "id": "guess",
+      "min": 7.2,
+      "text": "Everyone remembers the sprint differently, and memory is not data."
+    },
+    {
+      "id": "line",
+      "min": 7.2,
+      "text": "In Agent R Q, every task has its own timeline, recorded automatically."
+    },
+    {
+      "id": "states",
+      "min": 7.2,
+      "text": "Start to close, you see time spent working, time blocked, and time waiting on a human."
+    },
+    {
+      "id": "twelve",
+      "min": 7.2,
+      "text": "Open all twelve, and compare them side by side."
+    },
+    {
+      "id": "pattern",
+      "min": 7.2,
+      "text": "Then a pattern appears. Approvals always wait the longest on Fridays."
+    },
+    {
+      "id": "habit",
+      "min": 7.2,
+      "text": "That is a team habit, not an agent problem, and habits can be changed."
+    },
+    {
+      "id": "change",
+      "min": 7.2,
+      "text": "Maybe approvals get batched on Thursday afternoon, before the weekend rush."
+    },
+    {
+      "id": "retro",
+      "min": 7.2,
+      "text": "Bring real data to your retro, instead of a gut feeling."
+    },
+    {
+      "id": "next",
+      "min": 7.2,
+      "text": "Next sprint, check the same timelines again and see whether the habit changed."
+    },
+    {
+      "id": "end",
+      "min": 7.2,
+      "text": "Know exactly where the time goes, every single sprint."
+    },
+    {
+      "id": "close",
+      "min": 7.2,
+      "text": "When do your agents wait longest for you? Tell us your day of the week, or try it at Agent R Q dot com."
+    }
+  ]
+}

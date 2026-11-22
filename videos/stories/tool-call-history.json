@@ -1,0 +1,364 @@
+{
+ "title": "Tool call history",
+ "kicker": "tool-call-history",
+ "mascots": [
+  "claude",
+  "codex"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "The task says",
+    "done."
+   ],
+   "sub": "But what ran?",
+   "log": "> task: done",
+   "text": "The task says done. But what did the agent actually run along the way?",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Update the config",
+     "sub": "Claude Code",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "System",
+     "text": "...but what did it run?",
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "gap",
+   "min": 8,
+   "hed": [
+    "You see the",
+    "result only."
+   ],
+   "sub": "Not the path.",
+   "log": "> path: unknown",
+   "text": "Most tools show you the result. The path the agent took to get there stays hidden.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "The result.|Not the path.",
+     "sub": "a blind spot",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "idea",
+   "min": 8,
+   "hed": [
+    "Keep the",
+    "full run."
+   ],
+   "sub": "A trajectory.",
+   "log": "> trajectory: on",
+   "text": "Agent R Q keeps the whole run, as a trajectory you can open on any task.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Trajectory",
+     "sub": "Every tool call and message",
+     "chip": [
+      "Tab",
+      "b"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "kbd",
+     "keys": [
+      "Trajectory"
+     ],
+     "label": "open it on any task",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "lanes",
+   "min": 8,
+   "hed": [
+    "Grouped",
+    "in lanes."
+   ],
+   "sub": "In order.",
+   "log": "> lanes: ordered",
+   "text": "The Trajectory tab lists every tool call and message in the run, grouped into lanes.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Read  ·  config.yaml",
+     "sub": "Allowed",
+     "chip": [
+      "Allowed",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Edit  ·  config.yaml",
+     "sub": "Allowed",
+     "chip": [
+      "Allowed",
+      "g"
+     ],
+     "at": 2.8
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Bash  ·  rm -rf build/",
+     "sub": "Denied by you",
+     "chip": [
+      "Denied",
+      "r"
+     ],
+     "at": 4.4
+    }
+   ]
+  },
+  {
+   "id": "search",
+   "min": 8,
+   "hed": [
+    "Fully",
+    "searchable."
+   ],
+   "sub": "Find any call.",
+   "log": "> search: bash",
+   "text": "And it is searchable, so you can find every bash command in a long run without scrolling.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "Bash"
+     ],
+     "label": "search the trajectory",
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Bash  ·  rm -rf build/",
+     "sub": "Matches your search",
+     "chip": [
+      "Match",
+      "y"
+     ],
+     "at": 3.2
+    }
+   ]
+  },
+  {
+   "id": "detail",
+   "min": 8,
+   "hed": [
+    "Click for",
+    "the details."
+   ],
+   "sub": "Exact input.",
+   "log": "> entry: bash",
+   "text": "Click any entry to see exactly what ran, and whether it was allowed or denied.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "tool: Bash",
+       "g"
+      ],
+      [
+       "input: rm -rf build/",
+       "p"
+      ],
+      [
+       "decision: denied by Maya, 10:51",
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "approve",
+   "min": 8,
+   "hed": [
+    "Approvals",
+    "are logged."
+   ],
+   "sub": "Who said no.",
+   "log": "> approval: logged",
+   "text": "Your approvals are in the record. You can see who decided, and exactly when they decided.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Bash",
+      "y"
+     ],
+     "code": "Bash  rm -rf build/",
+     "buttons": [
+      "Allow",
+      "Deny"
+     ],
+     "press": 1,
+     "tap": 4,
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "denied",
+   "min": 8,
+   "hed": [
+    "Denied calls",
+    "show up too."
+   ],
+   "sub": "Nothing hidden.",
+   "log": "> denied: kept",
+   "text": "Denied calls are kept too, so you also see what the agent tried, and was stopped from doing.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Bash  ·  rm -rf build/",
+     "sub": "Denied by Maya",
+     "chip": [
+      "Denied",
+      "r"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Edit  ·  config.yaml",
+     "sub": "Allowed",
+     "chip": [
+      "Allowed",
+      "g"
+     ],
+     "at": 2.8
+    }
+   ]
+  },
+  {
+   "id": "debug",
+   "min": 8,
+   "hed": [
+    "Debug with",
+    "facts."
+   ],
+   "sub": "Replay the steps.",
+   "log": "> debug: replay",
+   "text": "When the result looks odd, replay the steps, and spot the wrong turn in a minute.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Facts,|not guesses.",
+     "sub": "replay the run",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "audit",
+   "min": 8,
+   "hed": [
+    "Answer the",
+    "auditor."
+   ],
+   "sub": "What ran, and when.",
+   "log": "> audit: ready",
+   "text": "And when an auditor asks what ran last Tuesday, you have the record, ready to show.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Question",
+       15,
+       "b"
+      ],
+      [
+       "Answer",
+       85,
+       "g"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "always",
+   "min": 8,
+   "hed": [
+    "Always on,",
+    "for every run."
+   ],
+   "sub": "Nothing to set up.",
+   "log": "> history: always on",
+   "text": "There is nothing to turn on. Every run keeps its history, from the first call to the last.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "Run 1",
+      "Run 2",
+      "Run 3"
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done"
+   }
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Your turn.",
+    "Strangest"
+   ],
+   "sub": "agent move?",
+   "log": "> agentrq.com",
+   "text": "What is the strangest thing an agent ever did while you were not looking? Tell us below, then try it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Strangest|agent move?",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ]
+  }
+ ]
+}

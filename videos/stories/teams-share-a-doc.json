@@ -1,0 +1,416 @@
+{
+ "title": "Teams: share a doc",
+ "kicker": "teams-share-a-doc",
+ "mascots": [
+  "claude",
+  "codex"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "One great doc,",
+    "many drafts."
+   ],
+   "sub": "Only one is ready.",
+   "log": "> pano: 3 docs",
+   "text": "You wrote a great launch plan, and your teammates really need to see it. But your other drafts are not ready for anyone.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Launch plan",
+     "sub": "Ready to share",
+     "chip": [
+      "Good",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Half-baked ideas",
+     "sub": "Not ready",
+     "chip": [
+      "Draft",
+      "z"
+     ],
+     "at": 2.6
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Salary notes",
+     "sub": "Private",
+     "chip": [
+      "Private",
+      "z"
+     ],
+     "at": 4
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "fear",
+   "min": 8,
+   "hed": [
+    "Share all,",
+    "or nothing?"
+   ],
+   "sub": "A bad trade.",
+   "log": "> share: all or none",
+   "text": "Without control you face a bad trade. Hand over the whole board, or email a copy and watch it go stale.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "All|or nothing?",
+     "sub": "a bad choice",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "team",
+   "min": 8,
+   "hed": [
+    "Pick a",
+    "team."
+   ],
+   "sub": "Platform team.",
+   "log": "> team: Platform",
+   "text": "Agent R Q Teams fixes that. You belong to a team, like your platform team, and your workspaces can be shared with it.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Platform team",
+     "sub": "4 members",
+     "chip": [
+      "Team",
+      "b"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Your workspace",
+     "sub": "Shared with the team",
+     "chip": [
+      "Live",
+      "g"
+     ],
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "open",
+   "min": 8,
+   "hed": [
+    "Open the",
+    "doc page."
+   ],
+   "sub": "Right where you read.",
+   "log": "> pano: launch plan",
+   "text": "In the Pano, open the launch plan. The share control sits right on the doc page, so there is nowhere else to go.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Launch plan",
+     "sub": "Pano doc",
+     "chip": [
+      "Open",
+      "b"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "kbd",
+     "keys": [
+      "Share"
+     ],
+     "label": "on the doc page",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "click",
+   "min": 8,
+   "hed": [
+    "Share one",
+    "doc only."
+   ],
+   "sub": "One click.",
+   "log": "> share: Platform team",
+   "text": "Choose to share with a team, pick the platform team, and press share.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Launch plan",
+      "b"
+     ],
+     "code": "Share with a team  ·  Platform team",
+     "buttons": [
+      "Share",
+      "Cancel"
+     ],
+     "press": 0,
+     "tap": 4.2,
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "done",
+   "min": 8,
+   "hed": [
+    "The others",
+    "stay private."
+   ],
+   "sub": "Only one moved.",
+   "log": "> shared: 1 of 3",
+   "text": "Only the launch plan moves. The half baked ideas and the salary notes never leave your account.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Launch plan",
+     "sub": "Shared with Platform team",
+     "chip": [
+      "Shared",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Half-baked ideas",
+     "sub": "Still private",
+     "chip": [
+      "Private",
+      "z"
+     ],
+     "at": 2.8
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Salary notes",
+     "sub": "Still private",
+     "chip": [
+      "Private",
+      "z"
+     ],
+     "at": 4.4
+    }
+   ]
+  },
+  {
+   "id": "read",
+   "min": 8,
+   "hed": [
+    "Teammates",
+    "read it."
+   ],
+   "sub": "On the team Pano.",
+   "log": "> mate: read launch plan",
+   "text": "Your teammates read it on the team Pano. Comments and checklists come along with the doc.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Launch plan",
+     "sub": "Read-only for teammates",
+     "chip": [
+      "Read",
+      "b"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "3 comments",
+     "sub": "Checklist: 4 of 6 done",
+     "chip": [
+      "Visible",
+      "g"
+     ],
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "readonly",
+   "min": 8,
+   "hed": [
+    "Read only,",
+    "never edited."
+   ],
+   "sub": "Your copy is yours.",
+   "log": "> mate: edit denied",
+   "text": "They cannot edit it. Your words stay yours, and nobody can change the plan behind your back.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> mate edits launch plan",
+       "p"
+      ],
+      [
+       "denied: read-only",
+       "r"
+      ],
+      [
+       "> your copy: untouched",
+       "g"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "agent",
+   "min": 8,
+   "hed": [
+    "Agents can",
+    "read it too."
+   ],
+   "sub": "Context for free.",
+   "log": "> agent: read launch plan",
+   "text": "Their agents can read the doc as well. So a teammate agent picks up the plan, and starts on the checklist.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Ada’s agent",
+     "text": "Read the launch plan. Starting the checklist.",
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Launch checklist",
+     "sub": "Ada’s agent is on it",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 3.2
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work"
+   }
+  },
+  {
+   "id": "revoke",
+   "min": 8,
+   "hed": [
+    "Unshare",
+    "any time."
+   ],
+   "sub": "You stay in control.",
+   "log": "> unshare: launch plan",
+   "text": "And you stay in control. Unshare the doc whenever you like, and your teammates lose access at once.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Launch plan",
+     "sub": "Unshared  ·  private again",
+     "chip": [
+      "Private",
+      "z"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Teammate access",
+     "sub": "Revoked",
+     "chip": [
+      "Off",
+      "r"
+     ],
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "scale",
+   "min": 8,
+   "hed": [
+    "Share the",
+    "next one."
+   ],
+   "sub": "Doc by doc.",
+   "log": "> shared: 1, 2, 3",
+   "text": "Share the next doc the same way, one at a time, and only when you decide it is ready.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "Plan",
+      "Spec",
+      "Notes"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Shared",
+       34,
+       "g"
+      ],
+      [
+       "Private",
+       66,
+       "z"
+      ]
+     ],
+     "at": 3.2
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Your turn.",
+    "Pick a doc."
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "Which doc would you share with your team first? Tell us in the comments, and try Teams at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "First doc|to share?",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done"
+   }
+  }
+ ]
+}

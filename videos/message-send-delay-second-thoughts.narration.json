@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "The agent broke the build again, for the third time today, and you are already typing."
+    },
+    {
+      "id": "angry",
+      "min": 8,
+      "text": "You fire back a very direct message, with several words you would never say out loud."
+    },
+    {
+      "id": "send",
+      "min": 8,
+      "text": "Your thumb moves faster than your judgment, and you hit send before reading it back."
+    },
+    {
+      "id": "hold",
+      "min": 8,
+      "text": "Agent R Q holds the message for a few seconds before the agent ever sees it."
+    },
+    {
+      "id": "buttons",
+      "min": 8,
+      "text": "Send Now and Cancel sit right there, on the message, for the whole countdown."
+    },
+    {
+      "id": "regret",
+      "min": 8,
+      "text": "In that pause you read it again, and it looks much worse than it felt."
+    },
+    {
+      "id": "cancel",
+      "min": 8,
+      "text": "You tap Cancel. The message is pulled back, and the agent never knew it existed."
+    },
+    {
+      "id": "rewrite",
+      "min": 8,
+      "text": "Then you write what actually helps. The failing test, the error, and the file you suspect."
+    },
+    {
+      "id": "send2",
+      "min": 8,
+      "text": "This time you let the countdown run out, and the message lands exactly as written."
+    },
+    {
+      "id": "result",
+      "min": 8,
+      "text": "The agent reads a clear instruction and fixes the rounding bug on the first try."
+    },
+    {
+      "id": "lesson",
+      "min": 8,
+      "text": "Better instructions get better results, and a few seconds of pause is what gets you there."
+    },
+    {
+      "id": "cta",
+      "min": 8,
+      "text": "What is the sharpest thing you have said to an agent? Admit it below, and try the send delay at Agent R Q dot com."
+    }
+  ]
+}

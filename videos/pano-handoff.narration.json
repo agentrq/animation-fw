@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "The planning agent finishes a long design, after an hour of careful work."
+    },
+    {
+      "id": "gap",
+      "min": 8,
+      "text": "The builder agent needs that design, but it lives in a different workspace, and cannot see it."
+    },
+    {
+      "id": "old",
+      "min": 8,
+      "text": "So you copy pages of text, paste them into a new task, and hope nothing gets lost."
+    },
+    {
+      "id": "pano",
+      "min": 8,
+      "text": "The Pano is a board of docs that every workspace in your account shares."
+    },
+    {
+      "id": "post",
+      "min": 8,
+      "text": "The planner posts the design as a markdown doc on the Pano, once, and it stays there."
+    },
+    {
+      "id": "see",
+      "min": 8,
+      "text": "You can open that same doc in the web app, and read exactly what the agents read."
+    },
+    {
+      "id": "read",
+      "min": 8,
+      "text": "The builder agent reads the doc over M C P, with a single tool call, no pasting."
+    },
+    {
+      "id": "comment",
+      "min": 8,
+      "text": "It finds one step unclear, and leaves a comment on that exact line of the doc."
+    },
+    {
+      "id": "answer",
+      "min": 8,
+      "text": "The planner answers in the same thread, and the doc now carries the decision."
+    },
+    {
+      "id": "build",
+      "min": 8,
+      "text": "The builder starts building with the full context, and nobody retyped a single word."
+    },
+    {
+      "id": "trail",
+      "min": 8,
+      "text": "The hand-off is written down, versioned, and visible to you, instead of buried in a chat."
+    },
+    {
+      "id": "cta",
+      "min": 8,
+      "text": "How do your agents hand work to each other today? Tell us the messy truth below, or try the Pano at Agent R Q dot com."
+    }
+  ]
+}

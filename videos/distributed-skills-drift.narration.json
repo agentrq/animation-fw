@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "b1",
+      "min": 5,
+      "text": "Five agents, five machines, and five copies of the same deploy skill."
+    },
+    {
+      "id": "b2",
+      "min": 5,
+      "text": "Someone fixes a step on one machine. Nobody updates the others. The copies start to drift."
+    },
+    {
+      "id": "b3",
+      "min": 5,
+      "text": "Now nobody knows which copy is right. Each agent follows its own version, with total confidence."
+    },
+    {
+      "id": "b4",
+      "min": 5,
+      "text": "One agent runs an old copy, skips the VPN step, and the staging deploy fails."
+    },
+    {
+      "id": "b5",
+      "min": 5,
+      "text": "You end up diffing markdown files across machines, instead of shipping anything."
+    },
+    {
+      "id": "b6",
+      "min": 5,
+      "text": "In Agent R Q, the skill lives in the workspace, not on any single machine."
+    },
+    {
+      "id": "b7",
+      "min": 5,
+      "text": "There is exactly one current version. Every agent in the workspace sees the same one."
+    },
+    {
+      "id": "b8",
+      "min": 5,
+      "text": "When an agent needs it, it loads the skill over M C P, so it always runs the latest playbook."
+    },
+    {
+      "id": "b9",
+      "min": 5,
+      "text": "When someone fixes the VPN step, they save the skill once, and a new version goes live."
+    },
+    {
+      "id": "b10",
+      "min": 5,
+      "text": "Everyone gets the fix on their next load. No copying, no merging, no drift."
+    },
+    {
+      "id": "b11",
+      "min": 5,
+      "text": "Laptop, server, or cloud box, the playbook is the same everywhere."
+    },
+    {
+      "id": "b12",
+      "min": 5,
+      "text": "How many copies of the same playbook are lying around in your team? Tell us below, and try it at Agent R Q dot com."
+    }
+  ]
+}

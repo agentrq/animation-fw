@@ -1,0 +1,366 @@
+{
+ "title": "Workflows: ship pipeline",
+ "kicker": "workflows-ship-pipeline",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "The pipeline",
+    "is invisible."
+   ],
+   "sub": "A habit.",
+   "log": "> pipeline: where?",
+   "text": "Your team ships with a pipeline of agents. But the whole thing is just a habit in people’s heads.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Build, review, test, ship",
+     "sub": "Where is it written?",
+     "chip": [
+      "Invisible",
+      "r"
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "cost",
+   "min": 8,
+   "hed": [
+    "New people",
+    "have to ask."
+   ],
+   "sub": "Slow to learn.",
+   "log": "> onboarding: ask around",
+   "text": "A new teammate has to ask around to learn the order, and nobody can point to one page.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "New teammate",
+     "text": "Who reviews after the build?",
+     "at": 1.4
+    },
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Everyone",
+     "text": "Hm, it depends.",
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "idea",
+   "min": 8,
+   "hed": [
+    "Draw it",
+    "as a graph."
+   ],
+   "sub": "Workflows.",
+   "log": "> workflows: graph",
+   "text": "Agent R Q Workflows turns that habit into a visual graph that everyone can read.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Draw the|pipeline.",
+     "sub": "Workflows",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "workspace",
+   "min": 8,
+   "hed": [
+    "Workspaces",
+    "are the nodes."
+   ],
+   "sub": "One per stage.",
+   "log": "> nodes: workspaces",
+   "text": "Each stage is a workspace. Build, review, test, and ship each get a node on the graph.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "Build",
+      "Review",
+      "Test",
+      "Ship"
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "events",
+   "min": 8,
+   "hed": [
+    "Events are",
+    "the links."
+   ],
+   "sub": "Named signals.",
+   "log": "> links: events",
+   "text": "Events are the links between them. Build emits code changed, and that is the signal the next stage listens for.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "code_changed",
+     "sub": "Emitted by Build",
+     "chip": [
+      "Event",
+      "b"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "tests_passed",
+     "sub": "Emitted by Test",
+     "chip": [
+      "Event",
+      "b"
+     ],
+     "at": 2.8
+    }
+   ]
+  },
+  {
+   "id": "drag",
+   "min": 8,
+   "hed": [
+    "Drag to",
+    "connect."
+   ],
+   "sub": "Both ways.",
+   "log": "> drag: workspace -> event",
+   "text": "Drag a workspace onto an event, and an event onto a workspace. The graph draws itself.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Build workspace",
+       "code_changed"
+      ],
+      [
+       "Review workspace",
+       "listens"
+      ],
+      [
+       "Test workspace",
+       "listens"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "run",
+   "min": 8,
+   "hed": [
+    "Watch it",
+    "run."
+   ],
+   "sub": "Live.",
+   "log": "> run: live",
+   "text": "Then watch the pipeline run. Each event fires, and each workspace picks up its next task.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Build",
+     "sub": "Done",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Review",
+     "sub": "Reading the diff",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 2.8
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Test",
+     "sub": "Next in line",
+     "chip": [
+      "Queued",
+      "z"
+     ],
+     "at": 4.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "work"
+   }
+  },
+  {
+   "id": "name",
+   "min": 8,
+   "hed": [
+    "Name the",
+    "workflow."
+   ],
+   "sub": "Save it.",
+   "log": "> save: ship pipeline",
+   "text": "Save it as a named workflow, so everyone sees the same picture.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Ship pipeline",
+     "sub": "3 workspaces, 2 events",
+     "chip": [
+      "Saved",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "kbd",
+     "keys": [
+      "Save"
+     ],
+     "label": "name it once",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "share",
+   "min": 8,
+   "hed": [
+    "One picture",
+    "for everyone."
+   ],
+   "sub": "Shared, visible.",
+   "log": "> workflow: shared",
+   "text": "Now the team shares one picture. A new teammate opens it, and understands the order in a minute.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "One picture.|Everyone.",
+     "sub": "shared and visible",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "guard",
+   "min": 8,
+   "hed": [
+    "Approvals stay",
+    "on each stage."
+   ],
+   "sub": "Humans in the loop.",
+   "log": "> ship: push to main?",
+   "text": "Each workspace keeps its approvals, so the pipeline never ships without a human saying yes.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Ship",
+      "y"
+     ],
+     "code": "Bash  git push origin main",
+     "buttons": [
+      "Allow",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 4,
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "grow",
+   "min": 8,
+   "hed": [
+    "Change it",
+    "as you grow."
+   ],
+   "sub": "Add a stage.",
+   "log": "> add: security scan",
+   "text": "And when the process changes, you change the graph. Add a stage, wire it up, and save.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Build",
+       "code_changed"
+      ],
+      [
+       "Scan",
+       "new stage"
+      ],
+      [
+       "Ship",
+       "deploy"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "agy": "work"
+   }
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Your turn.",
+    "Your pipeline,"
+   ],
+   "sub": "drawn?",
+   "log": "> agentrq.com",
+   "text": "Could you draw your team pipeline on one page? Tell us what is missing, and try Workflows at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Your pipeline|drawn?",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "A planning meeting ends, and everybody nods, certain that somebody wrote the action items down."
+    },
+    {
+      "id": "scatter",
+      "min": 8,
+      "text": "Ten action items end up scattered across messages, half remembered by everyone, and owned by no one."
+    },
+    {
+      "id": "risk",
+      "min": 8,
+      "text": "Two weeks later nobody can say what was done, what was dropped, and what was never started."
+    },
+    {
+      "id": "doc",
+      "min": 8,
+      "text": "Put the notes in a Pano doc instead, the shared board that humans and agents both read."
+    },
+    {
+      "id": "list",
+      "min": 8,
+      "text": "Each action item becomes a plain markdown line with a checkbox, the same syntax you already know."
+    },
+    {
+      "id": "link",
+      "min": 8,
+      "text": "Link a checklist item to a task, and the line points at real work in a real workspace."
+    },
+    {
+      "id": "pick",
+      "min": 8,
+      "text": "An agent picks that task up and starts, with the whole meeting doc as its context."
+    },
+    {
+      "id": "tick",
+      "min": 8,
+      "text": "When the task completes, the checkbox ticks itself, and nobody has to remember to do it."
+    },
+    {
+      "id": "more",
+      "min": 8,
+      "text": "Link the other items too, and different agents take different lines, all from one doc."
+    },
+    {
+      "id": "progress",
+      "min": 8,
+      "text": "Open the doc any day, and you see exactly which items are finished and which are still waiting."
+    },
+    {
+      "id": "history",
+      "min": 8,
+      "text": "People and agents can comment on any line, and every edit to the doc is kept in its history."
+    },
+    {
+      "id": "cta",
+      "min": 8,
+      "text": "Where do your meeting action items go to die? Tell us in the comments, and try the Pano at Agent R Q dot com."
+    }
+  ]
+}

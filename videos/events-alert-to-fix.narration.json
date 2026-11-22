@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "b1",
+      "min": 5,
+      "text": "Three in the morning. The nightly pipeline is running, and everyone is asleep."
+    },
+    {
+      "id": "b2",
+      "min": 5,
+      "text": "Then the build fails. Red, on the main branch, with a stack trace nobody sees."
+    },
+    {
+      "id": "b3",
+      "min": 5,
+      "text": "Nobody is awake, and nobody will look for hours. The broken build just sits there."
+    },
+    {
+      "id": "b4",
+      "min": 5,
+      "text": "At nine, the team wakes up to a red board and a lost morning."
+    },
+    {
+      "id": "b5",
+      "min": 5,
+      "text": "In Agent R Q, a failed build can emit a named event, just like a finished task does."
+    },
+    {
+      "id": "b6",
+      "min": 5,
+      "text": "An event is only a name, a signal that says what happened. No code to write."
+    },
+    {
+      "id": "b7",
+      "min": 5,
+      "text": "You wire that event to a fixer workspace, and it creates a task for its agent on the spot."
+    },
+    {
+      "id": "b8",
+      "min": 5,
+      "text": "The fixer agent is already listening. A minute later, it picks up the task and starts."
+    },
+    {
+      "id": "b9",
+      "min": 5,
+      "text": "It reads the logs, finds the failing test, and traces it to a bad import."
+    },
+    {
+      "id": "b10",
+      "min": 5,
+      "text": "It opens a pull request with the fix, and does not merge it. That part is left to you."
+    },
+    {
+      "id": "b11",
+      "min": 5,
+      "text": "Every workspace keeps its approvals, so a human still decides what ships."
+    },
+    {
+      "id": "b12",
+      "min": 5,
+      "text": "What would you want an agent to handle while you sleep? Tell us in the comments, and try events at Agent R Q dot com."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 5,
+      "text": "Your coding agent runs on the beefy computer at home. You are on a train, and you want to see what it is doing."
+    },
+    {
+      "id": "gap",
+      "min": 5,
+      "text": "Normally that means a remote desktop, a vpn, or an ssh session you set up months ago."
+    },
+    {
+      "id": "install",
+      "min": 5,
+      "text": "Install the Agent R Q D daemon on any computer you own. It is a small program that runs quietly."
+    },
+    {
+      "id": "enrol",
+      "min": 5,
+      "text": "Enrol it once with a single-use code, and it shows up in Agent R Q as a machine."
+    },
+    {
+      "id": "list",
+      "min": 5,
+      "text": "Each machine is listed with its name and status, so you know what is online before you tap."
+    },
+    {
+      "id": "start",
+      "min": 5,
+      "text": "From any browser, start a coding agent on that machine, in the repository you choose."
+    },
+    {
+      "id": "watch",
+      "min": 5,
+      "text": "Then watch its live terminal, line by line, as the agent works."
+    },
+    {
+      "id": "type",
+      "min": 5,
+      "text": "And you can type into the terminal, not just watch, so you can steer the agent from your seat."
+    },
+    {
+      "id": "esc",
+      "min": 5,
+      "text": "Even the escape key works, so you can interrupt the agent the moment it heads the wrong way."
+    },
+    {
+      "id": "multi",
+      "min": 5,
+      "text": "Laptop, server, a box under the desk. All of them live in one list."
+    },
+    {
+      "id": "desk",
+      "min": 5,
+      "text": "It is like being at the desk, from a train, a sofa, or a cafe."
+    },
+    {
+      "id": "close",
+      "min": 5,
+      "text": "Where do your agents run today? Tell us, or add a machine at Agent R Q dot com."
+    }
+  ]
+}

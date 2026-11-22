@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "Your security lead asks a simple question. What did the agent actually run last Tuesday?"
+    },
+    {
+      "id": "dread",
+      "min": 8,
+      "text": "Without a record, you start digging. Terminal scrollback is gone, and nobody remembers which command ran."
+    },
+    {
+      "id": "idea",
+      "min": 8,
+      "text": "Agent R Q keeps a searchable trajectory of every tool call and message in each task run."
+    },
+    {
+      "id": "open",
+      "min": 8,
+      "text": "Open the task from last Tuesday, and switch to the Trajectory tab. The whole run is there."
+    },
+    {
+      "id": "lanes",
+      "min": 8,
+      "text": "Entries are grouped into lanes, in order, so you can follow the run from the first message to the last."
+    },
+    {
+      "id": "search",
+      "min": 8,
+      "text": "Search for the command you care about, like curl, and the matching entries rise to the top."
+    },
+    {
+      "id": "denied",
+      "min": 8,
+      "text": "Each entry shows what ran, and whether it was allowed or denied."
+    },
+    {
+      "id": "detail",
+      "min": 8,
+      "text": "Click an entry for the exact input, the decision, the person who made it, and the time."
+    },
+    {
+      "id": "approvals",
+      "min": 8,
+      "text": "Approvals are part of the record too, so you can show that a person said no to the risky command."
+    },
+    {
+      "id": "answer",
+      "min": 8,
+      "text": "So the answer to your security lead takes seconds. Nothing to guess, nothing to dig up."
+    },
+    {
+      "id": "trust",
+      "min": 8,
+      "text": "The record is always on, so every run is audit ready, whether or not anyone asked in advance."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "What would your security team want to see in an agent log? Tell us below, and try it at Agent R Q dot com."
+    }
+  ]
+}

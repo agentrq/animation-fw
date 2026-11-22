@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "Your team ships with a pipeline of agents. But the whole thing is just a habit in people’s heads."
+    },
+    {
+      "id": "cost",
+      "min": 8,
+      "text": "A new teammate has to ask around to learn the order, and nobody can point to one page."
+    },
+    {
+      "id": "idea",
+      "min": 8,
+      "text": "Agent R Q Workflows turns that habit into a visual graph that everyone can read."
+    },
+    {
+      "id": "workspace",
+      "min": 8,
+      "text": "Each stage is a workspace. Build, review, test, and ship each get a node on the graph."
+    },
+    {
+      "id": "events",
+      "min": 8,
+      "text": "Events are the links between them. Build emits code changed, and that is the signal the next stage listens for."
+    },
+    {
+      "id": "drag",
+      "min": 8,
+      "text": "Drag a workspace onto an event, and an event onto a workspace. The graph draws itself."
+    },
+    {
+      "id": "run",
+      "min": 8,
+      "text": "Then watch the pipeline run. Each event fires, and each workspace picks up its next task."
+    },
+    {
+      "id": "name",
+      "min": 8,
+      "text": "Save it as a named workflow, so everyone sees the same picture."
+    },
+    {
+      "id": "share",
+      "min": 8,
+      "text": "Now the team shares one picture. A new teammate opens it, and understands the order in a minute."
+    },
+    {
+      "id": "guard",
+      "min": 8,
+      "text": "Each workspace keeps its approvals, so the pipeline never ships without a human saying yes."
+    },
+    {
+      "id": "grow",
+      "min": 8,
+      "text": "And when the process changes, you change the graph. Add a stage, wire it up, and save."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "Could you draw your team pipeline on one page? Tell us what is missing, and try Workflows at Agent R Q dot com."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "b1",
+      "min": 5,
+      "text": "Your best deploy playbook lives in a folder on one laptop."
+    },
+    {
+      "id": "b2",
+      "min": 5,
+      "text": "Every other agent has never heard of it. They guess the steps, and every guess is a little different."
+    },
+    {
+      "id": "b3",
+      "min": 5,
+      "text": "You could copy the folder around by hand, but each copy drifts the moment someone edits it."
+    },
+    {
+      "id": "b4",
+      "min": 5,
+      "text": "In Agent R Q, skills do not live on a machine. They live in the workspace, as one shared library."
+    },
+    {
+      "id": "b5",
+      "min": 5,
+      "text": "When an agent learns something worth repeating, it saves it as a skill, and the workspace stores it."
+    },
+    {
+      "id": "b6",
+      "min": 5,
+      "text": "Any agent can search the library over M C P, and find the skill it needs by name."
+    },
+    {
+      "id": "b7",
+      "min": 5,
+      "text": "It loads the skill only when it needs it, so the playbook is always the current one."
+    },
+    {
+      "id": "b8",
+      "min": 5,
+      "text": "Claude, Codex, Gemini, Cursor, all of them get the same playbook, on any machine."
+    },
+    {
+      "id": "b9",
+      "min": 5,
+      "text": "Then an agent notices a missing step. Staging needs the VPN first, so it updates the skill."
+    },
+    {
+      "id": "b10",
+      "min": 5,
+      "text": "The skill becomes version eight, and it is live for every agent in the workspace at once."
+    },
+    {
+      "id": "b11",
+      "min": 5,
+      "text": "No copying files around, ever. Fix a step once, and every agent gets the update."
+    },
+    {
+      "id": "b12",
+      "min": 5,
+      "text": "Where do your agents keep their playbooks today? Tell us in the comments, and try it at Agent R Q dot com."
+    }
+  ]
+}

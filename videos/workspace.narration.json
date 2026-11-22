@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "One agent, five projects, and one big pile of tasks. Things start to leak into each other."
+    },
+    {
+      "id": "cost",
+      "min": 8,
+      "text": "The agent has to guess which project a task belongs to. Sooner or later it guesses wrong, and edits the wrong repo."
+    },
+    {
+      "id": "you",
+      "min": 8,
+      "text": "And you cannot see the state of any one project, because the board is a jumble of everything at once."
+    },
+    {
+      "id": "idea",
+      "min": 8,
+      "text": "Agent R Q gives each project its own workspace. A clean room, with only that project in it."
+    },
+    {
+      "id": "own",
+      "min": 8,
+      "text": "Each workspace has its own tasks, its own history, and its own live event stream."
+    },
+    {
+      "id": "token",
+      "min": 8,
+      "text": "Each workspace also has its own M C P token, so an agent only sees the project it belongs to."
+    },
+    {
+      "id": "pick",
+      "min": 8,
+      "text": "Pick a different agent for each project. Claude on the storefront, Codex on billing, Gemini on the docs."
+    },
+    {
+      "id": "mem",
+      "min": 8,
+      "text": "Each workspace has its own memory and skills, shared by its agents, and invisible to the other projects."
+    },
+    {
+      "id": "ask",
+      "min": 8,
+      "text": "When an agent needs you, that one workspace lights up, so you know exactly where to look."
+    },
+    {
+      "id": "yolo",
+      "min": 8,
+      "text": "Settings follow the workspace too. Auto approve in the docs site, and stay strict in billing."
+    },
+    {
+      "id": "scale",
+      "min": 8,
+      "text": "A new project means a new workspace. Ten projects do not feel messier than two."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "Every project, in its own room. Try workspaces at Agent R Q dot com."
+    }
+  ]
+}

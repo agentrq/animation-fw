@@ -1,0 +1,385 @@
+{
+ "title": "Scheduling: nightly report",
+ "kicker": "scheduling",
+ "mascots": [
+  "claude"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 7.2,
+   "hed": [
+    "Every day,",
+    "a summary."
+   ],
+   "sub": "Due at six.",
+   "log": "> hook",
+   "text": "Every day, someone is supposed to summarize what changed in the project.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Daily summary",
+     "sub": "Due 6 pm",
+     "chip": [
+      "Due",
+      "y"
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "miss",
+   "min": 7.2,
+   "hed": [
+    "Every day,",
+    "nobody does."
+   ],
+   "sub": "Missed again.",
+   "log": "> miss",
+   "text": "And every day, nobody does. Everyone is busy, and it gets forgotten.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Daily summary, Monday",
+     "sub": "Missed",
+     "chip": [
+      "Missed",
+      "r"
+     ],
+     "at": 1
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Daily summary, Tuesday",
+     "sub": "Missed",
+     "chip": [
+      "Missed",
+      "r"
+     ],
+     "at": 2.2
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Daily summary, Wednesday",
+     "sub": "Missed",
+     "chip": [
+      "Missed",
+      "r"
+     ],
+     "at": 3.4
+    }
+   ]
+  },
+  {
+   "id": "agent",
+   "min": 7.2,
+   "hed": [
+    "An agent",
+    "can write it."
+   ],
+   "sub": "If someone asks.",
+   "log": "> agent",
+   "text": "An agent could write it in a minute, but only if somebody remembers to ask.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "You",
+     "text": "Summarize the day.",
+     "at": 1.2
+    },
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Here is the summary.",
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "cron",
+   "min": 7.2,
+   "hed": [
+    "Schedule it",
+    "on a cron."
+   ],
+   "sub": "Once, for good.",
+   "log": "> cron",
+   "text": "In Agent R Q, schedule the task on a cron, like every weekday at six.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "c",
+     "title": "Summarize the day",
+     "sub": "0 18 * * 1-5",
+     "chip": [
+      "Cron",
+      "c"
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "poller",
+   "min": 7.2,
+   "hed": [
+    "A poller",
+    "spawns it."
+   ],
+   "sub": "In the background.",
+   "log": "> poller",
+   "text": "The background poller watches the clock, and spawns the task for you.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Cron",
+       "18:00"
+      ],
+      [
+       "Poller",
+       "spawns"
+      ],
+      [
+       "Task",
+       "new run"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "six",
+   "min": 7.2,
+   "hed": [
+    "At six,",
+    "a new task."
+   ],
+   "sub": "Right on time.",
+   "log": "> six",
+   "text": "At six o clock, a new run lands on your board, like any other task.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Summarize the day, today",
+     "sub": "Spawned automatically",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Summarize the day, yesterday",
+     "sub": "Done",
+     "chip": [
+      "Done",
+      "z"
+     ],
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "agentgo",
+   "min": 7.2,
+   "hed": [
+    "The agent",
+    "starts."
+   ],
+   "sub": "Nobody asked.",
+   "log": "> agentgo",
+   "text": "The agent starts working at once, even though nobody asked it. No reminder, no prompt, and no one has to be online.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Reading today's commits.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "write",
+   "min": 7.2,
+   "hed": [
+    "It writes",
+    "the report."
+   ],
+   "sub": "Facts, not guesses.",
+   "log": "> write",
+   "text": "It reads the commits and the tasks, and writes up what actually changed.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> read 14 commits",
+       "g"
+      ],
+      [
+       "> read 6 tasks",
+       "g"
+      ],
+      [
+       "> write summary",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "read",
+   "min": 7.2,
+   "hed": [
+    "Read it",
+    "like any task."
+   ],
+   "sub": "Or reply to it.",
+   "log": "> read",
+   "text": "You can read the run, or reply to it, exactly like a normal task.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Summarize the day, today",
+     "sub": "Add the billing change",
+     "chip": [
+      "Reply",
+      "b"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "You",
+     "text": "Add the billing change.",
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "history",
+   "min": 7.2,
+   "hed": [
+    "Every run,",
+    "kept."
+   ],
+   "sub": "A history of days.",
+   "log": "> history",
+   "text": "And every run stays on the board, so you build a history of every day. Over time, that becomes a searchable record of every single day.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Summarize the day, Tuesday",
+     "sub": "Done",
+     "chip": [
+      "Done",
+      "z"
+     ],
+     "at": 0.8
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Summarize the day, Wednesday",
+     "sub": "Done",
+     "chip": [
+      "Done",
+      "z"
+     ],
+     "at": 1.8
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Summarize the day, Thursday",
+     "sub": "Done",
+     "chip": [
+      "Done",
+      "z"
+     ],
+     "at": 2.8
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "ontime",
+   "min": 7.2,
+   "hed": [
+    "Reports",
+    "on time."
+   ],
+   "sub": "Every weekday.",
+   "log": "> ontime",
+   "text": "No reminders, no chasing, and no more missed reports. The team just opens the board and reads yesterday's summary.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Reports|on time.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "close",
+   "min": 7.2,
+   "hed": [
+    "The report",
+    "you forget?"
+   ],
+   "sub": "agentrq.com",
+   "log": "> close",
+   "text": "What report do you always forget to write? Tell us below, or try it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "The report you|forget?",
+     "sub": "comment below",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  }
+ ]
+}

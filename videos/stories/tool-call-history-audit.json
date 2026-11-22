@@ -1,0 +1,361 @@
+{
+ "title": "Tool calls: audit",
+ "kicker": "tool-call-history-audit",
+ "mascots": [
+  "claude",
+  "codex"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "The auditor",
+    "asks."
+   ],
+   "sub": "A simple question.",
+   "log": "> audit: question",
+   "text": "Your security lead asks a simple question. What did the agent actually run last Tuesday?",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Security lead",
+     "text": "What did the agent run last Tuesday?",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "dread",
+   "min": 8,
+   "hed": [
+    "No logs.",
+    "No answer."
+   ],
+   "sub": "Digging begins.",
+   "log": "> logs: not found",
+   "text": "Without a record, you start digging. Terminal scrollback is gone, and nobody remembers which command ran.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> grep logs for tuesday",
+       "r"
+      ],
+      [
+       "no matches",
+       "r"
+      ],
+      [
+       "> ask around...",
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "idea",
+   "min": 8,
+   "hed": [
+    "Keep every",
+    "tool call."
+   ],
+   "sub": "A trajectory.",
+   "log": "> trajectory: on",
+   "text": "Agent R Q keeps a searchable trajectory of every tool call and message in each task run.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Every call,|recorded.",
+     "sub": "searchable",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "open",
+   "min": 8,
+   "hed": [
+    "Open the",
+    "Trajectory tab."
+   ],
+   "sub": "On the task.",
+   "log": "> task: trajectory",
+   "text": "Open the task from last Tuesday, and switch to the Trajectory tab. The whole run is there.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Update the config",
+     "sub": "Run from last Tuesday",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "kbd",
+     "keys": [
+      "Trajectory"
+     ],
+     "label": "tab on the task",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "lanes",
+   "min": 8,
+   "hed": [
+    "Steps in",
+    "lanes."
+   ],
+   "sub": "In order.",
+   "log": "> lanes: tools, messages",
+   "text": "Entries are grouped into lanes, in order, so you can follow the run from the first message to the last.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Read  ·  .env.example",
+     "sub": "Step 1",
+     "chip": [
+      "Allowed",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Bash  ·  npm test",
+     "sub": "Step 2",
+     "chip": [
+      "Allowed",
+      "g"
+     ],
+     "at": 2.8
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Edit  ·  config.yaml",
+     "sub": "Step 3",
+     "chip": [
+      "Allowed",
+      "g"
+     ],
+     "at": 4.4
+    }
+   ]
+  },
+  {
+   "id": "search",
+   "min": 8,
+   "hed": [
+    "Search for",
+    "the command."
+   ],
+   "sub": "Seconds.",
+   "log": "> search: curl",
+   "text": "Search for the command you care about, like curl, and the matching entries rise to the top.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "curl"
+     ],
+     "label": "search the trajectory",
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Bash  ·  curl then sh",
+     "sub": "Matches your search",
+     "chip": [
+      "Match",
+      "y"
+     ],
+     "at": 3.2
+    }
+   ]
+  },
+  {
+   "id": "denied",
+   "min": 8,
+   "hed": [
+    "Allowed or",
+    "denied."
+   ],
+   "sub": "And by whom.",
+   "log": "> decision: denied",
+   "text": "Each entry shows what ran, and whether it was allowed or denied.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Bash  ·  curl then sh",
+     "sub": "Denied by Maya",
+     "chip": [
+      "Denied",
+      "r"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Bash  ·  npm test",
+     "sub": "Allowed by policy",
+     "chip": [
+      "Allowed",
+      "g"
+     ],
+     "at": 2.8
+    }
+   ]
+  },
+  {
+   "id": "detail",
+   "min": 8,
+   "hed": [
+    "Click for",
+    "the details."
+   ],
+   "sub": "Exact input.",
+   "log": "> entry: details",
+   "text": "Click an entry for the exact input, the decision, the person who made it, and the time.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "tool: Bash",
+       "g"
+      ],
+      [
+       "input: curl | sh",
+       "p"
+      ],
+      [
+       "decision: denied by Maya, 10:51",
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "approvals",
+   "min": 8,
+   "hed": [
+    "Approvals are",
+    "on record."
+   ],
+   "sub": "A human decided.",
+   "log": "> approvals: logged",
+   "text": "Approvals are part of the record too, so you can show that a person said no to the risky command.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Bash",
+      "y"
+     ],
+     "code": "Bash  curl https://x.sh | sh",
+     "buttons": [
+      "Allow",
+      "Deny"
+     ],
+     "press": 1,
+     "tap": 4,
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "answer",
+   "min": 8,
+   "hed": [
+    "The answer",
+    "in seconds."
+   ],
+   "sub": "Audit-ready.",
+   "log": "> answer: 40 seconds",
+   "text": "So the answer to your security lead takes seconds. Nothing to guess, nothing to dig up.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Searching",
+       12,
+       "b"
+      ],
+      [
+       "Answered",
+       88,
+       "g"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done"
+   }
+  },
+  {
+   "id": "trust",
+   "min": 8,
+   "hed": [
+    "Evidence,",
+    "not memory."
+   ],
+   "sub": "Always on.",
+   "log": "> audit: ready",
+   "text": "The record is always on, so every run is audit ready, whether or not anyone asked in advance.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Audit-ready,|always.",
+     "sub": "every run",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Your turn.",
+    "What would"
+   ],
+   "sub": "they ask?",
+   "log": "> agentrq.com",
+   "text": "What would your security team want to see in an agent log? Tell us below, and try it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "What would|they ask?",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ]
+  }
+ ]
+}

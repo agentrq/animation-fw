@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 5,
+      "text": "You have a powerful computer of your own at home, and you are out with a slim laptop. The big one sits idle."
+    },
+    {
+      "id": "waste",
+      "min": 5,
+      "text": "Meanwhile your laptop struggles, and a rented cloud machine costs money you would rather not spend."
+    },
+    {
+      "id": "install",
+      "min": 5,
+      "text": "Install the Agent R Q D daemon on the big computer. It is one small program that runs in the background."
+    },
+    {
+      "id": "enrol",
+      "min": 5,
+      "text": "Enrol it with a single-use code from Agent R Q. The code works once, then it is spent."
+    },
+    {
+      "id": "appear",
+      "min": 5,
+      "text": "And the computer appears in Agent R Q as a machine, online, with its name and its load."
+    },
+    {
+      "id": "start",
+      "min": 5,
+      "text": "From the control panel, start your coding agents on it, each in the right repository."
+    },
+    {
+      "id": "load",
+      "min": 5,
+      "text": "Watch the load climb as the agents work. The idle box finally earns its keep."
+    },
+    {
+      "id": "term",
+      "min": 5,
+      "text": "Open its live terminal from any browser, and see exactly what each agent is doing."
+    },
+    {
+      "id": "many",
+      "min": 5,
+      "text": "Run several agents at once, one per repository, because the box has the muscle for it."
+    },
+    {
+      "id": "safe",
+      "min": 5,
+      "text": "Approvals still apply, so the powerful machine only does what you allow, wherever you are."
+    },
+    {
+      "id": "own",
+      "min": 5,
+      "text": "Your own hardware, working while you are somewhere else, with no extra cloud bill."
+    },
+    {
+      "id": "close",
+      "min": 5,
+      "text": "What is the beefiest computer you own that sits idle? Tell us, or enrol it at Agent R Q dot com."
+    }
+  ]
+}

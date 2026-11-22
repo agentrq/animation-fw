@@ -1,0 +1,394 @@
+{
+ "title": "Task Scheduling",
+ "kicker": "scheduling",
+ "mascots": [
+  "claude",
+  "codex"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 7.2,
+   "hed": [
+    "Every Monday,",
+    "the same ask."
+   ],
+   "sub": "Audit the dependencies.",
+   "log": "> hook",
+   "text": "Every Monday morning you ask an agent to audit your dependencies.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Monday, 9:00",
+     "sub": "Audit the dependencies",
+     "chip": [
+      "Ask",
+      "b"
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "forget",
+   "min": 7.2,
+   "hed": [
+    "Every Monday,",
+    "you forget."
+   ],
+   "sub": "Remembered late.",
+   "log": "> forget",
+   "text": "And every Monday, you remember late, or you forget the whole thing.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Monday, 9:00",
+     "sub": "Audit the dependencies",
+     "chip": [
+      "Forgot",
+      "r"
+     ],
+     "at": 1
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Next Monday, 9:00",
+     "sub": "Audit the dependencies",
+     "chip": [
+      "Forgot",
+      "r"
+     ],
+     "at": 2.2
+    }
+   ]
+  },
+  {
+   "id": "why",
+   "min": 7.2,
+   "hed": [
+    "Agents wait",
+    "to be asked."
+   ],
+   "sub": "They never remind you.",
+   "log": "> why",
+   "text": "An agent never reminds you. It waits to be asked, and then it does the work.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Waiting for your next task.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "schedule",
+   "min": 7.2,
+   "hed": [
+    "So schedule",
+    "the task."
+   ],
+   "sub": "Pick a time.",
+   "log": "> schedule",
+   "text": "With Agent R Q, you can schedule a task to run at exactly the time you choose.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Run the full test suite",
+     "sub": "Scheduled",
+     "chip": [
+      "Scheduled",
+      "b"
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "once",
+   "min": 7.2,
+   "hed": [
+    "Run it once,",
+    "at two a m."
+   ],
+   "sub": "While you sleep.",
+   "log": "> once",
+   "text": "Run it just once, tonight at two a.m., while you sleep.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Run the full test suite",
+     "sub": "One-time, tonight 02:00",
+     "chip": [
+      "Scheduled",
+      "b"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Run the full test suite",
+     "sub": "Started at 02:00",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 3.4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "repeat",
+   "min": 7.2,
+   "hed": [
+    "Or make it",
+    "repeat."
+   ],
+   "sub": "On a cron.",
+   "log": "> repeat",
+   "text": "Or make it repeat, on a cron schedule.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "c",
+     "title": "Audit the dependencies",
+     "sub": "Repeats, 0 9 * * 1-5",
+     "chip": [
+      "Cron",
+      "c"
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "weekday",
+   "min": 7.2,
+   "hed": [
+    "Every weekday",
+    "at nine."
+   ],
+   "sub": "By itself.",
+   "log": "> weekday",
+   "text": "Every weekday at nine, the dependency audit starts all by itself.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Mon 09:00",
+       "cron"
+      ],
+      [
+       "Task",
+       "spawned"
+      ],
+      [
+       "Agent",
+       "starts"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "runs",
+   "min": 7.2,
+   "hed": [
+    "Each run",
+    "is a task."
+   ],
+   "sub": "On your board.",
+   "log": "> runs",
+   "text": "Each run lands on your dashboard as a normal task, with its own history.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Audit the dependencies, today",
+     "sub": "Spawned automatically",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 1
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Audit the dependencies, yesterday",
+     "sub": "Done",
+     "chip": [
+      "Done",
+      "z"
+     ],
+     "at": 2.2
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Audit the dependencies, Monday",
+     "sub": "Done",
+     "chip": [
+      "Done",
+      "z"
+     ],
+     "at": 3.4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "review",
+   "min": 7.2,
+   "hed": [
+    "Review it.",
+    "Reply to it."
+   ],
+   "sub": "Like any task.",
+   "log": "> review",
+   "text": "You can review a run, reply to it, or ask the agent a follow up question.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "You",
+     "text": "Skip the dev dependencies.",
+     "at": 1.2
+    },
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Skipping them now.",
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "approve",
+   "min": 7.2,
+   "hed": [
+    "Approve what",
+    "it asks."
+   ],
+   "sub": "Stay in control.",
+   "log": "> approve",
+   "text": "And when it needs permission, it asks you first, even at two in the morning.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Authorization required",
+      "y"
+     ],
+     "code": "Bash  npm audit fix",
+     "buttons": [
+      "Allow Once",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 3.8,
+     "at": 1
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "free",
+   "min": 7.2,
+   "hed": [
+    "Stop",
+    "remembering."
+   ],
+   "sub": "Start scheduling.",
+   "log": "> free",
+   "text": "You stop remembering, and the schedule does the remembering for you.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Set it.|Forget it.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done"
+   }
+  },
+  {
+   "id": "every",
+   "min": 7.2,
+   "hed": [
+    "Every chore,",
+    "on a clock."
+   ],
+   "sub": "Tests, audits, reports.",
+   "log": "> every",
+   "text": "Tests, audits, reports, cleanups. Anything you do every week can run on a clock.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "Tests",
+      "Audits",
+      "Reports",
+      "Cleanup"
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done"
+   }
+  },
+  {
+   "id": "close",
+   "min": 7.2,
+   "hed": [
+    "Your weekly",
+    "chore?"
+   ],
+   "sub": "agentrq.com",
+   "log": "> close",
+   "text": "What chore would you hand your agents every single week? Drop it in the comments, or try it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Your weekly|chore?",
+     "sub": "comment below",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done"
+   }
+  }
+ ]
+}

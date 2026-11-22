@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "Something shipped on Friday, and your team has one question. Who approved the deploy?"
+    },
+    {
+      "id": "shared",
+      "min": 8,
+      "text": "Nobody knows, because the team shares one agent setup and one login."
+    },
+    {
+      "id": "ws",
+      "min": 8,
+      "text": "Agent R Q gives each workspace its own private Slack channel. Only the people you add can see it."
+    },
+    {
+      "id": "slash",
+      "min": 8,
+      "text": "Create a task with slash t, right inside the channel. Maya reports a rounding bug."
+    },
+    {
+      "id": "assign",
+      "min": 8,
+      "text": "It creates the task, assigns it to the coding agent, and the agent starts work."
+    },
+    {
+      "id": "reply",
+      "min": 8,
+      "text": "Reply in the thread with an at mention of Agent R Q, and your message goes to the agent."
+    },
+    {
+      "id": "perm",
+      "min": 8,
+      "text": "When the agent needs permission, the approval lands in that thread. Anyone on the team can answer."
+    },
+    {
+      "id": "who",
+      "min": 8,
+      "text": "Sam taps allow once, and it is saved under his own name."
+    },
+    {
+      "id": "trail",
+      "min": 8,
+      "text": "Every decision is attributed to a person. Sam approved the push, and Maya denied a risky delete."
+    },
+    {
+      "id": "noseat",
+      "min": 8,
+      "text": "No shared login to rotate, and no extra seats to buy."
+    },
+    {
+      "id": "fri",
+      "min": 8,
+      "text": "So next time something ships on a Friday, you open the log and read a name."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "Give your team its own channel and its own audit trail. Try it at Agent R Q dot com."
+    }
+  ]
+}

@@ -1,0 +1,375 @@
+{
+ "title": "Tool calls: debugging",
+ "kicker": "tool-call-history-debug",
+ "mascots": [
+  "claude",
+  "codex"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "The agent did",
+    "something odd."
+   ],
+   "sub": "Why though?",
+   "log": "> output: wrong",
+   "text": "The result is wrong, and you have no idea how the agent got there.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Wrong output",
+     "sub": "Why?",
+     "chip": [
+      "Odd",
+      "r"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Why did it do that?",
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "guess",
+   "min": 8,
+   "hed": [
+    "So you",
+    "guess."
+   ],
+   "sub": "Rerun and hope.",
+   "log": "> guess: rerun",
+   "text": "Without a record, you guess. You rerun the task, tweak the prompt, and hope the problem goes away.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> rerun the task",
+       "r"
+      ],
+      [
+       "> tweak the prompt",
+       "r"
+      ],
+      [
+       "> still wrong",
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "idea",
+   "min": 8,
+   "hed": [
+    "Every step",
+    "is recorded."
+   ],
+   "sub": "The trajectory.",
+   "log": "> trajectory: on",
+   "text": "Agent R Q records every tool call and message, and keeps them in the task’s trajectory.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Replay|every step.",
+     "sub": "trajectory",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "open",
+   "min": 8,
+   "hed": [
+    "Open the",
+    "Trajectory tab."
+   ],
+   "sub": "On the task.",
+   "log": "> task: trajectory",
+   "text": "Open the task, and switch to the Trajectory tab. Everything the agent did is already there.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Update the config",
+     "sub": "The odd run",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "kbd",
+     "keys": [
+      "Trajectory"
+     ],
+     "label": "tab on the task",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "lanes",
+   "min": 8,
+   "hed": [
+    "Steps in",
+    "lanes."
+   ],
+   "sub": "In order.",
+   "log": "> lanes: ordered",
+   "text": "Each step sits in a lane, in order, with every tool call and every message.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Read  ·  config.yaml",
+     "sub": "Step 1",
+     "chip": [
+      "1",
+      "b"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Edit  ·  config.yaml",
+     "sub": "Step 2",
+     "chip": [
+      "2",
+      "b"
+     ],
+     "at": 2.8
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Bash  ·  npm run build",
+     "sub": "Step 3",
+     "chip": [
+      "3",
+      "b"
+     ],
+     "at": 4.4
+    }
+   ]
+  },
+  {
+   "id": "search",
+   "min": 8,
+   "hed": [
+    "Search the",
+    "run."
+   ],
+   "sub": "Find the edit.",
+   "log": "> search: edit",
+   "text": "Search the run for the step you suspect. Looking for edits, one search finds them all.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "Edit"
+     ],
+     "label": "search the trajectory",
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Edit  ·  config.prod.yaml",
+     "sub": "Matches your search",
+     "chip": [
+      "Match",
+      "y"
+     ],
+     "at": 3.2
+    }
+   ]
+  },
+  {
+   "id": "click",
+   "min": 8,
+   "hed": [
+    "Click the",
+    "entry."
+   ],
+   "sub": "See the input.",
+   "log": "> entry: edit",
+   "text": "Click the entry, and you see exactly what the agent sent to the tool.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "tool: Edit",
+       "g"
+      ],
+      [
+       "file: config.prod.yaml",
+       "p"
+      ],
+      [
+       "change: timeout = 5",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "spot",
+   "min": 8,
+   "hed": [
+    "Spot the",
+    "wrong turn."
+   ],
+   "sub": "Wrong file.",
+   "log": "> expected config.yaml",
+   "text": "There it is. The agent edited the production file, when you expected the default config.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "Edit: config.prod.yaml",
+       "r"
+      ],
+      [
+       "expected: config.yaml",
+       "g"
+      ]
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Wrong file edited",
+     "sub": "Found in one minute",
+     "chip": [
+      "Found",
+      "r"
+     ],
+     "at": 2.8
+    }
+   ],
+   "mascot": {
+    "claude": "alert"
+   }
+  },
+  {
+   "id": "fix",
+   "min": 8,
+   "hed": [
+    "Fix the",
+    "instruction."
+   ],
+   "sub": "Not the guess.",
+   "log": "> fix: clearer prompt",
+   "text": "Now you know why. So you fix the instruction, and name the right file, instead of fixing a guess.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Edit config.yaml. Leave the prod file alone.",
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Instruction updated",
+     "sub": "Names the right file",
+     "chip": [
+      "Fixed",
+      "g"
+     ],
+     "at": 3.2
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "rerun",
+   "min": 8,
+   "hed": [
+    "Rerun it",
+    "with confidence."
+   ],
+   "sub": "This time it works.",
+   "log": "> rerun: green",
+   "text": "Rerun the task, and the agent edits the right file. The output is correct, and you can show why.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Update the config",
+     "sub": "Edited config.yaml",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Guessing",
+       65,
+       "r"
+      ],
+      [
+       "Facts",
+       35,
+       "g"
+      ]
+     ],
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Your turn.",
+    "Strangest"
+   ],
+   "sub": "agent bug?",
+   "log": "> agentrq.com",
+   "text": "What is the strangest bug an agent ever created? Tell us in the comments, and try it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Strangest agent|bug?",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ]
+  }
+ ]
+}

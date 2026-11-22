@@ -1,0 +1,320 @@
+{
+ "title": "Events Alert To Fix",
+ "kicker": "events",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "b1",
+   "min": 5,
+   "hed": [
+    "Three in",
+    "the morning."
+   ],
+   "sub": "The pipeline runs alone.",
+   "log": "> time: 03:00",
+   "text": "Three in the morning. The nightly pipeline is running, and everyone is asleep.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Nightly pipeline",
+     "sub": "main branch",
+     "at": 1.2,
+     "chip": [
+      "Running",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b2",
+   "min": 5,
+   "hed": [
+    "The build",
+    "fails."
+   ],
+   "sub": "Right on time.",
+   "log": "> build: failed",
+   "text": "Then the build fails. Red, on the main branch, with a stack trace nobody sees.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Build failed",
+     "sub": "main branch",
+     "at": 1.2,
+     "chip": [
+      "Failed",
+      "r"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "alert"
+   }
+  },
+  {
+   "id": "b3",
+   "min": 5,
+   "hed": [
+    "Nobody is",
+    "awake."
+   ],
+   "sub": "And nobody will look.",
+   "log": "> humans: 0",
+   "text": "Nobody is awake, and nobody will look for hours. The broken build just sits there.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "system",
+     "who": "System",
+     "text": "No one is awake...",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b4",
+   "min": 5,
+   "hed": [
+    "The team",
+    "wakes to it."
+   ],
+   "sub": "Everything is blocked.",
+   "log": "> morning: blocked",
+   "text": "At nine, the team wakes up to a red board and a lost morning.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Deploy",
+     "sub": "Blocked by the failed build",
+     "at": 1.2,
+     "chip": [
+      "Blocked",
+      "r"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Review",
+     "sub": "Waiting on the build",
+     "at": 3.2,
+     "chip": [
+      "Waiting",
+      "z"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b5",
+   "min": 5,
+   "hed": [
+    "A failed build",
+    "can speak up."
+   ],
+   "sub": "With a named event.",
+   "log": "> event: build_failed",
+   "text": "In Agent R Q, a failed build can emit a named event, just like a finished task does.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "build_failed",
+     "sub": "A named event",
+     "at": 1.2,
+     "chip": [
+      "Emitted",
+      "y"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b6",
+   "min": 5,
+   "hed": [
+    "The event is",
+    "just a name."
+   ],
+   "sub": "A signal with meaning.",
+   "log": "> event: build_failed",
+   "text": "An event is only a name, a signal that says what happened. No code to write.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "build_failed",
+     "sub": "a named signal",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b7",
+   "min": 5,
+   "hed": [
+    "Wire it to",
+    "a fixer."
+   ],
+   "sub": "A workspace.",
+   "log": "> wire: -> Fixer",
+   "text": "You wire that event to a fixer workspace, and it creates a task for its agent on the spot.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "build_failed",
+       "event"
+      ],
+      [
+       "Fixer workspace",
+       "new task"
+      ]
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b8",
+   "min": 5,
+   "hed": [
+    "The agent",
+    "wakes up."
+   ],
+   "sub": "At three oh one.",
+   "log": "> agent: picks up",
+   "text": "The fixer agent is already listening. A minute later, it picks up the task and starts.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Picked up: investigate build_failed.",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Investigate the failed build",
+     "sub": "Claude Code is on it",
+     "at": 3.2,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "b9",
+   "min": 5,
+   "hed": [
+    "It reads",
+    "the logs."
+   ],
+   "sub": "Finds the cause.",
+   "log": "> agent: reading logs",
+   "text": "It reads the logs, finds the failing test, and traces it to a bad import.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "read build log",
+       "p"
+      ],
+      [
+       "failing: checkout.test",
+       "r"
+      ],
+      [
+       "cause: bad import",
+       "y"
+      ]
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "b10",
+   "min": 5,
+   "hed": [
+    "It proposes",
+    "a fix."
+   ],
+   "sub": "Not a merge.",
+   "log": "> pr: opened",
+   "text": "It opens a pull request with the fix, and does not merge it. That part is left to you.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix PR opened",
+     "sub": "Waiting for your review",
+     "at": 1.2,
+     "chip": [
+      "Ready",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "b11",
+   "min": 5,
+   "hed": [
+    "You stay",
+    "in control."
+   ],
+   "sub": "Approvals still apply.",
+   "log": "> you: approve",
+   "text": "Every workspace keeps its approvals, so a human still decides what ships.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "You approve.",
+     "sub": "nothing ships alone",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b12",
+   "min": 5,
+   "hed": [
+    "What would you",
+    "hand off?"
+   ],
+   "sub": "Tell us below.",
+   "log": "> agentrq.com",
+   "text": "What would you want an agent to handle while you sleep? Tell us in the comments, and try events at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "What would you|hand off?",
+     "sub": "comment below",
+     "at": 1.2
+    }
+   ]
+  }
+ ]
+}

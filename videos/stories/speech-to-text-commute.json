@@ -1,0 +1,388 @@
+{
+ "title": "Speech to text: commute",
+ "kicker": "speech to text",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "On the train",
+    "home."
+   ],
+   "sub": "Ideas arrive.",
+   "log": "> you: commuting",
+   "text": "You are on the train home, and your head fills with ideas about tomorrow.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Train home",
+     "sub": "Seven minutes to your stop",
+     "at": 1.2,
+     "chip": [
+      "Moving",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Your head",
+     "sub": "Full of ideas",
+     "at": 3.0,
+     "chip": [
+      "Busy",
+      "y"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "three",
+   "min": 8,
+   "hed": [
+    "Three things",
+    "for the agents."
+   ],
+   "sub": "Right now.",
+   "log": "> ideas: three",
+   "text": "You think of three things your agents should do tomorrow, and each one is a good one.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "1. fix the signup bug",
+       "p"
+      ],
+      [
+       "2. write the release notes",
+       "p"
+      ],
+      [
+       "3. check the slow query",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "hands",
+   "min": 8,
+   "hed": [
+    "Hands full",
+    "of bag."
+   ],
+   "sub": "No laptop.",
+   "log": "> hands: full",
+   "text": "But your hands are full of bag, and a laptop is the last thing you want to open here.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "hands full",
+     "at": 1.4,
+     "sub": "no laptop, no keyboard"
+    }
+   ]
+  },
+  {
+   "id": "lose",
+   "min": 8,
+   "hed": [
+    "By tomorrow,",
+    "they are gone."
+   ],
+   "sub": "Ideas fade.",
+   "log": "> ideas: fading",
+   "text": "By tomorrow morning, two of the three have faded, and the third has changed shape.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Remembered",
+       30,
+       "g"
+      ],
+      [
+       "Faded",
+       70,
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "mic",
+   "min": 8,
+   "hed": [
+    "Tap the mic",
+    "and talk."
+   ],
+   "sub": "In Agent R Q.",
+   "log": "> you: tap mic",
+   "text": "In Agent R Q, you tap the mic and simply talk, the way you would to a colleague.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "Mic"
+     ],
+     "label": "tap and speak",
+     "at": 1.4
+    },
+    {
+     "k": "wave",
+     "at": 3.0
+    }
+   ]
+  },
+  {
+   "id": "phone",
+   "min": 8,
+   "hed": [
+    "On a phone,",
+    "dictation."
+   ],
+   "sub": "Uses the phone's own.",
+   "log": "> phone: dictation",
+   "text": "On a phone, it uses your phone's own dictation, so it works with the keyboard you already have.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Phone dictation",
+     "sub": "Built into your keyboard",
+     "at": 1.2,
+     "chip": [
+      "Native",
+      "b"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Agent R Q",
+     "sub": "Receives the words",
+     "at": 3.2,
+     "chip": [
+      "Text",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "speak",
+   "min": 8,
+   "hed": [
+    "Say all three."
+   ],
+   "sub": "In one go.",
+   "log": "> you: speaking",
+   "text": "You say all three in one go, at your own pace, with the train rattling in the background.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Fix signup, write notes, check the slow query.",
+     "at": 1.6
+    },
+    {
+     "k": "wave",
+     "at": 3.0
+    }
+   ]
+  },
+  {
+   "id": "clean",
+   "min": 8,
+   "hed": [
+    "Words become",
+    "text."
+   ],
+   "sub": "Clear and ready.",
+   "log": "> text: transcribed",
+   "text": "The words become clear text in the message box, ready for you to read and send.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Fix the signup bug. Write the release notes. Check the slow query.",
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "id": "tasks",
+   "min": 8,
+   "hed": [
+    "Three clear",
+    "tasks."
+   ],
+   "sub": "Ten seconds.",
+   "log": "> tasks: created",
+   "text": "Ten seconds later, three clear tasks are waiting for your agents, each with its own title.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Fix the signup bug",
+     "sub": "Waiting for an agent",
+     "at": 1.2,
+     "chip": [
+      "Not started",
+      "z"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Write the release notes",
+     "sub": "Waiting for an agent",
+     "at": 2.6,
+     "chip": [
+      "Not started",
+      "z"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Check the slow query",
+     "sub": "Waiting for an agent",
+     "at": 3.8,
+     "chip": [
+      "Not started",
+      "z"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pickup",
+   "min": 8,
+   "hed": [
+    "Agents pick",
+    "them up."
+   ],
+   "sub": "While you ride.",
+   "log": "> agents: picking up",
+   "text": "Your agents pick them up while you ride, and each one starts on its own task.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix the signup bug",
+     "sub": "Claude Code",
+     "at": 1.2,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Write the release notes",
+     "sub": "Codex",
+     "at": 2.6,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Check the slow query",
+     "sub": "Agy",
+     "at": 3.8,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work",
+    "agy": "work"
+   }
+  },
+  {
+   "id": "home",
+   "min": 8,
+   "hed": [
+    "By the time",
+    "you are home."
+   ],
+   "sub": "They are moving.",
+   "log": "> home: moving",
+   "text": "By the time you get home, they are already moving, and the evening is yours.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Done",
+       50,
+       "g"
+      ],
+      [
+       "Ongoing",
+       30,
+       "y"
+      ],
+      [
+       "Queued",
+       20,
+       "z"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "work",
+    "agy": "work"
+   }
+  },
+  {
+   "id": "cta",
+   "min": 8,
+   "hed": [
+    "Where do ideas",
+    "hit you?"
+   ],
+   "sub": "Tell us below.",
+   "log": "> comments: open",
+   "text": "Where do your best ideas hit you? Tell us in the comments, and try the mic at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Best idea?",
+     "at": 1.4,
+     "sub": "where did it hit you?"
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

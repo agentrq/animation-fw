@@ -1,0 +1,69 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 7.2,
+      "text": "Your coding agent just hit a fork in the road, and you are nowhere near your terminal."
+    },
+    {
+      "id": "wait",
+      "min": 7.2,
+      "text": "So the agent simply stops, and waits for you."
+    },
+    {
+      "id": "lost",
+      "min": 7.2,
+      "text": "Every hour it waits is an hour of work that does not happen."
+    },
+    {
+      "id": "board",
+      "min": 7.2,
+      "text": "With Agent R Q, every request your agents make lands on one task board, in real time."
+    },
+    {
+      "id": "statuses",
+      "min": 7.2,
+      "text": "Ongoing, waiting, blocked, done. Every status is visible in one place."
+    },
+    {
+      "id": "phone",
+      "min": 7.2,
+      "text": "Open it on your phone, wherever you are, and read the question in full."
+    },
+    {
+      "id": "answer",
+      "min": 7.2,
+      "text": "Then just answer, in plain words. Wait for the weekend, and do the indexes first."
+    },
+    {
+      "id": "pick",
+      "min": 7.2,
+      "text": "The agent picks up your reply instantly, with no refresh and no copy and paste."
+    },
+    {
+      "id": "perm",
+      "min": 7.2,
+      "text": "Or the agent needs permission. An approval card shows exactly what it wants to run."
+    },
+    {
+      "id": "choices",
+      "min": 7.2,
+      "text": "Allow once, always allow, or deny. You stay in control of every command."
+    },
+    {
+      "id": "carry",
+      "min": 7.2,
+      "text": "Approved, and the agent carries straight on with the job."
+    },
+    {
+      "id": "end",
+      "min": 7.2,
+      "text": "You never miss a request, and no agent ever stays stuck for long."
+    },
+    {
+      "id": "close",
+      "min": 7.2,
+      "text": "Which request from an agent do you miss most often? Let us know below, or try it at Agent R Q dot com."
+    }
+  ]
+}

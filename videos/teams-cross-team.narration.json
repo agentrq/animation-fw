@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "Ada and Ben both have a workspace called storefront, and both are working on the same shop."
+    },
+    {
+      "id": "island",
+      "min": 8,
+      "text": "Until now, they were two islands. Neither could see what the other agent was doing."
+    },
+    {
+      "id": "clash",
+      "min": 8,
+      "text": "Sometimes both agents even edit the same file, and nobody finds out until the merge conflict."
+    },
+    {
+      "id": "same",
+      "min": 8,
+      "text": "In Agent R Q, when two teammates share workspaces with the same name, it becomes one team workspace."
+    },
+    {
+      "id": "merged",
+      "min": 8,
+      "text": "There is nothing to configure. The two merge into one, and both of them stay in control of their own agents."
+    },
+    {
+      "id": "tasks",
+      "min": 8,
+      "text": "Now both see each other's tasks live, each one marked with the owner's name."
+    },
+    {
+      "id": "noclash",
+      "min": 8,
+      "text": "So Ada notices that Ben is already fixing the signup email, and she picks something else."
+    },
+    {
+      "id": "mem",
+      "min": 8,
+      "text": "The agents read each other's memory too. Ben's agent leaves a note about a quirky test, and Ada's agent can read it."
+    },
+    {
+      "id": "own",
+      "min": 8,
+      "text": "Each agent only writes to its own memory. Teammates can read it, but never change it."
+    },
+    {
+      "id": "sk",
+      "min": 8,
+      "text": "Nothing is shared until each person chooses it. Share a skill, or keep it private."
+    },
+    {
+      "id": "view",
+      "min": 8,
+      "text": "One project, one shared view, and a team that finally knows what is going on."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "Name them the same, and join the islands. Try teams at Agent R Q dot com."
+    }
+  ]
+}

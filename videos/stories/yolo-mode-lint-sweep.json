@@ -1,0 +1,419 @@
+{
+ "title": "YOLO: lint sweep",
+ "kicker": "yolo mode lint sweep",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "Two hundred",
+    "files."
+   ],
+   "sub": "One lint rule.",
+   "log": "> lint: 200 files",
+   "text": "You change one lint rule, and now two hundred files need fixing. A perfect job for an agent.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Fix lint in all files",
+     "sub": "200 files to touch",
+     "chip": [
+      "Todo",
+      "z"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> eslint: 200 errors",
+       "p"
+      ]
+     ],
+     "at": 3.2
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "ask",
+   "min": 8,
+   "hed": [
+    "Allow.",
+    "Allow."
+   ],
+   "sub": "Allow, allow, allow.",
+   "log": "> approval 1 of 200",
+   "text": "But every single edit asks for approval first. Allow, allow, allow, allow.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Authorization required",
+      "y"
+     ],
+     "code": "Edit  src/utils/a.ts",
+     "buttons": [
+      "Allow Once",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 3.6,
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "count",
+   "min": 8,
+   "hed": [
+    "Two hundred",
+    "clicks."
+   ],
+   "sub": "Same answer each time.",
+   "log": "> approvals: 200",
+   "text": "Two hundred identical approvals. You will say yes every time, so each click tells you nothing at all.",
+   "scene": [
+    {
+     "k": "count",
+     "from": 3,
+     "at": 1.4
+    },
+    {
+     "k": "msg",
+     "from": "system",
+     "who": "System",
+     "text": "200 approvals pending",
+     "at": 3.6
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "flip",
+   "min": 8,
+   "hed": [
+    "Flip",
+    "YOLO."
+   ],
+   "sub": "For this task only.",
+   "log": "> yolo: on",
+   "text": "So you turn on YOLO mode, for just this task. Tool calls are approved automatically from now on.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Fix lint in all files",
+     "sub": "YOLO on",
+     "chip": [
+      "YOLO",
+      "y"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "kbd",
+     "keys": [
+      "Y",
+      "O",
+      "L",
+      "O"
+     ],
+     "label": "one switch",
+     "at": 3.4
+    }
+   ]
+  },
+  {
+   "id": "scope",
+   "min": 8,
+   "hed": [
+    "Just this",
+    "task."
+   ],
+   "sub": "Or a whole workspace.",
+   "log": "> scope: task",
+   "text": "You can set it on one task, or on a whole workspace of low risk work, like a docs site.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix lint in all files",
+     "sub": "YOLO on",
+     "chip": [
+      "Auto",
+      "g"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Other tasks",
+     "sub": "Still ask first",
+     "chip": [
+      "Asks",
+      "y"
+     ],
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "run",
+   "min": 8,
+   "hed": [
+    "It just",
+    "runs."
+   ],
+   "sub": "No more waiting.",
+   "log": "> auto-approved",
+   "text": "The agent sweeps through every file and nobody waits on you. Edit after edit, all auto approved.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "Edit a.ts  auto-approved",
+       "p"
+      ],
+      [
+       "Edit b.ts  auto-approved",
+       "p"
+      ],
+      [
+       "Edit c.ts  auto-approved",
+       "p"
+      ],
+      [
+       "Edit d.ts  auto-approved",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work"
+   }
+  },
+  {
+   "id": "away",
+   "min": 8,
+   "hed": [
+    "Walk",
+    "away."
+   ],
+   "sub": "Come back to a result.",
+   "log": "> coffee break",
+   "text": "So you can go for coffee, or work on something else. The agent does not need you for this one.",
+   "scene": [
+    {
+     "k": "wave",
+     "at": 1.4
+    },
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude",
+     "text": "Working through the files.",
+     "at": 3.2
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "log",
+   "min": 8,
+   "hed": [
+    "Still",
+    "logged."
+   ],
+   "sub": "Every call in the history.",
+   "log": "> history: 200 edits",
+   "text": "Every call is still written to the task history. Nothing is hidden, and you can inspect any edit afterward.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Tool call history",
+     "sub": "200 edits recorded",
+     "chip": [
+      "Visible",
+      "b"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Read",
+       30,
+       "g"
+      ],
+      [
+       "Edit",
+       60,
+       "g"
+      ],
+      [
+       "Lint",
+       10,
+       "b"
+      ]
+     ],
+     "at": 3.2
+    }
+   ]
+  },
+  {
+   "id": "done",
+   "min": 8,
+   "hed": [
+    "All files",
+    "fixed."
+   ],
+   "sub": "Lint is clean.",
+   "log": "> lint: 0 errors",
+   "text": "The sweep finishes, and lint comes back clean. You review the diff once, instead of approving it two hundred times.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> eslint: 0 errors",
+       "p"
+      ],
+      [
+       "> 200 files changed",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix lint in all files",
+     "sub": "Ready to review",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 3.6
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "review",
+   "min": 8,
+   "hed": [
+    "Review the",
+    "diff."
+   ],
+   "sub": "One look, not two hundred.",
+   "log": "> git diff",
+   "text": "The review happens where it should, in the diff, with the whole change in front of you.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Agent",
+       "edits"
+      ],
+      [
+       "Diff",
+       "one view"
+      ],
+      [
+       "You",
+       "review"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "off",
+   "min": 8,
+   "hed": [
+    "Then turn",
+    "it off."
+   ],
+   "sub": "Back to careful mode.",
+   "log": "> yolo: off",
+   "text": "And when the sweep is over, you switch it off, and the careful defaults come right back.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Fix lint in all files",
+     "sub": "YOLO off",
+     "chip": [
+      "Off",
+      "z"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Next task",
+     "sub": "Asks first again",
+     "chip": [
+      "Asks",
+      "y"
+     ],
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Two hundred clicks,",
+    "zero."
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "Two hundred clicks, down to zero. Try YOLO mode at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "200 clicks.|Zero.",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

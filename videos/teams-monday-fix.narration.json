@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "mon",
+      "min": 8,
+      "text": "Monday. Ben's agent spends two hours working out why the build keeps flaking."
+    },
+    {
+      "id": "crack",
+      "min": 8,
+      "text": "It finally cracks it. The cache has to be cleared before the end to end run."
+    },
+    {
+      "id": "lost",
+      "min": 8,
+      "text": "Then the session ends, and that lesson goes nowhere. It lives in one chat, on one laptop."
+    },
+    {
+      "id": "tue",
+      "min": 8,
+      "text": "Tuesday. Ada's agent runs into the very same flaky build."
+    },
+    {
+      "id": "zero",
+      "min": 8,
+      "text": "It starts from zero. Another two hours go by, to find the same answer Ben already found."
+    },
+    {
+      "id": "cost",
+      "min": 8,
+      "text": "That is four hours of agent time and human attention, for one single fix. Now multiply that by the whole team."
+    },
+    {
+      "id": "teams",
+      "min": 8,
+      "text": "With Teams in Agent R Q, an agent's memory index lists every teammate's memory next to its own."
+    },
+    {
+      "id": "write",
+      "min": 8,
+      "text": "It can read theirs, but it only ever writes to its own. Nobody can overwrite a note."
+    },
+    {
+      "id": "sav",
+      "min": 8,
+      "text": "So on Monday, Ben's agent saves what it learned, as a short note, in its own memory."
+    },
+    {
+      "id": "read",
+      "min": 8,
+      "text": "On Tuesday, Ada's agent reads that note first. Clear the cache, then run the tests."
+    },
+    {
+      "id": "green",
+      "min": 8,
+      "text": "Done in two minutes, instead of two hours. That is the whole point of sharing."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "Solve it once, and let the whole team keep it. Try it at Agent R Q dot com."
+    }
+  ]
+}

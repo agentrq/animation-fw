@@ -1,0 +1,69 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 7.2,
+      "text": "Midnight. Three agents are working through your backlog while you are fast asleep."
+    },
+    {
+      "id": "stop",
+      "min": 7.2,
+      "text": "Then each one hits a question that only you can answer."
+    },
+    {
+      "id": "silent",
+      "min": 7.2,
+      "text": "Without a board, those questions sit silently in three different terminals, and nobody ever sees them."
+    },
+    {
+      "id": "cost",
+      "min": 7.2,
+      "text": "So all three agents sit idle all night, and your backlog barely moves."
+    },
+    {
+      "id": "board",
+      "min": 7.2,
+      "text": "In Agent R Q, every question lands on one board, in order, with the full context attached."
+    },
+    {
+      "id": "context",
+      "min": 7.2,
+      "text": "Each card carries who asked, what they asked, and why, so you never have to guess."
+    },
+    {
+      "id": "wake",
+      "min": 7.2,
+      "text": "You wake up, grab your phone, and open the board over coffee."
+    },
+    {
+      "id": "answer",
+      "min": 7.2,
+      "text": "Answer the question, allow the command, deny the risky one. All of it takes two minutes."
+    },
+    {
+      "id": "carry",
+      "min": 7.2,
+      "text": "The agents pick up your replies instantly, and carry on with the work."
+    },
+    {
+      "id": "cleared",
+      "min": 7.2,
+      "text": "Three answers, two minutes, and the whole queue is cleared before breakfast."
+    },
+    {
+      "id": "minutes",
+      "min": 7.2,
+      "text": "Instead of idling all night, the agents lost minutes, not hours."
+    },
+    {
+      "id": "prod",
+      "min": 7.2,
+      "text": "That is how a backlog gets finished while the humans are still asleep."
+    },
+    {
+      "id": "close",
+      "min": 7.2,
+      "text": "What was the longest an agent ever waited on you overnight? Tell us below, or try it at Agent R Q dot com."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 7.2,
+      "text": "Your agent finishes its tasks in the end, but they always feel slow."
+    },
+    {
+      "id": "why",
+      "min": 7.2,
+      "text": "You cannot say why. Was the agent slow, or was something in the way?"
+    },
+    {
+      "id": "guess",
+      "min": 7.2,
+      "text": "Without data, all you have is a gut feeling, and gut feelings fix nothing."
+    },
+    {
+      "id": "record",
+      "min": 7.2,
+      "text": "Agent R Q records a timeline for every task, from the moment it starts until it closes."
+    },
+    {
+      "id": "three",
+      "min": 7.2,
+      "text": "It records how long the task was working, how long it was blocked, and how long it waited on you."
+    },
+    {
+      "id": "read",
+      "min": 7.2,
+      "text": "All of that fits in one bar, which you can read at a glance."
+    },
+    {
+      "id": "blocked",
+      "min": 7.2,
+      "text": "A quarter of the time, the task was blocked, on something small like a missing credential."
+    },
+    {
+      "id": "fixable",
+      "min": 7.2,
+      "text": "That is fixable. Add the credential once, and it never blocks again."
+    },
+    {
+      "id": "wait",
+      "min": 7.2,
+      "text": "And a third of the time, it was waiting for you. That is fixable too."
+    },
+    {
+      "id": "approvals",
+      "min": 7.2,
+      "text": "Faster replies, or pre approved commands, and the waiting shrinks."
+    },
+    {
+      "id": "after",
+      "min": 7.2,
+      "text": "Next time, the same task takes one hour instead of three."
+    },
+    {
+      "id": "fix",
+      "min": 7.2,
+      "text": "Once you can see the delay, you can remove it."
+    },
+    {
+      "id": "close",
+      "min": 7.2,
+      "text": "What blocks your agents most often? Tell us in the comments, or try it at Agent R Q dot com."
+    }
+  ]
+}

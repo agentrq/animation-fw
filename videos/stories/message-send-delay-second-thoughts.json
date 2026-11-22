@@ -1,0 +1,371 @@
+{
+ "title": "Send delay: second thoughts",
+ "kicker": "send delay",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "Build broken",
+    "again."
+   ],
+   "sub": "Third time today.",
+   "log": "> build: failed",
+   "text": "The agent broke the build again, for the third time today, and you are already typing.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Build the checkout page",
+     "sub": "Failed again",
+     "at": 1.2,
+     "chip": [
+      "Failed",
+      "r"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Claude Code",
+     "sub": "Waiting for you",
+     "at": 3.0,
+     "chip": [
+      "Idle",
+      "z"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "alert"
+   }
+  },
+  {
+   "id": "angry",
+   "min": 8,
+   "hed": [
+    "Hot take",
+    "typed."
+   ],
+   "sub": "Not your finest draft.",
+   "log": "> you: typing...",
+   "text": "You fire back a very direct message, with several words you would never say out loud.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Fix it. How is this STILL broken?!",
+     "at": 1.6
+    },
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "I told you twice already!!",
+     "at": 3.4
+    }
+   ]
+  },
+  {
+   "id": "send",
+   "min": 8,
+   "hed": [
+    "Then you",
+    "hit send."
+   ],
+   "sub": "One tap.",
+   "log": "> you: send",
+   "text": "Your thumb moves faster than your judgment, and you hit send before reading it back.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "Enter"
+     ],
+     "label": "sent in anger",
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Message to Claude Code",
+     "sub": "Heading for the agent",
+     "at": 3.0,
+     "chip": [
+      "Sending",
+      "y"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hold",
+   "min": 8,
+   "hed": [
+    "Wait,",
+    "hold on."
+   ],
+   "sub": "The message is held.",
+   "log": "> send delay: 5s",
+   "text": "Agent R Q holds the message for a few seconds before the agent ever sees it.",
+   "scene": [
+    {
+     "k": "count",
+     "from": 5,
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Message held",
+     "sub": "Not delivered yet",
+     "at": 3.0,
+     "chip": [
+      "Held",
+      "y"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "buttons",
+   "min": 8,
+   "hed": [
+    "Two buttons",
+    "right there."
+   ],
+   "sub": "Send Now or Cancel.",
+   "log": "> choices: send now | cancel",
+   "text": "Send Now and Cancel sit right there, on the message, for the whole countdown.",
+   "scene": [
+    {
+     "k": "btns",
+     "code": "hold: Fix it. How is this STILL broken?!",
+     "buttons": [
+      "Send Now",
+      "Cancel"
+     ],
+     "press": 1,
+     "tap": 5.0,
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "regret",
+   "min": 8,
+   "hed": [
+    "Read it",
+    "again."
+   ],
+   "sub": "Now it looks different.",
+   "log": "> you: rereading",
+   "text": "In that pause you read it again, and it looks much worse than it felt.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Fix it. How is this STILL broken?!",
+     "at": 1.6
+    },
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> reread: sounds angry",
+       "y"
+      ],
+      [
+       "> reread: nothing useful",
+       "r"
+      ]
+     ],
+     "at": 2.4
+    }
+   ]
+  },
+  {
+   "id": "cancel",
+   "min": 8,
+   "hed": [
+    "Cancel.",
+    "Breathe."
+   ],
+   "sub": "Nothing was sent.",
+   "log": "> cancel: pulled back",
+   "text": "You tap Cancel. The message is pulled back, and the agent never knew it existed.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Angry message",
+     "sub": "Pulled back before delivery",
+     "at": 1.2,
+     "chip": [
+      "Cancelled",
+      "z"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Claude Code",
+     "sub": "Never saw it",
+     "at": 3.2,
+     "chip": [
+      "Calm",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "rewrite",
+   "min": 8,
+   "hed": [
+    "Write what",
+    "helps."
+   ],
+   "sub": "Calm and specific.",
+   "log": "> you: rewrite",
+   "text": "Then you write what actually helps. The failing test, the error, and the file you suspect.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Test checkout_total fails. See the error in cart.go.",
+     "at": 1.6
+    },
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Check the rounding first.",
+     "at": 3.6
+    }
+   ]
+  },
+  {
+   "id": "send2",
+   "min": 8,
+   "hed": [
+    "Send it",
+    "properly."
+   ],
+   "sub": "Delivered after the wait.",
+   "log": "> delivered",
+   "text": "This time you let the countdown run out, and the message lands exactly as written.",
+   "scene": [
+    {
+     "k": "count",
+     "from": 3,
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Message delivered",
+     "sub": "Calm, clear, useful",
+     "at": 3.2,
+     "chip": [
+      "Sent",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "result",
+   "min": 8,
+   "hed": [
+    "The agent",
+    "gets it."
+   ],
+   "sub": "First try.",
+   "log": "> build: passing",
+   "text": "The agent reads a clear instruction and fixes the rounding bug on the first try.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix the rounding bug",
+     "sub": "Claude Code",
+     "at": 1.2,
+     "chip": [
+      "Done",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Build the checkout page",
+     "sub": "Green again",
+     "at": 3.2,
+     "chip": [
+      "Passing",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "lesson",
+   "min": 8,
+   "hed": [
+    "Better asks,",
+    "better work."
+   ],
+   "sub": "Clear in, clear out.",
+   "log": "> lesson: pause first",
+   "text": "Better instructions get better results, and a few seconds of pause is what gets you there.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Better asks|better results",
+     "at": 1.4,
+     "sub": "a few seconds is enough"
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "min": 8,
+   "hed": [
+    "Your sharpest",
+    "message?"
+   ],
+   "sub": "Admit it below.",
+   "log": "> comments: open",
+   "text": "What is the sharpest thing you have said to an agent? Admit it below, and try the send delay at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Admit it",
+     "at": 1.4,
+     "sub": "the sharpest message you sent"
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  }
+ ]
+}

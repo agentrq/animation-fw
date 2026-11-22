@@ -1,0 +1,411 @@
+{
+ "title": "Workspaces: token isolation",
+ "kicker": "workspace token isolation",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "One token,",
+    "everything."
+   ],
+   "sub": "A very big key.",
+   "log": "> token: all projects",
+   "text": "Imagine one M C P token that can touch every project you have. Storefront, billing, search, all of it.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "One token for all",
+     "sub": "Every project reachable",
+     "chip": [
+      "Risk",
+      "r"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Token",
+       "one"
+      ],
+      [
+       "Web",
+       "open"
+      ],
+      [
+       "Billing",
+       "open"
+      ],
+      [
+       "Search",
+       "open"
+      ]
+     ],
+     "at": 3.4
+    }
+   ]
+  },
+  {
+   "id": "leak",
+   "min": 8,
+   "hed": [
+    "Then it",
+    "leaks."
+   ],
+   "sub": "A log, a paste, a screenshot.",
+   "log": "> token leaked",
+   "text": "Tokens leak. They end up in a log, a pasted message, or a screenshot. And when that one leaks, everything leaks.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> token pasted in a chat",
+       "p"
+      ],
+      [
+       "> token seen in a log",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Everything exposed",
+     "sub": "One leak, five projects",
+     "chip": [
+      "Breach",
+      "r"
+     ],
+     "at": 3.6
+    }
+   ],
+   "mascot": {
+    "claude": "alert"
+   }
+  },
+  {
+   "id": "rot",
+   "min": 8,
+   "hed": [
+    "Rotating",
+    "hurts."
+   ],
+   "sub": "Every agent breaks.",
+   "log": "> rotate: all agents down",
+   "text": "Worse, rotating that token breaks every agent at once. So people delay, and the risk just sits there.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Rotate the token",
+     "sub": "Every agent stops",
+     "chip": [
+      "Painful",
+      "y"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Maybe next week.",
+     "at": 3.4
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "idea",
+   "min": 8,
+   "hed": [
+    "A token",
+    "per workspace."
+   ],
+   "sub": "Scope it down.",
+   "log": "> token per workspace",
+   "text": "Agent R Q scopes the key. Each workspace has its own M C P token, and nothing else.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "One workspace.|One token.",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "two",
+   "min": 8,
+   "hed": [
+    "Each agent",
+    "sees one."
+   ],
+   "sub": "Only its own project.",
+   "log": "> storefront billing",
+   "text": "An agent holding the storefront token sees the storefront, and nothing else. Billing is simply not there for it.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "storefront  token: ••••a91",
+       "p"
+      ],
+      [
+       "billing     token: ••••c27",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Agents stay in their lane",
+     "sub": "No crossing between projects",
+     "chip": [
+      "Isolated",
+      "g"
+     ],
+     "at": 3.8
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work"
+   }
+  },
+  {
+   "id": "leak2",
+   "min": 8,
+   "hed": [
+    "A smaller",
+    "leak."
+   ],
+   "sub": "One workspace, not five.",
+   "log": "> leak: contained",
+   "text": "Now a leak stays in one workspace. The damage is limited to the project that token could ever reach.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "storefront token leaked",
+     "sub": "Billing, search untouched",
+     "chip": [
+      "Contained",
+      "y"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "grid",
+     "cells": [
+      "web",
+      "billing",
+      "search"
+     ],
+     "at": 3.4
+    }
+   ]
+  },
+  {
+   "id": "rotate",
+   "min": 8,
+   "hed": [
+    "Rotate",
+    "one."
+   ],
+   "sub": "The rest keep working.",
+   "log": "> rotate billing",
+   "text": "So you rotate the one token, and the rest keep working. No outage, no scramble, no waiting for next week.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "billing token rotated",
+     "sub": "Others unaffected",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "web",
+       "running"
+      ],
+      [
+       "billing",
+       "new token"
+      ],
+      [
+       "search",
+       "running"
+      ]
+     ],
+     "at": 3.4
+    }
+   ],
+   "mascot": {
+    "codex": "done"
+   }
+  },
+  {
+   "id": "new",
+   "min": 8,
+   "hed": [
+    "New agent,",
+    "new token."
+   ],
+   "sub": "Hand out only what is needed.",
+   "log": "> add agent",
+   "text": "Adding an agent is easy. Give it the token for the one workspace it needs, and nothing more.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "New agent",
+     "sub": "Gets the docs workspace only",
+     "chip": [
+      "Scoped",
+      "b"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Gemini",
+     "text": "Connected to docs.",
+     "at": 3.4
+    }
+   ],
+   "mascot": {
+    "agy": "work"
+   }
+  },
+  {
+   "id": "audit",
+   "min": 8,
+   "hed": [
+    "Know who",
+    "did what."
+   ],
+   "sub": "The history is per workspace.",
+   "log": "> history: billing",
+   "text": "Each workspace keeps its own history, so you can see which calls came in on which token.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Read",
+       40,
+       "g"
+      ],
+      [
+       "Edit",
+       35,
+       "g"
+      ],
+      [
+       "Deploy",
+       25,
+       "y"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "approve",
+   "min": 8,
+   "hed": [
+    "Approvals",
+    "still apply."
+   ],
+   "sub": "A token is not a free pass.",
+   "log": "> deploy: allow?",
+   "text": "And the token is not a free pass. Sensitive tool calls still ask you first, inside that workspace.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Needs input",
+      "y"
+     ],
+     "code": "Bash  git push origin main",
+     "buttons": [
+      "Allow",
+      "Deny"
+     ],
+     "press": 1,
+     "tap": 5.2,
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "default",
+   "min": 8,
+   "hed": [
+    "Safe by",
+    "default."
+   ],
+   "sub": "No setup required.",
+   "log": "> isolation: on",
+   "text": "You do not set this up. A new workspace gets its own token the moment you create it.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Isolation is the|default.",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "A small",
+    "blast radius."
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "A small blast radius, by default. Try workspaces at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Small blast radius.",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

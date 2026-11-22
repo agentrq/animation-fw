@@ -1,0 +1,395 @@
+{
+ "title": "Cross Team Workspaces",
+ "kicker": "cross team",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "Two people.",
+    "Same project."
+   ],
+   "sub": "Two lonely islands.",
+   "log": "> ada, ben: storefront",
+   "text": "Ada and Ben both have a workspace called storefront, and both are working on the same shop.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "storefront",
+     "sub": "Ada",
+     "at": 1.2,
+     "chip": [
+      "Own",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "storefront",
+     "sub": "Ben",
+     "at": 3.2,
+     "chip": [
+      "Own",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work"
+   }
+  },
+  {
+   "id": "island",
+   "min": 8,
+   "hed": [
+    "Neither can see",
+    "the other."
+   ],
+   "sub": "Two islands.",
+   "log": "> no shared view",
+   "text": "Until now, they were two islands. Neither could see what the other agent was doing.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "Ada",
+     "text": "What is Ben's agent on?",
+     "at": 1.2
+    },
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "Ben",
+     "text": "No idea. Ask him.",
+     "at": 3.0
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "clash",
+   "min": 8,
+   "hed": [
+    "So work gets",
+    "done twice."
+   ],
+   "sub": "Or breaks each other.",
+   "log": "> collision: cart.ts",
+   "text": "Sometimes both agents even edit the same file, and nobody finds out until the merge conflict.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> ada agent: edit cart.ts",
+       "p"
+      ],
+      [
+       "> ben agent: edit cart.ts",
+       "p"
+      ],
+      [
+       "> merge conflict",
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "alert",
+    "codex": "alert"
+   }
+  },
+  {
+   "id": "same",
+   "min": 8,
+   "hed": [
+    "Share it with",
+    "the same name."
+   ],
+   "sub": "That is the whole trick.",
+   "log": "> same name = one team workspace",
+   "text": "In Agent R Q, when two teammates share workspaces with the same name, it becomes one team workspace.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Ada storefront",
+       "shared"
+      ],
+      [
+       "One team workspace",
+       "merged"
+      ],
+      [
+       "Ben storefront",
+       "shared"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "merged",
+   "min": 8,
+   "hed": [
+    "Merged into one."
+   ],
+   "sub": "No setup, no migration.",
+   "log": "> storefront: merged",
+   "text": "There is nothing to configure. The two merge into one, and both of them stay in control of their own agents.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "storefront",
+     "sub": "One team workspace",
+     "at": 1.2,
+     "chip": [
+      "Merged",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Members",
+     "sub": "Ada, Ben",
+     "at": 3.0
+    }
+   ]
+  },
+  {
+   "id": "tasks",
+   "min": 8,
+   "hed": [
+    "See each other's",
+    "tasks live."
+   ],
+   "sub": "With the owner's name.",
+   "log": "> tasks: live",
+   "text": "Now both see each other's tasks live, each one marked with the owner's name.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix cart bug",
+     "sub": "Ada",
+     "at": 1.2,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Fix signup email",
+     "sub": "Ben",
+     "at": 2.6,
+     "chip": [
+      "Needs Ben",
+      "y"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Update docs",
+     "sub": "Ada",
+     "at": 4.0,
+     "chip": [
+      "Waiting",
+      "z"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "noclash",
+   "min": 8,
+   "hed": [
+    "No more",
+    "stepping on toes."
+   ],
+   "sub": "Spot overlap early.",
+   "log": "> overlap spotted",
+   "text": "So Ada notices that Ben is already fixing the signup email, and she picks something else.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "Ada",
+     "text": "Ben has the email bug. I will take docs.",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "mem",
+   "min": 8,
+   "hed": [
+    "The agents read",
+    "each other's memory."
+   ],
+   "sub": "Notes travel too.",
+   "log": "> memory: ben, ada",
+   "text": "The agents read each other's memory too. Ben's agent leaves a note about a quirky test, and Ada's agent can read it.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Memory index",
+     "sub": "yours, ben, ada",
+     "at": 1.2,
+     "chip": [
+      "Team",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "ben / flaky-test-note",
+     "sub": "Read-only for Ada's agent",
+     "at": 3.0,
+     "chip": [
+      "Read",
+      "b"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "done"
+   }
+  },
+  {
+   "id": "own",
+   "min": 8,
+   "hed": [
+    "Each agent writes",
+    "only its own."
+   ],
+   "sub": "Nobody edits your notes.",
+   "log": "> write: own memory only",
+   "text": "Each agent only writes to its own memory. Teammates can read it, but never change it.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Ada's memory",
+     "sub": "Only Ada's agent writes",
+     "at": 1.2,
+     "chip": [
+      "Yours",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Ben's memory",
+     "sub": "Read-only for Ada",
+     "at": 3.0,
+     "chip": [
+      "Read only",
+      "z"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sk",
+   "min": 8,
+   "hed": [
+    "Skills too,",
+    "if you opt in."
+   ],
+   "sub": "Nothing is shared by default.",
+   "log": "> skills: opt in",
+   "text": "Nothing is shared until each person chooses it. Share a skill, or keep it private.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Share a skill",
+      "b"
+     ],
+     "code": "release-checklist",
+     "buttons": [
+      "Share",
+      "Keep private"
+     ],
+     "press": 0,
+     "tap": 4.4,
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "view",
+   "min": 8,
+   "hed": [
+    "One project.",
+    "One shared view."
+   ],
+   "sub": "The whole picture.",
+   "log": "> one view",
+   "text": "One project, one shared view, and a team that finally knows what is going on.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "One project.|One view.",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Join the islands."
+   ],
+   "sub": "ag// Teams in Agent R Q",
+   "log": "> agentrq.com",
+   "text": "Name them the same, and join the islands. Try teams at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Same name.|One team.",
+     "at": 1.4,
+     "sub": "agentrq.com"
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

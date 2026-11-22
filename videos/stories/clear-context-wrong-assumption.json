@@ -1,0 +1,332 @@
+{
+ "title": "Clear Context Wrong Assumption",
+ "kicker": "clear context",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "b1",
+   "min": 5,
+   "hed": [
+    "Task two was",
+    "billing."
+   ],
+   "sub": "Invoices, all day.",
+   "log": "> task 2: billing",
+   "text": "Task two was about the billing service. The agent spent the whole job inside invoices.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix the billing service",
+     "sub": "Invoice table, totals",
+     "at": 1.2,
+     "chip": [
+      "Done",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "b2",
+   "min": 5,
+   "hed": [
+    "Task three is",
+    "signup."
+   ],
+   "sub": "A totally new job.",
+   "log": "> task 3: signup",
+   "text": "Task three is about the signup form. A different part of the product, and a different job.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Fix the signup form",
+     "sub": "Email validation",
+     "at": 1.2,
+     "chip": [
+      "New",
+      "b"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "min": 5,
+   "hed": [
+    "But it keeps",
+    "saying invoices."
+   ],
+   "sub": "Why is that?",
+   "log": "> agent: invoices?",
+   "text": "But the agent keeps talking about invoices, as if the last job never ended.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "I will update the invoice table for the signup form.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "alert"
+   }
+  },
+  {
+   "id": "b4",
+   "min": 5,
+   "hed": [
+    "That is",
+    "context bleed."
+   ],
+   "sub": "Task two leaks in.",
+   "log": "> bleed: detected",
+   "text": "That is context bleed. Leftover assumptions from the last task creep into the new one.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Context bleed",
+     "sub": "Task 2 leaking into task 3",
+     "at": 1.2,
+     "chip": [
+      "Confused",
+      "r"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b5",
+   "min": 5,
+   "hed": [
+    "The mistakes",
+    "look plausible."
+   ],
+   "sub": "That is the danger.",
+   "log": "> risk: confident",
+   "text": "And the mistakes look plausible, so you may not catch them until much later.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Wrong assumption",
+     "sub": "Reused from the last task",
+     "at": 1.2,
+     "chip": [
+      "Risk",
+      "y"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Confident answer",
+     "sub": "Sounds right, is not",
+     "at": 3.2,
+     "chip": [
+      "Wrong",
+      "r"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b6",
+   "min": 5,
+   "hed": [
+    "You can clear",
+    "by hand."
+   ],
+   "sub": "If you remember.",
+   "log": "> manual: forgot",
+   "text": "You could clear the context by hand between tasks, if you remember every single time.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "task 2 done",
+       "g"
+      ],
+      [
+       "forgot to /clear",
+       "r"
+      ],
+      [
+       "task 3 starts, dirty",
+       "r"
+      ]
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b7",
+   "min": 5,
+   "hed": [
+    "Agent R Q",
+    "does it for you."
+   ],
+   "sub": "Before every task.",
+   "log": "> /clear",
+   "text": "Agent R Q sends slash clear to a Claude Code agent right before it picks up a task.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "/clear",
+       "p"
+      ],
+      [
+       "context: 0%",
+       "p"
+      ]
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b8",
+   "min": 5,
+   "hed": [
+    "It reads only",
+    "the new task."
+   ],
+   "sub": "Plus its own notes.",
+   "log": "> reads: task + memory",
+   "text": "The agent reads only the new task, and its own notes saved in workspace memory.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "reading task: fix signup form",
+       "p"
+      ],
+      [
+       "loading memory notes",
+       "p"
+      ]
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "b9",
+   "min": 5,
+   "hed": [
+    "The answer",
+    "is on topic."
+   ],
+   "sub": "Signup, not invoices.",
+   "log": "> agent: signup",
+   "text": "Now the answer matches the job. Signup form, got it, starting.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Signup form, got it. Starting on email validation.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "b10",
+   "min": 5,
+   "hed": [
+    "Memory keeps",
+    "what helps."
+   ],
+   "sub": "Lessons carry over.",
+   "log": "> memory: kept",
+   "text": "Lessons that help still carry over, because the notes live in memory, not in the chat.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Workspace memory",
+     "sub": "Gotchas from past tasks",
+     "at": 1.2,
+     "chip": [
+      "Kept",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Last task's chat",
+     "sub": "Cleared",
+     "at": 3.2,
+     "chip": [
+      "Cleared",
+      "z"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b11",
+   "min": 5,
+   "hed": [
+    "Fewer confident",
+    "mistakes."
+   ],
+   "sub": "Clean in, clean out.",
+   "log": "> mistakes: fewer",
+   "text": "Clean context means fewer confident mistakes, and fewer surprises in review.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Fewer|confident mistakes.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  },
+  {
+   "id": "b12",
+   "min": 5,
+   "hed": [
+    "Most confidently",
+    "wrong?"
+   ],
+   "sub": "Share yours.",
+   "log": "> agentrq.com",
+   "text": "What is the most confidently wrong thing an agent ever told you? Share it below, and try clear context at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Most confidently|wrong?",
+     "sub": "comment below",
+     "at": 1.2
+    }
+   ]
+  }
+ ]
+}
