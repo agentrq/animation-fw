@@ -1,0 +1,936 @@
+{
+  "shots": {
+    "home-simple": {
+      "file": "home-simple.webp",
+      "route": "/",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "billing": [
+          289,
+          170.5,
+          356.7,
+          66
+        ],
+        "docs": [
+          661.7,
+          170.5,
+          356.7,
+          66
+        ],
+        "mobile": [
+          1034.3,
+          170.5,
+          356.7,
+          66
+        ],
+        "storefront": [
+          289,
+          252.5,
+          356.7,
+          66
+        ],
+        "chips": [
+          476.3,
+          269.5,
+          80.6,
+          20
+        ],
+        "rows": [
+          24,
+          279,
+          208,
+          28
+        ]
+      }
+    },
+    "home-detailed": {
+      "file": "home-detailed.webp",
+      "route": "/",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "billing": [
+          289,
+          170.5,
+          356.7,
+          181
+        ],
+        "storefront": [
+          289,
+          367.5,
+          356.7,
+          181
+        ],
+        "preview": [
+          298,
+          244.5,
+          338.7,
+          30
+        ]
+      }
+    },
+    "kanban": {
+      "file": "kanban.webp",
+      "route": "/kanban",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "notstarted": [
+          289,
+          113,
+          266.5,
+          648
+        ],
+        "ongoing": [
+          567.5,
+          113,
+          266.5,
+          648
+        ],
+        "blocked": [
+          846,
+          113,
+          266.5,
+          648
+        ],
+        "done": [
+          1124.5,
+          113,
+          266.5,
+          648
+        ],
+        "exports": [
+          575.5,
+          244.4,
+          250.5,
+          85.9
+        ],
+        "where": [
+          613.5,
+          256.4,
+          42,
+          15
+        ],
+        "who": [
+          591.5,
+          303.3,
+          222.5,
+          15
+        ],
+        "rows": [
+          0,
+          0,
+          256,
+          810
+        ]
+      }
+    },
+    "exports-thread": {
+      "file": "exports-thread.webp",
+      "route": "/workspaces/0mSNc5wh6aD/tasks/0mSNqBIRxHJ",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "title": [
+          689,
+          111.8,
+          235.3,
+          22.5
+        ]
+      }
+    },
+    "kanban-before": {
+      "file": "kanban-before.webp",
+      "route": "/kanban",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "exports": [
+          575.5,
+          244.4,
+          250.5,
+          85.9
+        ],
+        "done": [
+          1124.5,
+          113,
+          266.5,
+          648
+        ]
+      }
+    },
+    "kanban-done": {
+      "file": "kanban-done.webp",
+      "route": "/kanban",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "exports": [
+          1132.5,
+          150.5,
+          250.5,
+          85.9
+        ],
+        "done": [
+          1124.5,
+          113,
+          266.5,
+          648
+        ],
+        "toast": [
+          1012,
+          668,
+          408,
+          122
+        ]
+      }
+    },
+    "kanban-next": {
+      "file": "kanban-next.webp",
+      "route": "/kanban",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "next": [
+          575.5,
+          244.4,
+          250.5,
+          64.9
+        ],
+        "ongoing": [
+          567.5,
+          113,
+          266.5,
+          648
+        ]
+      }
+    },
+    "ask-board": {
+      "file": "ask-board.webp",
+      "route": "/kanban",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "next": [
+          575.5,
+          244.4,
+          250.5,
+          104.4
+        ],
+        "buttons": [
+          591.5,
+          309.3,
+          58.5,
+          27.5
+        ],
+        "toast": [
+          1012,
+          668,
+          408,
+          122
+        ],
+        "row": [
+          24,
+          279,
+          208,
+          28
+        ]
+      }
+    },
+    "ask-home": {
+      "file": "ask-home.webp",
+      "route": "/",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "billing": [
+          289,
+          170.5,
+          356.7,
+          66
+        ],
+        "chip": [
+          469.9,
+          187.5,
+          72.2,
+          20
+        ],
+        "row": [
+          24,
+          279,
+          208,
+          28
+        ]
+      }
+    },
+    "ask-pending": {
+      "file": "ask-pending.webp",
+      "route": "/tasks/pending",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "row": [
+          305,
+          186.5,
+          319,
+          21.1
+        ],
+        "menu": [
+          24,
+          471,
+          208,
+          28
+        ],
+        "allow": [
+          305,
+          219.6,
+          58.5,
+          27.5
+        ]
+      }
+    },
+    "ask-task": {
+      "file": "ask-task.webp",
+      "route": "/workspaces/0mSNc5wh6aD/tasks/0mSNqvI2DzR",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "auth": [
+          510,
+          308.9,
+          126,
+          27
+        ],
+        "once": [
+          494,
+          491.9,
+          80,
+          29
+        ],
+        "always": [
+          582,
+          491.9,
+          92,
+          29
+        ],
+        "deny": [
+          682,
+          491.9,
+          51,
+          29
+        ],
+        "command": [
+          488,
+          423.9,
+          896,
+          53
+        ],
+        "timeline": [
+          481,
+          143,
+          910,
+          58
+        ]
+      }
+    },
+    "ask-board2": {
+      "file": "ask-board2.webp",
+      "route": "/kanban",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "next": [
+          575.5,
+          244.4,
+          250.5,
+          104.4
+        ],
+        "allow": [
+          591.5,
+          309.3,
+          58.5,
+          27.5
+        ],
+        "deny": [
+          658,
+          309.3,
+          52.6,
+          27.5
+        ]
+      }
+    },
+    "allowed-board": {
+      "file": "allowed-board.webp",
+      "route": "/kanban",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "next": [
+          575.5,
+          244.4,
+          250.5,
+          64.9
+        ],
+        "toast": [
+          1012,
+          734,
+          408,
+          56
+        ]
+      }
+    },
+    "blocked-board": {
+      "file": "blocked-board.webp",
+      "route": "/kanban",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "card": [
+          854,
+          150.5,
+          250.5,
+          85.9
+        ],
+        "blocked": [
+          846,
+          113,
+          266.5,
+          648
+        ],
+        "toast": [
+          1012,
+          648,
+          408,
+          142
+        ],
+        "row": [
+          24,
+          309,
+          208,
+          28
+        ],
+        "dot": [
+          32,
+          320,
+          6,
+          6
+        ]
+      }
+    },
+    "blocked-task": {
+      "file": "blocked-task.webp",
+      "route": "/workspaces/0mSNkE9OtVN/tasks/0mSNucxnFDx",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "question": [
+          475,
+          299.4,
+          922,
+          33.4
+        ],
+        "timeline": [
+          481,
+          143,
+          910,
+          58
+        ],
+        "box": [
+          482,
+          694,
+          908,
+          46
+        ]
+      }
+    },
+    "answer-typed": {
+      "file": "answer-typed.webp",
+      "route": "/workspaces/0mSNkE9OtVN/tasks/0mSNucxnFDx",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "box": [
+          482,
+          694,
+          908,
+          46
+        ],
+        "question": [
+          475,
+          299.4,
+          922,
+          33.4
+        ]
+      }
+    },
+    "answered": {
+      "file": "answered.webp",
+      "route": "/workspaces/0mSNkE9OtVN/tasks/0mSNucxnFDx",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "answer": [
+          475,
+          299.4,
+          922,
+          33.4
+        ],
+        "reply": [
+          475,
+          473.3,
+          922,
+          33.4
+        ],
+        "timeline": [
+          481,
+          143,
+          910,
+          58
+        ]
+      }
+    },
+    "busy": {
+      "file": "busy.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mSNlinRfev",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "working": [
+          481,
+          285.9,
+          910,
+          16.5
+        ],
+        "tools": [
+          485,
+          306.4,
+          906,
+          61.5
+        ],
+        "reply": [
+          475,
+          222.5,
+          922,
+          33.4
+        ],
+        "title": [
+          481,
+          109,
+          279,
+          25
+        ]
+      }
+    },
+    "board-queue": {
+      "file": "board-queue.webp",
+      "route": "/kanban",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "ongoing": [
+          575.5,
+          150.5,
+          250.5,
+          85.9
+        ],
+        "q1": [
+          297,
+          150.5,
+          250.5,
+          64.9
+        ],
+        "q2": [
+          297,
+          223.4,
+          250.5,
+          64.9
+        ],
+        "notstarted": [
+          289,
+          113,
+          266.5,
+          648
+        ],
+        "queued": [
+          188,
+          375,
+          16,
+          16
+        ]
+      }
+    },
+    "timeline-live": {
+      "file": "timeline-live.webp",
+      "route": "/workspaces/0mSNc5wh6aD/tasks/0mSNqvI2DzR",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "timeline": [
+          481,
+          143,
+          910,
+          58
+        ],
+        "title": [
+          481,
+          109,
+          328.5,
+          25
+        ]
+      }
+    },
+    "timeline-refunds": {
+      "file": "timeline-refunds.webp",
+      "route": "/workspaces/0mSNc5wh6aD/tasks/0mSNpR8e7sr",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "timeline": [
+          481,
+          143,
+          910,
+          58
+        ],
+        "title": [
+          481,
+          109,
+          243,
+          25
+        ]
+      }
+    },
+    "trace-tab": {
+      "file": "trace-tab.webp",
+      "route": "/workspaces/0mSNc5wh6aD/tasks/0mSNqvI2DzR",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "toggle": [
+          1307,
+          112,
+          81,
+          22
+        ],
+        "list": [
+          465,
+          366,
+          376.8,
+          411
+        ],
+        "minimap": [
+          465,
+          105,
+          942,
+          672
+        ],
+        "chips": [
+          481,
+          286,
+          49.7,
+          23.5
+        ]
+      }
+    },
+    "trace-search": {
+      "file": "trace-search.webp",
+      "route": "/workspaces/0mSNc5wh6aD/tasks/0mSNqvI2DzR",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "search": [
+          481,
+          326.5,
+          804.3,
+          30.5
+        ],
+        "list": [
+          465,
+          366,
+          376.8,
+          411
+        ]
+      }
+    },
+    "trace-lane": {
+      "file": "trace-lane.webp",
+      "route": "/workspaces/0mSNc5wh6aD/tasks/0mSNqvI2DzR",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "list": [
+          465,
+          366,
+          376.8,
+          411
+        ],
+        "chip": [
+          752.5,
+          286,
+          60.2,
+          23.5
+        ]
+      }
+    },
+    "trace-detail": {
+      "file": "trace-detail.webp",
+      "route": "/workspaces/0mSNc5wh6aD/tasks/0mSNqvI2DzR",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "list": [
+          465,
+          366,
+          376.8,
+          411
+        ],
+        "detail": [
+          857.8,
+          382,
+          533.2,
+          162
+        ],
+        "status": [
+          933.8,
+          472.5,
+          461.2,
+          24.5
+        ]
+      }
+    },
+    "trace-denied": {
+      "file": "trace-denied.webp",
+      "route": "/workspaces/0mSNc5wh6aD/tasks/0mSNqvI2DzR",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "list": [
+          465,
+          366,
+          376.8,
+          411
+        ],
+        "row": [
+          507.4,
+          569,
+          269.4,
+          28.5
+        ],
+        "status": [
+          933.8,
+          472.5,
+          461.2,
+          24.5
+        ],
+        "push": [
+          507.4,
+          602.5,
+          269.4,
+          28.5
+        ]
+      }
+    },
+    "trace-payload": {
+      "file": "trace-payload.webp",
+      "route": "/workspaces/0mSNc5wh6aD/tasks/0mSNqvI2DzR",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "payload": [
+          857.8,
+          478,
+          533.2,
+          86
+        ]
+      }
+    },
+    "always-ask": {
+      "file": "always-ask.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mSNlinRfev",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "auth": [
+          510,
+          353.8,
+          126,
+          27
+        ],
+        "always": [
+          582,
+          536.8,
+          92,
+          29
+        ],
+        "command": [
+          488,
+          468.8,
+          896,
+          53
+        ]
+      }
+    },
+    "always-done": {
+      "file": "always-done.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mSNlinRfev",
+      "width": 4320,
+      "height": 2430,
+      "regions": {}
+    },
+    "auto-list": {
+      "file": "auto-list.webp",
+      "route": "/workspaces/0mSNbM3vCzd/settings",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "list": [
+          354,
+          138,
+          1004,
+          365.4
+        ],
+        "npm": [
+          413,
+          461.1,
+          52,
+          32
+        ],
+        "yolo": [
+          429,
+          589.9,
+          260.5,
+          32
+        ]
+      }
+    },
+    "trace-auto": {
+      "file": "trace-auto.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mSNlinRfev",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "list": [
+          465,
+          366,
+          376.8,
+          411
+        ],
+        "row": [
+          507.4,
+          703,
+          269.4,
+          28.5
+        ],
+        "status": [
+          933.8,
+          472.5,
+          461.2,
+          24.5
+        ]
+      }
+    },
+    "drag-before": {
+      "file": "drag-before.webp",
+      "route": "/kanban",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "a": [
+          297,
+          223.4,
+          250.5,
+          64.9
+        ],
+        "b": [
+          297,
+          150.5,
+          250.5,
+          64.9
+        ],
+        "notstarted": [
+          289,
+          113,
+          266.5,
+          648
+        ]
+      }
+    },
+    "drag-after": {
+      "file": "drag-after.webp",
+      "route": "/kanban",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "a": [
+          297,
+          150.5,
+          250.5,
+          64.9
+        ],
+        "b": [
+          297,
+          223.4,
+          250.5,
+          64.9
+        ],
+        "notstarted": [
+          289,
+          113,
+          266.5,
+          648
+        ]
+      }
+    },
+    "midturn-typed": {
+      "file": "midturn-typed.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mSNlinRfev",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "box": [
+          482,
+          694,
+          908,
+          46
+        ],
+        "working": [
+          481,
+          285.9,
+          910,
+          16.5
+        ]
+      }
+    },
+    "midturn": {
+      "file": "midturn.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mSNlinRfev",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "said": [
+          1113,
+          309.4,
+          270,
+          33.4
+        ],
+        "reply": [
+          475,
+          396.4,
+          922,
+          33.4
+        ],
+        "working": [
+          481,
+          459.8,
+          910,
+          16.5
+        ]
+      }
+    }
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 810
+  },
+  "scale": 3
+}
