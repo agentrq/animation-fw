@@ -133,8 +133,8 @@ function draw(s, o, y, t0) {
   }
 }
 
-export function storyScene(slug) {
-  const data = JSON.parse(fs.readFileSync(path.join(dir, 'stories', `${slug}.json`), 'utf8'));
+// `data` is videos/stories/<slug>.json unless given (a test passes its own).
+export function storyScene(slug, data = JSON.parse(fs.readFileSync(path.join(dir, 'stories', `${slug}.json`), 'utf8'))) {
   const tl = loadTimeline();
   if (tl.N !== data.lines.length) throw new Error(`${slug}: voice has ${tl.N} beats, story has ${data.lines.length}`);
   const { T, S } = tl;
