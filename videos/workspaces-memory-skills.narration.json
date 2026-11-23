@@ -1,0 +1,43 @@
+{
+  "captions": { "M C P": "MCP" },
+  "lines": [
+    { "id": "hook", "min": 9, "text": "You have three projects and one agent. Monday, it fixes checkout in the storefront. Tuesday, you ask for a billing change, and it edits the storefront repo instead." },
+    { "id": "pain", "min": 8, "text": "And every morning it starts from zero. The test setup it worked out yesterday, the deploy steps, all gone with yesterday's chat." },
+    { "id": "promise", "min": 10, "text": "Agent R Q gives every project its own workspace, with its own tasks, its own agent and its own key. And every workspace remembers: memory for the facts, and skills for the steps." },
+
+    { "id": "ws-pain", "min": 7, "text": "First, the mix-ups. When one chat holds every project, the agent has to guess which repo a task is about." },
+    { "id": "ws-create", "min": 9, "text": "So give each project a workspace. Name it billing, point it at the repo's folder, and start the mission from a template: Coding, then Backend." },
+    { "id": "ws-mission", "min": 7, "text": "The mission tells this workspace's agent how to work. The Backend template asks for tests on every change, and migrations that never break a running client." },
+    { "id": "ws-connect", "min": 9, "text": "Then open the setup guide. Claude Code, Codex, Antigravity and other agents each get the exact config or command to connect." },
+    { "id": "ws-online", "min": 9, "text": "Codex connects, and billing turns green. Each workspace card names the agent working in it: Claude Code in the storefront, Codex in billing." },
+    { "id": "ws-tasks", "min": 9, "text": "Now you hand billing a task, and only billing's agent gets it. The storefront agent never sees it, so it cannot touch the wrong repo." },
+    { "id": "ws-fork", "min": 10, "text": "Need a second agent on the same project? Fork the workspace. The fork gets its own queue and its own agent, but the same memory and skills, so what one saves, the other knows." },
+    { "id": "ws-merge", "min": 6, "text": "When its tasks are done, merge the fork back. Its agent stops, and its tasks move back to billing." },
+
+    { "id": "key-pain", "min": 6, "text": "Then the keys. One token for every project means one leak exposes all of them." },
+    { "id": "key-scope", "min": 9, "text": "Here, each workspace has its own token, issued for that workspace alone. Try the billing token on another workspace, and Agent R Q refuses it." },
+    { "id": "key-reset", "min": 9, "text": "If a token ever leaks, reset that workspace's ID in its danger zone. Every old token stops working, and your other workspaces never notice." },
+
+    { "id": "mem-pain", "min": 9, "text": "Now the forgetting. Your agent spends an hour learning that the billing tests need Postgres on port five four three three. Tomorrow, a new session learns it all again." },
+    { "id": "mem-loop", "min": 9, "text": "Every workspace comes with a self-learning loop. Before an agent marks a task done, it looks back and saves what the next task should know." },
+    { "id": "mem-rule", "min": 7, "text": "It writes the rule, not the story, and if nothing was learned, it saves nothing. So memory stays short enough to read in a minute." },
+    { "id": "mem-save", "min": 8, "text": "So the billing agent finishes its task, and saves one short note to the workspace memory: the tests need Postgres on five four three three." },
+    { "id": "mem-index", "min": 8, "text": "Memory is a small index with links to short notes. In the settings, you can read all of it, and open any note in place." },
+    { "id": "mem-next", "min": 10, "text": "The next day brings a new task. The agent loads the memory first, as every agent here is told to, and starts the database on the right port. No hour lost." },
+    { "id": "mem-safe", "min": 8, "text": "And two agents saving at once cannot overwrite each other. A stale save is refused, so the agent loads the note again, merges, and saves." },
+
+    { "id": "skill-pain", "min": 7, "text": "Then the playbooks. Your release steps live in a folder on one laptop, and every copy you hand out drifts." },
+    { "id": "skill-import", "min": 8, "text": "Here, skills live in your account. Import a set from GitHub in one step, or let an agent write one from work it just did." },
+    { "id": "skill-on", "min": 9, "text": "Then switch a skill on in each workspace that needs it. One release skill, on in the storefront and in billing, and no copies anywhere." },
+    { "id": "skill-use", "min": 8, "text": "When a task says release, the agent searches its workspace skills, loads the release skill, and follows every step." },
+    { "id": "skill-fix", "min": 10, "text": "When an agent finds a missing step, it saves the fix. The skill moves to version two, and every workspace it is on gets the new step at once." },
+
+    { "id": "ctl-pain", "min": 6, "text": "And each project carries its own risk. You trust the docs agent more than the billing one." },
+    { "id": "ctl-settings", "min": 10, "text": "Settings follow the workspace. Let the docs agent run its usual commands without asking, and keep billing strict, so it checks with you first." },
+    { "id": "ctl-skills", "min": 7, "text": "And an agent can only change skills that are switched on in its own workspace. Everything else stays out of its reach." },
+    { "id": "ctl-learning", "min": 7, "text": "You can rewrite the self-learning loop for each workspace too, to tell its agents exactly what is worth remembering." },
+
+    { "id": "recap", "min": 9, "text": "One workspace per project, a key for each, memory every agent reads first, and one copy of every playbook." },
+    { "id": "cta", "min": 8, "text": "What does your agent relearn every morning? Tell us in the comments, and try workspaces at Agent R Q dot com." }
+  ]
+}
