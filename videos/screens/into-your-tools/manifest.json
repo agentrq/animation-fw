@@ -1,0 +1,515 @@
+{
+  "shots": {
+    "setup-top": {
+      "file": "setup-top.webp",
+      "route": "/workspaces/0mSNbM3vCzd/settings",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "nav": [
+          97,
+          145,
+          192,
+          36
+        ],
+        "machine": [
+          354,
+          130,
+          1008,
+          470
+        ],
+        "panel": [
+          369,
+          232.5,
+          974,
+          305
+        ],
+        "tabs": [
+          346,
+          626,
+          388,
+          39
+        ],
+        "claude": [
+          350,
+          629,
+          54,
+          33
+        ]
+      }
+    },
+    "setup-config": {
+      "file": "setup-config.webp",
+      "route": "/workspaces/0mSNbM3vCzd/settings",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "head": [
+          352,
+          144,
+          1012,
+          27
+        ],
+        "config": [
+          369,
+          227,
+          974,
+          163
+        ],
+        "copy": [
+          1250,
+          196,
+          93,
+          27
+        ],
+        "permsHead": [
+          352,
+          431,
+          1012,
+          27
+        ],
+        "perms": [
+          369,
+          548.5,
+          974,
+          216.6
+        ],
+        "permsNote": [
+          350,
+          464,
+          1012,
+          26.5
+        ]
+      }
+    },
+    "setup-copied": {
+      "file": "setup-copied.webp",
+      "route": "/workspaces/0mSNbM3vCzd/settings",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "head": [
+          352,
+          144,
+          1012,
+          27
+        ],
+        "config": [
+          369,
+          227,
+          974,
+          163
+        ],
+        "copy": [
+          1250,
+          517.5,
+          93,
+          27
+        ],
+        "permsHead": [
+          352,
+          431,
+          1012,
+          27
+        ],
+        "perms": [
+          369,
+          548.5,
+          974,
+          216.6
+        ],
+        "permsNote": [
+          350,
+          464,
+          1012,
+          26.5
+        ],
+        "copied": [
+          1284,
+          196,
+          59,
+          27
+        ]
+      }
+    },
+    "setup-start": {
+      "file": "setup-start.webp",
+      "route": "/workspaces/0mSNbM3vCzd/settings",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "card": [
+          346,
+          495.1,
+          1020,
+          176.5
+        ],
+        "cmd": [
+          384,
+          604.6,
+          562.1,
+          27
+        ],
+        "perms": [
+          369,
+          239.5,
+          974,
+          216.6
+        ]
+      }
+    },
+    "setup-codex": {
+      "file": "setup-codex.webp",
+      "route": "/workspaces/0mSNbM3vCzd/settings",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "card": [
+          346,
+          321,
+          1020,
+          350.5
+        ],
+        "login": [
+          384,
+          461,
+          376.1,
+          27
+        ],
+        "bridge": [
+          384,
+          551.5,
+          328.1,
+          27
+        ],
+        "config": [
+          369,
+          119,
+          974,
+          163
+        ]
+      }
+    },
+    "c6-2": {
+      "file": "c6-2.webp",
+      "route": "/sessions/0mT8Jhs6mc1",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "term": [
+          90,
+          154.5,
+          1308,
+          615.5
+        ]
+      }
+    },
+    "mcp-2": {
+      "file": "mcp-2.webp",
+      "route": "/sessions/0mT8Jhs6mc1",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "term": [
+          90,
+          154.5,
+          1308,
+          615.5
+        ]
+      }
+    },
+    "mcp-4": {
+      "file": "mcp-4.webp",
+      "route": "/sessions/0mT8Jhs6mc1",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "term": [
+          90,
+          154.5,
+          1308,
+          615.5
+        ]
+      }
+    },
+    "ex-new": {
+      "file": "ex-new.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/new",
+      "width": 4320,
+      "height": 2430,
+      "regions": {}
+    },
+    "ex-start": {
+      "file": "ex-start.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mT8kGAjDVN",
+      "width": 4320,
+      "height": 2430,
+      "regions": {}
+    },
+    "ex2-reply-file": {
+      "file": "ex2-reply-file.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mT8kGAjDVN",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "title": [
+          113,
+          35,
+          614.8,
+          42
+        ]
+      }
+    },
+    "ex2-ask": {
+      "file": "ex2-ask.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mT8kGAjDVN",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "title": [
+          113,
+          35,
+          614.8,
+          42
+        ]
+      }
+    },
+    "ans-typed": {
+      "file": "ans-typed.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mT8kGAjDVN",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "box": [
+          475,
+          687,
+          922,
+          96
+        ]
+      }
+    },
+    "ans-reply": {
+      "file": "ans-reply.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mT8kGAjDVN",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "title": [
+          113,
+          35,
+          614.8,
+          42
+        ]
+      }
+    },
+    "mem-list": {
+      "file": "mem-list.webp",
+      "route": "/workspaces/0mSNbM3vCzd/settings",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "nav": [
+          97,
+          265,
+          192,
+          36
+        ]
+      }
+    },
+    "ci-task": {
+      "file": "ci-task.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTEineMVDp",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "title": [
+          113,
+          35,
+          654.8,
+          42
+        ],
+        "file": [
+          528,
+          540.5,
+          76,
+          27
+        ]
+      }
+    },
+    "slack-off": {
+      "file": "slack-off.webp",
+      "route": "/workspaces/0mSNbM3vCzd/settings",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "nav": [
+          97,
+          425,
+          192,
+          36
+        ],
+        "head": [
+          418,
+          138.8,
+          432,
+          52.5
+        ],
+        "status": [
+          395,
+          235,
+          172.4,
+          28
+        ],
+        "auth": [
+          379,
+          331,
+          592,
+          79
+        ],
+        "add": [
+          1137.6,
+          344.5,
+          193.4,
+          52
+        ],
+        "manual": [
+          351,
+          456,
+          1010,
+          56
+        ]
+      }
+    },
+    "slack-linked": {
+      "file": "slack-linked.webp",
+      "route": "/workspaces/0mSNbM3vCzd/settings",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "nav": [
+          97,
+          425,
+          192,
+          36
+        ],
+        "head": [
+          418,
+          138.8,
+          432,
+          52.5
+        ],
+        "status": [
+          395,
+          243.5,
+          129,
+          28
+        ],
+        "channel": [
+          373,
+          359.5,
+          314,
+          28
+        ],
+        "disconnect": [
+          1140,
+          235,
+          199,
+          45
+        ]
+      }
+    },
+    "tm-board": {
+      "file": "tm-board.webp",
+      "route": "/workspaces/0mSNbM3vCzd",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "card": [
+          103,
+          170.5,
+          339,
+          41.1
+        ]
+      }
+    },
+    "tm-mention": {
+      "file": "tm-mention.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTC14M6lWP",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "title": [
+          113,
+          35,
+          614.8,
+          42
+        ],
+        "slack": [
+          985,
+          231.5,
+          412,
+          125.4
+        ]
+      }
+    },
+    "tm-perm-1": {
+      "file": "tm-perm-1.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTC14M6lWP",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "title": [
+          113,
+          35,
+          614.8,
+          42
+        ]
+      }
+    },
+    "ctl-danger": {
+      "file": "ctl-danger.webp",
+      "route": "/workspaces/0mSNbM3vCzd/settings",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "nav": [
+          97,
+          582,
+          192,
+          36
+        ],
+        "reset": [
+          346,
+          359,
+          1020,
+          131
+        ],
+        "button": [
+          1224,
+          400,
+          115,
+          49
+        ]
+      }
+    },
+    "ctl-reset-dialog": {
+      "file": "ctl-reset-dialog.webp",
+      "route": "/workspaces/0mSNbM3vCzd/settings",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "dialog": [
+          0,
+          0,
+          1440,
+          810
+        ]
+      }
+    }
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 810
+  },
+  "scale": 3
+}

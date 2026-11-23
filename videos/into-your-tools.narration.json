@@ -1,0 +1,43 @@
+{
+  "captions": {"A C P": "ACP", "M C P": "MCP", "C I": "CI", "dot M C P dot json": ".mcp.json", "slash T": "/t", "agent R Q dash W S": "agentrq-ws"},
+  "lines": [
+    {"id": "hook", "min": 6, "text": "Your agent works in a terminal. Your team talks in Slack. And you sit in the middle, copying messages back and forth."},
+    {"id": "pain", "min": 9, "text": "A teammate reports a bug in Slack, so you paste it into the terminal. The agent asks a question, so you paste that back. All day."},
+    {"id": "promise", "min": 12, "text": "Agent R Q connects any agent to your workspace with one M C P config. Your team can hand it work, and approve what it does, right from Slack."},
+
+    {"id": "conn-pain", "min": 6, "text": "Every agent has its own setup: its own files, its own flags, its own docs."},
+    {"id": "conn-setup", "min": 9, "text": "In Agent R Q, every workspace has a Setup tab. Ada opens storefront's, and picks her agent: Claude Code, Codex, Antigravity, or any A C P agent."},
+    {"id": "conn-config", "min": 9, "text": "Step one is the same for all of them: an M C P config with this workspace's address and token. She copies it into the project, as dot M C P dot json."},
+    {"id": "conn-perm", "min": 7, "text": "For Claude Code, step two allows the workspace's tools, so Claude doesn't stop to ask about each one."},
+    {"id": "conn-start", "min": 9, "text": "Then one start command. Claude Code opens with the workspace as a channel, so new tasks reach it on their own. No polling."},
+    {"id": "conn-acp", "min": 8, "text": "Codex and Antigravity connect through the Agent R Q gateway: one command, sign in once, and they join the same way."},
+    {"id": "conn-more", "min": 9, "text": "Claude Code and Cursor also have an Agent R Q plugin. And with a machine enrolled, she can skip all of this and start the agent from the browser."},
+
+    {"id": "tool-list", "min": 9, "text": "Once it's connected, the agent has seven tools: tasks, memory, skills, the workspace, site tools, the Pano, and help."},
+    {"id": "tool-task", "min": 9, "text": "Ada gives it a real task: the order export times out on big stores, so stream it instead. The agent picks it up and marks it as ongoing."},
+    {"id": "tool-reply", "min": 8, "text": "It works in the repo, and reports back on the task, with the test output attached."},
+    {"id": "tool-ask", "min": 9, "text": "When it needs a decision, it asks: should the export include cancelled orders? Ada answers on the task, and the agent carries on."},
+    {"id": "tool-memory", "min": 8, "text": "What it learns goes into the workspace's memory and skills, so the next agent starts where this one stopped."},
+    {"id": "tool-cli", "min": 10, "text": "No agent at all? The agent R Q dash W S command has the same tools. A C I job can open a task, or reply with a log file."},
+
+    {"id": "slack-pain", "min": 6, "text": "But Ada's team doesn't live in Agent R Q. They live in Slack."},
+    {"id": "slack-add", "min": 10, "text": "In the workspace settings, she clicks Add to Slack and approves the app. Agent R Q creates a private channel for this workspace, and invites her."},
+    {"id": "slack-invite", "min": 5, "text": "She invites Sam, who's on call this week."},
+    {"id": "slack-thread", "min": 8, "text": "Now every new task posts to that channel as its own thread. Every message on the task lands in the same thread."},
+    {"id": "slack-t", "min": 10, "text": "Sam hands the agent work without leaving Slack: slash T, a title, and a description. If the agent is free, it starts right away."},
+    {"id": "slack-mention", "min": 9, "text": "To steer it, Sam mentions the bot in the thread. The agent gets that as a reply on the task, files included."},
+    {"id": "slack-web", "min": 7, "text": "Ada sees the whole conversation in the browser, on the same task, marked as coming from Slack."},
+
+    {"id": "appr-ask", "min": 8, "text": "When the agent wants to run a command that needs approval, the request posts in the thread, with Allow and Deny."},
+    {"id": "appr-click", "min": 8, "text": "Sam clicks Allow. The agent carries on, and the buttons turn into one line: allowed by Sam."},
+    {"id": "appr-web", "min": 8, "text": "If Ada answers in the browser first, the thread says so instead. Nobody answers the same request twice."},
+
+    {"id": "ctl-token", "min": 9, "text": "Each visit to the Setup tab makes a new token, good for a year. It works for this one workspace, and no other."},
+    {"id": "ctl-reset", "min": 9, "text": "If a token leaks, Reset Workspace ID gives the workspace a new address, and every old token stops working."},
+    {"id": "ctl-sig", "min": 7, "text": "Every request from Slack must carry Slack's signature, and old ones are turned away."},
+    {"id": "ctl-members", "min": 9, "text": "One thing to know: anyone in that channel can approve. So the channel's members are your approvers. Keep the list short."},
+
+    {"id": "recap", "min": 10, "text": "One config connects any agent. Seven tools let it work with you. And your team hands it work, and approves it, from Slack."},
+    {"id": "cta", "min": 8, "text": "Which tool should Agent R Q plug into next? Tell us in the comments, and try it at Agent R Q dot com."}
+  ]
+}
