@@ -1,0 +1,46 @@
+{
+  "captions": {"A C P": "ACP", "M C P": "MCP", "C P U": "CPU", "S S H": "SSH", "Yolo": "YOLO"},
+  "lines": [
+    {"id": "hook", "min": 6, "text": "Your agents live in a terminal on one laptop. Close the lid, and the work stops."},
+    {"id": "pain", "min": 8, "text": "Step away for lunch, and a permission prompt waits in that terminal all afternoon. Nothing moves until you're back."},
+    {"id": "promise", "min": 12, "text": "Agent R Q runs your agents on any machine you own, and starts them from the browser. It tells you the moment one needs you, and lets the safe work run on its own."},
+
+    {"id": "mach-pain", "min": 7, "text": "The desktop under your desk has more memory, and it never sleeps. But your agents can't get to it."},
+    {"id": "mach-add", "min": 11, "text": "Here, Ada opens Machines and adds one. It takes two commands: install the daemon, then enroll the machine with a code that works once and expires in ten minutes."},
+    {"id": "mach-warn", "min": 8, "text": "The warning is plain: anyone who can sign in to this account can run commands on that machine. So enroll only the machines you trust."},
+    {"id": "mach-online", "min": 9, "text": "On her dev box, the daemon connects, and the card turns green: the system, the daemon's version, C P U and memory."},
+    {"id": "mach-info", "min": 6, "text": "Machine Info shows more: free memory, the load, and the uptime."},
+
+    {"id": "start-pain", "min": 7, "text": "Starting an agent used to mean S S H, find the folder, remember the flags. Every time."},
+    {"id": "start-ask", "min": 8, "text": "The quickest way is to ask the supervisor: start storefront's agent on the dev box. It does, over M C P."},
+    {"id": "start-card", "min": 9, "text": "Or do it yourself. A workspace with no agent offers one right on its page: start it in its folder, on the dev box."},
+    {"id": "start-pick", "min": 9, "text": "She picks Claude Code, with Opus and high effort. A C P agents run through the gateway, from the same menu."},
+    {"id": "start-term", "min": 10, "text": "The machine writes the M C P config and starts Claude Code. Its terminal opens in the browser, live, and she answers Claude's first-run questions right there."},
+    {"id": "start-live", "min": 7, "text": "Seconds later, storefront's dot turns green: the agent is connected and ready for tasks."},
+    {"id": "start-sessions", "min": 9, "text": "The machine lists every session it runs, with its workspace and status. One click opens its terminal, or stops it."},
+    {"id": "start-spin", "min": 12, "text": "A task waiting in the queue can get an agent of its own. Spin up forks the workspace, moves the task into the fork, and starts an agent there, while the main agent keeps working."},
+
+    {"id": "note-pain", "min": 6, "text": "A question in a terminal you're not watching is a question nobody answers."},
+    {"id": "note-toast", "min": 9, "text": "Here, billing asks to run a command while Ada is on another page. The toast finds her anyway: permission required."},
+    {"id": "note-input", "min": 7, "text": "When an agent is blocked on a question, the toast says so, and one click opens the task."},
+    {"id": "note-settings", "min": 6, "text": "Each workspace picks its channels in its notification settings."},
+    {"id": "note-push", "min": 8, "text": "Turn on push, and alerts reach you even with the tab closed: a new task, a status change, a reply."},
+    {"id": "note-email", "min": 7, "text": "Email covers the events you switch on: new tasks, status updates, and new messages."},
+    {"id": "note-slack", "min": 10, "text": "Link Slack, and a permission request lands in the channel with Allow and Deny buttons. Answer it in Slack, and the agent carries on."},
+
+    {"id": "yolo-pain", "min": 6, "text": "Approving go test for the fortieth time isn't oversight. It's a reflex."},
+    {"id": "yolo-always", "min": 9, "text": "Always Allow turns one answer into a rule: go, with any arguments, now runs without asking."},
+    {"id": "yolo-list", "min": 7, "text": "The workspace keeps those rules in its auto-allow list, and you can remove any of them."},
+    {"id": "yolo-task", "min": 8, "text": "For a task you trust end to end, turn on Yolo. The agent runs every command without asking."},
+    {"id": "yolo-record", "min": 7, "text": "Nothing goes off the record: the trajectory marks each of those calls as auto-allowed."},
+    {"id": "yolo-default", "min": 9, "text": "Under Automations, Yolo can be the default for every new task in a workspace, and a red warning says what that means."},
+
+    {"id": "ctl-pain", "min": 5, "text": "But agents on your machines should still answer to you."},
+    {"id": "ctl-limit", "min": 7, "text": "Each machine has an agent limit, so one busy afternoon can't swamp it."},
+    {"id": "ctl-disable", "min": 9, "text": "Disable a machine, and its connection closes at once. Delete it, and it's gone from your account."},
+    {"id": "ctl-root", "min": 7, "text": "The daemon won't run as root, and Yolo stays off until you turn it on."},
+
+    {"id": "recap", "min": 10, "text": "Your own machines, agents started from the browser, alerts wherever you are, and Yolo for the work you trust."},
+    {"id": "cta", "min": 8, "text": "Where would you run your agents? Tell us in the comments, and try it at Agent R Q dot com."}
+  ]
+}
