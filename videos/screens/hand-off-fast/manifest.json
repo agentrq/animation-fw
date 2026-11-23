@@ -1,0 +1,785 @@
+{
+  "shots": {
+    "c-form": {
+      "file": "c-form.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/new",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "eraser": [
+          583,
+          427,
+          36,
+          36
+        ],
+        "yolo": [
+          619,
+          427,
+          79,
+          36
+        ]
+      }
+    },
+    "c-setting": {
+      "file": "c-setting.webp",
+      "route": "/workspaces/0mSNbM3vCzd/settings",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "row": [
+          373,
+          495.4,
+          926,
+          65.5
+        ]
+      }
+    },
+    "c-term-0": {
+      "file": "c-term-0.webp",
+      "route": "/sessions/0mTMK7huqF3",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "term": [
+          90,
+          154.5,
+          1308,
+          615.5
+        ]
+      }
+    },
+    "c-term-1": {
+      "file": "c-term-1.webp",
+      "route": "/sessions/0mTMK7huqF3",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "term": [
+          90,
+          154.5,
+          1308,
+          615.5
+        ]
+      }
+    },
+    "c-term-3": {
+      "file": "c-term-3.webp",
+      "route": "/sessions/0mTMK7huqF3",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "term": [
+          90,
+          154.5,
+          1308,
+          615.5
+        ]
+      }
+    },
+    "c-term-end": {
+      "file": "c-term-end.webp",
+      "route": "/sessions/0mTMK7huqF3",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "term": [
+          90,
+          154.5,
+          1308,
+          615.5
+        ]
+      }
+    },
+    "d-cancelled": {
+      "file": "d-cancelled.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTMPDlyZwz",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "box": [
+          476,
+          688,
+          920,
+          58
+        ]
+      }
+    },
+    "d-fixed": {
+      "file": "d-fixed.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTMPDlyZwz",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "box": [
+          476,
+          688,
+          920,
+          58
+        ]
+      }
+    },
+    "d-sending": {
+      "file": "d-sending.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTMPDlyZwz",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "pending": [
+          932,
+          426.8,
+          465,
+          124.9
+        ],
+        "cancel": [
+          1211,
+          505.8,
+          77,
+          33
+        ],
+        "now": [
+          1288,
+          506.8,
+          92,
+          31
+        ]
+      }
+    },
+    "d-sending-2": {
+      "file": "d-sending-2.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTMPDlyZwz",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "pending": [
+          932,
+          426.8,
+          465,
+          124.9
+        ],
+        "now": [
+          1288,
+          506.8,
+          92,
+          31
+        ]
+      }
+    },
+    "d-sent": {
+      "file": "d-sent.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTMPDlyZwz",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "box": [
+          476,
+          688,
+          920,
+          58
+        ]
+      }
+    },
+    "d-settings": {
+      "file": "d-settings.webp",
+      "route": "/workspaces/0mSNbM3vCzd/settings",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "lang": [
+          348,
+          155,
+          332,
+          47
+        ],
+        "untitled": [
+          373,
+          272.5,
+          583,
+          55.9
+        ],
+        "delay": [
+          348,
+          373.4,
+          1016,
+          104
+        ],
+        "update": [
+          1151,
+          522.4,
+          213,
+          47
+        ]
+      }
+    },
+    "d-typed": {
+      "file": "d-typed.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTMPDlyZwz",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "box": [
+          476,
+          688,
+          920,
+          58
+        ]
+      }
+    },
+    "k-c": {
+      "file": "k-c.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTMPDlyZwz",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "title": [
+          113,
+          35,
+          638.7,
+          42
+        ]
+      }
+    },
+    "k-find": {
+      "file": "k-find.webp",
+      "route": "/workspaces/0mSNbM3vCzd",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "dialog": [
+          0,
+          0,
+          1440,
+          810
+        ]
+      }
+    },
+    "k-find-typed": {
+      "file": "k-find-typed.webp",
+      "route": "/workspaces/0mSNbM3vCzd",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "dialog": [
+          0,
+          0,
+          1440,
+          810
+        ]
+      }
+    },
+    "k-help": {
+      "file": "k-help.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTMPDlyZwz",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "dialog": [
+          0,
+          0,
+          1440,
+          810
+        ]
+      }
+    },
+    "k-m": {
+      "file": "k-m.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTMPDlyZwz",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "dialog": [
+          0,
+          0,
+          1440,
+          810
+        ]
+      }
+    },
+    "k-opened": {
+      "file": "k-opened.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTMPDlyZwz",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "title": [
+          113,
+          35,
+          638.7,
+          42
+        ]
+      }
+    },
+    "k-t": {
+      "file": "k-t.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTMPDlyZwz",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "title": [
+          113,
+          35,
+          638.7,
+          42
+        ]
+      }
+    },
+    "k-w": {
+      "file": "k-w.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTMPDlyZwz",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "dialog": [
+          0,
+          0,
+          1440,
+          810
+        ]
+      }
+    },
+    "pr-empty": {
+      "file": "pr-empty.webp",
+      "route": "/workspaces/0mSNbM3vCzd/settings",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "name": [
+          348,
+          445.9,
+          1016,
+          58
+        ],
+        "msg": [
+          348,
+          552.4,
+          1016,
+          118
+        ],
+        "add": [
+          348,
+          680.4,
+          124,
+          47
+        ]
+      }
+    },
+    "pr-inserted": {
+      "file": "pr-inserted.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTMPDlyZwz",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "box": [
+          476,
+          688,
+          920,
+          58
+        ]
+      }
+    },
+    "pr-menu": {
+      "file": "pr-menu.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTMPDlyZwz",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "box": [
+          476,
+          688,
+          920,
+          58
+        ],
+        "menu": [
+          476,
+          648,
+          920,
+          42
+        ]
+      }
+    },
+    "pr-saved": {
+      "file": "pr-saved.webp",
+      "route": "/workspaces/0mSNbM3vCzd/settings",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "name": [
+          348,
+          392.9,
+          1016,
+          58
+        ],
+        "msg": [
+          348,
+          499.4,
+          1016,
+          118
+        ],
+        "add": [
+          348,
+          627.4,
+          124,
+          47
+        ],
+        "saved": [
+          363,
+          238.4,
+          396,
+          32.5
+        ]
+      }
+    },
+    "pr-typed": {
+      "file": "pr-typed.webp",
+      "route": "/workspaces/0mSNbM3vCzd/settings",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "name": [
+          348,
+          445.9,
+          1016,
+          58
+        ],
+        "msg": [
+          348,
+          552.4,
+          1016,
+          118
+        ],
+        "add": [
+          348,
+          680.4,
+          124,
+          47
+        ]
+      }
+    },
+    "s-done": {
+      "file": "s-done.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/new",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "title": [
+          393,
+          226.3,
+          694,
+          31.5
+        ],
+        "desc": [
+          355,
+          252,
+          778,
+          172
+        ]
+      }
+    },
+    "s-generating": {
+      "file": "s-generating.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/new",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "title": [
+          393,
+          226.3,
+          694,
+          31.5
+        ]
+      }
+    },
+    "s-hover": {
+      "file": "s-hover.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/new",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "title": [
+          393,
+          226.3,
+          694,
+          31.5
+        ],
+        "sparkle": [
+          1085,
+          227,
+          30,
+          30
+        ]
+      }
+    },
+    "t-detail": {
+      "file": "t-detail.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTMPDlyZwz",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "title": [
+          113,
+          35,
+          638.7,
+          42
+        ]
+      }
+    },
+    "t-form": {
+      "file": "t-form.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/new",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "title": [
+          393,
+          225,
+          724,
+          31.5
+        ],
+        "desc": [
+          355,
+          249.5,
+          778,
+          172
+        ],
+        "agent": [
+          461,
+          427.5,
+          62.5,
+          30
+        ],
+        "eraser": [
+          583,
+          424.5,
+          36,
+          36
+        ],
+        "yolo": [
+          619,
+          424.5,
+          79,
+          36
+        ],
+        "mic": [
+          405,
+          424.5,
+          36,
+          36
+        ],
+        "hint": [
+          855,
+          431,
+          127,
+          23
+        ]
+      }
+    },
+    "t-named": {
+      "file": "t-named.webp",
+      "route": "/workspaces/0mSNbM3vCzd",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "row": [
+          107,
+          174.5,
+          331,
+          33.1
+        ]
+      }
+    },
+    "t-typed": {
+      "file": "t-typed.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/new",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "title": [
+          393,
+          226.3,
+          694,
+          31.5
+        ],
+        "desc": [
+          355,
+          252,
+          778,
+          172
+        ],
+        "agent": [
+          461,
+          430,
+          62.5,
+          30
+        ],
+        "eraser": [
+          583,
+          427,
+          36,
+          36
+        ],
+        "yolo": [
+          619,
+          427,
+          79,
+          36
+        ],
+        "mic": [
+          405,
+          427,
+          36,
+          36
+        ],
+        "hint": [
+          855,
+          433.5,
+          127,
+          23
+        ],
+        "sparkle": [
+          1085,
+          227,
+          30,
+          30
+        ]
+      }
+    },
+    "t-untitled": {
+      "file": "t-untitled.webp",
+      "route": "/workspaces/0mSNbM3vCzd",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "untitled": [
+          107,
+          270.5,
+          331,
+          33.1
+        ],
+        "toast": [
+          1012,
+          734,
+          408,
+          56
+        ]
+      }
+    },
+    "v-box": {
+      "file": "v-box.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTMPDlyZwz",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "box": [
+          476,
+          688,
+          920,
+          58
+        ],
+        "mic": [
+          522,
+          740,
+          32,
+          32
+        ]
+      }
+    },
+    "v-load-b": {
+      "file": "v-load-b.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTMPDlyZwz",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "box": [
+          476,
+          688,
+          920,
+          58
+        ],
+        "mic": [
+          522,
+          740,
+          32,
+          32
+        ]
+      }
+    },
+    "v-rec": {
+      "file": "v-rec.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTMPDlyZwz",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "box": [
+          476,
+          688,
+          920,
+          58
+        ],
+        "mic": [
+          522,
+          740,
+          32,
+          32
+        ]
+      }
+    },
+    "v-sent": {
+      "file": "v-sent.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTMPDlyZwz",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "box": [
+          476,
+          688,
+          920,
+          58
+        ]
+      }
+    },
+    "v-text": {
+      "file": "v-text.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTMPDlyZwz",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "box": [
+          476,
+          688,
+          920,
+          58
+        ],
+        "mic": [
+          522,
+          740,
+          32,
+          32
+        ]
+      }
+    },
+    "v-transcribing": {
+      "file": "v-transcribing.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTMPDlyZwz",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "box": [
+          476,
+          688,
+          920,
+          58
+        ],
+        "mic": [
+          522,
+          740,
+          32,
+          32
+        ]
+      }
+    }
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 810
+  },
+  "scale": 3
+}

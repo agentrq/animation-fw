@@ -40,6 +40,7 @@ export const POSTERS = [
   { slug: 'see-every-agent', kicker: 'ONE SCREEN', headline: ['See every', 'agent.'], sub: 'Who works, who waits, who needs you.', shot: 'ask-board', crop: [280, 30, 1140, 760], chip: 'Allow, right on the board', mascots: ['claude', 'codex', 'agy', 'hermes'] },
   { slug: 'automate-work', kicker: 'AUTOMATION', headline: ['Automate', 'the busywork.'], sub: 'Schedules, events, webhooks, workflows.', shot: 'wf-board', crop: [992, 392, 416, 400], chip: 'one task starts the next', mascots: ['claude', 'codex', 'hermes'] },
   { slug: 'into-your-tools', kicker: 'MCP + SLACK', headline: ['Agents in', 'your Slack.'], sub: 'One MCP config. Approvals in Slack.', shot: 'tm-mention', crop: [944, 224, 476, 150], chip: 'sent from Slack, with the file', mascots: ['claude', 'codex', 'agy'] },
+  { slug: 'hand-off-fast', kicker: 'HAND OFF FAST', headline: ['Hand off', 'in seconds.'], sub: 'Talk, skip the title, take it back.', shot: 'd-sending', crop: [900, 410, 520, 160], chip: 'Cancel, before it goes', mascots: ['claude', 'codex', 'agy'] },
   { slug: 'run-anywhere', kicker: 'MACHINES', headline: ['Run agents', 'anywhere.'], sub: 'Your machines, started from the browser.', shot: 'term-4', crop: [60, 30, 760, 260], chip: 'Claude Code, live in a tab', mascots: ['claude', 'codex', 'agy', 'hermes'] },
 ];
 
