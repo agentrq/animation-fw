@@ -1,0 +1,19 @@
+{
+  "captions": { "five four three three": "5433" },
+  "lines": [
+    { "id": "hook", "min": 6, "text": "One AI agent for every project? It edits the wrong repo, and by morning it forgets everything." },
+    { "id": "promise", "min": 5, "text": "Agent R Q fixes both. Isolated workspaces, and learning that every agent shares." },
+    { "id": "ws-create", "min": 7, "text": "Each project gets its own workspace. Ada names one billing, and points it at the repo's folder." },
+    { "id": "ws-online", "min": 7, "text": "Codex connects, and billing turns green. The storefront keeps its own agent, Claude Code." },
+    { "id": "ws-tasks", "min": 7, "text": "A billing task reaches only billing's agent. The storefront agent never even sees it." },
+    { "id": "ws-key", "min": 7, "text": "Each workspace has its own key, too. If one leaks, reset it, and the other workspaces never notice." },
+    { "id": "mem-save", "min": 9, "text": "Now the learning. Billing's agent spent an hour on a failing test. So before it finishes, it saves one rule: tests need Postgres on port five four three three." },
+    { "id": "mem-next", "min": 7, "text": "Next day, a new task. The agent reads the memory first, and starts on the right port." },
+    { "id": "mem-fork", "min": 7, "text": "Fork the workspace for a second agent, and it shares that memory. What one learns, the other knows." },
+    { "id": "mem-safe", "min": 6, "text": "Two agents saving at once? A stale save is refused, so nothing gets overwritten." },
+    { "id": "skill-import", "min": 7, "text": "Playbooks become skills. Import them from GitHub, or let an agent write one from work it just did." },
+    { "id": "skill-on", "min": 5, "text": "Keep one copy, and switch it on in each workspace that needs it." },
+    { "id": "skill-fix", "min": 8, "text": "When an agent finds a missing step, it saves version two. Every workspace gets the fix at once." },
+    { "id": "cta", "min": 8, "text": "Isolated workspaces, shared learning. What does your agent relearn every morning? Tell us in the comments, and try it at Agent R Q dot com." }
+  ]
+}

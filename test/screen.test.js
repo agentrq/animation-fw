@@ -146,6 +146,19 @@ test('a built screen has the window, each state, callouts and the pointer', () =
   assert.deepEqual(check(svg, { maxBytes: 200_000 }), []);
 });
 
+test('a clipped screen keeps its picture in the safe box, with labels sized for a phone', () => {
+  const { s, sc } = screen({ clip: true, labels: { size: 20, char: 11.4, h: 38 } });
+  sc.show('a', 0, { fade: 0 }).cut(0, [0, 0, 400, 200]).callout(1, 3, 'card', { label: 'big' }).visible([[0, 6]]).build();
+  const svg = s.toSVG();
+  const id = svg.match(/<clipPath id="(screen-clip-\d+)"><rect x="0" y="0" width="800" height="400" rx="14"/)?.[1];
+  assert.ok(id, 'a clip the size of the safe box');
+  assert.match(svg, new RegExp(`clip-path="url\\(#${id}\\)"`));
+  // 'big' is 3 characters: 3 x 11.4 + 28 wide, 38 high, rounded at the ends.
+  assert.match(svg, /<rect x="[\d.-]+" y="[\d.-]+" width="62" height="38" rx="19" fill="#4ade80"/);
+  assert.match(svg, /font-size="20"[^>]*>big</);
+  assert.deepEqual(check(svg, { maxBytes: 200_000 }), []);
+});
+
 test('a screen without a pointer or moves still builds', () => {
   const { s, sc } = screen({ host: 'example.test' });
   sc.show('b', 2).visible([[1, 5]]).build();

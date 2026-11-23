@@ -1,0 +1,16 @@
+{
+  "lines": [
+    { "id": "hook", "min": 7, "text": "Four agents in four terminals. One finished an hour ago. One is stuck. One has waited forty minutes for your yes." },
+    { "id": "promise", "min": 5, "text": "Agent R Q puts every agent on one screen. What it's doing, what it needs, and every command it ran." },
+    { "id": "home", "min": 7, "text": "Each workspace gets a card, naming its agent. The dot is green while it's connected. Yellow chips count what waits on you." },
+    { "id": "kanban", "min": 7, "text": "The Kanban board puts every task on one board. Nothing needs a refresh. When billing's export is done, its card moves itself." },
+    { "id": "ask", "min": 6, "text": "Billing's agent wants to run a migration. The request comes to you, with the exact command." },
+    { "id": "allow", "min": 5, "text": "Allow it once, always, or deny it. The buttons are right on its board card." },
+    { "id": "blocked", "min": 8, "text": "Docs needs a decision, so it marks its task blocked. You answer in its thread, and it picks up where it stopped." },
+    { "id": "busy", "min": 6, "text": "Open a task, and you see it working: for how long, and its last three tools." },
+    { "id": "midturn", "min": 5, "text": "Type while it works, and your message reaches it at once. No restart." },
+    { "id": "time", "min": 8, "text": "Every task keeps a timeline. Red is time blocked. Yellow is time waiting on you. And the totals add it up." },
+    { "id": "trace", "min": 8, "text": "And every command is on the record. Trajectory shows each call, and who said yes. Like this force push to main: denied." },
+    { "id": "cta", "min": 8, "text": "Every agent, on one screen. What do you check first when an agent goes quiet? Tell us in the comments, and try it at Agent R Q dot com." }
+  ]
+}

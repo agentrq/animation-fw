@@ -89,9 +89,14 @@ function animOn(s, keys) {
 const GREEN = '#4ade80';
 const GREEN_INK = '#052e16';
 
+let clips = 0;
+
 export class Screen {
-  constructor(s, shots, { safe = { x: 0, y: 0, w: 1200, h: 595 }, bar = 30, host = 'app.agentrq.com', pad = 28 } = {}) {
-    Object.assign(this, { s, shots, safe, bar, host, pad });
+  // `clip` keeps the camera's picture inside `safe` (a vertical short shows the
+  // screen in a box between its header and its captions); `labels` sizes the
+  // callout labels ({ size, char, h }: font size, width per character, height).
+  constructor(s, shots, { safe = { x: 0, y: 0, w: 1200, h: 595 }, bar = 30, host = 'app.agentrq.com', pad = 28, clip = false, labels = { size: 15, char: 8.6, h: 30 } } = {}) {
+    Object.assign(this, { s, shots, safe, bar, host, pad, clip, labels });
     this.vw = shots.viewport.width;
     this.vh = shots.viewport.height;
     this.states = [];
@@ -238,7 +243,14 @@ export class Screen {
     const pointer = this.cursor();
     const on = [[0, { opacity: 0 }]];
     for (const { from, to, fade } of this.spans) on.push([from, { opacity: 0 }, 'step'], [from + fade, { opacity: 1 }], [to - fade, { opacity: 1 }], [to, { opacity: 0 }]);
-    s.add(s.anim(g({}, camera, ...marks, pointer), on));
+    let picture = g({}, camera, ...marks, pointer);
+    if (this.clip) {
+      const id = `screen-clip-${clips++}`;
+      const { x, y, w, h } = this.safe;
+      s.def(el('clipPath', { id }, el('rect', { x, y, width: w, height: h, rx: 14 })));
+      picture = g({ 'clip-path': `url(#${id})` }, picture);
+    }
+    s.add(s.anim(picture, on));
     return this;
   }
 
@@ -255,8 +267,8 @@ export class Screen {
     }
     parts.push(el('rect', { x, y, width: w, height: h, rx: 8, fill: GREEN, 'fill-opacity': 0.08, stroke: GREEN, 'stroke-width': 3 }));
     if (label) {
-      const lw = Math.round(label.length * 8.6 + 28);
-      const lh = 30;
+      const lw = Math.round(label.length * this.labels.char + 28);
+      const lh = this.labels.h;
       const room = { below: safe.y + safe.h - (y + h), above: y - safe.y, right: safe.x + safe.w - (x + w), left: x - safe.x };
       const pick = side !== 'auto' ? side
         : room.below >= lh + 14 ? 'below' : room.above >= lh + 14 ? 'above' : room.right >= lw + 14 ? 'right' : 'left';
@@ -264,8 +276,8 @@ export class Screen {
       let ly = pick === 'below' ? y + h + 12 : pick === 'above' ? y - lh - 12 : y + h / 2 - lh / 2;
       lx = clamp(lx, safe.x + 8, safe.x + safe.w - lw - 8);
       ly = clamp(ly, safe.y + 8, safe.y + safe.h - lh - 8);
-      parts.push(el('rect', { x: lx, y: ly, width: lw, height: lh, rx: 15, fill: GREEN }),
-        s.text(label, { x: lx + lw / 2, y: ly + 20, font: 'semi', size: 15, fill: GREEN_INK, anchor: 'middle' }));
+      parts.push(el('rect', { x: lx, y: ly, width: lw, height: lh, rx: lh / 2, fill: GREEN }),
+        s.text(label, { x: lx + lw / 2, y: ly + Math.round((lh * 2) / 3), font: 'semi', size: this.labels.size, fill: GREEN_INK, anchor: 'middle' }));
     }
     return s.anim(g({}, parts), [[0, { opacity: 0 }], [from, { opacity: 0 }, 'step'], [from + 0.25, { opacity: 1 }], [to - 0.2, { opacity: 1 }], [to, { opacity: 0 }]]);
   }
