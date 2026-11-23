@@ -123,8 +123,9 @@ Python's `fonttools` and `brotli`; if they are installed with `pip install --tar
 A video can show the product itself, not a drawing of it. `videos/pano-collaboration.js` (about 7 minutes),
 `videos/teams-collaboration.js` (about 6.5 minutes, three people sharing workspaces in a team),
 `videos/workspaces-memory-skills.js` (about 6 minutes, one workspace per project with its own key, memory and skills),
-`videos/see-every-agent.js` (about 6 minutes, four agents on one board: who waits on you, what each is doing, where the time went) and
-`videos/automate-work.js` (about 6 minutes, schedules, events, a GitHub webhook and a workflow that start work on their own)
+`videos/see-every-agent.js` (about 6 minutes, four agents on one board: who waits on you, what each is doing, where the time went),
+`videos/automate-work.js` (about 6 minutes, schedules, events, a GitHub webhook and a workflow that start work on their own) and
+`videos/run-anywhere.js` (about 5.5 minutes, agents on your own machines, started from the browser, alerts and YOLO)
 are the examples: each
 chapter opens on a pain in the house style, then shows the fix on screenshots of the real app. The pieces they share
 are in `videos/house.js`: the pain card (kicker, headline, a line under it, art on the right), the logo, the ground, and

@@ -1,0 +1,404 @@
+{
+ "shots": {
+  "mach-add": {
+   "file": "mach-add.webp",
+   "route": "/machines",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "add": [1255, 41, 136, 33],
+    "panel": [97, 121, 1294, 345],
+    "note": [118, 140, 545, 42],
+    "warn": [118, 198, 1252, 35],
+    "tabs": [118, 249, 236, 29],
+    "install": [118, 292, 1252, 79],
+    "enroll": [118, 382, 1252, 63]
+   }
+  },
+  "mach-online": {
+   "file": "mach-online.webp",
+   "route": "/machines",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "add": [1255, 41, 136, 33],
+    "card": [97, 121, 641, 133],
+    "name": [124, 133.3, 69, 32],
+    "os": [110, 159.3, 162, 24.5],
+    "agents": [667, 134, 58, 51],
+    "res": [110, 189, 615, 52]
+   }
+  },
+  "start-offline": {
+   "file": "start-offline.webp",
+   "route": "/workspaces/0mSNbM3vCzd",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "title": [96, 40, 150, 32],
+    "box": [481, 121, 910, 640],
+    "offline": [700, 375, 472, 90],
+    "start": [726, 495, 420, 39],
+    "on": [726, 538, 420, 24]
+   }
+  },
+  "start-card": {
+   "file": "start-card.webp",
+   "route": "/workspaces/0mSNbM3vCzd",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "panel": [727, 323, 419, 440],
+    "runs": [740, 340, 392, 60],
+    "kind": [747, 434, 254, 33],
+    "model": [742, 503, 388, 64],
+    "effort": [742, 575, 388, 64],
+    "compact": [742, 646, 388, 64],
+    "go": [745, 722, 149, 36]
+   }
+  },
+  "start-acp": {
+   "file": "start-acp.webp",
+   "route": "/workspaces/0mSNbM3vCzd",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "panel": [739, 334.5, 394, 584],
+    "kind": [743, 430.5, 262, 41]
+   }
+  },
+  "start-pick": {
+   "file": "start-pick.webp",
+   "route": "/workspaces/0mSNbM3vCzd",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "panel": [727, 323, 419, 440],
+    "runs": [740, 340, 392, 60],
+    "kind": [747, 434, 254, 33],
+    "model": [742, 503, 388, 64],
+    "effort": [742, 575, 388, 64],
+    "compact": [742, 646, 388, 64],
+    "go": [745, 722, 149, 36]
+   }
+  },
+  "term-1": {
+   "file": "term-1.webp",
+   "route": "/sessions/0mSwoVMuodB",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "term": [90, 154.5, 1308, 615.5]
+   }
+  },
+  "term-3": {
+   "file": "term-3.webp",
+   "route": "/sessions/0mSxETZdk1t",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "term": [90, 154.5, 1308, 615.5]
+   }
+  },
+  "term-4": {
+   "file": "term-4.webp",
+   "route": "/sessions/0mSxETZdk1t",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "term": [90, 154.5, 1308, 615.5]
+   }
+  },
+  "start-live": {
+   "file": "start-live.webp",
+   "route": "/workspaces/0mSNbM3vCzd",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "title": [96, 40, 150, 32]
+   }
+  },
+  "start-sessions": {
+   "file": "start-sessions.webp",
+   "route": "/machines/0mSwZwpskqr",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "tabs": [97, 138, 192, 156],
+    "list": [308, 132.5, 1088, 171]
+   }
+  },
+  "mach-info": {
+   "file": "mach-info.webp",
+   "route": "/machines/0mSwZwpskqr",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "res": [340, 164.5, 1024, 129.5],
+    "cpu": [344, 204.5, 251, 85.5],
+    "load": [1109, 204.5, 251, 85.5]
+   }
+  },
+  "spin-row": {
+   "file": "spin-row.webp",
+   "route": "/workspaces/0mSNbM3vCzd",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "row": [95, 438.4, 355, 88.1],
+    "btn": [314, 452.4, 30, 30],
+    "list": [97, 236, 345, 380]
+   }
+  },
+  "spin-pop": {
+   "file": "spin-pop.webp",
+   "route": "/workspaces/0mSNbM3vCzd",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "pop": [530, 173.5, 380, 463],
+    "title": [543, 186.5, 354, 63],
+    "go": [543, 583, 89.7, 40.5]
+   }
+  },
+  "spin-term-2": {
+   "file": "spin-term-2.webp",
+   "route": "/sessions/0mSxVQXkR1x",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "term": [90, 154.5, 1308, 615.5]
+   }
+  },
+  "spin-sessions": {
+   "file": "spin-sessions.webp",
+   "route": "/machines/0mSwZwpskqr",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "tabs": [97, 138, 192, 156],
+    "list": [308, 132.5, 1088, 171]
+   }
+  },
+  "spin-fork": {
+   "file": "spin-fork.webp",
+   "route": "/workspaces/0mSxVPqbPG9",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "title": [96, 40, 520, 32],
+    "list": [97, 96, 345, 200]
+   }
+  },
+  "spin-main": {
+   "file": "spin-main.webp",
+   "route": "/workspaces/0mSNbM3vCzd",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "title": [96, 40, 150, 32],
+    "ongoing": [97, 96, 345, 125],
+    "waiting": [97, 226, 345, 300]
+   }
+  },
+  "ask-typed": {
+   "file": "ask-typed.webp",
+   "route": "/pano",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "box": [77, 673, 1334, 108]
+   }
+  },
+  "start-ask": {
+   "file": "start-ask.webp",
+   "route": "/pano/chat/0mSygwxAfcD/0mSyzRguZTp",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "column": [64, 0, 480, 810]
+   }
+  },
+  "note-toast": {
+   "file": "note-toast.webp",
+   "route": "/machines/0mSwZwpskqr",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "toast": [1012, 668, 408, 122]
+   }
+  },
+  "note-input": {
+   "file": "note-input.webp",
+   "route": "/machines/0mSwZwpskqr",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "toast": [1012, 503, 408, 142]
+   }
+  },
+  "note-task": {
+   "file": "note-task.webp",
+   "route": "/workspaces/0mSNky7HZR7/tasks/0mSaMLrgxa1",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "question": [473, 249, 926, 37.4]
+   }
+  },
+  "note-settings": {
+   "file": "note-settings.webp",
+   "route": "/workspaces/0mSNc5wh6aD/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "nav": [97, 225, 192, 36],
+    "triggers": [354, 130, 1004, 262],
+    "channels": [354, 450, 1004, 80],
+    "push": [646, 481, 148, 46],
+    "email": [350, 481, 166, 46],
+    "slack": [520, 481, 122, 46]
+   }
+  },
+  "note-email": {
+   "file": "note-email.webp",
+   "route": "/workspaces/0mSNc5wh6aD/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "nav": [97, 225, 192, 36],
+    "triggers": [354, 130, 1004, 262],
+    "channels": [354, 450, 1004, 80],
+    "push": [646, 481, 148, 46],
+    "email": [350, 481, 166, 46],
+    "slack": [520, 481, 122, 46]
+   }
+  },
+  "note-slack": {
+   "file": "note-slack.webp",
+   "route": "/workspaces/0mSNc5wh6aD/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "nav": [97, 425, 192, 36],
+    "card": [348, 132, 1016, 383],
+    "add": [1137.6, 344.5, 193.4, 52],
+    "auth": [381, 333, 588, 75]
+   }
+  },
+  "yolo-ask": {
+   "file": "yolo-ask.webp",
+   "route": "/workspaces/0mSNc5wh6aD/tasks/0mSNqvI2DzR",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "always": [578, 524.9, 100, 37],
+    "card": [477, 338.9, 918, 236]
+   }
+  },
+  "yolo-always": {
+   "file": "yolo-always.webp",
+   "route": "/workspaces/0mSNc5wh6aD/tasks/0mSNqvI2DzR",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "card": [60, 12, 1368, 786]
+   }
+  },
+  "yolo-record": {
+   "file": "yolo-record.webp",
+   "route": "/workspaces/0mSNc5wh6aD/tasks/0mSNqvI2DzR",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "auto": [932.2, 377.8, 98.8, 28],
+    "row": [507.4, 468.5, 269.4, 28.5]
+   }
+  },
+  "yolo-list": {
+   "file": "yolo-list.webp",
+   "route": "/workspaces/0mSNc5wh6aD/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "nav": [97, 185, 192, 36],
+    "rule": [415, 387.1, 41.6, 28],
+    "yolo": [373, 511.4, 314.5, 54],
+    "warn": [433, 535.9, 252.5, 23]
+   }
+  },
+  "yolo-off": {
+   "file": "yolo-off.webp",
+   "route": "/workspaces/0mSNc5wh6aD/tasks/new",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "chip": [583, 427, 79, 36],
+    "form": [356, 214, 776, 262]
+   }
+  },
+  "yolo-task": {
+   "file": "yolo-task.webp",
+   "route": "/workspaces/0mSNc5wh6aD/tasks/new",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "chip": [583, 427, 77, 36],
+    "form": [356, 214, 776, 262]
+   }
+  },
+  "ctl-settings": {
+   "file": "ctl-settings.webp",
+   "route": "/machines/0mSwZwpskqr",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "avail": [342, 233.5, 506, 97],
+    "limit": [1165, 282.8, 108, 50]
+   }
+  },
+  "ctl-limit": {
+   "file": "ctl-limit.webp",
+   "route": "/machines/0mSwZwpskqr",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "limit": [1165, 282.8, 108, 50],
+    "avail": [342, 233.5, 506, 97]
+   }
+  },
+  "ctl-disabled": {
+   "file": "ctl-disabled.webp",
+   "route": "/machines/0mSwZwpskqr",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "avail": [342, 233.5, 506, 97],
+    "toast": [1012, 734, 408, 56]
+   }
+  },
+  "ctl-offline": {
+   "file": "ctl-offline.webp",
+   "route": "/machines",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "card": [95, 119, 645, 137]
+   }
+  },
+  "ctl-delete": {
+   "file": "ctl-delete.webp",
+   "route": "/machines/0mSwZwpskqr",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "dialog": [0, 0, 1440, 810]
+   }
+  }
+ },
+ "viewport": {
+  "width": 1440,
+  "height": 810
+ },
+ "scale": 3
+}
