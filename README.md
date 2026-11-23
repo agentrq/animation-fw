@@ -177,8 +177,8 @@ ANIMFW_PYLIB=DIR node videos/posters.js out/posters                 # every post
 ANIMFW_PYLIB=DIR node videos/posters.js out/posters run-anywhere    # just one
 ```
 
-**Shorts.** `videos/shorts/` holds a 9:16 YouTube short of about two minutes for five of the videos (workspaces, see
-every agent, automate, run anywhere, into your tools). Each short has a script of its own and reuses its long video's
+**Shorts.** `videos/shorts/` holds a 9:16 YouTube short of about two minutes for six of the videos (teams, workspaces,
+see every agent, automate, run anywhere, into your tools). Each short has a script of its own and reuses its long video's
 screens and card art. `videos/short.js` is the vertical kit. Its hook card shows from the first frame. The app sits in a
 box, clipped to it, with the camera close in on about 340 CSS px of a row so a phone can read it. Under the box come big
 captions, one sentence at a time, and the end card asks the question for the comments. Everything stays clear of

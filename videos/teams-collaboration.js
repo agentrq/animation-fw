@@ -36,7 +36,7 @@ function toggle(s, x, y, t) {
 }
 
 // Monday Ben's agent cracks a flaky build in two hours; Tuesday Ada's starts again.
-function artTwoAfternoons(s, at) {
+export function artTwoAfternoons(s, at) {
   const lines = (x, t0, last, fill) => ['the build flakes again', 'retry it... still red', last].map((text, i) =>
     from(s, bubbleLine(s, { x: x + 12, y: 112 + i * 36, w: 262, text, fill: i === 2 ? fill : undefined }), t0 + i * 1.0));
   const t1 = at('hook', 0.8);
@@ -54,7 +54,7 @@ function artTwoAfternoons(s, at) {
 }
 
 // The promise: a team, and a switch for each part of a workspace.
-function artPromise(s, at) {
+export function artPromise(s, at) {
   const members = [['Ada Park', ADA], ['Ben Okafor', BEN], ['Chen Wei', CHEN]];
   const parts = ['tasks', 'memory', 'skills', 'Pano docs'];
   return g({},

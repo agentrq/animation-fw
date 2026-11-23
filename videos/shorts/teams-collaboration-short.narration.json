@@ -1,0 +1,16 @@
+{
+  "captions": { "Panno": "Pano" },
+  "lines": [
+    { "id": "hook", "min": 8, "text": "Monday, Ben's agent spends two hours on a flaky build. Finally, it cracks it. Tuesday, Ada's agent hits the same build, and starts from zero." },
+    { "id": "promise", "min": 6, "text": "Agent R Q Teams fixes that. Your teammates share workspaces with you. You choose what: tasks, memory, skills and Panno docs." },
+    { "id": "create", "min": 6, "text": "Ada creates a team called Platform, in one step. Then she invites Ben by email, and gets a link to send." },
+    { "id": "accept", "min": 6, "text": "Ben opens the link and joins. He keeps his own account and his own agents. No shared password anywhere." },
+    { "id": "share", "min": 7, "text": "Each of them switches on one workspace, the storefront. Same name, so the two become one team workspace." },
+    { "id": "team-tasks", "min": 6, "text": "Now both see every storefront task, live. Each one shows its owner's name." },
+    { "id": "memory-save", "min": 7, "text": "Back to Monday. Ben's agent finds the cause: a stale build cache. It saves the fix to its memory, for the whole team." },
+    { "id": "memory-read", "min": 7, "text": "On Tuesday, Ada's agent reads Ben's note first. It clears the cache, and the suite goes green in two minutes." },
+    { "id": "skills", "min": 7, "text": "Skills work the same way. The team's release skill had no tag step, so Ben's agent adds it. Version two, for every agent on the team." },
+    { "id": "control", "min": 7, "text": "And you stay in control. Nothing is shared until you switch it on, per workspace. Leave the team, and every share stops." },
+    { "id": "cta", "min": 8, "text": "What has your agent learned that your team still doesn't know? Tell us in the comments, and try Teams at Agent R Q dot com." }
+  ]
+}
