@@ -1,0 +1,217 @@
+{
+  "captions": {
+    "Panno": "Pano"
+  },
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "Monday morning. Four agents in four terminals, on four projects, and you are the one holding it all together."
+    },
+    {
+      "id": "pain",
+      "min": 10,
+      "text": "You copy the plan from one chat to the next, answer each prompt in its own window, and check every terminal to find who's stuck. Step away, and everything waits."
+    },
+    {
+      "id": "promise",
+      "min": 11,
+      "text": "Agent R Q is one place for all of them. A workspace per project, one board for every agent, memory they keep, work that starts itself, and your yes, wherever you are."
+    },
+    {
+      "id": "ws-pain",
+      "min": 6,
+      "text": "When one chat holds every project, the agent has to guess which repo a task is about."
+    },
+    {
+      "id": "ws-create",
+      "min": 9,
+      "text": "So each project gets a workspace. Ada names this one billing, points it at the repo's folder, and starts its mission from a template."
+    },
+    {
+      "id": "ws-connect",
+      "min": 10,
+      "text": "The setup guide gives each agent its exact config: Claude Code, Codex, Antigravity, or any A C P agent. One M C P config, with this workspace's own token."
+    },
+    {
+      "id": "ws-online",
+      "min": 8,
+      "text": "Codex connects, and billing turns green. Each workspace card names the agent working in it."
+    },
+    {
+      "id": "ws-tasks",
+      "min": 9,
+      "text": "Hand billing a task, and only billing's agent gets it. Its token works for this workspace, and no other."
+    },
+    {
+      "id": "fast-pain",
+      "min": 6,
+      "text": "Writing a task down is often slower than the work: a title, a paragraph, the same steps as yesterday."
+    },
+    {
+      "id": "fast-title",
+      "min": 10,
+      "text": "Press N anywhere for a new task, and skip the title. A small model, right in the browser, names it from the description."
+    },
+    {
+      "id": "fast-voice",
+      "min": 9,
+      "text": "Or click the mic, and just say it. On a computer, Whisper turns your voice into text in the browser."
+    },
+    {
+      "id": "fast-preset",
+      "min": 8,
+      "text": "Type a hash and a preset's name, and the message you send every day drops in."
+    },
+    {
+      "id": "fast-delay",
+      "min": 9,
+      "text": "And by default, a reply waits five seconds before it goes, so Cancel can still catch the typo."
+    },
+    {
+      "id": "crew-pain",
+      "min": 7,
+      "text": "A big feature needs five agents, and you end up as the glue, relaying the plan and every question between them."
+    },
+    {
+      "id": "crew-board",
+      "min": 9,
+      "text": "The Panno is a board of markdown docs that every workspace shares. Ada posts the kickoff note, one checkbox per action item."
+    },
+    {
+      "id": "crew-split",
+      "min": 9,
+      "text": "Then she asks the supervisor, in the chat box below the board, to split the work and run in parallel whatever can."
+    },
+    {
+      "id": "crew-assign",
+      "min": 10,
+      "text": "It creates a task in each workspace, and four agents start at once. Each item on the note now shows its owner, and the live status of its task."
+    },
+    {
+      "id": "crew-contract",
+      "min": 10,
+      "text": "When the web agent needs the A P I contract, it reads the doc the A P I agent posted, and asks its question right on it."
+    },
+    {
+      "id": "crew-done",
+      "min": 9,
+      "text": "As the tasks finish, the boxes tick themselves, and the supervisor reports back. Nobody asked you to relay a thing."
+    },
+    {
+      "id": "see-pain",
+      "min": 7,
+      "text": "One agent finished an hour ago. One has waited forty minutes for your yes. A terminal tells you nothing until you go and look."
+    },
+    {
+      "id": "see-home",
+      "min": 9,
+      "text": "Here, every workspace is a card: the agent in it, a green dot while it's connected, and the actions waiting on you, in yellow."
+    },
+    {
+      "id": "see-kanban",
+      "min": 8,
+      "text": "The Kanban board puts every workspace's tasks on one board, and it moves live. No refresh."
+    },
+    {
+      "id": "see-ask",
+      "min": 10,
+      "text": "When an agent wants to run a command, the request comes to you, with the exact command. Allow and Deny sit right on its card."
+    },
+    {
+      "id": "see-time",
+      "min": 9,
+      "text": "Every task keeps a timeline, so you see how long it worked, how long it was blocked, and how long it waited on you."
+    },
+    {
+      "id": "see-trace",
+      "min": 9,
+      "text": "And the trajectory keeps every tool call on the record: what ran, and who said yes."
+    },
+    {
+      "id": "mem-pain",
+      "min": 8,
+      "text": "Your agent spends an hour learning that the billing tests need Postgres on port five four three three. Tomorrow, a new session learns it again."
+    },
+    {
+      "id": "mem-save",
+      "min": 10,
+      "text": "Here, before it marks a task done, the agent saves what the next task should know, as one short note in the workspace memory."
+    },
+    {
+      "id": "mem-next",
+      "min": 8,
+      "text": "The next task starts by loading that memory, and goes straight to the right port."
+    },
+    {
+      "id": "mem-skill",
+      "min": 10,
+      "text": "Playbooks become skills: one copy in your account, switched on per workspace. When an agent adds a missing step, every workspace gets it at once."
+    },
+    {
+      "id": "mem-team",
+      "min": 9,
+      "text": "Share a workspace's memory with your team, and the lessons one agent learns, every teammate's agent can read."
+    },
+    {
+      "id": "auto-pain",
+      "min": 7,
+      "text": "Every morning you type the same prompts. And every change, you carry from one agent to the next by hand."
+    },
+    {
+      "id": "auto-sched",
+      "min": 10,
+      "text": "Put a task on a schedule: daily at nine, read last night's errors. Each run is a normal task, with its own thread."
+    },
+    {
+      "id": "auto-event",
+      "min": 9,
+      "text": "Events hand work on. When billing's agent publishes A P I changed, docs and mobile get their tasks at once."
+    },
+    {
+      "id": "auto-hook",
+      "min": 9,
+      "text": "Webhooks let GitHub start the work: a failed build on main becomes a task, before anyone wakes up."
+    },
+    {
+      "id": "auto-wf",
+      "min": 9,
+      "text": "And a workflow chains it all, so a whole release runs step by step, across workspaces."
+    },
+    {
+      "id": "any-pain",
+      "min": 7,
+      "text": "Close the laptop lid, and your agents stop. Step away, and a prompt waits in a terminal all afternoon."
+    },
+    {
+      "id": "any-mach",
+      "min": 9,
+      "text": "Enroll the machines you own, with two commands. Each one shows up green, with its C P U and memory."
+    },
+    {
+      "id": "any-start",
+      "min": 10,
+      "text": "Start an agent from the browser, in the workspace's folder on that machine. Its terminal opens live, right in the page."
+    },
+    {
+      "id": "any-note",
+      "min": 9,
+      "text": "When an agent needs you, a toast finds you on any page. Push, email and Slack reach you with the tab closed."
+    },
+    {
+      "id": "any-trust",
+      "min": 10,
+      "text": "For the work you trust, Always Allow saves a rule, and Yolo runs a task without asking. The trajectory still records every call."
+    },
+    {
+      "id": "recap",
+      "min": 11,
+      "text": "A workspace per project, handoffs in seconds, and agents that work together. Every agent on one screen, memory they keep, work that starts itself, and any machine you own."
+    },
+    {
+      "id": "cta",
+      "min": 10,
+      "text": "Each of these has its own video in this series. Which would you hand to your agents first? Tell us in the comments. Agent R Q is open source: try it at Agent R Q dot com."
+    }
+  ]
+}
