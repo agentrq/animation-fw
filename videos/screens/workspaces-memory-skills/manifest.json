@@ -1,0 +1,404 @@
+{
+ "shots": {
+  "new-typed": {
+   "file": "new-typed.webp",
+   "route": "/workspaces/new",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "form": [328, 238, 1024, 636.5],
+    "name": [353, 285, 475, 42],
+    "dir": [852, 285.5, 475, 42],
+    "picker": [353, 374, 974, 50.5],
+    "mission": [353, 470.5, 475, 295],
+    "learning": [852, 470.5, 475, 295]
+   }
+  },
+  "new-backend": {
+   "file": "new-backend.webp",
+   "route": "/workspaces/new",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "form": [328, 238, 1024, 637],
+    "name": [353, 285, 475, 42],
+    "dir": [852, 285.5, 475, 42],
+    "picker": [353, 374, 974, 50.5],
+    "mission": [353, 471, 475, 295],
+    "learning": [852, 470.5, 475, 295.5],
+    "backend": [430, 398, 68, 26.5]
+   }
+  },
+  "new-create": {
+   "file": "new-create.webp",
+   "route": "/workspaces/new",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "create": [1150.4, 740.5, 176.6, 36.5],
+    "learning": [852, 385.5, 475, 295.5],
+    "mission": [353, 386, 475, 295]
+   }
+  },
+  "billing-offline": {
+   "file": "billing-offline.webp",
+   "route": "/workspaces/0mSGmcoEGDl",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "connect": [822, 520.3, 420, 39],
+    "heading": [907, 400.8, 250, 40],
+    "row": [24, 279, 208, 28]
+   }
+  },
+  "setup-claude": {
+   "file": "setup-claude.webp",
+   "route": "/workspaces/0mSGmcoEGDl/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "tabs": [546, 138, 812, 42],
+    "config": [567, 295, 770, 151],
+    "command": [584, 983.6, 528.1, 11]
+   }
+  },
+  "setup-codex": {
+   "file": "setup-codex.webp",
+   "route": "/workspaces/0mSGmcoEGDl/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "tabs": [546, 138, 812, 42],
+    "config": [567, 295, 770, 151],
+    "title": [565, 518, 774, 28]
+   }
+  },
+  "home-online": {
+   "file": "home-online.webp",
+   "route": "/",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "billing": [289, 170.5, 356.7, 66],
+    "docs": [661.7, 170.5, 356.7, 66],
+    "storefront": [1034.3, 170.5, 356.7, 66],
+    "row": [24, 279, 208, 28],
+    "rows": [24, 279, 208, 28]
+   }
+  },
+  "task-typed": {
+   "file": "task-typed.webp",
+   "route": "/workspaces/0mSGmcoEGDl/tasks/new",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "title": [495, 232.3, 682, 19.5],
+    "body": [457, 258, 766, 160],
+    "send": [1175, 427, 36, 36],
+    "form": [456, 218, 768, 254]
+   }
+  },
+  "task-billing": {
+   "file": "task-billing.webp",
+   "route": "/workspaces/0mSGmcoEGDl/tasks/0mSGpG7G1v3",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "reply": [667, 209, 730, 33.4],
+    "row": [24, 279, 208, 28]
+   }
+  },
+  "home-detailed": {
+   "file": "home-detailed.webp",
+   "route": "/",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "billing": [289, 170.5, 356.7, 181],
+    "storefront": [1034.3, 170.5, 356.7, 181],
+    "docs": [661.7, 170.5, 356.7, 181],
+    "vat": [316, 244.1, 236.7, 30.8]
+   }
+  },
+  "mem-saved": {
+   "file": "mem-saved.webp",
+   "route": "/workspaces/0mSGmcoEGDl/tasks/0mSGpG7G1v3",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "found": [667, 285.9, 730, 54.9],
+    "loop": [667, 384.3, 730, 33.4]
+   }
+  },
+  "memories": {
+   "file": "memories.webp",
+   "route": "/workspaces/0mSGmcoEGDl/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "body": [550, 244, 808, 21.4],
+    "link": [569.5, 246, 222, 16],
+    "name": [544, 210, 76.8, 28]
+   }
+  },
+  "memory-note": {
+   "file": "memory-note.webp",
+   "route": "/workspaces/0mSGmcoEGDl/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "body": [550, 244, 808, 79.1],
+    "back": [544, 211.3, 55.4, 25.5]
+   }
+  },
+  "fork-menu": {
+   "file": "fork-menu.webp",
+   "route": "/workspaces/0mSGmcoEGDl",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "menu": [210, 302, 160, 42.5],
+    "fork": [211, 307, 158, 32.5],
+    "row": [24, 279, 208, 28]
+   }
+  },
+  "fork-modal": {
+   "file": "fork-modal.webp",
+   "route": "/workspaces/0mSGmcoEGDl",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "modal": [0, 0, 1440, 810],
+    "name": [585, 432, 326, 38],
+    "go": [841, 519, 70, 37],
+    "text": [579, 300, 338, 103]
+   }
+  },
+  "fork-memory": {
+   "file": "fork-memory.webp",
+   "route": "/workspaces/0mSHA7jYwmT/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "banner": [546, 138, 812, 73],
+    "body": [550, 341, 808, 21.4],
+    "link": [569.5, 343, 222, 16],
+    "row": [24, 309, 208, 28]
+   }
+  },
+  "mem-conflict": {
+   "file": "mem-conflict.webp",
+   "route": "/workspaces/0mSHA7jYwmT/tasks/0mSHAl9XEhx",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "refused": [667, 307.4, 730, 54.9]
+   }
+  },
+  "memories-full": {
+   "file": "memories-full.webp",
+   "route": "/workspaces/0mSGmcoEGDl/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "body": [550, 244, 808, 70.8],
+    "link": [569.5, 246, 222, 16],
+    "name": [544, 210, 76.8, 28]
+   }
+  },
+  "merge-menu": {
+   "file": "merge-menu.webp",
+   "route": "/workspaces/0mSGmcoEGDl",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "menu": [210, 332, 160, 42.5],
+    "merge": [211, 337, 158, 32.5],
+    "row": [24, 309, 208, 28]
+   }
+  },
+  "merge-modal": {
+   "file": "merge-modal.webp",
+   "route": "/workspaces/0mSGmcoEGDl",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "modal": [0, 0, 1440, 810],
+    "message": [585, 353.9, 326, 68.3],
+    "merge": [832, 471.1, 79, 37]
+   }
+  },
+  "merged": {
+   "file": "merged.webp",
+   "route": "/workspaces/0mSGmcoEGDl",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "refunds": [299, 462.5, 331, 33.1],
+    "numbers": [299, 550.6, 331, 33.1],
+    "row": [24, 279, 208, 28]
+   }
+  },
+  "mem-next": {
+   "file": "mem-next.webp",
+   "route": "/workspaces/0mSGmcoEGDl/tasks/0mSHF2tUAej",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "reply": [667, 209, 730, 54.9]
+   }
+  },
+  "setup-key": {
+   "file": "setup-key.webp",
+   "route": "/workspaces/0mSGmcoEGDl/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "config": [567, 295, 770, 151],
+    "url": [571, 301, 1544.7, 137.1]
+   }
+  },
+  "danger": {
+   "file": "danger.webp",
+   "route": "/workspaces/0mSGmcoEGDl/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "reset": [546, 367, 812, 148]
+   }
+  },
+  "reset-modal": {
+   "file": "reset-modal.webp",
+   "route": "/workspaces/0mSGmcoEGDl/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "modal": [0, 0, 1440, 810],
+    "confirm": [821, 505.3, 90, 37],
+    "text": [579, 313.8, 338, 148.5]
+   }
+  },
+  "skills-import": {
+   "file": "skills-import.webp",
+   "route": "/workspaces/0mSGmcoEGDl/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "url": [563, 260.5, 686.4, 34],
+    "go": [1257.4, 260.5, 83.6, 34],
+    "grid": [546, 364, 812, 222.5],
+    "release": [1092.7, 364, 265.3, 107.3],
+    "toggle": [755.3, 376, 44, 24]
+   }
+  },
+  "skill-page": {
+   "file": "skill-page.webp",
+   "route": "/workspaces/0mSGmcoEGDl/settings/skills/release",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "workspaces": [546, 331.5, 812, 46],
+    "shop": [691, 351, 90, 26.5],
+    "body": [794, 442.5, 564, 148.9],
+    "meta": [546, 242.5, 812, 15]
+   }
+  },
+  "skill-page-on": {
+   "file": "skill-page-on.webp",
+   "route": "/workspaces/0mSGmcoEGDl/settings/skills/release",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "workspaces": [546, 331.5, 812, 46],
+    "shop": [691, 351, 90, 26.5],
+    "body": [794, 442.5, 564, 148.9],
+    "meta": [546, 242.5, 812, 15]
+   }
+  },
+  "skill-use": {
+   "file": "skill-use.webp",
+   "route": "/workspaces/0mSExe5kfob/tasks/0mSHbJjknfJ",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "reply": [667, 209, 730, 54.9]
+   }
+  },
+  "skill-fix": {
+   "file": "skill-fix.webp",
+   "route": "/workspaces/0mSGmcoEGDl/tasks/0mSHc3vpQ6H",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "found": [667, 209, 730, 54.9],
+    "saved": [667, 307.4, 730, 54.9]
+   }
+  },
+  "skill-v2": {
+   "file": "skill-v2.webp",
+   "route": "/workspaces/0mSExe5kfob/settings/skills/release",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "workspaces": [546, 331.5, 812, 46],
+    "shop": [691, 351, 90, 26.5],
+    "body": [794, 442.5, 564, 173.6],
+    "meta": [546, 242.5, 812, 15],
+    "step": [807.5, 539.3, 556.5, 33.4]
+   }
+  },
+  "docs-auto": {
+   "file": "docs-auto.webp",
+   "route": "/workspaces/0mSEyNxOAsv/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "auto": [546, 138, 812, 690.9],
+    "yolo": [546, 568.4, 812, 92]
+   }
+  },
+  "billing-auto": {
+   "file": "billing-auto.webp",
+   "route": "/workspaces/0mSGmcoEGDl/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "auto": [546, 138, 812, 630.4],
+    "yolo": [546, 507.9, 812, 92]
+   }
+  },
+  "ctl-skill": {
+   "file": "ctl-skill.webp",
+   "route": "/workspaces/0mSEyNxOAsv/tasks/0mSHedNqwHF",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "reply": [667, 209, 730, 76.3]
+   }
+  },
+  "learning-docs": {
+   "file": "learning-docs.webp",
+   "route": "/workspaces/0mSEyNxOAsv/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "learning": [546, 398, 812, 146],
+    "save": [1157, 636.5, 201, 35]
+   }
+  },
+  "learning-rule": {
+   "file": "learning-rule.webp",
+   "route": "/workspaces/0mSGmcoEGDl/settings",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "learning": [546, 398, 812, 146]
+   }
+  }
+ },
+ "viewport": {
+  "width": 1440,
+  "height": 810
+ },
+ "scale": 3
+}
