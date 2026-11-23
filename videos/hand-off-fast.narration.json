@@ -1,0 +1,47 @@
+{
+  "captions": { "Panno": "Pano" },
+  "lines": [
+    { "id": "hook", "min": 9, "text": "You know exactly what the agent should do next. Writing it down is the slow part: a title, a paragraph, the same instructions as yesterday." },
+    { "id": "pain", "min": 9, "text": "Then you press send, spot the typo a second later, and the agent has already read it, with the last task still in its head." },
+    { "id": "promise", "min": 10, "text": "Agent R Q makes handing off work fast. Talk instead of type, skip the title, reuse what you always say, take a message back, and start every task clean." },
+
+    { "id": "title-pain", "min": 6, "text": "Naming a task often takes longer than writing it." },
+    { "id": "title-new", "min": 8, "text": "Ada presses N, anywhere in the app, and the new task form opens for storefront." },
+    { "id": "title-write", "min": 9, "text": "The title is optional, so she writes only the task: after a coupon is removed, the checkout still shows the discounted price." },
+    { "id": "title-create", "min": 8, "text": "Command Enter creates it. For a moment, it is called Untitled." },
+    { "id": "title-named", "min": 10, "text": "Then a small model, running right in her browser, reads the description and gives the task a name. Nothing is sent anywhere to write it." },
+    { "id": "title-sparkle", "min": 8, "text": "Want the title before you create? Type a few words, and click the sparkle beside the title field." },
+
+    { "id": "voice-pain", "min": 6, "text": "Some tasks take a whole paragraph. Typing it is the slow part." },
+    { "id": "voice-mic", "min": 8, "text": "So Ada clicks the mic in the reply box, and just says it." },
+    { "id": "voice-model", "min": 8, "text": "The first time, a Whisper speech model downloads into her browser. After that, it's ready." },
+    { "id": "voice-text", "min": 10, "text": "When she stops, the text lands where her cursor was. On a computer, her voice becomes text on her own machine, and no audio is uploaded." },
+    { "id": "voice-lang", "min": 9, "text": "She picks the language she speaks in Settings, under Input. On a phone, the mic uses the phone's own dictation." },
+
+    { "id": "preset-pain", "min": 7, "text": "Some instructions you type every single day: pull the latest main, run the tests, tag and push." },
+    { "id": "preset-save", "min": 9, "text": "Ada saves it once, as a preset: in the workspace settings, a short name, the message, and Add Preset." },
+    { "id": "preset-use", "min": 8, "text": "Now, in any task or reply, she types a hash and the first letters of the name, and picks it from the menu." },
+    { "id": "preset-done", "min": 9, "text": "The name becomes the whole message, right where she typed it. The agent just reads the message, so there's nothing to set up on its side." },
+
+    { "id": "delay-pain", "min": 6, "text": "You press send, and see the mistake one second later. Too late: the agent read it." },
+    { "id": "delay-send", "min": 9, "text": "In Agent R Q, a reply waits a few seconds before it goes: Sending in five seconds, with Cancel and Send Now." },
+    { "id": "delay-cancel", "min": 8, "text": "Cancel puts the message back in the box, unsent, attachments and all. Ada fixes the branch name." },
+    { "id": "delay-now", "min": 8, "text": "Send Now delivers it at once. Leave it alone, and it goes when the count reaches zero." },
+    { "id": "delay-setting", "min": 9, "text": "Each workspace sets its own delay, from off to sixty seconds. New workspaces start at five." },
+
+    { "id": "key-pain", "min": 6, "text": "Four workspaces, dozens of tasks. Finding the one you need shouldn't be a hunt." },
+    { "id": "key-find", "min": 9, "text": "Command K opens the task finder. Ada types coupon, a word from the description, and it finds the task. It searches every task this device has opened, and Enter opens it." },
+    { "id": "key-letters", "min": 9, "text": "Single letters do the rest: N for a new task, W to switch workspace, M for a machine, and P for the Panno." },
+    { "id": "key-task", "min": 8, "text": "Inside a task, C shows the chat, and T shows the agent's tool calls." },
+    { "id": "key-help", "min": 8, "text": "A question mark lists them all. They pause while you type in a field, so they never get in your way." },
+
+    { "id": "clear-pain", "min": 7, "text": "An agent that runs all day starts your third task with the first two still in its context, and reads them again on every turn." },
+    { "id": "clear-eraser", "min": 9, "text": "Storefront's Claude Code runs on Ada's machine, so the new task form shows an eraser next to YOLO: clear context." },
+    { "id": "clear-how", "min": 10, "text": "Before the agent picks the task up, Agent R Q types slash clear into its terminal, waits two seconds, then hands the task over." },
+    { "id": "clear-term", "min": 9, "text": "In the live terminal you can watch it happen: the context clears, and the new task arrives on a clean slate." },
+    { "id": "clear-default", "min": 9, "text": "It's on by default for new workspaces, in the Automations settings. Agents can ask for it too, when they create a task." },
+
+    { "id": "recap", "min": 9, "text": "Skip the title, say it out loud, reuse what you always type, take a message back, find anything with a key, and start each task clean." },
+    { "id": "cta", "min": 8, "text": "What slows down your handoffs today? Tell us in the comments, and try it at Agent R Q dot com." }
+  ]
+}
