@@ -127,9 +127,10 @@ A video can show the product itself, not a drawing of it. `videos/pano-collabora
 `videos/automate-work.js` (about 6 minutes, schedules, events, a GitHub webhook and a workflow that start work on their own),
 `videos/run-anywhere.js` (about 5.5 minutes, agents on your own machines, started from the browser, alerts and YOLO),
 `videos/into-your-tools.js` (about 5.5 minutes, any agent connected with one MCP config, its seven tools, the `agentrq-ws`
-CLI, and a team that hands it work and approves it from Slack) and
+CLI, and a team that hands it work and approves it from Slack),
 `videos/hand-off-fast.js` (about 5.5 minutes, tasks named by a model in the browser, replies spoken and transcribed by
-Whisper on your machine, presets, the send delay, single-key shortcuts and /clear before each task)
+Whisper on your machine, presets, the send delay, single-key shortcuts and /clear before each task) and
+`videos/end-to-end.js` (about 7 minutes, the overview: one chapter per feature, told over the screens of the videos above)
 are the examples: each
 chapter opens on a pain in the house style, then shows the fix on screenshots of the real app. The pieces they share
 are in `videos/house.js`: the pain card (kicker, headline, a line under it, art on the right), the logo, the ground, and
