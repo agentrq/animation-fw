@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "You are in the kitchen, making lunch, and your agent is somewhere deep in a refactor."
+    },
+    {
+      "id": "stuck",
+      "min": 8,
+      "text": "Then it hits a decision it cannot make alone, and stops, waiting on a question for you."
+    },
+    {
+      "id": "unknown",
+      "min": 8,
+      "text": "And you would never know. Your laptop is closed, and your phone stays silent on the counter."
+    },
+    {
+      "id": "cost",
+      "min": 8,
+      "text": "An hour later the agent is still waiting, the whole refactor stalled over one simple question."
+    },
+    {
+      "id": "push",
+      "min": 8,
+      "text": "Agent R Q pushes the request to your phone the moment it appears, instead of waiting for you to look."
+    },
+    {
+      "id": "buzz",
+      "min": 8,
+      "text": "Your phone buzzes on the counter, and the question is right there on the lock screen."
+    },
+    {
+      "id": "tap",
+      "min": 8,
+      "text": "You wipe your hands, and tap a reply, with one finger, without opening a laptop."
+    },
+    {
+      "id": "hears",
+      "min": 8,
+      "text": "The agent hears it instantly, over a live stream, with no timer and no check in between."
+    },
+    {
+      "id": "carry",
+      "min": 8,
+      "text": "It carries on with the refactor, exactly where it paused, and keeps the old session format."
+    },
+    {
+      "id": "lunch",
+      "min": 8,
+      "text": "And lunch is saved, because the whole interruption cost you about ten seconds."
+    },
+    {
+      "id": "control",
+      "min": 8,
+      "text": "You stay in control without being chained to a screen, because the agent finds you when it matters."
+    },
+    {
+      "id": "cta",
+      "min": 8,
+      "text": "Where were you the last time an agent needed you? Tell us the funniest place, and try Agent R Q dot com."
+    }
+  ]
+}

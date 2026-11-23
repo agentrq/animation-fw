@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 7.2,
+      "text": "Every day, someone is supposed to summarize what changed in the project."
+    },
+    {
+      "id": "miss",
+      "min": 7.2,
+      "text": "And every day, nobody does. Everyone is busy, and it gets forgotten."
+    },
+    {
+      "id": "agent",
+      "min": 7.2,
+      "text": "An agent could write it in a minute, but only if somebody remembers to ask."
+    },
+    {
+      "id": "cron",
+      "min": 7.2,
+      "text": "In Agent R Q, schedule the task on a cron, like every weekday at six."
+    },
+    {
+      "id": "poller",
+      "min": 7.2,
+      "text": "The background poller watches the clock, and spawns the task for you."
+    },
+    {
+      "id": "six",
+      "min": 7.2,
+      "text": "At six o clock, a new run lands on your board, like any other task."
+    },
+    {
+      "id": "agentgo",
+      "min": 7.2,
+      "text": "The agent starts working at once, even though nobody asked it. No reminder, no prompt, and no one has to be online."
+    },
+    {
+      "id": "write",
+      "min": 7.2,
+      "text": "It reads the commits and the tasks, and writes up what actually changed."
+    },
+    {
+      "id": "read",
+      "min": 7.2,
+      "text": "You can read the run, or reply to it, exactly like a normal task."
+    },
+    {
+      "id": "history",
+      "min": 7.2,
+      "text": "And every run stays on the board, so you build a history of every day. Over time, that becomes a searchable record of every single day."
+    },
+    {
+      "id": "ontime",
+      "min": 7.2,
+      "text": "No reminders, no chasing, and no more missed reports. The team just opens the board and reads yesterday's summary."
+    },
+    {
+      "id": "close",
+      "min": 7.2,
+      "text": "What report do you always forget to write? Tell us below, or try it at Agent R Q dot com."
+    }
+  ]
+}

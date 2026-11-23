@@ -1,0 +1,359 @@
+{
+ "title": "Speech to text: hands busy",
+ "kicker": "speech to text",
+ "mascots": [
+  "claude"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 7.2,
+   "hed": [
+    "Hands full,",
+    "agent waiting."
+   ],
+   "sub": "Flour up to the wrists.",
+   "log": "> hook",
+   "text": "You are cooking dinner, and your hands are covered in flour.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Cooking dinner",
+     "sub": "Hands covered in flour",
+     "chip": [
+      "Busy",
+      "y"
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "ping",
+   "min": 7.2,
+   "hed": [
+    "Your phone",
+    "buzzes."
+   ],
+   "sub": "An agent has a question.",
+   "log": "> ping",
+   "text": "Your phone buzzes. Your agent has stopped, and it just asked you a question.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Should I keep the old API?",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "stuck",
+   "min": 7.2,
+   "hed": [
+    "A simple",
+    "question."
+   ],
+   "sub": "Too messy to type.",
+   "log": "> stuck",
+   "text": "It only wants to know whether to keep the old API. A simple question, but you cannot type.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Should I keep the old API?",
+     "at": 0.8
+    },
+    {
+     "k": "msg",
+     "from": "system",
+     "who": null,
+     "text": "Waiting for you...",
+     "at": 2.6
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "cost",
+   "min": 7.2,
+   "hed": [
+    "Typing costs",
+    "a minute."
+   ],
+   "sub": "And the agent waits.",
+   "log": "> cost",
+   "text": "Washing your hands and typing a reply takes a minute. Meanwhile the agent just sits there, waiting.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Reply to Claude Code",
+     "sub": "Waiting for 4 minutes",
+     "chip": [
+      "Idle",
+      "y"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Wash hands, find phone",
+     "sub": "Still going",
+     "chip": [
+      "Slow",
+      "z"
+     ],
+     "at": 3.4
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "mic",
+   "min": 7.2,
+   "hed": [
+    "Tap the mic.",
+    "Say it."
+   ],
+   "sub": "No keyboard needed.",
+   "log": "> mic",
+   "text": "So tap the mic instead, and say your answer out loud, the way you would tell a teammate.",
+   "scene": [
+    {
+     "k": "wave",
+     "at": 1
+    },
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "Dictating",
+     "text": "Keep it for two more releases.",
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "desktop",
+   "min": 7.2,
+   "hed": [
+    "On a computer,",
+    "Whisper."
+   ],
+   "sub": "Runs in your browser.",
+   "log": "> desktop",
+   "text": "On a computer, a local Whisper model listens and transcribes right inside your browser.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Whisper model",
+     "sub": "Runs locally in the browser",
+     "chip": [
+      "Local",
+      "g"
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "phone",
+   "min": 7.2,
+   "hed": [
+    "On a phone,",
+    "dictation."
+   ],
+   "sub": "Built in already.",
+   "log": "> phone",
+   "text": "On a phone, it simply uses the dictation your phone already has, so there is nothing to set up.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Phone dictation",
+     "sub": "Uses the native keyboard mic",
+     "chip": [
+      "Native",
+      "b"
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "private",
+   "min": 7.2,
+   "hed": [
+    "Audio stays",
+    "on your machine."
+   ],
+   "sub": "Nothing uploaded.",
+   "log": "> private",
+   "text": "On desktop, your audio never leaves your machine. Nothing is uploaded to anyone, anywhere.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Audio stays local",
+     "sub": "No upload, no server",
+     "chip": [
+      "Private",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "big",
+     "text": "Private",
+     "sub": "by design",
+     "at": 3.6
+    }
+   ]
+  },
+  {
+   "id": "review",
+   "min": 7.2,
+   "hed": [
+    "Check the",
+    "text first."
+   ],
+   "sub": "Fix a word if needed.",
+   "log": "> review",
+   "text": "Your words appear as text, so you can check them, and fix a word, before anything is sent.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "Transcribed",
+     "text": "Keep it for two more releases.",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Review the text",
+     "sub": "Edit before sending",
+     "chip": [
+      "Draft",
+      "y"
+     ],
+     "at": 3.2
+    }
+   ]
+  },
+  {
+   "id": "send",
+   "min": 7.2,
+   "hed": [
+    "Happy?",
+    "Send."
+   ],
+   "sub": "One tap.",
+   "log": "> send",
+   "text": "Happy with it? Send. The agent reads your answer and carries on with its work.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "You",
+     "text": "Keep it for two more releases.",
+     "at": 1
+    },
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Got it. Continuing now.",
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "other",
+   "min": 7.2,
+   "hed": [
+    "Works anywhere",
+    "your hands are busy."
+   ],
+   "sub": "Babies, boxes, bikes.",
+   "log": "> other",
+   "text": "It works just as well when you are holding a baby, or carrying boxes up the stairs.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "Cooking",
+      "Baby",
+      "Boxes",
+      "Driving"
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "moral",
+   "min": 7.2,
+   "hed": [
+    "Reply without",
+    "stopping."
+   ],
+   "sub": "Talk. Done.",
+   "log": "> moral",
+   "text": "You can answer your agents without stopping whatever else you are doing.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Talk.|Done.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "close",
+   "min": 7.2,
+   "hed": [
+    "What are you",
+    "doing?"
+   ],
+   "sub": "agentrq.com",
+   "log": "> close",
+   "text": "What are you usually doing when an agent pings you? Tell us in the comments, or try it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "What are you|doing?",
+     "sub": "comment below",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  }
+ ]
+}

@@ -1,0 +1,368 @@
+{
+ "title": "Events",
+ "kicker": "events",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 5,
+   "hed": [
+    "Agent one",
+    "is done."
+   ],
+   "sub": "Then everything stops.",
+   "log": "> build: done",
+   "text": "Your first agent finishes the code. Then everything stops, because somebody has to start the reviewer.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Build the checkout page",
+     "sub": "Claude Code",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Review the checkout page",
+     "sub": "Nobody started it",
+     "chip": [
+      "Waiting",
+      "z"
+     ],
+     "at": 3.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "cost",
+   "min": 5,
+   "hed": [
+    "That somebody",
+    "is you."
+   ],
+   "sub": "Every single handoff.",
+   "log": "> you: copy, paste, repeat",
+   "text": "That somebody is you. You check the board, copy the context, and open a new task. Every handoff.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> check the board",
+       "r"
+      ],
+      [
+       "> copy the context",
+       "r"
+      ],
+      [
+       "> open a new task",
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "idea",
+   "min": 5,
+   "hed": [
+    "Events fix",
+    "the gap."
+   ],
+   "sub": "A named signal.",
+   "log": "> event: code_changed",
+   "text": "Events close that gap. An event is just a named signal, like code changed.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "code_changed",
+     "sub": "a named signal",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "emit",
+   "min": 5,
+   "hed": [
+    "Finish with",
+    "a signal."
+   ],
+   "sub": "The agent says what happened.",
+   "log": "> build: emits code_changed",
+   "text": "When a task completes, it can emit that signal. The agent calls nothing. It just says what happened.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Build the checkout page",
+     "sub": "Completes and emits",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "big",
+     "text": "code_changed",
+     "sub": "emitted",
+     "at": 3.4
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "wire",
+   "min": 5,
+   "hed": [
+    "Wire it to",
+    "a workspace."
+   ],
+   "sub": "No glue code.",
+   "log": "> wire: code_changed -> Review",
+   "text": "Wire the event to a workspace, and Agent R Q creates a task there on its own.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Build workspace",
+       "code_changed"
+      ],
+      [
+       "Review workspace",
+       "new task"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "pickup",
+   "min": 5,
+   "hed": [
+    "The reviewer",
+    "wakes up."
+   ],
+   "sub": "It starts at once.",
+   "log": "> review: picked up the task",
+   "text": "The reviewer is already listening. The moment the signal lands, it picks the task up and starts.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Codex",
+     "text": "Picked up: Review the checkout page.",
+     "at": 1.6
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Review the checkout page",
+     "sub": "Codex is on it",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 3.4
+    }
+   ],
+   "mascot": {
+    "codex": "work"
+   }
+  },
+  {
+   "id": "chain",
+   "min": 5,
+   "hed": [
+    "Agents",
+    "chain up."
+   ],
+   "sub": "One event leads to the next.",
+   "log": "> reviewed -> test -> deploy",
+   "text": "It chains. The reviewer emits its own event, then testing wakes up, then deploy.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Build",
+       "Claude"
+      ],
+      [
+       "Review",
+       "Codex"
+      ],
+      [
+       "Test",
+       "Gemini"
+      ],
+      [
+       "Deploy",
+       "Cursor"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "work",
+    "agy": "work"
+   }
+  },
+  {
+   "id": "guard",
+   "min": 5,
+   "hed": [
+    "You stay",
+    "in control."
+   ],
+   "sub": "Approvals still apply.",
+   "log": "> deploy: push to main?",
+   "text": "You stay in control. Every workspace keeps its approvals, so a chain never skips a human.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Deploy",
+      "y"
+     ],
+     "code": "Bash  git push origin main",
+     "buttons": [
+      "Allow",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 4.2,
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "night",
+   "min": 5,
+   "hed": [
+    "Add a",
+    "schedule."
+   ],
+   "sub": "The train runs at night.",
+   "log": "> cron 02:00 -> build",
+   "text": "Add a schedule, and a nightly build runs the whole release train while you sleep.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "c",
+     "title": "Nightly build",
+     "sub": "Every day at 02:00",
+     "chip": [
+      "Scheduled",
+      "c"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Build",
+       "02:00"
+      ],
+      [
+       "Review",
+       "auto"
+      ],
+      [
+       "Deploy",
+       "auto"
+      ]
+     ],
+     "at": 3.0
+    }
+   ]
+  },
+  {
+   "id": "see",
+   "min": 5,
+   "hed": [
+    "See every",
+    "handoff."
+   ],
+   "sub": "What fired what, and when.",
+   "log": "> timeline: 3 handoffs",
+   "text": "Every handoff shows up in the task timeline, so you can see what fired what, and when.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Build",
+       30,
+       "g"
+      ],
+      [
+       "Review",
+       30,
+       "g"
+      ],
+      [
+       "Deploy",
+       40,
+       "y"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "min": 5,
+   "hed": [
+    "Events chain",
+    "your agents."
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "No glue code, no copy and paste. Try events at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Your turn.",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

@@ -1,0 +1,382 @@
+{
+ "title": "YOLO mode",
+ "kicker": "yolo mode",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "Approval",
+    "number forty-two."
+   ],
+   "sub": "Allow. Allow. Allow.",
+   "log": "> approvals today: 42",
+   "text": "Allow. Allow. Allow. Your agent asks permission to read a file for the forty-second time today.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Authorization required",
+      "y"
+     ],
+     "code": "Read  src/utils/format.ts",
+     "buttons": [
+      "Allow Once",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 3,
+     "at": 1.4
+    },
+    {
+     "k": "msg",
+     "from": "system",
+     "who": "System",
+     "text": "42 approvals today",
+     "at": 4.6
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "cost",
+   "min": 8,
+   "hed": [
+    "A click",
+    "is a break."
+   ],
+   "sub": "Your focus goes with it.",
+   "log": "> flow: broken",
+   "text": "Each click is a tiny interruption. Forty-two of them, and your focus is gone for the day.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> allow",
+       "p"
+      ],
+      [
+       "> allow",
+       "p"
+      ],
+      [
+       "> allow",
+       "p"
+      ],
+      [
+       "> allow",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "same",
+   "min": 8,
+   "hed": [
+    "Same answer,",
+    "every time."
+   ],
+   "sub": "You always say yes.",
+   "log": "> answer: yes",
+   "text": "And you always say yes. When the answer never changes, the question is just noise.",
+   "scene": [
+    {
+     "k": "count",
+     "from": 3,
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "idea",
+   "min": 8,
+   "hed": [
+    "Meet YOLO",
+    "mode."
+   ],
+   "sub": "Auto approve tool calls.",
+   "log": "> yolo: on",
+   "text": "YOLO mode auto approves tool calls. The agent keeps moving, and nobody has to click.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Format all the files",
+     "sub": "Auto approve tool calls",
+     "chip": [
+      "YOLO",
+      "y"
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "run",
+   "min": 8,
+   "hed": [
+    "It just",
+    "runs."
+   ],
+   "sub": "Read, edit, edit.",
+   "log": "> auto-approved",
+   "text": "Read, edit, edit, all approved on the spot. The whole job finishes while you do something else.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "Read  auto-approved",
+       "p"
+      ],
+      [
+       "Edit  auto-approved",
+       "p"
+      ],
+      [
+       "Edit  auto-approved",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work"
+   }
+  },
+  {
+   "id": "task",
+   "min": 8,
+   "hed": [
+    "One task."
+   ],
+   "sub": "The narrowest switch.",
+   "log": "> yolo: this task",
+   "text": "Turn it on for a single task, the narrowest switch there is. Everything else keeps asking.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Format all the files",
+     "sub": "YOLO on",
+     "chip": [
+      "Auto",
+      "g"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Other tasks",
+     "sub": "Ask as usual",
+     "chip": [
+      "Asks",
+      "y"
+     ],
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "ws",
+   "min": 8,
+   "hed": [
+    "Or a whole",
+    "workspace."
+   ],
+   "sub": "A wide switch.",
+   "log": "> yolo: workspace",
+   "text": "Or for a whole workspace, if everything inside it is low risk, like a docs site or a sandbox.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "docs",
+       "yolo on"
+      ],
+      [
+       "sandbox",
+       "yolo on"
+      ],
+      [
+       "billing",
+       "asks"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "scope",
+   "min": 8,
+   "hed": [
+    "Only in your",
+    "scope."
+   ],
+   "sub": "Outside it, still asks.",
+   "log": "> deploy: asks first",
+   "text": "Pick the scope you trust. Anything outside it still asks first, like a deploy to production.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Format all the files",
+     "sub": "YOLO on",
+     "chip": [
+      "Auto",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Deploy to production",
+     "sub": "YOLO off, asks first",
+     "chip": [
+      "Asks",
+      "y"
+     ],
+     "at": 2.6
+    }
+   ]
+  },
+  {
+   "id": "log",
+   "min": 8,
+   "hed": [
+    "Still on the",
+    "record."
+   ],
+   "sub": "Every call is logged.",
+   "log": "> history: all calls",
+   "text": "And every call is still in the task history. YOLO removes the clicks, not the visibility.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Tool call history",
+     "sub": "Every call recorded",
+     "chip": [
+      "Visible",
+      "b"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Read",
+       30,
+       "g"
+      ],
+      [
+       "Edit",
+       55,
+       "g"
+      ],
+      [
+       "Run",
+       15,
+       "b"
+      ]
+     ],
+     "at": 3.2
+    }
+   ]
+  },
+  {
+   "id": "away",
+   "min": 8,
+   "hed": [
+    "Walk",
+    "away."
+   ],
+   "sub": "Come back to a result.",
+   "log": "> coffee break",
+   "text": "So walk away. Come back to finished work, and a log that shows exactly how it got there.",
+   "scene": [
+    {
+     "k": "wave",
+     "at": 1.4
+    },
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude",
+     "text": "All files formatted.",
+     "at": 3.2
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "off",
+   "min": 8,
+   "hed": [
+    "Off with",
+    "one tap."
+   ],
+   "sub": "Back to careful.",
+   "log": "> yolo: off",
+   "text": "And when you want the careful defaults back, you switch it off, and the questions return.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "YOLO",
+      "Off"
+     ],
+     "label": "one tap either way",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Fewer clicks,",
+    "same control."
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "Fewer clicks, same control. Try YOLO mode at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Fewer clicks.|Same control.",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

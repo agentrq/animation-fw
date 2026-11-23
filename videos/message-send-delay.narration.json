@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "You hit send. And one second later, you spot the typo, in a very dangerous place."
+    },
+    {
+      "id": "meant",
+      "min": 8,
+      "text": "You meant the staging database. One word apart, and a world of difference."
+    },
+    {
+      "id": "agent",
+      "min": 8,
+      "text": "Agents are fast and literal. It does not ask whether you meant it. It simply starts."
+    },
+    {
+      "id": "idea",
+      "min": 8,
+      "text": "The fix is a small buffer between your finger and the agent. That is a send delay."
+    },
+    {
+      "id": "setting",
+      "min": 8,
+      "text": "You turn it on in settings, and pick how many seconds Agent R Q should wait."
+    },
+    {
+      "id": "hold",
+      "min": 8,
+      "text": "Now Agent R Q holds your message for a few seconds before it reaches the agent."
+    },
+    {
+      "id": "spot",
+      "min": 8,
+      "text": "Inside that window you spot the typo, and you still have time to act on it."
+    },
+    {
+      "id": "buttons",
+      "min": 8,
+      "text": "Send Now skips the wait when you are sure. Cancel pulls the message back."
+    },
+    {
+      "id": "cancel",
+      "min": 8,
+      "text": "You cancel. The message never reaches the agent, and the database is exactly as you left it."
+    },
+    {
+      "id": "fix",
+      "min": 8,
+      "text": "You fix the typo, send again, and let the countdown finish this time."
+    },
+    {
+      "id": "run",
+      "min": 8,
+      "text": "The agent acts on the right target, and the only database that disappears is staging."
+    },
+    {
+      "id": "cta",
+      "min": 8,
+      "text": "Ever sent a message to an agent and instantly regretted it? Confess in the comments, and find send delay at Agent R Q dot com."
+    }
+  ]
+}

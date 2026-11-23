@@ -1,0 +1,423 @@
+{
+ "title": "YOLO: when not to",
+ "kicker": "yolo mode when not to",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "Not for",
+    "everything."
+   ],
+   "sub": "Auto approval has limits.",
+   "log": "> yolo: wonderful, not universal",
+   "text": "Auto approval is wonderful for safe, repetitive work. But it is not a switch for the whole world.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Format all files",
+     "sub": "YOLO on",
+     "chip": [
+      "Safe",
+      "g"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Everything else?",
+     "sub": "Think twice",
+     "chip": [
+      "Careful",
+      "y"
+     ],
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "safe",
+   "min": 8,
+   "hed": [
+    "Safe work",
+    "is fine."
+   ],
+   "sub": "Undoable and local.",
+   "log": "> formatting, lint, docs",
+   "text": "Formatting, lint fixes and docs edits are fine. They are local, and you can undo them in one command.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Format all files",
+     "sub": "Undo with git",
+     "chip": [
+      "Safe",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix lint errors",
+     "sub": "Undo with git",
+     "chip": [
+      "Safe",
+      "g"
+     ],
+     "at": 2.6
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Update the docs",
+     "sub": "Undo with git",
+     "chip": [
+      "Safe",
+      "g"
+     ],
+     "at": 4
+    }
+   ]
+  },
+  {
+   "id": "risky",
+   "min": 8,
+   "hed": [
+    "Risky work",
+    "is not."
+   ],
+   "sub": "Some things can not be undone.",
+   "log": "> deploy, delete, pay",
+   "text": "Deploys, deletes and anything with money are different. A wrong call there cannot be taken back.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Deploy to production",
+     "sub": "Cannot be undone",
+     "chip": [
+      "Risky",
+      "r"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Drop the old table",
+     "sub": "Cannot be undone",
+     "chip": [
+      "Risky",
+      "r"
+     ],
+     "at": 2.6
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Refund a customer",
+     "sub": "Cannot be undone",
+     "chip": [
+      "Risky",
+      "r"
+     ],
+     "at": 4
+    }
+   ],
+   "mascot": {
+    "codex": "alert"
+   }
+  },
+  {
+   "id": "ask",
+   "min": 8,
+   "hed": [
+    "Keep the",
+    "question."
+   ],
+   "sub": "For work like that.",
+   "log": "> deploy: allow?",
+   "text": "For that work, you want the question. The agent stops, and a human says yes or no.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Authorization required",
+      "y"
+     ],
+     "code": "Bash  git push origin main",
+     "buttons": [
+      "Allow Once",
+      "Deny"
+     ],
+     "press": 1,
+     "tap": 5,
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "task",
+   "min": 8,
+   "hed": [
+    "Set it",
+    "per task."
+   ],
+   "sub": "A narrow switch.",
+   "log": "> yolo: per task",
+   "text": "So YOLO is set per task. The lint sweep gets it, and the deploy task does not.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Lint sweep",
+     "sub": "YOLO on",
+     "chip": [
+      "Auto",
+      "g"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Deploy to production",
+     "sub": "YOLO off, asks first",
+     "chip": [
+      "Asks",
+      "y"
+     ],
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "ws",
+   "min": 8,
+   "hed": [
+    "Or per",
+    "workspace."
+   ],
+   "sub": "A wide switch.",
+   "log": "> yolo: per workspace",
+   "text": "Or set it per workspace. A docs workspace can run free, and a billing workspace never does.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "docs",
+       "yolo on"
+      ],
+      [
+       "web",
+       "asks"
+      ],
+      [
+       "billing",
+       "never"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "rule",
+   "min": 8,
+   "hed": [
+    "A good",
+    "rule."
+   ],
+   "sub": "Keep risk apart.",
+   "log": "> separate the risky",
+   "text": "Keep risky work in a workspace or task that never has YOLO. Then a slip of the finger cannot reach it.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Keep risk|in its own room.",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "record",
+   "min": 8,
+   "hed": [
+    "Still on the",
+    "record."
+   ],
+   "sub": "Every call is logged.",
+   "log": "> trajectory: all calls",
+   "text": "Even with YOLO on, every call stays in the tool call history, so you can check afterwards.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Trajectory",
+     "sub": "Every call logged",
+     "chip": [
+      "Visible",
+      "b"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "term",
+     "lines": [
+      [
+       "Read   auto-approved",
+       "p"
+      ],
+      [
+       "Edit   auto-approved",
+       "p"
+      ]
+     ],
+     "at": 3.2
+    }
+   ]
+  },
+  {
+   "id": "review",
+   "min": 8,
+   "hed": [
+    "Check the",
+    "trail."
+   ],
+   "sub": "Spot surprises early.",
+   "log": "> review history",
+   "text": "Skim the history after a run. If something looks odd, you catch it while it is still small.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Read",
+       35,
+       "g"
+      ],
+      [
+       "Edit",
+       50,
+       "g"
+      ],
+      [
+       "Odd",
+       15,
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "stop",
+   "min": 8,
+   "hed": [
+    "You can stop",
+    "it."
+   ],
+   "sub": "Switch off any time.",
+   "log": "> yolo: off",
+   "text": "And if a task starts to feel risky, switch YOLO off in the middle, and the questions return at once.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Migrate the data",
+     "sub": "YOLO off",
+     "chip": [
+      "Asks",
+      "y"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Agent",
+     "text": "Asking before the next step.",
+     "at": 3.2
+    }
+   ],
+   "mascot": {
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "trust",
+   "min": 8,
+   "hed": [
+    "Trust is",
+    "earned."
+   ],
+   "sub": "Widen it slowly.",
+   "log": "> start small",
+   "text": "Start small. Give YOLO to one safe task, watch the history, and widen it only as trust grows.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "One task",
+       "safe"
+      ],
+      [
+       "One workspace",
+       "trusted"
+      ],
+      [
+       "More",
+       "earned"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Choose your",
+    "risk."
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "You decide where trust is earned. Try YOLO mode at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Trust.|Your scope.",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

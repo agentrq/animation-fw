@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "You wrote a great launch plan, and your teammates really need to see it. But your other drafts are not ready for anyone."
+    },
+    {
+      "id": "fear",
+      "min": 8,
+      "text": "Without control you face a bad trade. Hand over the whole board, or email a copy and watch it go stale."
+    },
+    {
+      "id": "team",
+      "min": 8,
+      "text": "Agent R Q Teams fixes that. You belong to a team, like your platform team, and your workspaces can be shared with it."
+    },
+    {
+      "id": "open",
+      "min": 8,
+      "text": "In the Pano, open the launch plan. The share control sits right on the doc page, so there is nowhere else to go."
+    },
+    {
+      "id": "click",
+      "min": 8,
+      "text": "Choose to share with a team, pick the platform team, and press share."
+    },
+    {
+      "id": "done",
+      "min": 8,
+      "text": "Only the launch plan moves. The half baked ideas and the salary notes never leave your account."
+    },
+    {
+      "id": "read",
+      "min": 8,
+      "text": "Your teammates read it on the team Pano. Comments and checklists come along with the doc."
+    },
+    {
+      "id": "readonly",
+      "min": 8,
+      "text": "They cannot edit it. Your words stay yours, and nobody can change the plan behind your back."
+    },
+    {
+      "id": "agent",
+      "min": 8,
+      "text": "Their agents can read the doc as well. So a teammate agent picks up the plan, and starts on the checklist."
+    },
+    {
+      "id": "revoke",
+      "min": 8,
+      "text": "And you stay in control. Unshare the doc whenever you like, and your teammates lose access at once."
+    },
+    {
+      "id": "scale",
+      "min": 8,
+      "text": "Share the next doc the same way, one at a time, and only when you decide it is ready."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "Which doc would you share with your team first? Tell us in the comments, and try Teams at Agent R Q dot com."
+    }
+  ]
+}

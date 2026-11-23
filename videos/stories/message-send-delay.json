@@ -1,0 +1,371 @@
+{
+ "title": "Message Send Delay",
+ "kicker": "send delay",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "One second",
+    "too late."
+   ],
+   "sub": "The typo shows up.",
+   "log": "> you: sent",
+   "text": "You hit send. And one second later, you spot the typo, in a very dangerous place.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Delete the production database.",
+     "at": 1.6
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Message sent",
+     "sub": "Already with the agent",
+     "at": 3.2,
+     "chip": [
+      "Sent",
+      "r"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "alert"
+   }
+  },
+  {
+   "id": "meant",
+   "min": 8,
+   "hed": [
+    "You meant",
+    "staging."
+   ],
+   "sub": "One word apart.",
+   "log": "> meant: staging",
+   "text": "You meant the staging database. One word apart, and a world of difference.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> meant: delete staging database",
+       "g"
+      ],
+      [
+       "> sent: delete production database",
+       "r"
+      ]
+     ],
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "id": "agent",
+   "min": 8,
+   "hed": [
+    "The agent",
+    "does not guess."
+   ],
+   "sub": "It just acts.",
+   "log": "> agent: starting",
+   "text": "Agents are fast and literal. It does not ask whether you meant it. It simply starts.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Delete the production database",
+     "sub": "Claude Code started",
+     "at": 1.2,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    },
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> drop table customers",
+       "r"
+      ]
+     ],
+     "at": 3.2
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "idea",
+   "min": 8,
+   "hed": [
+    "A buffer",
+    "before sending."
+   ],
+   "sub": "That is the fix.",
+   "log": "> setting: send delay",
+   "text": "The fix is a small buffer between your finger and the agent. That is a send delay.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "send delay",
+     "at": 1.4,
+     "sub": "a buffer before the agent"
+    }
+   ]
+  },
+  {
+   "id": "setting",
+   "min": 8,
+   "hed": [
+    "Turn it on",
+    "in settings."
+   ],
+   "sub": "Pick a few seconds.",
+   "log": "> delay: 5s",
+   "text": "You turn it on in settings, and pick how many seconds Agent R Q should wait.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "3s",
+      "5s",
+      "10s"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Send delay",
+     "sub": "Set to five seconds",
+     "at": 3.2,
+     "chip": [
+      "On",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hold",
+   "min": 8,
+   "hed": [
+    "Your message",
+    "is held."
+   ],
+   "sub": "Countdown visible.",
+   "log": "> message held",
+   "text": "Now Agent R Q holds your message for a few seconds before it reaches the agent.",
+   "scene": [
+    {
+     "k": "count",
+     "from": 5,
+     "at": 1.4
+    },
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Delete the production database.",
+     "at": 3.0
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "spot",
+   "min": 8,
+   "hed": [
+    "Spot the",
+    "mistake."
+   ],
+   "sub": "Inside the window.",
+   "log": "> you: wait, production?",
+   "text": "Inside that window you spot the typo, and you still have time to act on it.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Delete the production database",
+     "sub": "Held, not delivered",
+     "at": 1.2,
+     "chip": [
+      "Held",
+      "y"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Typo",
+     "sub": "Production, not staging",
+     "at": 3.2,
+     "chip": [
+      "Spotted",
+      "r"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "buttons",
+   "min": 8,
+   "hed": [
+    "Send Now",
+    "or Cancel."
+   ],
+   "sub": "Two clear buttons.",
+   "log": "> choices: send now | cancel",
+   "text": "Send Now skips the wait when you are sure. Cancel pulls the message back.",
+   "scene": [
+    {
+     "k": "btns",
+     "code": "hold: Delete the production database.",
+     "buttons": [
+      "Send Now",
+      "Cancel"
+     ],
+     "press": 1,
+     "tap": 5.0,
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "cancel",
+   "min": 8,
+   "hed": [
+    "Pulled back",
+    "cleanly."
+   ],
+   "sub": "Agent never saw it.",
+   "log": "> cancelled",
+   "text": "You cancel. The message never reaches the agent, and the database is exactly as you left it.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Message",
+     "sub": "Pulled back",
+     "at": 1.2,
+     "chip": [
+      "Cancelled",
+      "z"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Production database",
+     "sub": "Untouched",
+     "at": 3.2,
+     "chip": [
+      "Safe",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "fix",
+   "min": 8,
+   "hed": [
+    "Fix the typo.",
+    "Send again."
+   ],
+   "sub": "Staging this time.",
+   "log": "> retyped: staging",
+   "text": "You fix the typo, send again, and let the countdown finish this time.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Delete the staging database.",
+     "at": 1.6
+    },
+    {
+     "k": "count",
+     "from": 3,
+     "at": 3.2
+    }
+   ]
+  },
+  {
+   "id": "run",
+   "min": 8,
+   "hed": [
+    "Agent acts",
+    "on the right one."
+   ],
+   "sub": "Safe cleanup.",
+   "log": "> staging: deleted",
+   "text": "The agent acts on the right target, and the only database that disappears is staging.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Delete the staging database",
+     "sub": "Claude Code",
+     "at": 1.2,
+     "chip": [
+      "Done",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Production database",
+     "sub": "Untouched",
+     "at": 3.2,
+     "chip": [
+      "Safe",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "cta",
+   "min": 8,
+   "hed": [
+    "Ever instantly",
+    "regretted it?"
+   ],
+   "sub": "Confess below.",
+   "log": "> comments: open",
+   "text": "Ever sent a message to an agent and instantly regretted it? Confess in the comments, and find send delay at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Regret it?",
+     "at": 1.4,
+     "sub": "confess in the comments"
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  }
+ ]
+}

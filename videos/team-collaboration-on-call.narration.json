@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "It is two in the morning, and you are on call. An agent needs a risky command approved."
+    },
+    {
+      "id": "alone",
+      "min": 8,
+      "text": "Normally only one person can answer. If your phone is silent, the agent and the outage both wait."
+    },
+    {
+      "id": "slack",
+      "min": 8,
+      "text": "Each workspace has its own private Slack channel, and the approval request lands right there."
+    },
+    {
+      "id": "any",
+      "min": 8,
+      "text": "Any teammate in that channel can approve or deny. It no longer depends on one person."
+    },
+    {
+      "id": "sam",
+      "min": 8,
+      "text": "Sam wakes up and reads the exact command, not a vague summary."
+    },
+    {
+      "id": "tap",
+      "min": 8,
+      "text": "Sam taps allow once. That covers this single command only."
+    },
+    {
+      "id": "run",
+      "min": 8,
+      "text": "The agent carries on. The restart goes out, and the service recovers."
+    },
+    {
+      "id": "log",
+      "min": 8,
+      "text": "Agent R Q records who clicked. Approved by Sam, at seven minutes past two. No shared login."
+    },
+    {
+      "id": "deny",
+      "min": 8,
+      "text": "Denying is just as easy. Maya denied a delete command, and her name is on it too."
+    },
+    {
+      "id": "share",
+      "min": 8,
+      "text": "The team shares the load, so nobody carries every alert alone."
+    },
+    {
+      "id": "morn",
+      "min": 8,
+      "text": "In the morning, the log tells the story. What was asked, who answered, and when."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "Share the on call load, and keep a signed trail. Try it at Agent R Q dot com."
+    }
+  ]
+}

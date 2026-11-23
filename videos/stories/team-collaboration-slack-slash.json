@@ -1,0 +1,377 @@
+{
+ "title": "Slack Slash Command",
+ "kicker": "slack slash",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "A teammate spots",
+    "a bug."
+   ],
+   "sub": "Right in the middle of Slack.",
+   "log": "> slack: bug spotted",
+   "text": "A teammate spots a bug in the middle of a Slack conversation.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "Maya, in #web-agent",
+     "text": "Checkout is broken on mobile!",
+     "at": 1.2
+    },
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "Sam",
+     "text": "Whoa, same here.",
+     "at": 3.0
+    }
+   ]
+  },
+  {
+   "id": "switch",
+   "min": 8,
+   "hed": [
+    "Switching tools",
+    "breaks the flow."
+   ],
+   "sub": "Open a tracker, lose the thread.",
+   "log": "> context switch",
+   "text": "Opening a tracker means a form, a project, and ten lost minutes. The thread moves on.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Open tracker",
+       "tab 1"
+      ],
+      [
+       "Fill the form",
+       "5 fields"
+      ],
+      [
+       "Back to Slack",
+       "too late"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "slash",
+   "min": 8,
+   "hed": [
+    "Type slash t."
+   ],
+   "sub": "Right where you are.",
+   "log": "> /t",
+   "text": "Agent R Q has a better way. In the workspace channel, just type slash t and a title.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "Maya",
+     "text": "/t Fix mobile checkout",
+     "at": 1.4
+    },
+    {
+     "k": "big",
+     "text": "/t",
+     "at": 3.2
+    }
+   ]
+  },
+  {
+   "id": "made",
+   "min": 8,
+   "hed": [
+    "The task is made."
+   ],
+   "sub": "And assigned to the agent.",
+   "log": "> task: created",
+   "text": "The task is created and assigned to the agent, without leaving the channel.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "AgentRQ",
+     "text": "Task created for Claude Code.",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Fix mobile checkout",
+     "sub": "Assigned to Claude Code",
+     "at": 3.2,
+     "chip": [
+      "Not started",
+      "z"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "pick",
+   "min": 8,
+   "hed": [
+    "The agent picks",
+    "it up."
+   ],
+   "sub": "No hand off to wait for.",
+   "log": "> claude: ongoing",
+   "text": "The agent sees it and starts at once. No handoff, no waiting for triage.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix mobile checkout",
+     "sub": "Claude Code is on it",
+     "at": 1.2,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    },
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> read cart.ts",
+       "p"
+      ],
+      [
+       "> run mobile tests",
+       "p"
+      ]
+     ],
+     "at": 3.0
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "update",
+   "min": 8,
+   "hed": [
+    "It posts updates",
+    "in the thread."
+   ],
+   "sub": "The conversation stays together.",
+   "log": "> agent: reply in thread",
+   "text": "As it works, the agent posts updates in the same thread, for everyone who saw the bug.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Cart total is wrong on mobile. Fixing.",
+     "at": 1.2
+    },
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Found a rounding bug in the discount code.",
+     "at": 3.0
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "ask",
+   "min": 8,
+   "hed": [
+    "Anyone can",
+    "answer back."
+   ],
+   "sub": "Just mention the bot.",
+   "log": "> sam: mentions agent",
+   "text": "Anyone can answer by mentioning Agent R Q. Sam wants a test added, so he asks right there.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "Sam",
+     "text": "@agentrq Please add a test too.",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "reply",
+   "min": 8,
+   "hed": [
+    "The agent",
+    "takes the note."
+   ],
+   "sub": "Same task, new instruction.",
+   "log": "> agent: adding test",
+   "text": "The agent reads Sam's reply as part of the task, and adds the test.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Sure. Adding a mobile checkout test.",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Add mobile checkout test",
+     "sub": "Part of the same task",
+     "at": 3.0,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "approve",
+   "min": 8,
+   "hed": [
+    "Approvals show up",
+    "there too."
+   ],
+   "sub": "Risky commands ask first.",
+   "log": "> approval in thread",
+   "text": "If it needs permission for something risky, the approval shows up in the thread too.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Authorization required",
+      "y"
+     ],
+     "code": "Bash  git push origin fix/checkout",
+     "buttons": [
+      "Allow Once",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 4.8,
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "done",
+   "min": 8,
+   "hed": [
+    "Done,",
+    "and it is visible."
+   ],
+   "sub": "Closed where it started.",
+   "log": "> task: completed",
+   "text": "Then the task closes, with a summary right where the bug first came up.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix mobile checkout",
+     "sub": "Cart total fixed, test added",
+     "at": 1.2,
+     "chip": [
+      "Done",
+      "g"
+     ]
+    },
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Fixed, tested and pushed.",
+     "at": 3.0
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "same",
+   "min": 8,
+   "hed": [
+    "The talk and",
+    "the work."
+   ],
+   "sub": "They live in one place.",
+   "log": "> one place",
+   "text": "The conversation and the work live in the same place. Nothing gets lost.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Spot the bug",
+       "chat"
+      ],
+      [
+       "Slash t",
+       "task"
+      ],
+      [
+       "Agent fixes",
+       "thread"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Work where",
+    "you talk."
+   ],
+   "sub": "ag// Slash t in Slack",
+   "log": "> agentrq.com",
+   "text": "Keep working where you talk. Try slash t in Slack, at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Work where|you talk.",
+     "at": 1.4,
+     "sub": "agentrq.com"
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

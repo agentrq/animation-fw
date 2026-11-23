@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "The task says done. But what did the agent actually run along the way?"
+    },
+    {
+      "id": "gap",
+      "min": 8,
+      "text": "Most tools show you the result. The path the agent took to get there stays hidden."
+    },
+    {
+      "id": "idea",
+      "min": 8,
+      "text": "Agent R Q keeps the whole run, as a trajectory you can open on any task."
+    },
+    {
+      "id": "lanes",
+      "min": 8,
+      "text": "The Trajectory tab lists every tool call and message in the run, grouped into lanes."
+    },
+    {
+      "id": "search",
+      "min": 8,
+      "text": "And it is searchable, so you can find every bash command in a long run without scrolling."
+    },
+    {
+      "id": "detail",
+      "min": 8,
+      "text": "Click any entry to see exactly what ran, and whether it was allowed or denied."
+    },
+    {
+      "id": "approve",
+      "min": 8,
+      "text": "Your approvals are in the record. You can see who decided, and exactly when they decided."
+    },
+    {
+      "id": "denied",
+      "min": 8,
+      "text": "Denied calls are kept too, so you also see what the agent tried, and was stopped from doing."
+    },
+    {
+      "id": "debug",
+      "min": 8,
+      "text": "When the result looks odd, replay the steps, and spot the wrong turn in a minute."
+    },
+    {
+      "id": "audit",
+      "min": 8,
+      "text": "And when an auditor asks what ran last Tuesday, you have the record, ready to show."
+    },
+    {
+      "id": "always",
+      "min": 8,
+      "text": "There is nothing to turn on. Every run keeps its history, from the first call to the last."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "What is the strangest thing an agent ever did while you were not looking? Tell us below, then try it at Agent R Q dot com."
+    }
+  ]
+}

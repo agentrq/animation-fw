@@ -1,0 +1,379 @@
+{
+ "title": "Workflows: bug to fix",
+ "kicker": "workflows-bug-to-fix",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "A bug report",
+    "arrives."
+   ],
+   "sub": "Checkout fails.",
+   "log": "> bug: checkout, safari",
+   "text": "A bug report comes in. Checkout fails on Safari, and someone has to deal with it.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Checkout fails on Safari",
+     "sub": "Bug report",
+     "chip": [
+      "New",
+      "b"
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "chase",
+   "min": 8,
+   "hed": [
+    "Triage, assign,",
+    "then chase."
+   ],
+   "sub": "All by hand.",
+   "log": "> you: triage, assign, chase",
+   "text": "Someone has to triage it, pick an agent, and then chase the fix, step by step.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> read the report",
+       "r"
+      ],
+      [
+       "> assign an agent",
+       "r"
+      ],
+      [
+       "> chase the fix",
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "idea",
+   "min": 8,
+   "hed": [
+    "Chain it",
+    "with events."
+   ],
+   "sub": "Named signals.",
+   "log": "> event: bug_triaged",
+   "text": "Workflows chain agents with events. An event is a named signal, like bug triaged.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "bug_triaged",
+     "sub": "a named signal",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "triage",
+   "min": 8,
+   "hed": [
+    "Triage emits",
+    "the event."
+   ],
+   "sub": "When it finishes.",
+   "log": "> triage: emits bug_triaged",
+   "text": "The triage workspace finishes its work, and emits the event, saying what happened.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Triage",
+     "sub": "Classified as a Safari bug",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "bug_triaged",
+     "sub": "emitted",
+     "chip": [
+      "Event",
+      "b"
+     ],
+     "at": 2.8
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "wire",
+   "min": 8,
+   "hed": [
+    "Wire it to",
+    "the fixer."
+   ],
+   "sub": "No glue code.",
+   "log": "> wire: bug_triaged -> Fixer",
+   "text": "That event is wired to the fixer workspace, and a new task appears there on its own.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Triage workspace",
+       "bug_triaged"
+      ],
+      [
+       "Fixer workspace",
+       "new task"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "graph",
+   "min": 8,
+   "hed": [
+    "Draw the",
+    "chain."
+   ],
+   "sub": "On a graph.",
+   "log": "> graph: 3 workspaces",
+   "text": "Drag the workspaces onto events, and the graph draws itself. Triage, then fixer, then review.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Triage",
+       "bug_triaged"
+      ],
+      [
+       "Fixer",
+       "fix_ready"
+      ],
+      [
+       "Review",
+       "listens"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "fix",
+   "min": 8,
+   "hed": [
+    "The fixer",
+    "picks it up."
+   ],
+   "sub": "At once.",
+   "log": "> fixer: picked up",
+   "text": "The fixer is already listening, so it picks up the task the moment the signal arrives.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Fixer",
+     "text": "Picked up: checkout fails on Safari.",
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix the checkout bug",
+     "sub": "The fixer is on it",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 3.2
+    }
+   ],
+   "mascot": {
+    "codex": "work"
+   }
+  },
+  {
+   "id": "review",
+   "min": 8,
+   "hed": [
+    "Review fires",
+    "next."
+   ],
+   "sub": "Another event.",
+   "log": "> fix_ready -> review",
+   "text": "When the fix is ready, it emits its own event, and the review workspace wakes up.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix",
+     "sub": "Pull request opened",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Review",
+     "sub": "Reading the diff",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 2.8
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Ship",
+     "sub": "Next",
+     "chip": [
+      "Queued",
+      "z"
+     ],
+     "at": 4.4
+    }
+   ],
+   "mascot": {
+    "codex": "done",
+    "agy": "work"
+   }
+  },
+  {
+   "id": "visible",
+   "min": 8,
+   "hed": [
+    "The graph",
+    "runs live."
+   ],
+   "sub": "See every step.",
+   "log": "> graph: live",
+   "text": "All of it is visible on the graph, so you can see what fired what, and when.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Triage",
+       25,
+       "g"
+      ],
+      [
+       "Fix",
+       40,
+       "g"
+      ],
+      [
+       "Review",
+       35,
+       "y"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "human",
+   "min": 8,
+   "hed": [
+    "You step in",
+    "for decisions."
+   ],
+   "sub": "Approvals stay.",
+   "log": "> approval: merge?",
+   "text": "Every workspace keeps its approvals, so a person still decides on the risky steps, like a merge.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Merge",
+      "y"
+     ],
+     "code": "Bash  git merge fix/safari-checkout",
+     "buttons": [
+      "Allow",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 4,
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "done",
+   "min": 8,
+   "hed": [
+    "Bug in.",
+    "Fix out."
+   ],
+   "sub": "Hands off.",
+   "log": "> shipped",
+   "text": "Bug in, fix out. You only step in when a decision really needs you.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Bug in.|Fix out.",
+     "sub": "hands off",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Your turn.",
+    "Steps to"
+   ],
+   "sub": "a fix?",
+   "log": "> agentrq.com",
+   "text": "How many steps sit between a bug report and a fix on your team? Tell us below, then try Workflows at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Steps to a fix?",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ]
+  }
+ ]
+}

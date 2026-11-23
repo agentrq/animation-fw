@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "A teammate spots a bug in the middle of a Slack conversation."
+    },
+    {
+      "id": "switch",
+      "min": 8,
+      "text": "Opening a tracker means a form, a project, and ten lost minutes. The thread moves on."
+    },
+    {
+      "id": "slash",
+      "min": 8,
+      "text": "Agent R Q has a better way. In the workspace channel, just type slash t and a title."
+    },
+    {
+      "id": "made",
+      "min": 8,
+      "text": "The task is created and assigned to the agent, without leaving the channel."
+    },
+    {
+      "id": "pick",
+      "min": 8,
+      "text": "The agent sees it and starts at once. No handoff, no waiting for triage."
+    },
+    {
+      "id": "update",
+      "min": 8,
+      "text": "As it works, the agent posts updates in the same thread, for everyone who saw the bug."
+    },
+    {
+      "id": "ask",
+      "min": 8,
+      "text": "Anyone can answer by mentioning Agent R Q. Sam wants a test added, so he asks right there."
+    },
+    {
+      "id": "reply",
+      "min": 8,
+      "text": "The agent reads Sam's reply as part of the task, and adds the test."
+    },
+    {
+      "id": "approve",
+      "min": 8,
+      "text": "If it needs permission for something risky, the approval shows up in the thread too."
+    },
+    {
+      "id": "done",
+      "min": 8,
+      "text": "Then the task closes, with a summary right where the bug first came up."
+    },
+    {
+      "id": "same",
+      "min": 8,
+      "text": "The conversation and the work live in the same place. Nothing gets lost."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "Keep working where you talk. Try slash t in Slack, at Agent R Q dot com."
+    }
+  ]
+}

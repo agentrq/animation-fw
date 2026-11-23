@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "b1",
+      "min": 5,
+      "text": "You type a long, messy description of what you need. The login page flickers on Safari."
+    },
+    {
+      "id": "b2",
+      "min": 5,
+      "text": "Then the app asks for a title. A required field, after you already explained everything once."
+    },
+    {
+      "id": "b3",
+      "min": 5,
+      "text": "So nobody names anything. By Friday your board is fifty cards called new task."
+    },
+    {
+      "id": "b4",
+      "min": 5,
+      "text": "So Agent R Q writes the title for you. The moment you create a task, it reads your description."
+    },
+    {
+      "id": "b5",
+      "min": 5,
+      "text": "A small language model runs right inside your browser tab. No server call, and no network wait."
+    },
+    {
+      "id": "b6",
+      "min": 5,
+      "text": "Your description never leaves your device. Customer names, secret paths, half finished ideas, all stay with you."
+    },
+    {
+      "id": "b7",
+      "min": 5,
+      "text": "A second later the task has a clear name: fix Safari login flicker on token refresh."
+    },
+    {
+      "id": "b8",
+      "min": 5,
+      "text": "Your board stays readable. Every card says what it is, so you can scan it at a glance."
+    },
+    {
+      "id": "b9",
+      "min": 5,
+      "text": "Your agents read those titles too, so the task they pick up already tells them the job."
+    },
+    {
+      "id": "b10",
+      "min": 5,
+      "text": "And when you need an old task, search by its title. Type login, and there it is."
+    },
+    {
+      "id": "b11",
+      "min": 5,
+      "text": "The title is only a suggestion. If you want different words, edit it. Otherwise it simply works."
+    },
+    {
+      "id": "b12",
+      "min": 5,
+      "text": "Tell me below, what is the worst task name your agents ever left behind? Try it at Agent R Q dot com."
+    }
+  ]
+}

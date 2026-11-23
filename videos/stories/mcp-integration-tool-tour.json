@@ -1,0 +1,366 @@
+{
+ "title": "MCP: tool tour",
+ "kicker": "mcp",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 5,
+   "hed": [
+    "Seven tools,",
+    "one tour."
+   ],
+   "sub": "What your agent gets.",
+   "log": "> tools: 7",
+   "text": "Here is a quick tour of the seven tools your agent gets when it connects to Agent R Q.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "7 tools",
+     "sub": "for your agent",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "task",
+   "min": 5,
+   "hed": [
+    "Task.",
+    "Work, status, reply."
+   ],
+   "sub": "The core tool.",
+   "log": "> tool: task",
+   "text": "First, task. It gets the next piece of work, updates the status, and replies to you.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix the login bug",
+     "sub": "Picked up with task",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude",
+     "text": "Fixed it. Tests pass.",
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "mem",
+   "min": 5,
+   "hed": [
+    "Memory.",
+    "It learns."
+   ],
+   "sub": "Notes for next time.",
+   "log": "> tool: memory",
+   "text": "Memory saves what the agent learned, so the next agent starts with the notes the last one wrote.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "memory.md",
+     "sub": "Use pnpm, not npm",
+     "chip": [
+      "Saved",
+      "b"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "deploy-notes",
+     "sub": "Staging first",
+     "chip": [
+      "Saved",
+      "b"
+     ],
+     "at": 2.6
+    }
+   ]
+  },
+  {
+   "id": "skill",
+   "min": 5,
+   "hed": [
+    "Skills.",
+    "Playbooks."
+   ],
+   "sub": "Reusable know-how.",
+   "log": "> tool: skills",
+   "text": "Skills holds the playbooks, step by step guides the agent loads when a task matches.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "release-checklist",
+     "sub": "Skill, 6 steps",
+     "chip": [
+      "Skill",
+      "c"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "code-review",
+     "sub": "Skill, 4 steps",
+     "chip": [
+      "Skill",
+      "c"
+     ],
+     "at": 2.6
+    }
+   ]
+  },
+  {
+   "id": "pano",
+   "min": 5,
+   "hed": [
+    "Pano.",
+    "Shared docs."
+   ],
+   "sub": "A workspace library.",
+   "log": "> tool: pano",
+   "text": "Pano holds the shared docs, so humans and agents read and write the same pages.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Architecture notes",
+     "sub": "Shared with the team",
+     "chip": [
+      "Doc",
+      "b"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Runbook",
+     "sub": "Updated today",
+     "chip": [
+      "Doc",
+      "b"
+     ],
+     "at": 2.6
+    }
+   ]
+  },
+  {
+   "id": "site",
+   "min": 5,
+   "hed": [
+    "Site tools.",
+    "Shared websites."
+   ],
+   "sub": "Reach what you share.",
+   "log": "> tool: siteTools",
+   "text": "Site tools reach the websites you choose to share, so the agent can use them like any other tool.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Agent",
+       "site tools"
+      ],
+      [
+       "Your site",
+       "shared"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "ws",
+   "min": 5,
+   "hed": [
+    "Workspace.",
+    "Where am I."
+   ],
+   "sub": "Context in one call.",
+   "log": "> tool: workspace",
+   "text": "Workspace tells the agent where it is, which project, which rules, and what it may do.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> workspace: shop-api",
+       "g"
+      ],
+      [
+       "> repo: ./shop",
+       "g"
+      ],
+      [
+       "> mode: ask first",
+       "y"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "help",
+   "min": 5,
+   "hed": [
+    "Help.",
+    "Explains the rest."
+   ],
+   "sub": "Every action.",
+   "log": "> tool: help",
+   "text": "And help explains every action of the other six, so the agent never has to guess.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude",
+     "text": "help: what can task do?",
+     "at": 1.2
+    },
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "Agent R Q",
+     "text": "updateStatus, reply, elicit...",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "line",
+   "min": 5,
+   "hed": [
+    "All seven",
+    "in one line."
+   ],
+   "sub": "Config, once.",
+   "log": "> config: 1 line",
+   "text": "All seven arrive with a single line of config, and no extra servers to run.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "\"agentrq\": { \"url\": \"...\" }",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "big",
+     "text": "1 line",
+     "sub": "7 tools",
+     "at": 2.4
+    }
+   ]
+  },
+  {
+   "id": "grid",
+   "min": 5,
+   "hed": [
+    "The whole",
+    "set."
+   ],
+   "sub": "At a glance.",
+   "log": "> tools: all 7",
+   "text": "Task, memory, skills, pano, site tools, workspace, and help. That is the full set.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "task",
+      "memory",
+      "skills",
+      "pano"
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "grid",
+     "cells": [
+      "site",
+      "workspace",
+      "help"
+     ],
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work",
+    "agy": "work"
+   }
+  },
+  {
+   "id": "use",
+   "min": 5,
+   "hed": [
+    "Agents use",
+    "them alone."
+   ],
+   "sub": "You watch.",
+   "log": "> agent: autonomous",
+   "text": "Agents call them on their own, without you pasting context or reminding them what to do.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "No reminders.",
+     "sub": "agents call them alone",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "close",
+   "min": 5,
+   "hed": [
+    "Pick your",
+    "first tool."
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "Which of these seven would you use first? Tell us, or connect your agent at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Connect.",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

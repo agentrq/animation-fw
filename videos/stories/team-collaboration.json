@@ -1,0 +1,371 @@
+{
+ "title": "Team Collaboration",
+ "kicker": "team collaboration",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "Who approved",
+    "the deploy?"
+   ],
+   "sub": "Nobody knows.",
+   "log": "> deploy: who approved?",
+   "text": "Something shipped on Friday, and your team has one question. Who approved the deploy?",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "system",
+     "who": "",
+     "text": "Who approved the deploy?",
+     "at": 1.2
+    },
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "Maya",
+     "text": "Not me. Sam?",
+     "at": 3.0
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "shared",
+   "min": 8,
+   "hed": [
+    "One login for",
+    "the whole team."
+   ],
+   "sub": "Everyone is admin.",
+   "log": "> shared login",
+   "text": "Nobody knows, because the team shares one agent setup and one login.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Shared login",
+     "sub": "Everyone is admin",
+     "at": 1.2,
+     "chip": [
+      "No audit",
+      "r"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Agent setup",
+     "sub": "Used by five people",
+     "at": 3.0
+    }
+   ],
+   "mascot": {
+    "agy": "alert"
+   }
+  },
+  {
+   "id": "ws",
+   "min": 8,
+   "hed": [
+    "Give each workspace",
+    "its own channel."
+   ],
+   "sub": "A private Slack channel.",
+   "log": "> workspace: #billing-agent",
+   "text": "Agent R Q gives each workspace its own private Slack channel. Only the people you add can see it.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "#billing-agent",
+     "sub": "Private Slack channel",
+     "at": 1.2,
+     "chip": [
+      "Private",
+      "b"
+     ]
+    },
+    {
+     "k": "grid",
+     "cells": [
+      "Maya",
+      "Sam",
+      "Ben"
+     ],
+     "at": 3.0
+    }
+   ]
+  },
+  {
+   "id": "slash",
+   "min": 8,
+   "hed": [
+    "Create tasks",
+    "with slash t."
+   ],
+   "sub": "Without leaving Slack.",
+   "log": "> /t Fix the invoice bug",
+   "text": "Create a task with slash t, right inside the channel. Maya reports a rounding bug.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "Maya in #billing-agent",
+     "text": "/t Fix the invoice rounding bug",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "assign",
+   "min": 8,
+   "hed": [
+    "It lands with",
+    "the agent."
+   ],
+   "sub": "Assigned straight away.",
+   "log": "> task: assigned",
+   "text": "It creates the task, assigns it to the coding agent, and the agent starts work.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "AgentRQ",
+     "text": "Task created and assigned to Claude Code.",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix the invoice rounding bug",
+     "sub": "Claude Code is on it",
+     "at": 3.0,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "reply",
+   "min": 8,
+   "hed": [
+    "Reply with",
+    "an at mention."
+   ],
+   "sub": "Talk to the agent in thread.",
+   "log": "> reply: @agentrq",
+   "text": "Reply in the thread with an at mention of Agent R Q, and your message goes to the agent.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "Sam",
+     "text": "@agentrq Round half up, please.",
+     "at": 1.4
+    },
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Got it. Rounding half up.",
+     "at": 3.2
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "perm",
+   "min": 8,
+   "hed": [
+    "Permission needs",
+    "a human."
+   ],
+   "sub": "The request lands in the thread.",
+   "log": "> agent: git push",
+   "text": "When the agent needs permission, the approval lands in that thread. Anyone on the team can answer.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Authorization required",
+      "y"
+     ],
+     "code": "Bash  git push origin main",
+     "buttons": [
+      "Allow Once",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 5.0,
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "who",
+   "min": 8,
+   "hed": [
+    "Sam taps allow."
+   ],
+   "sub": "And his name is saved.",
+   "log": "> approved by Sam",
+   "text": "Sam taps allow once, and it is saved under his own name.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Approved by Sam",
+     "sub": "Allow once, git push",
+     "at": 1.2,
+     "chip": [
+      "Attributed",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "trail",
+   "min": 8,
+   "hed": [
+    "Every decision",
+    "has an owner."
+   ],
+   "sub": "Attributed to a person.",
+   "log": "> audit trail",
+   "text": "Every decision is attributed to a person. Sam approved the push, and Maya denied a risky delete.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Sam approved git push",
+     "sub": "10:42",
+     "at": 1.2,
+     "chip": [
+      "Allowed",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Maya denied rm -rf",
+     "sub": "10:51",
+     "at": 3.0,
+     "chip": [
+      "Denied",
+      "r"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "noseat",
+   "min": 8,
+   "hed": [
+    "No shared login.",
+    "No extra seats."
+   ],
+   "sub": "Use the tools you have.",
+   "log": "> no new seats",
+   "text": "No shared login to rotate, and no extra seats to buy.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> shared logins: 0",
+       "g"
+      ],
+      [
+       "> extra seats: 0",
+       "g"
+      ],
+      [
+       "> approvals attributed: all",
+       "g"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "fri",
+   "min": 8,
+   "hed": [
+    "So Friday is",
+    "no mystery."
+   ],
+   "sub": "Open the log, read the name.",
+   "log": "> friday deploy: Sam",
+   "text": "So next time something ships on a Friday, you open the log and read a name.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Friday deploy",
+     "sub": "Approved by Sam at 16:12",
+     "at": 1.2,
+     "chip": [
+      "Known",
+      "g"
+     ]
+    },
+    {
+     "k": "big",
+     "text": "Sam.",
+     "at": 3.2
+    }
+   ],
+   "mascot": {
+    "codex": "done"
+   }
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Teams that can",
+    "see each other."
+   ],
+   "sub": "ag// Try Slack for teams",
+   "log": "> agentrq.com",
+   "text": "Give your team its own channel and its own audit trail. Try it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "One team.|One trail.",
+     "at": 1.4,
+     "sub": "agentrq.com"
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

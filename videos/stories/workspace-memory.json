@@ -1,0 +1,404 @@
+{
+ "title": "Workspace memory",
+ "kicker": "workspace memory",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "Tuesday,",
+    "a hard lesson."
+   ],
+   "sub": "An hour on the VPN.",
+   "log": "> staging: unreachable",
+   "text": "Tuesday, your agent spends an hour learning that the staging server is only reachable through the V P N.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude, Tuesday",
+     "text": "Staging unreachable. It needs the VPN.",
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Staging deploy",
+     "sub": "Finally working",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 3.6
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "forget",
+   "min": 8,
+   "hed": [
+    "Wednesday,",
+    "it forgets."
+   ],
+   "sub": "A new chat, a blank slate.",
+   "log": "> staging: unreachable?",
+   "text": "Wednesday, a new chat begins, and the agent remembers nothing. It starts the same hour all over again.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude, Wednesday",
+     "text": "Staging is unreachable. Any ideas?",
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Same problem",
+     "sub": "One more wasted hour",
+     "chip": [
+      "Again",
+      "r"
+     ],
+     "at": 3.6
+    }
+   ],
+   "mascot": {
+    "claude": "alert"
+   }
+  },
+  {
+   "id": "cost",
+   "min": 8,
+   "hed": [
+    "You pay",
+    "twice."
+   ],
+   "sub": "Time and tokens.",
+   "log": "> cost: 2 hours",
+   "text": "You pay twice, in your time, and in tokens. And it happens again with every agent you add.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> Tuesday: 1 hour",
+       "p"
+      ],
+      [
+       "> Wednesday: 1 hour",
+       "p"
+      ],
+      [
+       "> next agent: 1 hour",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "idea",
+   "min": 8,
+   "hed": [
+    "One memory,",
+    "per workspace."
+   ],
+   "sub": "Shared by every agent.",
+   "log": "> memory: workspace",
+   "text": "Agent R Q gives every workspace one shared memory. Whatever one agent learns, the others can read.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "One memory.|Every agent.",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "save",
+   "min": 8,
+   "hed": [
+    "Save it",
+    "once."
+   ],
+   "sub": "One short entry.",
+   "log": "> memory save staging-needs-vpn",
+   "text": "Claude saves the lesson once, as a short entry. Staging needs the V P N.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "memory save staging-needs-vpn",
+       "p"
+      ],
+      [
+       "saved to the workspace",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "staging-needs-vpn",
+     "sub": "Connect to the VPN first",
+     "chip": [
+      "Memory",
+      "g"
+     ],
+     "at": 3.8
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "index",
+   "min": 8,
+   "hed": [
+    "A tidy",
+    "index."
+   ],
+   "sub": "memory dot m d links them.",
+   "log": "> memory.md",
+   "text": "The entries hang off a small index. An agent reads the index, and opens only the entries it needs.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "memory.md",
+     "sub": "The index",
+     "chip": [
+      "Index",
+      "b"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "staging-needs-vpn",
+     "sub": "Connect first",
+     "chip": [
+      "Memory",
+      "b"
+     ],
+     "at": 2.6
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "deploy-order",
+     "sub": "Migrate, then deploy",
+     "chip": [
+      "Memory",
+      "b"
+     ],
+     "at": 4
+    }
+   ]
+  },
+  {
+   "id": "read",
+   "min": 8,
+   "hed": [
+    "Read before",
+    "starting."
+   ],
+   "sub": "Every task, every agent.",
+   "log": "> memory load",
+   "text": "On the next task, Gemini or Codex loads the memory before touching anything, as a standing rule.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "memory load",
+       "p"
+      ],
+      [
+       "staging-needs-vpn",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "grid",
+     "cells": [
+      "Claude",
+      "Codex",
+      "Gemini"
+     ],
+     "at": 3.6
+    }
+   ],
+   "mascot": {
+    "codex": "work",
+    "agy": "work"
+   }
+  },
+  {
+   "id": "skip",
+   "min": 8,
+   "hed": [
+    "The hour",
+    "is gone."
+   ],
+   "sub": "Straight to the fix.",
+   "log": "> vpn: connected",
+   "text": "So the agent connects to the V P N first, and the deploy just works. No hour lost.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Gemini",
+     "text": "Memory says VPN first. Connecting.",
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Staging deploy",
+     "sub": "First try",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 3.6
+    }
+   ],
+   "mascot": {
+    "agy": "done"
+   }
+  },
+  {
+   "id": "machine",
+   "min": 8,
+   "hed": [
+    "Any machine,",
+    "no sync."
+   ],
+   "sub": "It lives in the workspace.",
+   "log": "> laptop, server, cloud",
+   "text": "It works on any machine, a laptop, a server or the cloud, because the memory lives in the workspace, not in a file you copy around.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Laptop",
+       "Claude"
+      ],
+      [
+       "Server",
+       "Codex"
+      ],
+      [
+       "Cloud",
+       "Gemini"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "you",
+   "min": 8,
+   "hed": [
+    "You can",
+    "edit it."
+   ],
+   "sub": "Plain text, your control.",
+   "log": "> edit entry",
+   "text": "You can read, edit or delete any entry yourself. It is your project, and the memory stays honest.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "staging-needs-vpn",
+     "sub": "Edit or delete any time",
+     "chip": [
+      "Yours",
+      "y"
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "grow",
+   "min": 8,
+   "hed": [
+    "It compounds."
+   ],
+   "sub": "Every week, smarter.",
+   "log": "> entries: 24",
+   "text": "Over weeks, the memory compounds. Each lesson is learned once, and then every agent starts a little further ahead.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Week 1",
+       15,
+       "z"
+      ],
+      [
+       "Week 2",
+       25,
+       "b"
+      ],
+      [
+       "Week 3",
+       60,
+       "g"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Agents that",
+    "remember."
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "Agents that remember. Try workspace memory at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Agents that remember.",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

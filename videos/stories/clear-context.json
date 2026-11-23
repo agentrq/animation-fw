@@ -1,0 +1,347 @@
+{
+ "title": "Clear Context",
+ "kicker": "clear context",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "b1",
+   "min": 5,
+   "hed": [
+    "Task five.",
+    "Still carrying it all."
+   ],
+   "sub": "Tasks one to four.",
+   "log": "> context: 96%",
+   "text": "Task five. Your agent is still carrying everything from tasks one through four.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "context: 12%",
+       "g"
+      ],
+      [
+       "context: 41%",
+       "y"
+      ],
+      [
+       "context: 78%",
+       "r"
+      ],
+      [
+       "context: 96%  re-reading...",
+       "r"
+      ]
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "alert"
+   }
+  },
+  {
+   "id": "b2",
+   "min": 5,
+   "hed": [
+    "Slow,",
+    "expensive, confused."
+   ],
+   "sub": "All three at once.",
+   "log": "> cost: climbing",
+   "text": "That is slow, because it re-reads everything. Expensive, because you pay for all of it.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Slow",
+     "sub": "Re-reading every turn",
+     "at": 1.2,
+     "chip": [
+      "Lag",
+      "y"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Expensive",
+     "sub": "Tokens pile up",
+     "at": 3.2,
+     "chip": [
+      "Cost",
+      "r"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Confused",
+     "sub": "Old facts leak in",
+     "at": 5.2,
+     "chip": [
+      "Risk",
+      "r"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "min": 5,
+   "hed": [
+    "A fresh start",
+    "each time."
+   ],
+   "sub": "That is the goal.",
+   "log": "> goal: fresh",
+   "text": "The fix is simple. Every task should start fresh, as if it were the first job of the day.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "A fresh|start.",
+     "sub": "for every task",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b4",
+   "min": 5,
+   "hed": [
+    "A task",
+    "finishes."
+   ],
+   "sub": "Work is saved.",
+   "log": "> task: done",
+   "text": "A task finishes. The code is committed and the result is reported.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Refactor the billing module",
+     "sub": "Claude Code",
+     "at": 1.2,
+     "chip": [
+      "Done",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "b5",
+   "min": 5,
+   "hed": [
+    "Then Agent R Q",
+    "sends clear."
+   ],
+   "sub": "Right before the next.",
+   "log": "> /clear",
+   "text": "Agent R Q sends slash clear to the Claude Code agent right before it picks up the next task.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "/clear",
+       "p"
+      ],
+      [
+       "context: 0%",
+       "p"
+      ]
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b6",
+   "min": 5,
+   "hed": [
+    "The next one",
+    "starts."
+   ],
+   "sub": "Empty context.",
+   "log": "> task: starts",
+   "text": "The next task starts with an empty context. Fix the signup email bug.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Fix the signup email bug",
+     "sub": "Next task picked up",
+     "at": 1.2,
+     "chip": [
+      "Starting",
+      "y"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "b7",
+   "min": 5,
+   "hed": [
+    "Memory carries",
+    "the lessons."
+   ],
+   "sub": "Notes, not chat.",
+   "log": "> memory: loaded",
+   "text": "Anything worth keeping lives in workspace memory, so the agent loads the notes and not the noise.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Workspace memory",
+     "sub": "Gotchas, decisions",
+     "at": 1.2,
+     "chip": [
+      "Loaded",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Old chat",
+     "sub": "Cleared",
+     "at": 3.2,
+     "chip": [
+      "Cleared",
+      "z"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b8",
+   "min": 5,
+   "hed": [
+    "Faster",
+    "turns."
+   ],
+   "sub": "Less to re-read.",
+   "log": "> speed: up",
+   "text": "Without stale context to re-read, the agent answers faster on every turn.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Faster turns",
+     "sub": "Less to re-read",
+     "at": 1.2,
+     "chip": [
+      "Quick",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b9",
+   "min": 5,
+   "hed": [
+    "Fewer",
+    "tokens."
+   ],
+   "sub": "Pay for the task.",
+   "log": "> tokens: down",
+   "text": "It spends fewer tokens too, so you pay for the task, not the history.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fewer tokens",
+     "sub": "Pay for the task, not the history",
+     "at": 1.2,
+     "chip": [
+      "Cheaper",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b10",
+   "min": 5,
+   "hed": [
+    "Stays on",
+    "the topic."
+   ],
+   "sub": "No bleed.",
+   "log": "> focus: on task",
+   "text": "And it stays on topic, with no bleed from the last task into the new one.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Stays on topic",
+     "sub": "No bleed from the last task",
+     "at": 1.2,
+     "chip": [
+      "Focused",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "b11",
+   "min": 5,
+   "hed": [
+    "Fresh,",
+    "every time."
+   ],
+   "sub": "Automatically.",
+   "log": "> auto: always",
+   "text": "All of it happens automatically, before every task, with nothing for you to remember.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Fresh,|every time.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  },
+  {
+   "id": "b12",
+   "min": 5,
+   "hed": [
+    "Your context",
+    "horror story?"
+   ],
+   "sub": "Tell us below.",
+   "log": "> agentrq.com",
+   "text": "How much of your agent budget goes to old context? Drop your story below, and try clear context at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Your context|horror story?",
+     "sub": "comment below",
+     "at": 1.2
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,386 @@
+{
+ "title": "Memory: onboarding",
+ "kicker": "workspace memory onboarding",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "Every agent",
+    "asks again."
+   ],
+   "sub": "The same questions.",
+   "log": "> new agent: how do I..",
+   "text": "Every new agent starts blank, and asks the same questions. Where are the tests? How do we deploy?",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "New agent",
+     "text": "Where are the tests?",
+     "at": 1.4
+    },
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "New agent",
+     "text": "How do we deploy?",
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "cost",
+   "min": 8,
+   "hed": [
+    "You answer",
+    "every time."
+   ],
+   "sub": "Copy, paste, repeat.",
+   "log": "> you: paste the answer",
+   "text": "So you answer every time. You paste the same paragraph into every chat, and hope you did not leave a step out.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> paste the test command",
+       "p"
+      ],
+      [
+       "> paste the deploy steps",
+       "p"
+      ],
+      [
+       "> paste the port note",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "idea",
+   "min": 8,
+   "hed": [
+    "Write it",
+    "once."
+   ],
+   "sub": "Workspace memory.",
+   "log": "> memory: how-to-run-tests",
+   "text": "Workspace memory fixes that. The first agent writes the answers down once, in the workspace.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Write it once.",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "save",
+   "min": 8,
+   "hed": [
+    "The first",
+    "agent saves."
+   ],
+   "sub": "Short, named entries.",
+   "log": "> memory save",
+   "text": "So the first agent that works it out saves a short entry, with a name like how to run tests.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "memory save how-to-run-tests",
+       "p"
+      ],
+      [
+       "saved to the workspace",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "how-to-run-tests",
+     "sub": "Run npm test",
+     "chip": [
+      "Memory",
+      "g"
+     ],
+     "at": 3.8
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "more",
+   "min": 8,
+   "hed": [
+    "Then the",
+    "rest."
+   ],
+   "sub": "Deploy, ports, style.",
+   "log": "> 3 entries",
+   "text": "Then deploy steps, the port quirk, and the code style. Each gets its own entry, linked from one index.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "how-to-run-tests",
+     "sub": "npm test",
+     "chip": [
+      "Memory",
+      "b"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "how-to-deploy",
+     "sub": "make release",
+     "chip": [
+      "Memory",
+      "b"
+     ],
+     "at": 2.6
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "port-3300",
+     "sub": "Not 3000",
+     "chip": [
+      "Memory",
+      "b"
+     ],
+     "at": 4
+    }
+   ]
+  },
+  {
+   "id": "load",
+   "min": 8,
+   "hed": [
+    "New agents",
+    "load it."
+   ],
+   "sub": "At the start of a task.",
+   "log": "> memory load",
+   "text": "Now a new agent loads the index before it starts. It reads the titles, and opens what it needs.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "memory load",
+       "p"
+      ],
+      [
+       "how-to-run-tests",
+       "p"
+      ],
+      [
+       "how-to-deploy",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "codex": "work"
+   }
+  },
+  {
+   "id": "go",
+   "min": 8,
+   "hed": [
+    "No questions,",
+    "just work."
+   ],
+   "sub": "It knows the way.",
+   "log": "> running npm test",
+   "text": "So it does not ask. It runs the tests the right way, the first time.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Codex",
+     "text": "Got it. Running npm test.",
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Tests passing",
+     "sub": "No questions asked",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 3.4
+    }
+   ],
+   "mascot": {
+    "codex": "done"
+   }
+  },
+  {
+   "id": "any",
+   "min": 8,
+   "hed": [
+    "Whoever",
+    "shows up."
+   ],
+   "sub": "Claude, Codex or Gemini.",
+   "log": "> any agent, any day",
+   "text": "It does not matter which agent shows up, or on which machine, because the knowledge sits in the workspace.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "Claude",
+      "Codex",
+      "Gemini"
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  },
+  {
+   "id": "skills",
+   "min": 8,
+   "hed": [
+    "Memory says",
+    "what."
+   ],
+   "sub": "Skills say how.",
+   "log": "> memory vs skills",
+   "text": "Memory holds facts about your project. Skills hold the steps to follow. Together, they onboard an agent in seconds.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Memory",
+       "facts"
+      ],
+      [
+       "Skills",
+       "steps"
+      ],
+      [
+       "Agent",
+       "ready"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "update",
+   "min": 8,
+   "hed": [
+    "Keep it",
+    "current."
+   ],
+   "sub": "Agents update entries.",
+   "log": "> memory save (update)",
+   "text": "When something changes, the next agent updates the entry, so the answer is always the latest one.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "how-to-deploy",
+     "sub": "Updated: now uses make release",
+     "chip": [
+      "Fresh",
+      "y"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Old note",
+     "sub": "Replaced",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "sync",
+   "min": 8,
+   "hed": [
+    "Nothing to",
+    "sync."
+   ],
+   "sub": "No docs to chase.",
+   "log": "> no wiki needed",
+   "text": "There is no wiki to keep alive and no onboarding doc to chase. The workspace is the onboarding doc.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Nothing to sync.|Nothing to re-explain.",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Ask once.",
+    "Know always."
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "Ask once, know always. Try workspace memory at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Ask once.|Know always.",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

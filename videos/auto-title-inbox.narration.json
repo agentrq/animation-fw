@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "b1",
+      "min": 5,
+      "text": "You file tasks fast, all day long. Quick thought, quick description, send it, next one."
+    },
+    {
+      "id": "b2",
+      "min": 5,
+      "text": "But naming each one takes a moment you do not have. So you skip it, every single time."
+    },
+    {
+      "id": "b3",
+      "min": 5,
+      "text": "By Friday your board is fifty cards called new task, and nobody knows which is which."
+    },
+    {
+      "id": "b4",
+      "min": 5,
+      "text": "So you open each card to learn what it is. Open, read, close. Then do it again."
+    },
+    {
+      "id": "b5",
+      "min": 5,
+      "text": "With auto titles, each task is named from its description the moment you create it."
+    },
+    {
+      "id": "b6",
+      "min": 5,
+      "text": "There is no extra step. No field to fill, no button to press. You describe the work and move on."
+    },
+    {
+      "id": "b7",
+      "min": 5,
+      "text": "A small language model does it inside your browser, so the text never leaves your device."
+    },
+    {
+      "id": "b8",
+      "min": 5,
+      "text": "Now your board makes sense. Every card names its job, and you can scan it in seconds."
+    },
+    {
+      "id": "b9",
+      "min": 5,
+      "text": "Search works too, because the words are there. Type checkout, and your task is found."
+    },
+    {
+      "id": "b10",
+      "min": 5,
+      "text": "Your agents pick up a task that already says what the job is."
+    },
+    {
+      "id": "b11",
+      "min": 5,
+      "text": "A readable board, without lifting a finger. That is the whole feature."
+    },
+    {
+      "id": "b12",
+      "min": 5,
+      "text": "How messy is your task list right now? Be honest in the comments, and try auto titles at Agent R Q dot com."
+    }
+  ]
+}

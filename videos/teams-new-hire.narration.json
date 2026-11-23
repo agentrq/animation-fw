@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "A new teammate joins on Monday. Chen is smart, but has never seen your project."
+    },
+    {
+      "id": "knows",
+      "min": 8,
+      "text": "Chen's agent knows nothing either. Not your conventions, and not the odd traps in your setup."
+    },
+    {
+      "id": "old",
+      "min": 8,
+      "text": "Normally, teammates spend weeks explaining it, one question at a time, in chat."
+    },
+    {
+      "id": "inv",
+      "min": 8,
+      "text": "Instead, Chen accepts an invite link, and keeps their own account the whole time."
+    },
+    {
+      "id": "share",
+      "min": 8,
+      "text": "Then Chen shares a workspace with the team. Nothing is shared until each person chooses it."
+    },
+    {
+      "id": "mem",
+      "min": 8,
+      "text": "Chen's agent reads the team memory, and learns, for example, that staging needs the VPN."
+    },
+    {
+      "id": "trap",
+      "min": 8,
+      "text": "So it connects first, and skips the failure that has caught everyone else."
+    },
+    {
+      "id": "skills",
+      "min": 8,
+      "text": "It picks up the team's skills, like release and deploy, wherever teammates chose to share them."
+    },
+    {
+      "id": "task",
+      "min": 8,
+      "text": "So Chen's first real task goes out before lunch, not after weeks of questions."
+    },
+    {
+      "id": "see",
+      "min": 8,
+      "text": "The team sees Chen's tasks as they happen, read-only, with Chen's name on each one."
+    },
+    {
+      "id": "wait",
+      "min": 8,
+      "text": "The knowledge was already waiting for them, written down by the teammates who came before."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "Onboard the agent with the team. Try it at Agent R Q dot com."
+    }
+  ]
+}

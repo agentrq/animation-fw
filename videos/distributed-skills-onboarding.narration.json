@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "b1",
+      "min": 5,
+      "text": "A brand new agent joins the project on Monday. It is eager, and it knows nothing."
+    },
+    {
+      "id": "b2",
+      "min": 5,
+      "text": "It does not know how your team deploys, triages bugs, or writes release notes."
+    },
+    {
+      "id": "b3",
+      "min": 5,
+      "text": "Usually you write an onboarding doc. Then it goes stale, and nobody trusts it."
+    },
+    {
+      "id": "b4",
+      "min": 5,
+      "text": "Or you copy a skills folder onto the new machine, and hope it is the latest version."
+    },
+    {
+      "id": "b5",
+      "min": 5,
+      "text": "With Agent R Q the skills are already in the workspace, shared by every agent that joins."
+    },
+    {
+      "id": "b6",
+      "min": 5,
+      "text": "On day one, the agent searches the workspace skills, and finds the deploy, triage and release playbooks."
+    },
+    {
+      "id": "b7",
+      "min": 5,
+      "text": "It loads the deploy skill and reads every step, including the ones nobody remembers to mention."
+    },
+    {
+      "id": "b8",
+      "min": 5,
+      "text": "Even the VPN step. The new agent knows staging needs it first, so it connects before anything else."
+    },
+    {
+      "id": "b9",
+      "min": 5,
+      "text": "By lunch, it deploys to staging exactly the way your best agent does."
+    },
+    {
+      "id": "b10",
+      "min": 5,
+      "text": "No copying folders, and no onboarding doc to keep up to date. The skills were already there."
+    },
+    {
+      "id": "b11",
+      "min": 5,
+      "text": "Claude, Codex, Gemini, or Cursor, any new agent is up to speed on day one."
+    },
+    {
+      "id": "b12",
+      "min": 5,
+      "text": "What is the first thing you would teach a new agent? Tell us in the comments, and try it at Agent R Q dot com."
+    }
+  ]
+}

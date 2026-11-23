@@ -1,0 +1,446 @@
+{
+ "title": "Events: release train",
+ "kicker": "events",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 5,
+   "hed": [
+    "Four agents,",
+    "one release."
+   ],
+   "sub": "A human nudges each.",
+   "log": "> release: 4 handoffs",
+   "text": "Shipping a release means build, then test, then docs, then deploy. Four agents, and a human nudging every single one.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Build",
+     "sub": "Claude Code",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 1
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Test",
+     "sub": "Codex",
+     "chip": [
+      "Waiting",
+      "z"
+     ],
+     "at": 2.2
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Docs",
+     "sub": "Gemini",
+     "chip": [
+      "Waiting",
+      "z"
+     ],
+     "at": 3.4
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Deploy",
+     "sub": "Cursor",
+     "chip": [
+      "Waiting",
+      "z"
+     ],
+     "at": 4.6
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "cost",
+   "min": 5,
+   "hed": [
+    "Every handoff",
+    "waits for you."
+   ],
+   "sub": "Copy, paste, repeat.",
+   "log": "> you: start the next task",
+   "text": "Each handoff waits for you. You check the board, copy the context, and start the next task by hand.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> check the board",
+       "r"
+      ],
+      [
+       "> copy the context",
+       "r"
+      ],
+      [
+       "> start the next task",
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "idea",
+   "min": 5,
+   "hed": [
+    "Events fix",
+    "the gap."
+   ],
+   "sub": "A named signal.",
+   "log": "> event: built",
+   "text": "Agent R Q events fix that. An event is a named signal that a task sends the moment it finishes.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "built",
+     "sub": "a named signal",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "emit",
+   "min": 5,
+   "hed": [
+    "Finish with",
+    "a signal."
+   ],
+   "sub": "The agent just reports.",
+   "log": "> build emits built",
+   "text": "Build completes and emits built. Test completes and emits tested. The agent calls nothing, it only reports what happened.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Build",
+       "emits built"
+      ],
+      [
+       "Test",
+       "emits tested"
+      ],
+      [
+       "Deploy",
+       "emits shipped"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "wire",
+   "min": 5,
+   "hed": [
+    "Wire it to",
+    "a workspace."
+   ],
+   "sub": "No glue code.",
+   "log": "> built -> Test workspace",
+   "text": "Wire each event to the next workspace, and the next task appears on its own. No glue code at all.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Build workspace",
+       "built"
+      ],
+      [
+       "Test workspace",
+       "new task"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "pickup",
+   "min": 5,
+   "hed": [
+    "The tester",
+    "wakes up."
+   ],
+   "sub": "It starts at once.",
+   "log": "> test: picked up",
+   "text": "The tester is already listening. The moment built lands, it picks the task up and starts working.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Codex",
+     "text": "Picked up: Test the release.",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Test the release",
+     "sub": "Codex is on it",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "codex": "work"
+   }
+  },
+  {
+   "id": "fan",
+   "min": 5,
+   "hed": [
+    "Fan out",
+    "in parallel."
+   ],
+   "sub": "One event, two tasks.",
+   "log": "> built -> test + docs",
+   "text": "Events can fan out too. One built signal starts testing and docs at the same time, so they run in parallel.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Build",
+       "built"
+      ],
+      [
+       "Test",
+       "Codex"
+      ]
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Build",
+       "built"
+      ],
+      [
+       "Docs",
+       "Gemini"
+      ]
+     ],
+     "at": 3.2
+    }
+   ],
+   "mascot": {
+    "codex": "work",
+    "agy": "work"
+   }
+  },
+  {
+   "id": "guard",
+   "min": 5,
+   "hed": [
+    "You stay",
+    "in control."
+   ],
+   "sub": "Approvals still apply.",
+   "log": "> deploy: push to main?",
+   "text": "You stay in control. Deploy keeps its approval, so the train never ships without a human saying yes.",
+   "scene": [
+    {
+     "k": "btns",
+     "code": "Bash  git push origin main",
+     "buttons": [
+      "Allow",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 4.2,
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "night",
+   "min": 5,
+   "hed": [
+    "Leave on",
+    "a schedule."
+   ],
+   "sub": "Two in the morning.",
+   "log": "> cron 02:00 -> build",
+   "text": "Add a schedule, and the whole train leaves at two in the morning while you sleep.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "c",
+     "title": "Nightly release",
+     "sub": "Every day at 02:00",
+     "chip": [
+      "Scheduled",
+      "c"
+     ],
+     "at": 1
+    },
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Build",
+       "02:00"
+      ],
+      [
+       "Test",
+       "auto"
+      ],
+      [
+       "Deploy",
+       "auto"
+      ]
+     ],
+     "at": 2.8
+    }
+   ]
+  },
+  {
+   "id": "fail",
+   "min": 5,
+   "hed": [
+    "A failure",
+    "stops the train."
+   ],
+   "sub": "At the right stop.",
+   "log": "> test: blocked",
+   "text": "If a step fails, the train stops right there, and you can see exactly which stop it was.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Build",
+     "sub": "Claude Code",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 1
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Test",
+     "sub": "Tests are failing",
+     "chip": [
+      "Blocked",
+      "r"
+     ],
+     "at": 2.6
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Deploy",
+     "sub": "Held back",
+     "chip": [
+      "Waiting",
+      "z"
+     ],
+     "at": 4.2
+    }
+   ],
+   "mascot": {
+    "codex": "alert"
+   }
+  },
+  {
+   "id": "see",
+   "min": 5,
+   "hed": [
+    "See every",
+    "handoff."
+   ],
+   "sub": "What fired what.",
+   "log": "> timeline: 4 handoffs",
+   "text": "Every handoff lands in the task timeline, so you can always see what fired what, and when.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Build",
+       25,
+       "g"
+      ],
+      [
+       "Test",
+       25,
+       "g"
+      ],
+      [
+       "Docs",
+       25,
+       "g"
+      ],
+      [
+       "Deploy",
+       25,
+       "y"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "min": 5,
+   "hed": [
+    "Events run",
+    "your train."
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "No glue code, no copy and paste. Try events at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Your turn.",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

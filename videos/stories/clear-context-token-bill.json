@@ -1,0 +1,371 @@
+{
+ "title": "Clear Context Token Bill",
+ "kicker": "clear context",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "b1",
+   "min": 5,
+   "hed": [
+    "Task one",
+    "goes fine."
+   ],
+   "sub": "A clean start.",
+   "log": "> task 1: 2k tokens",
+   "text": "Your agent starts task one. The context is small, the replies are quick, and the bill is tiny.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Task 1",
+       15,
+       "g"
+      ]
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "b2",
+   "min": 5,
+   "hed": [
+    "Then task two",
+    "arrives."
+   ],
+   "sub": "History comes along.",
+   "log": "> task 2: 6k tokens",
+   "text": "Then task two arrives, and every reply now drags task one along with it.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Task 1",
+       15,
+       "g"
+      ],
+      [
+       "Task 2",
+       30,
+       "y"
+      ]
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "b3",
+   "min": 5,
+   "hed": [
+    "Task three",
+    "gets heavy."
+   ],
+   "sub": "The pile keeps growing.",
+   "log": "> task 3: 14k tokens",
+   "text": "By task three, most of what the agent reads is history from the last two jobs.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Task 1",
+       15,
+       "g"
+      ],
+      [
+       "Task 2",
+       30,
+       "y"
+      ],
+      [
+       "Task 3",
+       55,
+       "r"
+      ]
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "alert"
+   }
+  },
+  {
+   "id": "b4",
+   "min": 5,
+   "hed": [
+    "The bill",
+    "climbs."
+   ],
+   "sub": "Every single turn.",
+   "log": "> bill: rising",
+   "text": "The token bill climbs on every turn, because the whole history is sent again each time.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "turn 1: 2k tokens",
+       "g"
+      ],
+      [
+       "turn 2: 6k tokens",
+       "y"
+      ],
+      [
+       "turn 3: 14k tokens",
+       "r"
+      ]
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b5",
+   "min": 5,
+   "hed": [
+    "You pay to",
+    "re-read."
+   ],
+   "sub": "The past, again.",
+   "log": "> waste: 80%",
+   "text": "Most of that old context has nothing to do with the new task. You are paying to re-read the past.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Re-reading old tasks",
+     "sub": "Every single turn",
+     "at": 1.2,
+     "chip": [
+      "Wasted",
+      "r"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "New task",
+     "sub": "Needs only its own context",
+     "at": 3.2,
+     "chip": [
+      "Small",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b6",
+   "min": 5,
+   "hed": [
+    "Reset before",
+    "each task."
+   ],
+   "sub": "One command.",
+   "log": "> /clear",
+   "text": "Agent R Q fixes this. Right before a Claude Code agent picks up a task, it sends slash clear.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "/clear",
+       "p"
+      ],
+      [
+       "context: 0%",
+       "p"
+      ]
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b7",
+   "min": 5,
+   "hed": [
+    "Each task",
+    "starts empty."
+   ],
+   "sub": "Nothing carried over.",
+   "log": "> context: 0%",
+   "text": "Every task begins with an empty context. The agent reads only the new task, and nothing else.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Task 1",
+       20,
+       "g"
+      ],
+      [
+       "Task 2",
+       20,
+       "g"
+      ],
+      [
+       "Task 3",
+       20,
+       "g"
+      ]
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "b8",
+   "min": 5,
+   "hed": [
+    "Memory keeps",
+    "what matters."
+   ],
+   "sub": "Notes survive.",
+   "log": "> memory: loaded",
+   "text": "What the agent needs to remember lives in workspace memory, so clearing never loses the important parts.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Workspace memory",
+     "sub": "Notes and gotchas",
+     "at": 1.2,
+     "chip": [
+      "Kept",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Chat history",
+     "sub": "Cleared before each task",
+     "at": 3.2,
+     "chip": [
+      "Cleared",
+      "z"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b9",
+   "min": 5,
+   "hed": [
+    "Same work,",
+    "fewer tokens."
+   ],
+   "sub": "A fraction of the cost.",
+   "log": "> tokens: -70%",
+   "text": "The same work costs a fraction of the tokens, and every turn comes back faster.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Faster turns",
+     "sub": "Less to re-read",
+     "at": 1.2,
+     "chip": [
+      "Quick",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fewer tokens",
+     "sub": "Pay for the task only",
+     "at": 3.2,
+     "chip": [
+      "Cheaper",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b10",
+   "min": 5,
+   "hed": [
+    "It is",
+    "automatic."
+   ],
+   "sub": "No habit to build.",
+   "log": "> auto: on",
+   "text": "You do not have to remember to clear anything. It happens before every task, on its own.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Automatic.",
+     "sub": "before every task",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "b11",
+   "min": 5,
+   "hed": [
+    "Pay for",
+    "the work."
+   ],
+   "sub": "Not the history.",
+   "log": "> bill: fair",
+   "text": "Pay for the work, not the history.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Pay for|the work.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  },
+  {
+   "id": "b12",
+   "min": 5,
+   "hed": [
+    "Your monthly",
+    "guess?"
+   ],
+   "sub": "Tell us below.",
+   "log": "> agentrq.com",
+   "text": "How much do you think old context costs you each month? Guess in the comments, then try clear context at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Your monthly|guess?",
+     "sub": "comment below",
+     "at": 1.2
+    }
+   ]
+  }
+ ]
+}

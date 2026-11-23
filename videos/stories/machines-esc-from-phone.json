@@ -1,0 +1,353 @@
+{
+ "title": "Machines: escape from a phone",
+ "kicker": "machines",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 5,
+   "hed": [
+    "You are at",
+    "a cafe."
+   ],
+   "sub": "The agent is at home.",
+   "log": "> you: cafe, agent: home",
+   "text": "You are at a cafe, and your coding agent, on a computer at home, starts doing something you did not intend.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Home machine",
+     "sub": "Claude Code is running",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 1
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Away from the desk",
+     "sub": "You are at a cafe",
+     "chip": [
+      "Remote",
+      "b"
+     ],
+     "at": 2.6
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "panic",
+   "min": 5,
+   "hed": [
+    "Something",
+    "looks wrong."
+   ],
+   "sub": "It is deleting files.",
+   "log": "> agent: rm -rf ./build",
+   "text": "On your phone you see it. The agent is about to delete a folder you wanted to keep.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> rm -rf ./data",
+       "r"
+      ],
+      [
+       "> deleting...",
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "alert"
+   }
+  },
+  {
+   "id": "open",
+   "min": 5,
+   "hed": [
+    "Open the",
+    "machine session."
+   ],
+   "sub": "In your browser.",
+   "log": "> machine session: open",
+   "text": "In Agent R Q you open the machine session. It is a real terminal, right in your phone browser.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Home machine",
+     "sub": "Online, 1 session",
+     "chip": [
+      "Online",
+      "g"
+     ],
+     "at": 1
+    },
+    {
+     "k": "big",
+     "text": "Open session",
+     "sub": "browser terminal",
+     "at": 2.8
+    }
+   ]
+  },
+  {
+   "id": "prompt",
+   "min": 5,
+   "hed": [
+    "You are at",
+    "its prompt."
+   ],
+   "sub": "Live.",
+   "log": "> connected",
+   "text": "And there you are, at the agent prompt, watching its output live, as if you sat at the desk.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> connected to home-machine",
+       "g"
+      ],
+      [
+       "> agent: working on ./data",
+       "y"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "keys",
+   "min": 5,
+   "hed": [
+    "Every key",
+    "goes through."
+   ],
+   "sub": "Escape included.",
+   "log": "> key: esc",
+   "text": "Every key goes through, escape included. The key that terminal agents need most still works on a phone.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "esc"
+     ],
+     "label": "Stop the agent",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "stop",
+   "min": 5,
+   "hed": [
+    "One press,",
+    "it stops."
+   ],
+   "sub": "Mid thought.",
+   "log": "> agent: interrupted",
+   "text": "One press, and the agent stops mid-thought, before it finishes the thing you did not want.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> rm -rf ./data",
+       "r"
+      ],
+      [
+       "> ^ interrupted",
+       "g"
+      ]
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Folder saved",
+     "sub": "Nothing deleted",
+     "chip": [
+      "Safe",
+      "g"
+     ],
+     "at": 3.4
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "type",
+   "min": 5,
+   "hed": [
+    "Then say what",
+    "you meant."
+   ],
+   "sub": "From the same screen.",
+   "log": "> you: only delete ./build",
+   "text": "Then type what you actually wanted, in plain words, right into the same prompt.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Only delete the build folder.",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "redo",
+   "min": 5,
+   "hed": [
+    "It carries on",
+    "the right way."
+   ],
+   "sub": "Same session.",
+   "log": "> agent: understood",
+   "text": "The agent reads it, understands, and carries on, this time the right way.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude",
+     "text": "Understood. Deleting ./build only.",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Clean the build folder",
+     "sub": "Claude is on it",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "phone",
+   "min": 5,
+   "hed": [
+    "A phone",
+    "is enough."
+   ],
+   "sub": "No laptop needed.",
+   "log": "> device: phone",
+   "text": "No laptop, no remote desktop, no vpn dance. A phone and a browser are enough.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Phone",
+       "browser"
+      ],
+      [
+       "Home machine",
+       "terminal"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "safe",
+   "min": 5,
+   "hed": [
+    "Still safe",
+    "by design."
+   ],
+   "sub": "Approvals apply.",
+   "log": "> approval: required",
+   "text": "The agent still asks before risky commands, so you get an approval, and an emergency stop.",
+   "scene": [
+    {
+     "k": "btns",
+     "code": "Bash  rm -rf ./build",
+     "buttons": [
+      "Allow",
+      "Deny"
+     ],
+     "press": 1,
+     "tap": 4.2,
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "calm",
+   "min": 5,
+   "hed": [
+    "Walk away,",
+    "stay in reach."
+   ],
+   "sub": "Sip your coffee.",
+   "log": "> relax",
+   "text": "So you can leave the desk, and still be one tap from the controls.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "One tap|from the controls.",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "close",
+   "min": 5,
+   "hed": [
+    "Escape from",
+    "anywhere."
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "What was the scariest thing you ever saw an agent start to do? Tell us, or try machines at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Escape.",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done"
+   }
+  }
+ ]
+}

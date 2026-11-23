@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "Ada, Ben and Chen each keep their own copy of the release skill. And every copy has quietly drifted away from the others."
+    },
+    {
+      "id": "cost",
+      "min": 8,
+      "text": "So a release goes out without a tag, or without a changelog. Nobody has the full playbook, and nobody notices until later."
+    },
+    {
+      "id": "idea",
+      "min": 8,
+      "text": "The fix is simple. Let the team own the skill, instead of every person keeping a private copy."
+    },
+    {
+      "id": "own",
+      "min": 8,
+      "text": "In Agent R Q, a team workspace owns its skills. Every member can edit them, so nobody is stuck with a stale copy."
+    },
+    {
+      "id": "optin",
+      "min": 8,
+      "text": "And each member opts in, workspace by workspace. Nobody gets a skill pushed on them without saying yes."
+    },
+    {
+      "id": "improve",
+      "min": 8,
+      "text": "Then Ben’s agent adds the tagging step. That is one edit, made in one place."
+    },
+    {
+      "id": "version",
+      "min": 8,
+      "text": "The change lands in a versioned file. Version one becomes version two, and nothing is overwritten by accident."
+    },
+    {
+      "id": "sync",
+      "min": 8,
+      "text": "Every opted in agent gets the new version, with nobody emailing a file and nobody copying one by hand."
+    },
+    {
+      "id": "wins",
+      "min": 8,
+      "text": "Next release, Chen’s agent loads the skill and follows every step, including the two it never knew about."
+    },
+    {
+      "id": "search",
+      "min": 8,
+      "text": "Agents search for a matching skill at the start of every task, so the right playbook shows up on its own."
+    },
+    {
+      "id": "trust",
+      "min": 8,
+      "text": "And any agent can improve the skill after it learns something. The whole team benefits from every lesson."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "How many versions of the same playbook does your team have? Tell us below, then try shared skills at Agent R Q dot com."
+    }
+  ]
+}

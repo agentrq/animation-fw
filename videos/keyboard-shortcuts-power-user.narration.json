@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 5,
+      "text": "Here is a day with Agent R Q without touching the mouse once. Imagine the cable is unplugged."
+    },
+    {
+      "id": "new",
+      "min": 5,
+      "text": "The day starts with the letter N. It opens a new task, so you can file an idea before you forget it."
+    },
+    {
+      "id": "type",
+      "min": 5,
+      "text": "Type the title, add a line of detail, and send it. The agent has its work before your coffee cools."
+    },
+    {
+      "id": "ws",
+      "min": 5,
+      "text": "W jumps to a workspace. It opens a quick search, so you type a few letters and press enter."
+    },
+    {
+      "id": "mc",
+      "min": 5,
+      "text": "M jumps to a machine the same way. Type a few letters of its name, and you are looking at its terminal."
+    },
+    {
+      "id": "search",
+      "min": 5,
+      "text": "Command K finds any task by title or description, instantly, and it runs straight from your device."
+    },
+    {
+      "id": "word",
+      "min": 5,
+      "text": "You only remember one word, migration. Type it, and the matching tasks appear while you are still typing."
+    },
+    {
+      "id": "pick",
+      "min": 5,
+      "text": "Arrow to the one you want and press enter. No scrolling through two hundred old tasks."
+    },
+    {
+      "id": "ask",
+      "min": 5,
+      "text": "When an agent asks for permission, the keys handle that too, so a quick decision never needs the mouse."
+    },
+    {
+      "id": "help",
+      "min": 5,
+      "text": "And if you forget a shortcut, question mark lists every one of them in a single panel."
+    },
+    {
+      "id": "fast",
+      "min": 5,
+      "text": "Your hands never leave the keyboard, so you stay faster than any menu, and your focus stays on the work."
+    },
+    {
+      "id": "close",
+      "min": 5,
+      "text": "Learn the five keys today, and try it all at Agent R Q dot com."
+    }
+  ]
+}

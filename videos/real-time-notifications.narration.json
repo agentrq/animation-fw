@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "Most setups make the agent check for news over and over. Is there a reply yet?"
+    },
+    {
+      "id": "cost",
+      "min": 8,
+      "text": "Every check costs time and tokens, and most of them come back empty."
+    },
+    {
+      "id": "lag",
+      "min": 8,
+      "text": "Slow the timer down to save effort, and you answer in seconds but wait a minute for the agent."
+    },
+    {
+      "id": "fast",
+      "min": 8,
+      "text": "Speed the timer up, and the agent spends its day asking, instead of doing the work you gave it."
+    },
+    {
+      "id": "flip",
+      "min": 8,
+      "text": "The better idea is to flip it around, so the agent stops asking and gets told instead."
+    },
+    {
+      "id": "push",
+      "min": 8,
+      "text": "Agent R Q pushes updates the moment they happen, so there is nothing for the agent to check."
+    },
+    {
+      "id": "stream",
+      "min": 8,
+      "text": "They travel over a live stream that stays open for the whole session, between you and the agent."
+    },
+    {
+      "id": "channel",
+      "min": 8,
+      "text": "The stream feeds straight into Claude Code's own notification channel, so it feels like a built in feature."
+    },
+    {
+      "id": "answer",
+      "min": 8,
+      "text": "You answer a question, and the agent hears it instantly, within the same second."
+    },
+    {
+      "id": "none",
+      "min": 8,
+      "text": "There is no waiting for the next check, because there is no next check to wait for."
+    },
+    {
+      "id": "what",
+      "min": 8,
+      "text": "Replies, approvals, and new tasks all arrive the same way, live, the moment they exist."
+    },
+    {
+      "id": "cta",
+      "min": 8,
+      "text": "How long does your agent sit waiting on you? Be honest, tell us in the comments, and try Agent R Q dot com."
+    }
+  ]
+}

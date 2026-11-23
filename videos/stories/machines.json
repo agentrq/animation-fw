@@ -1,0 +1,362 @@
+{
+ "title": "Machines",
+ "kicker": "machines",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 5,
+   "hed": [
+    "The agent runs",
+    "at home."
+   ],
+   "sub": "You are on a train.",
+   "log": "> agent: home, you: train",
+   "text": "Your coding agent runs on the beefy computer at home. You are on a train, and you want to see what it is doing.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Home computer",
+     "sub": "Claude Code is running",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 1
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "You, on a train",
+     "sub": "No laptop",
+     "chip": [
+      "Remote",
+      "b"
+     ],
+     "at": 2.6
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "gap",
+   "min": 5,
+   "hed": [
+    "Out of sight,",
+    "out of reach."
+   ],
+   "sub": "Until now.",
+   "log": "> status: unknown",
+   "text": "Normally that means a remote desktop, a vpn, or an ssh session you set up months ago.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> vpn: not connected",
+       "r"
+      ],
+      [
+       "> ssh: connection refused",
+       "r"
+      ],
+      [
+       "> remote desktop: laggy",
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "install",
+   "min": 5,
+   "hed": [
+    "Install the",
+    "daemon."
+   ],
+   "sub": "On any computer.",
+   "log": "> install agentrqd",
+   "text": "Install the Agent R Q D daemon on any computer you own. It is a small program that runs quietly.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> install agentrqd",
+       "p"
+      ],
+      [
+       "> daemon: running",
+       "g"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "enrol",
+   "min": 5,
+   "hed": [
+    "Enrol it",
+    "once."
+   ],
+   "sub": "Single-use code.",
+   "log": "> enrol: code ready",
+   "text": "Enrol it once with a single-use code, and it shows up in Agent R Q as a machine.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "One-time code",
+     "sub": "enrol once",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "list",
+   "min": 5,
+   "hed": [
+    "It appears",
+    "as a machine."
+   ],
+   "sub": "Online, with a name.",
+   "log": "> machines: 2 online",
+   "text": "Each machine is listed with its name and status, so you know what is online before you tap.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "home-pc",
+     "sub": "Linux, 16 cores",
+     "chip": [
+      "Online",
+      "g"
+     ],
+     "at": 1
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "office-mac",
+     "sub": "macOS",
+     "chip": [
+      "Online",
+      "g"
+     ],
+     "at": 2.4
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "old-server",
+     "sub": "Last seen 2 days ago",
+     "chip": [
+      "Offline",
+      "z"
+     ],
+     "at": 3.8
+    }
+   ]
+  },
+  {
+   "id": "start",
+   "min": 5,
+   "hed": [
+    "Start an",
+    "agent there."
+   ],
+   "sub": "From any browser.",
+   "log": "> start: claude on home-pc",
+   "text": "From any browser, start a coding agent on that machine, in the repository you choose.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Browser",
+       "start"
+      ],
+      [
+       "home-pc",
+       "claude"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "watch",
+   "min": 5,
+   "hed": [
+    "Watch its",
+    "live terminal."
+   ],
+   "sub": "Every line.",
+   "log": "> terminal: live",
+   "text": "Then watch its live terminal, line by line, as the agent works.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> claude: reading the repo",
+       "g"
+      ],
+      [
+       "> claude: editing files",
+       "g"
+      ],
+      [
+       "> claude: running tests",
+       "y"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "type",
+   "min": 5,
+   "hed": [
+    "Type into it",
+    "too."
+   ],
+   "sub": "Not just a viewer.",
+   "log": "> you: use the new api",
+   "text": "And you can type into the terminal, not just watch, so you can steer the agent from your seat.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "You",
+     "text": "Use the new API version.",
+     "at": 1.2
+    },
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude",
+     "text": "Switching to v2 now.",
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "esc",
+   "min": 5,
+   "hed": [
+    "Even escape",
+    "works."
+   ],
+   "sub": "Every key.",
+   "log": "> key: esc",
+   "text": "Even the escape key works, so you can interrupt the agent the moment it heads the wrong way.",
+   "scene": [
+    {
+     "k": "kbd",
+     "keys": [
+      "esc"
+     ],
+     "label": "Interrupt the agent",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "multi",
+   "min": 5,
+   "hed": [
+    "Many machines,",
+    "one place."
+   ],
+   "sub": "Pick any.",
+   "log": "> 3 machines",
+   "text": "Laptop, server, a box under the desk. All of them live in one list.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "laptop",
+      "server",
+      "desk box"
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work",
+    "agy": "work"
+   }
+  },
+  {
+   "id": "desk",
+   "min": 5,
+   "hed": [
+    "It is like",
+    "being at the desk."
+   ],
+   "sub": "From anywhere.",
+   "log": "> location: anywhere",
+   "text": "It is like being at the desk, from a train, a sofa, or a cafe.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Like being|at the desk.",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "close",
+   "min": 5,
+   "hed": [
+    "Your agents,",
+    "anywhere."
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "Where do your agents run today? Tell us, or add a machine at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Add a machine.",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

@@ -1,0 +1,408 @@
+{
+ "title": "Teams: shared skills",
+ "kicker": "teams-shared-skills",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "Three people,",
+    "three skills."
+   ],
+   "sub": "Each one drifted.",
+   "log": "> release skill x3",
+   "text": "Ada, Ben and Chen each keep their own copy of the release skill. And every copy has quietly drifted away from the others.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Ada’s release skill",
+     "sub": "Knows the changelog step",
+     "chip": [
+      "v1",
+      "z"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Ben’s release skill",
+     "sub": "Knows the tagging step",
+     "chip": [
+      "v1",
+      "z"
+     ],
+     "at": 2.8
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Chen’s release skill",
+     "sub": "Knows neither",
+     "chip": [
+      "v1",
+      "z"
+     ],
+     "at": 4.4
+    }
+   ],
+   "mascot": {
+    "claude": "ask",
+    "codex": "ask",
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "cost",
+   "min": 8,
+   "hed": [
+    "Nobody has",
+    "the full set."
+   ],
+   "sub": "Steps get skipped.",
+   "log": "> release: step missed",
+   "text": "So a release goes out without a tag, or without a changelog. Nobody has the full playbook, and nobody notices until later.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> release v3 shipped",
+       "p"
+      ],
+      [
+       "changelog: missing",
+       "r"
+      ],
+      [
+       "git tag: missing",
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "idea",
+   "min": 8,
+   "hed": [
+    "One skill,",
+    "one owner."
+   ],
+   "sub": "The team workspace.",
+   "log": "> skills: team-owned",
+   "text": "The fix is simple. Let the team own the skill, instead of every person keeping a private copy.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "One skill.|One owner.",
+     "sub": "the team workspace",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "own",
+   "min": 8,
+   "hed": [
+    "The workspace",
+    "owns it."
+   ],
+   "sub": "Every member can edit.",
+   "log": "> release: owned by team",
+   "text": "In Agent R Q, a team workspace owns its skills. Every member can edit them, so nobody is stuck with a stale copy.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "release",
+     "sub": "Owned by the team workspace",
+     "chip": [
+      "Shared",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Members",
+     "sub": "Ada, Ben and Chen can edit",
+     "chip": [
+      "Edit",
+      "b"
+     ],
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "optin",
+   "min": 8,
+   "hed": [
+    "Opt in",
+    "per workspace."
+   ],
+   "sub": "Your choice.",
+   "log": "> opt in: release",
+   "text": "And each member opts in, workspace by workspace. Nobody gets a skill pushed on them without saying yes.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Ada",
+     "sub": "Opted in",
+     "chip": [
+      "On",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Ben",
+     "sub": "Opted in",
+     "chip": [
+      "On",
+      "g"
+     ],
+     "at": 2.8
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Chen",
+     "sub": "Not yet",
+     "chip": [
+      "Off",
+      "z"
+     ],
+     "at": 4.4
+    }
+   ]
+  },
+  {
+   "id": "improve",
+   "min": 8,
+   "hed": [
+    "Ben improves",
+    "it once."
+   ],
+   "sub": "One edit.",
+   "log": "> ben: add tag step",
+   "text": "Then Ben’s agent adds the tagging step. That is one edit, made in one place.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Ben’s agent",
+     "text": "Adding the tagging step to the release skill.",
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "release",
+     "sub": "Editing...",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 3.2
+    }
+   ],
+   "mascot": {
+    "codex": "work"
+   }
+  },
+  {
+   "id": "version",
+   "min": 8,
+   "hed": [
+    "Saved as",
+    "version two."
+   ],
+   "sub": "A versioned file.",
+   "log": "> release: v1 -> v2",
+   "text": "The change lands in a versioned file. Version one becomes version two, and nothing is overwritten by accident.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "release",
+       "v1"
+      ],
+      [
+       "release",
+       "v2"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "sync",
+   "min": 8,
+   "hed": [
+    "Every agent",
+    "gets it."
+   ],
+   "sub": "All opted in.",
+   "log": "> v2: 3 agents updated",
+   "text": "Every opted in agent gets the new version, with nobody emailing a file and nobody copying one by hand.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Ada",
+       "v2"
+      ],
+      [
+       "Ben",
+       "v2"
+      ],
+      [
+       "Chen",
+       "v2"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  },
+  {
+   "id": "wins",
+   "min": 8,
+   "hed": [
+    "Chen gets",
+    "smarter."
+   ],
+   "sub": "Two steps he never knew.",
+   "log": "> skills load release",
+   "text": "Next release, Chen’s agent loads the skill and follows every step, including the two it never knew about.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "skills load release  (v2)",
+       "p"
+      ],
+      [
+       "changelog  done",
+       "g"
+      ],
+      [
+       "tag  done",
+       "g"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "agy": "work"
+   }
+  },
+  {
+   "id": "search",
+   "min": 8,
+   "hed": [
+    "Find skills",
+    "from anywhere."
+   ],
+   "sub": "Search first.",
+   "log": "> skills search release",
+   "text": "Agents search for a matching skill at the start of every task, so the right playbook shows up on its own.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Agent",
+     "text": "skills search: release",
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "release  v2",
+     "sub": "Best match",
+     "chip": [
+      "Found",
+      "g"
+     ],
+     "at": 3.2
+    }
+   ]
+  },
+  {
+   "id": "trust",
+   "min": 8,
+   "hed": [
+    "Better over",
+    "time."
+   ],
+   "sub": "Each run adds.",
+   "log": "> improve: ongoing",
+   "text": "And any agent can improve the skill after it learns something. The whole team benefits from every lesson.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "v1",
+       20,
+       "z"
+      ],
+      [
+       "v2",
+       35,
+       "b"
+      ],
+      [
+       "v3",
+       45,
+       "g"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "Your turn.",
+    "How many?"
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "How many versions of the same playbook does your team have? Tell us below, then try shared skills at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "How many|versions?",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ]
+  }
+ ]
+}

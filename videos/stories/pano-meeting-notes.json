@@ -1,0 +1,383 @@
+{
+ "title": "Pano: meeting notes",
+ "kicker": "pano",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "Meeting",
+    "over."
+   ],
+   "sub": "Ten action items.",
+   "log": "> meeting: ended",
+   "text": "A planning meeting ends, and everybody nods, certain that somebody wrote the action items down.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Planning meeting",
+     "sub": "Ended five minutes ago",
+     "at": 1.2,
+     "chip": [
+      "Done",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Action items",
+     "sub": "Ten of them",
+     "at": 3.0,
+     "chip": [
+      "Unwritten",
+      "y"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "scatter",
+   "min": 8,
+   "hed": [
+    "Scattered",
+    "everywhere."
+   ],
+   "sub": "Half remembered.",
+   "log": "> items: scattered",
+   "text": "Ten action items end up scattered across messages, half remembered by everyone, and owned by no one.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> chat: three items",
+       "r"
+      ],
+      [
+       "> email: two items",
+       "r"
+      ],
+      [
+       "> memory: five items?",
+       "r"
+      ]
+     ],
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "id": "risk",
+   "min": 8,
+   "hed": [
+    "Two weeks",
+    "later."
+   ],
+   "sub": "Who did what?",
+   "log": "> status: unknown",
+   "text": "Two weeks later nobody can say what was done, what was dropped, and what was never started.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Who did what?",
+     "at": 1.4,
+     "sub": "two weeks later"
+    }
+   ]
+  },
+  {
+   "id": "doc",
+   "min": 8,
+   "hed": [
+    "Put them in",
+    "a Pano doc."
+   ],
+   "sub": "One place.",
+   "log": "> pano: meeting.md",
+   "text": "Put the notes in a Pano doc instead, the shared board that humans and agents both read.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "meeting-notes.md",
+     "sub": "On the Pano",
+     "at": 1.2,
+     "chip": [
+      "Markdown",
+      "b"
+     ]
+    },
+    {
+     "k": "big",
+     "text": "Pano",
+     "at": 3.2,
+     "sub": "one shared place"
+    }
+   ]
+  },
+  {
+   "id": "list",
+   "min": 8,
+   "hed": [
+    "A plain",
+    "checklist."
+   ],
+   "sub": "Markdown lines.",
+   "log": "> checklist: markdown",
+   "text": "Each action item becomes a plain markdown line with a checkbox, the same syntax you already know.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "- [ ] Draft the launch email",
+       "p"
+      ],
+      [
+       "- [ ] Fix the signup bug",
+       "p"
+      ],
+      [
+       "- [ ] Book the demo room",
+       "p"
+      ]
+     ],
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "id": "link",
+   "min": 8,
+   "hed": [
+    "Link an item",
+    "to a task."
+   ],
+   "sub": "One click.",
+   "log": "> link: item -> task",
+   "text": "Link a checklist item to a task, and the line points at real work in a real workspace.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Fix the signup bug",
+       "checklist item"
+      ],
+      [
+       "Fix signup task",
+       "linked task"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "pick",
+   "min": 8,
+   "hed": [
+    "An agent",
+    "picks it up."
+   ],
+   "sub": "Right away.",
+   "log": "> agent: picked up",
+   "text": "An agent picks that task up and starts, with the whole meeting doc as its context.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Codex",
+     "text": "Picked up: Fix the signup bug.",
+     "at": 1.6
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix the signup bug",
+     "sub": "Codex is on it",
+     "at": 3.4,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "codex": "work"
+   }
+  },
+  {
+   "id": "tick",
+   "min": 8,
+   "hed": [
+    "The box",
+    "ticks itself."
+   ],
+   "sub": "When the task completes.",
+   "log": "> checklist: ticked",
+   "text": "When the task completes, the checkbox ticks itself, and nobody has to remember to do it.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix the signup bug",
+     "sub": "Codex",
+     "at": 1.2,
+     "chip": [
+      "Done",
+      "g"
+     ]
+    },
+    {
+     "k": "term",
+     "lines": [
+      [
+       "- [x] Fix the signup bug",
+       "g"
+      ]
+     ],
+     "at": 3.2
+    }
+   ],
+   "mascot": {
+    "codex": "done"
+   }
+  },
+  {
+   "id": "more",
+   "min": 8,
+   "hed": [
+    "Link the rest."
+   ],
+   "sub": "Different agents.",
+   "log": "> tasks: three linked",
+   "text": "Link the other items too, and different agents take different lines, all from one doc.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Launch email",
+       "Claude"
+      ],
+      [
+       "Signup bug",
+       "Codex"
+      ],
+      [
+       "Demo room",
+       "Agy"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work",
+    "agy": "work"
+   }
+  },
+  {
+   "id": "progress",
+   "min": 8,
+   "hed": [
+    "See progress",
+    "at a glance."
+   ],
+   "sub": "Done and not done.",
+   "log": "> doc: 7 of 10",
+   "text": "Open the doc any day, and you see exactly which items are finished and which are still waiting.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Done",
+       70,
+       "g"
+      ],
+      [
+       "Ongoing",
+       20,
+       "y"
+      ],
+      [
+       "Waiting",
+       10,
+       "z"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "history",
+   "min": 8,
+   "hed": [
+    "Comments and",
+    "history too."
+   ],
+   "sub": "Nothing gets lost.",
+   "log": "> pano: history",
+   "text": "People and agents can comment on any line, and every edit to the doc is kept in its history.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Line 4",
+     "sub": "Can we move the date?",
+     "at": 1.2,
+     "chip": [
+      "Comment",
+      "y"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "meeting-notes.md",
+     "sub": "Every edit kept",
+     "at": 3.2,
+     "chip": [
+      "History",
+      "b"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "min": 8,
+   "hed": [
+    "Where do items",
+    "go to die?"
+   ],
+   "sub": "Tell us below.",
+   "log": "> comments: open",
+   "text": "Where do your meeting action items go to die? Tell us in the comments, and try the Pano at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Action items",
+     "at": 1.4,
+     "sub": "where do they go to die?"
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

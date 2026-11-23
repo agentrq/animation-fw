@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "Your agent stops and asks permission to run a command, and waits for you to say yes."
+    },
+    {
+      "id": "yes",
+      "min": 8,
+      "text": "You see the request and you tap Allow, within seconds of the question appearing."
+    },
+    {
+      "id": "sit",
+      "min": 8,
+      "text": "Then nothing happens. The agent sits there, as if you had never answered."
+    },
+    {
+      "id": "minute",
+      "min": 8,
+      "text": "A full minute passes before it finally notices, and you wonder if something has crashed."
+    },
+    {
+      "id": "poll",
+      "min": 8,
+      "text": "The reason is that the agent only checks for replies on a timer, and the timer had not fired yet."
+    },
+    {
+      "id": "tradeoff",
+      "min": 8,
+      "text": "Agents that check for replies on a timer always have a delay. The longer the timer, the longer you wait."
+    },
+    {
+      "id": "fast",
+      "min": 8,
+      "text": "A shorter timer wastes work asking over and over, so you get lag or noise, never neither."
+    },
+    {
+      "id": "push",
+      "min": 8,
+      "text": "Agent R Q pushes your reply to Claude Code over a live stream, the moment you send it."
+    },
+    {
+      "id": "channel",
+      "min": 8,
+      "text": "It arrives through Claude Code's own notification channel, so the agent does not poll at all."
+    },
+    {
+      "id": "instant",
+      "min": 8,
+      "text": "The moment you answer, the agent moves. The migration starts in the same second."
+    },
+    {
+      "id": "calm",
+      "min": 8,
+      "text": "You stop wondering if it crashed, because every answer gets a response straight away."
+    },
+    {
+      "id": "cta",
+      "min": 8,
+      "text": "How long does your agent usually wait on you? Tell us your record below, and try live notifications at Agent R Q dot com."
+    }
+  ]
+}

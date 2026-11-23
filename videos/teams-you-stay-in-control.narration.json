@@ -1,0 +1,59 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "Joining a team sounds risky. Will everyone now see all my tasks, my notes, and my private docs?"
+    },
+    {
+      "id": "nothing",
+      "min": 8,
+      "text": "The answer is no. Nothing is shared just because you joined, and everyone keeps their own account."
+    },
+    {
+      "id": "own",
+      "min": 8,
+      "text": "Your account, your agents and your workspaces all stay yours. A team only links them if you ask it to."
+    },
+    {
+      "id": "pick",
+      "min": 8,
+      "text": "To share anything, first pick a workspace. Sharing is decided per workspace, never for the whole account."
+    },
+    {
+      "id": "switch",
+      "min": 8,
+      "text": "Then choose what to share. Tasks, memory, and skills each have their own switch."
+    },
+    {
+      "id": "tasks",
+      "min": 8,
+      "text": "Shared tasks are read only. Teammates can follow progress, but they cannot change what you asked for."
+    },
+    {
+      "id": "pano",
+      "min": 8,
+      "text": "For the Pano, share one doc at a time. The launch plan can go to the team while your private notes stay home."
+    },
+    {
+      "id": "unshare",
+      "min": 8,
+      "text": "And changed your mind? Unshare it, and the team stops seeing it right away."
+    },
+    {
+      "id": "leave",
+      "min": 8,
+      "text": "If you leave the team, every share stops with you. Nothing stays behind in anyone else’s view."
+    },
+    {
+      "id": "agents",
+      "min": 8,
+      "text": "Agents obey the same switches. A teammate agent can only read what you chose to share, and nothing more."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "What would you want to keep private from your team? Tell us in the comments, and try Teams at Agent R Q dot com."
+    }
+  ]
+}

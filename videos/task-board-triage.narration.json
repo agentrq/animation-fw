@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 7.2,
+      "text": "Monday morning. Four agents have a question for you, and all at the same time."
+    },
+    {
+      "id": "which",
+      "min": 7.2,
+      "text": "Which one do you answer first? Without a view, it is just panic and guessing."
+    },
+    {
+      "id": "chat",
+      "min": 7.2,
+      "text": "If the questions are scattered across chats and terminals, ranking them is nearly impossible."
+    },
+    {
+      "id": "board",
+      "min": 7.2,
+      "text": "On the board, every question sits in one place, in order, so you see everything at a glance."
+    },
+    {
+      "id": "detail",
+      "min": 7.2,
+      "text": "Each card carries its status, its owner, and the exact request, so you can rank them in seconds."
+    },
+    {
+      "id": "blocker",
+      "min": 7.2,
+      "text": "The blocker comes first, because a blocked agent makes everything behind it wait."
+    },
+    {
+      "id": "unblock",
+      "min": 7.2,
+      "text": "You add the key, and Cursor is unblocked with a single reply."
+    },
+    {
+      "id": "approve",
+      "min": 7.2,
+      "text": "Second, the deploy. The card shows exactly what the agent wants to run."
+    },
+    {
+      "id": "later",
+      "min": 7.2,
+      "text": "The color scheme is not urgent, so it simply waits for later."
+    },
+    {
+      "id": "minute",
+      "min": 7.2,
+      "text": "One minute of triage, and three agents are moving again."
+    },
+    {
+      "id": "calm",
+      "min": 7.2,
+      "text": "A clear queue turns a panicky Monday into a calm one."
+    },
+    {
+      "id": "close",
+      "min": 7.2,
+      "text": "How do you decide which agent to unblock first? Tell us your triage rules below, or try it at Agent R Q dot com."
+    }
+  ]
+}

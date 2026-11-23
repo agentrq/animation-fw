@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "You are on the train home, and your head fills with ideas about tomorrow."
+    },
+    {
+      "id": "three",
+      "min": 8,
+      "text": "You think of three things your agents should do tomorrow, and each one is a good one."
+    },
+    {
+      "id": "hands",
+      "min": 8,
+      "text": "But your hands are full of bag, and a laptop is the last thing you want to open here."
+    },
+    {
+      "id": "lose",
+      "min": 8,
+      "text": "By tomorrow morning, two of the three have faded, and the third has changed shape."
+    },
+    {
+      "id": "mic",
+      "min": 8,
+      "text": "In Agent R Q, you tap the mic and simply talk, the way you would to a colleague."
+    },
+    {
+      "id": "phone",
+      "min": 8,
+      "text": "On a phone, it uses your phone's own dictation, so it works with the keyboard you already have."
+    },
+    {
+      "id": "speak",
+      "min": 8,
+      "text": "You say all three in one go, at your own pace, with the train rattling in the background."
+    },
+    {
+      "id": "clean",
+      "min": 8,
+      "text": "The words become clear text in the message box, ready for you to read and send."
+    },
+    {
+      "id": "tasks",
+      "min": 8,
+      "text": "Ten seconds later, three clear tasks are waiting for your agents, each with its own title."
+    },
+    {
+      "id": "pickup",
+      "min": 8,
+      "text": "Your agents pick them up while you ride, and each one starts on its own task."
+    },
+    {
+      "id": "home",
+      "min": 8,
+      "text": "By the time you get home, they are already moving, and the evening is yours."
+    },
+    {
+      "id": "cta",
+      "min": 8,
+      "text": "Where do your best ideas hit you? Tell us in the comments, and try the mic at Agent R Q dot com."
+    }
+  ]
+}

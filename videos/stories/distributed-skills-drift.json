@@ -1,0 +1,357 @@
+{
+ "title": "Distributed Skills Drift",
+ "kicker": "distributed skills",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "b1",
+   "min": 5,
+   "hed": [
+    "One deploy",
+    "skill."
+   ],
+   "sub": "Copied everywhere.",
+   "log": "> deploy.md: 5 copies",
+   "text": "Five agents, five machines, and five copies of the same deploy skill.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "deploy.md  v1",
+     "sub": "laptop",
+     "at": 1.2,
+     "chip": [
+      "Old",
+      "z"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "deploy.md  v3",
+     "sub": "server",
+     "at": 3.2,
+     "chip": [
+      "Newer",
+      "y"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b2",
+   "min": 5,
+   "hed": [
+    "Each copy",
+    "changes."
+   ],
+   "sub": "Quietly, over time.",
+   "log": "> drift: starts",
+   "text": "Someone fixes a step on one machine. Nobody updates the others. The copies start to drift.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "deploy.md  v2",
+     "sub": "cloud box",
+     "at": 1.2,
+     "chip": [
+      "Odd",
+      "r"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "deploy.md  v3",
+     "sub": "server",
+     "at": 3.2,
+     "chip": [
+      "Newer",
+      "y"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "min": 5,
+   "hed": [
+    "Which one",
+    "is right?"
+   ],
+   "sub": "Nobody knows.",
+   "log": "> which: ???",
+   "text": "Now nobody knows which copy is right. Each agent follows its own version, with total confidence.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Which one|is right?",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "ask",
+    "codex": "ask",
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "b4",
+   "min": 5,
+   "hed": [
+    "The wrong step",
+    "ships."
+   ],
+   "sub": "A real failure.",
+   "log": "> deploy: failed",
+   "text": "One agent runs an old copy, skips the VPN step, and the staging deploy fails.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Codex",
+     "text": "Deploy failed. Timeout reaching staging.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "codex": "alert"
+   }
+  },
+  {
+   "id": "b5",
+   "min": 5,
+   "hed": [
+    "You debug",
+    "the playbook."
+   ],
+   "sub": "Not the code.",
+   "log": "> you: diffing files",
+   "text": "You end up diffing markdown files across machines, instead of shipping anything.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "diff laptop/deploy.md server/deploy.md",
+       "r"
+      ],
+      [
+       "diff server/deploy.md cloud/deploy.md",
+       "r"
+      ]
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b6",
+   "min": 5,
+   "hed": [
+    "Move it into",
+    "the workspace."
+   ],
+   "sub": "One home for skills.",
+   "log": "> skill: workspace",
+   "text": "In Agent R Q, the skill lives in the workspace, not on any single machine.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "deploy-staging",
+     "sub": "Workspace skill  \u00b7  v7",
+     "at": 1.2,
+     "chip": [
+      "Current",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b7",
+   "min": 5,
+   "hed": [
+    "There is one",
+    "current version."
+   ],
+   "sub": "Always.",
+   "log": "> version: v7",
+   "text": "There is exactly one current version. Every agent in the workspace sees the same one.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "One skill.|One version.",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b8",
+   "min": 5,
+   "hed": [
+    "Agents load",
+    "it on demand."
+   ],
+   "sub": "Over M C P.",
+   "log": "> skills load",
+   "text": "When an agent needs it, it loads the skill over M C P, so it always runs the latest playbook.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "skills search deploy",
+       "p"
+      ],
+      [
+       "skills load deploy-staging",
+       "p"
+      ],
+      [
+       "v7 loaded",
+       "g"
+      ]
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "b9",
+   "min": 5,
+   "hed": [
+    "Fix a step",
+    "once."
+   ],
+   "sub": "In one place.",
+   "log": "> skill: v8",
+   "text": "When someone fixes the VPN step, they save the skill once, and a new version goes live.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Codex",
+     "text": "Staging needs the VPN first. Updating the skill.",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "deploy-staging",
+     "sub": "v8 is now live",
+     "at": 3.2,
+     "chip": [
+      "Updated",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "codex": "work"
+   }
+  },
+  {
+   "id": "b10",
+   "min": 5,
+   "hed": [
+    "Everyone gets",
+    "the fix."
+   ],
+   "sub": "Right away.",
+   "log": "> sync: instant",
+   "text": "Everyone gets the fix on their next load. No copying, no merging, no drift.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "Claude",
+      "Codex",
+      "Gemini",
+      "Cursor"
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  },
+  {
+   "id": "b11",
+   "min": 5,
+   "hed": [
+    "Same playbook,",
+    "every machine."
+   ],
+   "sub": "Laptop, server, cloud.",
+   "log": "> machines: in sync",
+   "text": "Laptop, server, or cloud box, the playbook is the same everywhere.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Laptop",
+     "sub": "deploy-staging v8",
+     "at": 1.2,
+     "chip": [
+      "Synced",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Server",
+     "sub": "deploy-staging v8",
+     "at": 3.2,
+     "chip": [
+      "Synced",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Cloud box",
+     "sub": "deploy-staging v8",
+     "at": 5.2,
+     "chip": [
+      "Synced",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b12",
+   "min": 5,
+   "hed": [
+    "How many",
+    "copies?"
+   ],
+   "sub": "Tell us below.",
+   "log": "> agentrq.com",
+   "text": "How many copies of the same playbook are lying around in your team? Tell us below, and try it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "How many|copies?",
+     "sub": "comment below",
+     "at": 1.2
+    }
+   ]
+  }
+ ]
+}

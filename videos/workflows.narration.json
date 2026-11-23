@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "Build, then review, then test. The pipeline exists, but only in your head, and in a few scattered settings."
+    },
+    {
+      "id": "pain",
+      "min": 8,
+      "text": "So nobody else can see it, and when something breaks, nobody knows which stage to blame."
+    },
+    {
+      "id": "idea",
+      "min": 8,
+      "text": "Workflows turn the pipeline into a visual graph, where every stage is a node you can see."
+    },
+    {
+      "id": "nodes",
+      "min": 8,
+      "text": "Each workspace is a stage. The build workspace, the review workspace, and the test workspace each get a place."
+    },
+    {
+      "id": "events",
+      "min": 8,
+      "text": "Events connect them. When build finishes, it emits code changed, and the next stage listens for it."
+    },
+    {
+      "id": "drag",
+      "min": 8,
+      "text": "Drag a workspace onto an event, and an event onto a workspace. No config files, no glue code."
+    },
+    {
+      "id": "draw",
+      "min": 8,
+      "text": "As you connect the pieces, the graph draws itself, so you always see the shape of the whole."
+    },
+    {
+      "id": "run",
+      "min": 8,
+      "text": "Then watch it run. Each event fires, and each workspace picks up its next task."
+    },
+    {
+      "id": "timeline",
+      "min": 8,
+      "text": "Every handoff shows up on the timeline, so you see what fired what, and when."
+    },
+    {
+      "id": "guard",
+      "min": 8,
+      "text": "Each workspace keeps its approvals, so a chain never skips a human on a risky step."
+    },
+    {
+      "id": "share",
+      "min": 8,
+      "text": "Save the graph as a named workflow, and the whole team shares the same picture."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "What is the longest chain of agents you have juggled by hand? Tell us below, and try Workflows at Agent R Q dot com."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "b1",
+      "min": 5,
+      "text": "You describe a task with a customer name, a secret path, and a half finished idea."
+    },
+    {
+      "id": "b2",
+      "min": 5,
+      "text": "Now the app wants a title for it. Something short, so the board stays readable."
+    },
+    {
+      "id": "b3",
+      "min": 5,
+      "text": "Many tools send your whole description to a server, just to get one short title back."
+    },
+    {
+      "id": "b4",
+      "min": 5,
+      "text": "Do you really want a customer name and a file path sent off, just for a label?"
+    },
+    {
+      "id": "b5",
+      "min": 5,
+      "text": "Agent R Q does it differently. It writes the title with a small language model inside your browser."
+    },
+    {
+      "id": "b6",
+      "min": 5,
+      "text": "The text never leaves your device. Not the customer, not the path, not one byte of it."
+    },
+    {
+      "id": "b7",
+      "min": 5,
+      "text": "It even works on a flaky connection, because the model is already on your machine."
+    },
+    {
+      "id": "b8",
+      "min": 5,
+      "text": "A second later the task has a tidy name: fix Acme invoice export. Short and safe."
+    },
+    {
+      "id": "b9",
+      "min": 5,
+      "text": "The full description stays on the task, for your agent to read. Only you and your agent see it."
+    },
+    {
+      "id": "b10",
+      "min": 5,
+      "text": "You do not have to choose between a readable board and a private one. You get both."
+    },
+    {
+      "id": "b11",
+      "min": 5,
+      "text": "Your descriptions stay yours, whatever you write in them."
+    },
+    {
+      "id": "b12",
+      "min": 5,
+      "text": "What would you never paste into a cloud tool? Tell us in the comments, or try it at Agent R Q dot com."
+    }
+  ]
+}

@@ -1,0 +1,429 @@
+{
+ "title": "Workspaces: client projects",
+ "kicker": "workspace client projects",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "Three clients,",
+    "one agent."
+   ],
+   "sub": "The details start to blur.",
+   "log": "> clients: 3, agents: 1",
+   "text": "You freelance for three clients. One agent works across all of them, and the details start to blur together.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Client A",
+     "sub": "Retail site",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Client B",
+     "sub": "Bank app",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 2.6
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Client C",
+     "sub": "Travel blog",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 4
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "mix",
+   "min": 8,
+   "hed": [
+    "Which repo",
+    "was it?"
+   ],
+   "sub": "Mistakes get expensive.",
+   "log": "> wrong repo",
+   "text": "Then one morning the agent asks which repo it is in, and nobody is quite sure. That is how a bank key lands in a retail site.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude",
+     "text": "Which repo was this again?",
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Mixed up",
+     "sub": "Bank key in the retail repo",
+     "chip": [
+      "Mess",
+      "r"
+     ],
+     "at": 4
+    }
+   ],
+   "mascot": {
+    "claude": "alert"
+   }
+  },
+  {
+   "id": "cost",
+   "min": 8,
+   "hed": [
+    "Clients",
+    "notice."
+   ],
+   "sub": "Trust is hard to win back.",
+   "log": "> trust: broken",
+   "text": "Clients notice mistakes like that. You end up checking every task by hand, and the agent saves you no time at all.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> check the repo",
+       "p"
+      ],
+      [
+       "> check the client",
+       "p"
+      ],
+      [
+       "> check it all again",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "idea",
+   "min": 8,
+   "hed": [
+    "One client,",
+    "one workspace."
+   ],
+   "sub": "A clean room for each.",
+   "log": "> workspace per client",
+   "text": "Agent R Q fixes this with workspaces. Each client gets a workspace of its own, a clean room for their work.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "One client.|One workspace.",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "own",
+   "min": 8,
+   "hed": [
+    "Its own",
+    "everything."
+   ],
+   "sub": "Tasks, history, live stream.",
+   "log": "> client-a client-b client-c",
+   "text": "Every workspace has its own tasks, its own history, and its own live event stream. Nothing is shared by accident.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "client-a",
+     "sub": "3 tasks",
+     "chip": [
+      "Isolated",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "client-b",
+     "sub": "1 task needs you",
+     "chip": [
+      "Isolated",
+      "g"
+     ],
+     "at": 2.6
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "client-c",
+     "sub": "Idle",
+     "chip": [
+      "Isolated",
+      "g"
+     ],
+     "at": 4
+    }
+   ]
+  },
+  {
+   "id": "token",
+   "min": 8,
+   "hed": [
+    "A token",
+    "for each."
+   ],
+   "sub": "No crossing over.",
+   "log": "> token per workspace",
+   "text": "Each one also has its own M C P token. The agent for client B simply cannot see client A.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "client-a  token: ••••a91",
+       "p"
+      ],
+      [
+       "client-b  token: ••••c27",
+       "p"
+      ],
+      [
+       "client-c  token: ••••f04",
+       "p"
+      ]
+     ],
+     "at": 1.4
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "No crossing",
+     "sub": "One token per workspace",
+     "chip": [
+      "Safe",
+      "g"
+     ],
+     "at": 4.4
+    }
+   ]
+  },
+  {
+   "id": "morning",
+   "min": 8,
+   "hed": [
+    "Open one,",
+    "see one."
+   ],
+   "sub": "Nothing to filter.",
+   "log": "> open client-a",
+   "text": "Open client A in the morning, and only client A tasks are there. Nothing to filter and nothing to remember.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "client-a",
+     "sub": "Fix the product page",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Codex",
+     "text": "Picked up the product page.",
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "codex": "work"
+   }
+  },
+  {
+   "id": "agents",
+   "min": 8,
+   "hed": [
+    "A different",
+    "agent each."
+   ],
+   "sub": "Pick the best tool.",
+   "log": "> claude, codex, gemini",
+   "text": "Use a different agent per client if you like. Claude on the retail site, Codex on the bank app, Gemini on the blog.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "Claude",
+      "Codex",
+      "Gemini"
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "work",
+    "agy": "work"
+   }
+  },
+  {
+   "id": "ask",
+   "min": 8,
+   "hed": [
+    "Questions",
+    "find you."
+   ],
+   "sub": "Only the right lane lights up.",
+   "log": "> client-b needs input",
+   "text": "When one agent needs you, only that workspace lights up, so a question from client B never gets buried.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Needs input",
+      "y"
+     ],
+     "code": "Bash  npm run deploy",
+     "buttons": [
+      "Allow",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 5,
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "end",
+   "min": 8,
+   "hed": [
+    "A contract",
+    "ends."
+   ],
+   "sub": "Cut one lane, keep the rest.",
+   "log": "> rotate client-c token",
+   "text": "If a client leaves, you rotate or delete that one token, and the other two workspaces keep working untouched.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "client-c token rotated",
+     "sub": "Other clients unaffected",
+     "chip": [
+      "Done",
+      "g"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "client-a",
+       "running"
+      ],
+      [
+       "client-b",
+       "running"
+      ],
+      [
+       "client-c",
+       "closed"
+      ]
+     ],
+     "at": 3.4
+    }
+   ]
+  },
+  {
+   "id": "hand",
+   "min": 8,
+   "hed": [
+    "Hand over",
+    "the record."
+   ],
+   "sub": "Everything in one place.",
+   "log": "> history: export",
+   "text": "When the project is finished, the whole story of that client is in one place, ready to hand over or look back on.",
+   "scene": [
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Task 1",
+       30,
+       "g"
+      ],
+      [
+       "Task 2",
+       30,
+       "g"
+      ],
+      [
+       "Task 3",
+       40,
+       "b"
+      ]
+     ],
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done"
+   }
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "One client,",
+    "one lane."
+   ],
+   "sub": "agentrq.com",
+   "log": "> agentrq.com",
+   "text": "One client, one lane. Try workspaces for your own client work at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "One client.|One lane.",
+     "sub": "agentrq.com",
+     "at": 1.4
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

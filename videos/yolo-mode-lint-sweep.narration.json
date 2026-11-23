@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "You change one lint rule, and now two hundred files need fixing. A perfect job for an agent."
+    },
+    {
+      "id": "ask",
+      "min": 8,
+      "text": "But every single edit asks for approval first. Allow, allow, allow, allow."
+    },
+    {
+      "id": "count",
+      "min": 8,
+      "text": "Two hundred identical approvals. You will say yes every time, so each click tells you nothing at all."
+    },
+    {
+      "id": "flip",
+      "min": 8,
+      "text": "So you turn on YOLO mode, for just this task. Tool calls are approved automatically from now on."
+    },
+    {
+      "id": "scope",
+      "min": 8,
+      "text": "You can set it on one task, or on a whole workspace of low risk work, like a docs site."
+    },
+    {
+      "id": "run",
+      "min": 8,
+      "text": "The agent sweeps through every file and nobody waits on you. Edit after edit, all auto approved."
+    },
+    {
+      "id": "away",
+      "min": 8,
+      "text": "So you can go for coffee, or work on something else. The agent does not need you for this one."
+    },
+    {
+      "id": "log",
+      "min": 8,
+      "text": "Every call is still written to the task history. Nothing is hidden, and you can inspect any edit afterward."
+    },
+    {
+      "id": "done",
+      "min": 8,
+      "text": "The sweep finishes, and lint comes back clean. You review the diff once, instead of approving it two hundred times."
+    },
+    {
+      "id": "review",
+      "min": 8,
+      "text": "The review happens where it should, in the diff, with the whole change in front of you."
+    },
+    {
+      "id": "off",
+      "min": 8,
+      "text": "And when the sweep is over, you switch it off, and the careful defaults come right back."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "Two hundred clicks, down to zero. Try YOLO mode at Agent R Q dot com."
+    }
+  ]
+}

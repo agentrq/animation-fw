@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 5,
+      "text": "Here is a quick tour of the seven tools your agent gets when it connects to Agent R Q."
+    },
+    {
+      "id": "task",
+      "min": 5,
+      "text": "First, task. It gets the next piece of work, updates the status, and replies to you."
+    },
+    {
+      "id": "mem",
+      "min": 5,
+      "text": "Memory saves what the agent learned, so the next agent starts with the notes the last one wrote."
+    },
+    {
+      "id": "skill",
+      "min": 5,
+      "text": "Skills holds the playbooks, step by step guides the agent loads when a task matches."
+    },
+    {
+      "id": "pano",
+      "min": 5,
+      "text": "Pano holds the shared docs, so humans and agents read and write the same pages."
+    },
+    {
+      "id": "site",
+      "min": 5,
+      "text": "Site tools reach the websites you choose to share, so the agent can use them like any other tool."
+    },
+    {
+      "id": "ws",
+      "min": 5,
+      "text": "Workspace tells the agent where it is, which project, which rules, and what it may do."
+    },
+    {
+      "id": "help",
+      "min": 5,
+      "text": "And help explains every action of the other six, so the agent never has to guess."
+    },
+    {
+      "id": "line",
+      "min": 5,
+      "text": "All seven arrive with a single line of config, and no extra servers to run."
+    },
+    {
+      "id": "grid",
+      "min": 5,
+      "text": "Task, memory, skills, pano, site tools, workspace, and help. That is the full set."
+    },
+    {
+      "id": "use",
+      "min": 5,
+      "text": "Agents call them on their own, without you pasting context or reminding them what to do."
+    },
+    {
+      "id": "close",
+      "min": 5,
+      "text": "Which of these seven would you use first? Tell us, or connect your agent at Agent R Q dot com."
+    }
+  ]
+}

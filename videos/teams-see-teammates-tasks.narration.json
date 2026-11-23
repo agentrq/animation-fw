@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "Standup is in five minutes. What are Ada and Ben's agents working on right now?"
+    },
+    {
+      "id": "ask",
+      "min": 8,
+      "text": "Nobody knows, so everyone asks, and everyone scrolls back through old chats to remember."
+    },
+    {
+      "id": "share",
+      "min": 8,
+      "text": "With Agent R Q, you share a workspace with your team, and that is all it takes."
+    },
+    {
+      "id": "live",
+      "min": 8,
+      "text": "Everyone sees its tasks live, with the owner's name on each one."
+    },
+    {
+      "id": "stand",
+      "min": 8,
+      "text": "So standup is a glance at the board. Nothing to ask, and nobody to interrupt."
+    },
+    {
+      "id": "filter",
+      "min": 8,
+      "text": "Filter by member, and see only what one teammate is doing."
+    },
+    {
+      "id": "board",
+      "min": 8,
+      "text": "Or switch to the board, with columns for waiting, ongoing, and done."
+    },
+    {
+      "id": "stats",
+      "min": 8,
+      "text": "Open the analytics for the whole team, to see how many tasks were finished this week."
+    },
+    {
+      "id": "ro",
+      "min": 8,
+      "text": "It is read-only. Teammates cannot reply, or approve anything on your behalf."
+    },
+    {
+      "id": "clone",
+      "min": 8,
+      "text": "But if a task is useful, you can clone it into a workspace of your own."
+    },
+    {
+      "id": "own",
+      "min": 8,
+      "text": "The clone is a fresh task in your workspace, run by your own agent, with its own approvals."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "Skip the status chat. See your team's tasks at Agent R Q dot com."
+    }
+  ]
+}

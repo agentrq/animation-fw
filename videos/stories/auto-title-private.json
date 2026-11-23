@@ -1,0 +1,323 @@
+{
+ "title": "Auto-Title Private",
+ "kicker": "private titles",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "b1",
+   "min": 5,
+   "hed": [
+    "A task with",
+    "a secret in it."
+   ],
+   "sub": "Real work is sensitive.",
+   "log": "> task: has a secret",
+   "text": "You describe a task with a customer name, a secret path, and a half finished idea.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "user",
+     "who": "New task",
+     "text": "Fix the invoice export for Acme Corp, the key is in /etc/acme",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b2",
+   "min": 5,
+   "hed": [
+    "Now it needs",
+    "a title."
+   ],
+   "sub": "The app wants a name.",
+   "log": "> title: required",
+   "text": "Now the app wants a title for it. Something short, so the board stays readable.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Title",
+     "sub": "Required field",
+     "at": 1.2,
+     "chip": [
+      "Empty",
+      "z"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "min": 5,
+   "hed": [
+    "Cloud tools",
+    "send it away."
+   ],
+   "sub": "That is how they work.",
+   "log": "> cloud: uploading",
+   "text": "Many tools send your whole description to a server, just to get one short title back.",
+   "scene": [
+    {
+     "k": "flow",
+     "nodes": [
+      [
+       "Your text",
+       "customer, path"
+      ],
+      [
+       "Their server",
+       "stored?"
+      ]
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b4",
+   "min": 5,
+   "hed": [
+    "Do you really",
+    "want that?"
+   ],
+   "sub": "A customer name, off to the cloud.",
+   "log": "> risk: leak",
+   "text": "Do you really want a customer name and a file path sent off, just for a label?",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Description sent to a server",
+     "sub": "Logs, retention, unknown",
+     "at": 1.2,
+     "chip": [
+      "Risk",
+      "r"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b5",
+   "min": 5,
+   "hed": [
+    "Agent R Q",
+    "stays local."
+   ],
+   "sub": "A different design.",
+   "log": "> model: on-device",
+   "text": "Agent R Q does it differently. It writes the title with a small language model inside your browser.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "loading local model",
+       "p"
+      ],
+      [
+       "reading description",
+       "p"
+      ],
+      [
+       "writing title",
+       "p"
+      ]
+     ],
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b6",
+   "min": 5,
+   "hed": [
+    "The text never",
+    "leaves."
+   ],
+   "sub": "Not one byte.",
+   "log": "> network: 0 bytes",
+   "text": "The text never leaves your device. Not the customer, not the path, not one byte of it.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "On-device",
+     "sub": "No server round-trip",
+     "at": 1.2,
+     "chip": [
+      "Private",
+      "g"
+     ]
+    },
+    {
+     "k": "big",
+     "text": "0 bytes",
+     "sub": "sent anywhere",
+     "at": 3.2
+    }
+   ]
+  },
+  {
+   "id": "b7",
+   "min": 5,
+   "hed": [
+    "It works",
+    "offline too."
+   ],
+   "sub": "Flaky wifi is fine.",
+   "log": "> network: offline",
+   "text": "It even works on a flaky connection, because the model is already on your machine.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "Wifi",
+     "sub": "Connection dropped",
+     "at": 1.2,
+     "chip": [
+      "Offline",
+      "r"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Title still generated",
+     "sub": "Model is local",
+     "at": 3.2,
+     "chip": [
+      "Works",
+      "g"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b8",
+   "min": 5,
+   "hed": [
+    "A tidy title",
+    "appears."
+   ],
+   "sub": "Safe and short.",
+   "log": "> title: ready",
+   "text": "A second later the task has a tidy name: fix Acme invoice export. Short and safe.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Fix Acme invoice export",
+     "sub": "New task",
+     "at": 1.2,
+     "chip": [
+      "Titled",
+      "b"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "b9",
+   "min": 5,
+   "hed": [
+    "Your details",
+    "stay yours."
+   ],
+   "sub": "In the description only.",
+   "log": "> detail: kept",
+   "text": "The full description stays on the task, for your agent to read. Only you and your agent see it.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "agent",
+     "who": "Claude Code",
+     "text": "Read the task. Starting on the export.",
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Fix Acme invoice export",
+     "sub": "Claude Code is on it",
+     "at": 3.2,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "b10",
+   "min": 5,
+   "hed": [
+    "Tidy titles,",
+    "private text."
+   ],
+   "sub": "Both at once.",
+   "log": "> trade-off: none",
+   "text": "You do not have to choose between a readable board and a private one. You get both.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Tidy and|private.",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "b11",
+   "min": 5,
+   "hed": [
+    "Yours,",
+    "always."
+   ],
+   "sub": "Your words, your device.",
+   "log": "> data: yours",
+   "text": "Your descriptions stay yours, whatever you write in them.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Yours,|always.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  },
+  {
+   "id": "b12",
+   "min": 5,
+   "hed": [
+    "What stays",
+    "private?"
+   ],
+   "sub": "Tell us below.",
+   "log": "> agentrq.com",
+   "text": "What would you never paste into a cloud tool? Tell us in the comments, or try it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "What stays|private?",
+     "sub": "comment below",
+     "at": 1.2
+    }
+   ]
+  }
+ ]
+}

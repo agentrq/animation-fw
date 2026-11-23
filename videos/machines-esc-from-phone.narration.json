@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 5,
+      "text": "You are at a cafe, and your coding agent, on a computer at home, starts doing something you did not intend."
+    },
+    {
+      "id": "panic",
+      "min": 5,
+      "text": "On your phone you see it. The agent is about to delete a folder you wanted to keep."
+    },
+    {
+      "id": "open",
+      "min": 5,
+      "text": "In Agent R Q you open the machine session. It is a real terminal, right in your phone browser."
+    },
+    {
+      "id": "prompt",
+      "min": 5,
+      "text": "And there you are, at the agent prompt, watching its output live, as if you sat at the desk."
+    },
+    {
+      "id": "keys",
+      "min": 5,
+      "text": "Every key goes through, escape included. The key that terminal agents need most still works on a phone."
+    },
+    {
+      "id": "stop",
+      "min": 5,
+      "text": "One press, and the agent stops mid-thought, before it finishes the thing you did not want."
+    },
+    {
+      "id": "type",
+      "min": 5,
+      "text": "Then type what you actually wanted, in plain words, right into the same prompt."
+    },
+    {
+      "id": "redo",
+      "min": 5,
+      "text": "The agent reads it, understands, and carries on, this time the right way."
+    },
+    {
+      "id": "phone",
+      "min": 5,
+      "text": "No laptop, no remote desktop, no vpn dance. A phone and a browser are enough."
+    },
+    {
+      "id": "safe",
+      "min": 5,
+      "text": "The agent still asks before risky commands, so you get an approval, and an emergency stop."
+    },
+    {
+      "id": "calm",
+      "min": 5,
+      "text": "So you can leave the desk, and still be one tap from the controls."
+    },
+    {
+      "id": "close",
+      "min": 5,
+      "text": "What was the scariest thing you ever saw an agent start to do? Tell us, or try machines at Agent R Q dot com."
+    }
+  ]
+}

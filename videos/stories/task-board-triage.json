@@ -1,0 +1,424 @@
+{
+ "title": "Task Board: triage",
+ "kicker": "task board",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 7.2,
+   "hed": [
+    "Monday",
+    "morning."
+   ],
+   "sub": "Four agents at once.",
+   "log": "> hook",
+   "text": "Monday morning. Four agents have a question for you, and all at the same time.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Approve the deploy",
+     "sub": "Claude Code",
+     "chip": [
+      "Needs you",
+      "y"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Pick a color scheme",
+     "sub": "Codex",
+     "chip": [
+      "Needs you",
+      "y"
+     ],
+     "at": 2.2
+    },
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "API key missing",
+     "sub": "Cursor",
+     "chip": [
+      "Blocked",
+      "r"
+     ],
+     "at": 3.2
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Merge the PR?",
+     "sub": "Antigravity",
+     "chip": [
+      "Needs you",
+      "y"
+     ],
+     "at": 4.2
+    }
+   ],
+   "mascot": {
+    "claude": "ask",
+    "codex": "ask",
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "which",
+   "min": 7.2,
+   "hed": [
+    "Which one",
+    "first?"
+   ],
+   "sub": "Panic sets in.",
+   "log": "> which",
+   "text": "Which one do you answer first? Without a view, it is just panic and guessing.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Which|first?",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "ask",
+    "codex": "ask",
+    "agy": "ask"
+   }
+  },
+  {
+   "id": "chat",
+   "min": 7.2,
+   "hed": [
+    "Scattered",
+    "across chats."
+   ],
+   "sub": "Hard to rank.",
+   "log": "> chat",
+   "text": "If the questions are scattered across chats and terminals, ranking them is nearly impossible.",
+   "scene": [
+    {
+     "k": "term",
+     "lines": [
+      [
+       "> terminal 1: approve?",
+       "y"
+      ],
+      [
+       "> terminal 2: pick one",
+       "y"
+      ],
+      [
+       "> terminal 3: key missing",
+       "r"
+      ]
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "board",
+   "min": 7.2,
+   "hed": [
+    "One board,",
+    "one glance."
+   ],
+   "sub": "Everything in order.",
+   "log": "> board",
+   "text": "On the board, every question sits in one place, in order, so you see everything at a glance.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "API key missing",
+     "sub": "Cursor",
+     "chip": [
+      "Blocked",
+      "r"
+     ],
+     "at": 0.8
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Approve the deploy",
+     "sub": "Claude Code",
+     "chip": [
+      "Needs you",
+      "y"
+     ],
+     "at": 2
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Merge the PR?",
+     "sub": "Antigravity",
+     "chip": [
+      "Needs you",
+      "y"
+     ],
+     "at": 3.2
+    }
+   ]
+  },
+  {
+   "id": "detail",
+   "min": 7.2,
+   "hed": [
+    "Status, owner,",
+    "exact request."
+   ],
+   "sub": "On every card.",
+   "log": "> detail",
+   "text": "Each card carries its status, its owner, and the exact request, so you can rank them in seconds.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "API key missing",
+     "sub": "Blocks everything else",
+     "chip": [
+      "Blocked",
+      "r"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Pick a color scheme",
+     "sub": "Can wait until later",
+     "chip": [
+      "Needs you",
+      "y"
+     ],
+     "at": 3
+    }
+   ]
+  },
+  {
+   "id": "blocker",
+   "min": 7.2,
+   "hed": [
+    "Blockers",
+    "come first."
+   ],
+   "sub": "They stop everything.",
+   "log": "> blocker",
+   "text": "The blocker comes first, because a blocked agent makes everything behind it wait.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "r",
+     "title": "API key missing",
+     "sub": "Cursor is stuck",
+     "chip": [
+      "Blocked",
+      "r"
+     ],
+     "at": 1.2
+    },
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "You",
+     "text": "Here is the key.",
+     "at": 3
+    }
+   ],
+   "mascot": {
+    "agy": "alert"
+   }
+  },
+  {
+   "id": "unblock",
+   "min": 7.2,
+   "hed": [
+    "Key added.",
+    "Cursor moves."
+   ],
+   "sub": "One reply.",
+   "log": "> unblock",
+   "text": "You add the key, and Cursor is unblocked with a single reply.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "API key added",
+     "sub": "Cursor unblocked",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "agy": "work"
+   }
+  },
+  {
+   "id": "approve",
+   "min": 7.2,
+   "hed": [
+    "Approve the",
+    "deploy next."
+   ],
+   "sub": "Exactly what it runs.",
+   "log": "> approve",
+   "text": "Second, the deploy. The card shows exactly what the agent wants to run.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Authorization required",
+      "y"
+     ],
+     "code": "Bash  git push origin main",
+     "buttons": [
+      "Allow Once",
+      "Deny"
+     ],
+     "press": 0,
+     "tap": 3.8,
+     "at": 1
+    }
+   ],
+   "mascot": {
+    "claude": "ask"
+   }
+  },
+  {
+   "id": "later",
+   "min": 7.2,
+   "hed": [
+    "Color scheme?",
+    "Later."
+   ],
+   "sub": "Not urgent.",
+   "log": "> later",
+   "text": "The color scheme is not urgent, so it simply waits for later.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Pick a color scheme",
+     "sub": "Parked for this afternoon",
+     "chip": [
+      "Later",
+      "z"
+     ],
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "minute",
+   "min": 7.2,
+   "hed": [
+    "One minute.",
+    "Three moves."
+   ],
+   "sub": "Three agents running.",
+   "log": "> minute",
+   "text": "One minute of triage, and three agents are moving again.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "API key added",
+     "sub": "Cursor",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 0.8
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Deploy approved",
+     "sub": "Claude Code",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 1.8
+    },
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "PR merged",
+     "sub": "Antigravity",
+     "chip": [
+      "Ongoing",
+      "g"
+     ],
+     "at": 2.8
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "agy": "work",
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "calm",
+   "min": 7.2,
+   "hed": [
+    "A clear queue.",
+    "A calm day."
+   ],
+   "sub": "No panic.",
+   "log": "> calm",
+   "text": "A clear queue turns a panicky Monday into a calm one.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Calm|Mondays.",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "agy": "done"
+   }
+  },
+  {
+   "id": "close",
+   "min": 7.2,
+   "hed": [
+    "Your triage",
+    "rules?"
+   ],
+   "sub": "agentrq.com",
+   "log": "> close",
+   "text": "How do you decide which agent to unblock first? Tell us your triage rules below, or try it at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "Your triage|rules?",
+     "sub": "comment below",
+     "at": 1.2
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}

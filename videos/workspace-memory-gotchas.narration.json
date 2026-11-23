@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "Tuesday, an agent loses an hour. The app will not start, because another stack is squatting on port three thousand."
+    },
+    {
+      "id": "find",
+      "min": 8,
+      "text": "Finally it works out the fix. Use port three thousand three hundred, and the whole thing runs."
+    },
+    {
+      "id": "lose",
+      "min": 8,
+      "text": "But the chat ends, and so does the lesson. Tomorrow another agent will have to find it all out again."
+    },
+    {
+      "id": "save",
+      "min": 8,
+      "text": "Agent R Q has workspace memory. Before it finishes, the agent saves that one line, and moves on."
+    },
+    {
+      "id": "index",
+      "min": 8,
+      "text": "Memory is a small index with links to short entries. Every gotcha gets its own page, so nothing gets buried."
+    },
+    {
+      "id": "read",
+      "min": 8,
+      "text": "On the next task, any agent reads the index first. That is the rule, and agents follow it before they touch code."
+    },
+    {
+      "id": "skip",
+      "min": 8,
+      "text": "Wednesday, a different agent in a different tool reads it, and goes straight to port three thousand three hundred."
+    },
+    {
+      "id": "any",
+      "min": 8,
+      "text": "It works for Claude, Codex and Gemini alike, on any machine, because the memory lives in the workspace, not on a laptop."
+    },
+    {
+      "id": "own",
+      "min": 8,
+      "text": "And you can read and edit it yourself. If a gotcha goes stale, fix the entry or delete it, like any other note."
+    },
+    {
+      "id": "grow",
+      "min": 8,
+      "text": "Over a few weeks, the list grows. Every trap you hit once becomes a signpost for every agent after."
+    },
+    {
+      "id": "safe",
+      "min": 8,
+      "text": "Keep each gotcha to a line or two. Short entries get read, long ones get skipped."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "Hit a trap once, and never again. Try workspace memory at Agent R Q dot com."
+    }
+  ]
+}

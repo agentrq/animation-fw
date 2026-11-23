@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "id": "hook",
+      "min": 8,
+      "text": "Imagine one M C P token that can touch every project you have. Storefront, billing, search, all of it."
+    },
+    {
+      "id": "leak",
+      "min": 8,
+      "text": "Tokens leak. They end up in a log, a pasted message, or a screenshot. And when that one leaks, everything leaks."
+    },
+    {
+      "id": "rot",
+      "min": 8,
+      "text": "Worse, rotating that token breaks every agent at once. So people delay, and the risk just sits there."
+    },
+    {
+      "id": "idea",
+      "min": 8,
+      "text": "Agent R Q scopes the key. Each workspace has its own M C P token, and nothing else."
+    },
+    {
+      "id": "two",
+      "min": 8,
+      "text": "An agent holding the storefront token sees the storefront, and nothing else. Billing is simply not there for it."
+    },
+    {
+      "id": "leak2",
+      "min": 8,
+      "text": "Now a leak stays in one workspace. The damage is limited to the project that token could ever reach."
+    },
+    {
+      "id": "rotate",
+      "min": 8,
+      "text": "So you rotate the one token, and the rest keep working. No outage, no scramble, no waiting for next week."
+    },
+    {
+      "id": "new",
+      "min": 8,
+      "text": "Adding an agent is easy. Give it the token for the one workspace it needs, and nothing more."
+    },
+    {
+      "id": "audit",
+      "min": 8,
+      "text": "Each workspace keeps its own history, so you can see which calls came in on which token."
+    },
+    {
+      "id": "approve",
+      "min": 8,
+      "text": "And the token is not a free pass. Sensitive tool calls still ask you first, inside that workspace."
+    },
+    {
+      "id": "default",
+      "min": 8,
+      "text": "You do not set this up. A new workspace gets its own token the moment you create it."
+    },
+    {
+      "id": "close",
+      "min": 8,
+      "text": "A small blast radius, by default. Try workspaces at Agent R Q dot com."
+    }
+  ]
+}

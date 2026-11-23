@@ -1,0 +1,351 @@
+{
+ "title": "See Teammates Tasks",
+ "kicker": "teammate tasks",
+ "mascots": [
+  "claude",
+  "codex",
+  "agy"
+ ],
+ "lines": [
+  {
+   "id": "hook",
+   "min": 8,
+   "hed": [
+    "Standup is",
+    "in five minutes."
+   ],
+   "sub": "What is everyone on?",
+   "log": "> standup: 5 min",
+   "text": "Standup is in five minutes. What are Ada and Ben's agents working on right now?",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "system",
+     "who": "",
+     "text": "Standup in 5 minutes",
+     "at": 1.2
+    },
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "You, in chat",
+     "text": "Hey, what is your agent doing today?",
+     "at": 2.8
+    }
+   ]
+  },
+  {
+   "id": "ask",
+   "min": 8,
+   "hed": [
+    "So everyone asks."
+   ],
+   "sub": "Nobody knows.",
+   "log": "> everyone asks",
+   "text": "Nobody knows, so everyone asks, and everyone scrolls back through old chats to remember.",
+   "scene": [
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "Ada",
+     "text": "Migrating payment webhooks, I think?",
+     "at": 1.2
+    },
+    {
+     "k": "msg",
+     "from": "you",
+     "who": "Ben",
+     "text": "Signup bug. Or was it the email?",
+     "at": 3.0
+    }
+   ],
+   "mascot": {
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "share",
+   "min": 8,
+   "hed": [
+    "Share a workspace",
+    "with your team."
+   ],
+   "sub": "One switch.",
+   "log": "> workspace: shared",
+   "text": "With Agent R Q, you share a workspace with your team, and that is all it takes.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "billing",
+     "sub": "Shared with Platform team",
+     "at": 1.2,
+     "chip": [
+      "Shared",
+      "b"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "live",
+   "min": 8,
+   "hed": [
+    "Everyone sees",
+    "its tasks live."
+   ],
+   "sub": "With the owner's name.",
+   "log": "> tasks: live",
+   "text": "Everyone sees its tasks live, with the owner's name on each one.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Migrate payment webhooks",
+     "sub": "Ada, billing",
+     "at": 1.2,
+     "chip": [
+      "Ongoing",
+      "g"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "y",
+     "title": "Fix signup email bug",
+     "sub": "Ben, web",
+     "at": 2.6,
+     "chip": [
+      "Needs Ben",
+      "y"
+     ]
+    },
+    {
+     "k": "card",
+     "dot": "z",
+     "title": "Update the API docs",
+     "sub": "Chen, docs",
+     "at": 4.0,
+     "chip": [
+      "Waiting",
+      "z"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work",
+    "codex": "ask"
+   }
+  },
+  {
+   "id": "stand",
+   "min": 8,
+   "hed": [
+    "Standup becomes",
+    "a glance."
+   ],
+   "sub": "Nothing to ask.",
+   "log": "> standup: one glance",
+   "text": "So standup is a glance at the board. Nothing to ask, and nobody to interrupt.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "A glance.",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "filter",
+   "min": 8,
+   "hed": [
+    "Filter by member."
+   ],
+   "sub": "Just one teammate.",
+   "log": "> filter: Ada",
+   "text": "Filter by member, and see only what one teammate is doing.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "All",
+      "Ada",
+      "Ben",
+      "Chen"
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "board",
+   "min": 8,
+   "hed": [
+    "Switch to",
+    "the board."
+   ],
+   "sub": "Columns by status.",
+   "log": "> board view",
+   "text": "Or switch to the board, with columns for waiting, ongoing, and done.",
+   "scene": [
+    {
+     "k": "grid",
+     "cells": [
+      "Waiting",
+      "Ongoing",
+      "Done"
+     ],
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "stats",
+   "min": 8,
+   "hed": [
+    "Open the analytics",
+    "for the team."
+   ],
+   "sub": "Tasks done this week.",
+   "log": "> analytics: team",
+   "text": "Open the analytics for the whole team, to see how many tasks were finished this week.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "b",
+     "title": "Team analytics",
+     "sub": "Tasks done this week",
+     "at": 1.2,
+     "chip": [
+      "12 done",
+      "b"
+     ]
+    },
+    {
+     "k": "bar",
+     "segs": [
+      [
+       "Ada",
+       40,
+       "g"
+      ],
+      [
+       "Ben",
+       35,
+       "g"
+      ],
+      [
+       "Chen",
+       25,
+       "g"
+      ]
+     ],
+     "at": 3.0
+    }
+   ]
+  },
+  {
+   "id": "ro",
+   "min": 8,
+   "hed": [
+    "It is read-only."
+   ],
+   "sub": "Nobody can reply for you.",
+   "log": "> teammates: read-only",
+   "text": "It is read-only. Teammates cannot reply, or approve anything on your behalf.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Teammates can't reply or approve",
+     "sub": "Read-only",
+     "at": 1.2,
+     "chip": [
+      "Safe",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "agy": "done"
+   }
+  },
+  {
+   "id": "clone",
+   "min": 8,
+   "hed": [
+    "But clone any task."
+   ],
+   "sub": "Into a workspace of your own.",
+   "log": "> clone task",
+   "text": "But if a task is useful, you can clone it into a workspace of your own.",
+   "scene": [
+    {
+     "k": "btns",
+     "chip": [
+      "Ada's task",
+      "b"
+     ],
+     "code": "Migrate payment webhooks",
+     "buttons": [
+      "Clone",
+      "Cancel"
+     ],
+     "press": 0,
+     "tap": 4.0,
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "own",
+   "min": 8,
+   "hed": [
+    "Now it is yours."
+   ],
+   "sub": "With your own agent.",
+   "log": "> cloned to: my workspace",
+   "text": "The clone is a fresh task in your workspace, run by your own agent, with its own approvals.",
+   "scene": [
+    {
+     "k": "card",
+     "dot": "g",
+     "title": "Migrate payment webhooks",
+     "sub": "In my workspace",
+     "at": 1.2,
+     "chip": [
+      "Cloned",
+      "g"
+     ]
+    }
+   ],
+   "mascot": {
+    "claude": "work"
+   }
+  },
+  {
+   "id": "close",
+   "min": 8,
+   "hed": [
+    "No more",
+    "what are you on?"
+   ],
+   "sub": "ag// See teammates' tasks",
+   "log": "> agentrq.com",
+   "text": "Skip the status chat. See your team's tasks at Agent R Q dot com.",
+   "scene": [
+    {
+     "k": "big",
+     "text": "How do you|find out?",
+     "at": 1.4,
+     "sub": "agentrq.com"
+    }
+   ],
+   "mascot": {
+    "claude": "done",
+    "codex": "done",
+    "agy": "done"
+   }
+  }
+ ]
+}
