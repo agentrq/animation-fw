@@ -40,7 +40,7 @@ function folder(s, x, y, name, color, { w = 170, h = 120 } = {}) {
 }
 
 // One agent for three repos: asked for billing, it edits the storefront; the next morning, nothing is left.
-function artWrongRepo(s, at) {
+export function artWrongRepo(s, at) {
   const t = at('hook', 5.4);
   const chat = at('pain', 0.6);
   return g({},
@@ -53,7 +53,7 @@ function artWrongRepo(s, at) {
 }
 
 // The promise: three workspaces, each with its own tasks, agent and key, and its memory and skills.
-function artPromise(s, at) {
+export function artPromise(s, at) {
   const ROWS = ['tasks', 'agent', 'key', 'memory', 'skills'];
   return g({}, ...PROJECTS.map(([name, color], i) => {
     const x = ARTX + i * 200;

@@ -46,7 +46,7 @@ const lines = (s, x, y, rows, { size = 14, gap = 22, font = 'mono', tab = 120 } 
 
 // The go-between: a bug comes in on Slack, goes into the terminal by hand, and the
 // agent's question goes back the same way.
-function artRelay(s, at) {
+export function artRelay(s, at) {
   const SX = ARTX;
   const TX = ARTX + 350;
   return g({},
@@ -65,7 +65,7 @@ function artRelay(s, at) {
 }
 
 // The promise: one config, seven tools, and Slack.
-function artPromise(s, at) {
+export function artPromise(s, at) {
   const W = [['ONE CONFIG', 'any agent, connected', 1.5], ['SEVEN TOOLS', 'tasks, memory, skills ...', 3.6], ['SLACK', 'hand it work, approve it', 6.4]];
   return g({},
     ...W.map(([kind, line, o], i) => from(s, g({},

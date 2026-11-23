@@ -62,7 +62,7 @@ export function beatsById(tl, ids) {
   return { at: (id, o = 0) => tl.T(b(id), o), start: (id) => tl.S[b(id)], end: (id) => tl.beatEnd(b(id)) };
 }
 
-function wrap(text, max) {
+export function wrap(text, max) {
   const lines = [];
   let line = '';
   for (const w of text.split(' ')) {

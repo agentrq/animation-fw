@@ -37,7 +37,7 @@ function term(s, { x, y, w, h, title, color, lines = [] }) {
 }
 
 // Four agents in four terminals: one done, one waiting on a yes, one stuck, one busy; you see one at a time.
-function artTerminals(s, at) {
+export function artTerminals(s, at) {
   const T = [
     ['STOREFRONT', SHOP, [['$ npm test'], ['212 passed', GREEN]], 'done an hour ago', GREEN, C.ink, at('pain', 0.8)],
     ['BILLING', BILL, [['Run make migrate?'], ['(y/n) _', C.ask]], 'waiting 40 min', C.ask, C.ink, at('pain', 2.5)],
@@ -56,7 +56,7 @@ function artTerminals(s, at) {
 }
 
 // The promise: one screen, and the four things it answers.
-function artPromise(s, at) {
+export function artPromise(s, at) {
   const COLS = ['NOT STARTED', 'ONGOING', 'BLOCKED', 'DONE'];
   const SAYS = [['what it is on', 3.4], ['who it is waiting for', 5.0], ['where the time went', 6.6], ['every command it asked', 8.0]];
   return g({},

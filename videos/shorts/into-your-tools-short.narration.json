@@ -1,0 +1,16 @@
+{
+  "captions": { "A C P": "ACP", "M C P": "MCP", "slash T": "/t" },
+  "lines": [
+    { "id": "hook", "min": 7, "text": "Your agent works in a terminal. Your team talks in Slack. And you copy messages between them, all day." },
+    { "id": "promise", "min": 6, "text": "Agent R Q connects any agent with one M C P config. And your team can hand it work from Slack." },
+    { "id": "setup", "min": 6, "text": "Every workspace has a Setup tab. Pick your agent: Claude Code, Codex, Antigravity, or any A C P agent." },
+    { "id": "config", "min": 6, "text": "Copy one M C P config into the project. Then one start command." },
+    { "id": "channel", "min": 6, "text": "Claude Code opens with the workspace as a channel. New tasks reach it on their own." },
+    { "id": "task", "min": 7, "text": "Ada hands it a real task: the order export times out, so stream it. It reports back with the test output attached." },
+    { "id": "ask", "min": 6, "text": "When it needs a decision, it asks on the task. Ada answers, and it carries on." },
+    { "id": "slack-add", "min": 6, "text": "Now Slack. Add to Slack, and the workspace gets its own private channel." },
+    { "id": "slack-t", "min": 7, "text": "Sam, on call this week, types slash T with a title. The task lands in Agent R Q, marked as from Slack." },
+    { "id": "appr", "min": 7, "text": "When the agent needs approval, Allow and Deny post in the thread. Sam clicks Allow, and it carries on." },
+    { "id": "cta", "min": 8, "text": "One config, any agent, and your team in Slack. Which tool should Agent R Q plug into next? Tell us in the comments, and try it at Agent R Q dot com." }
+  ]
+}

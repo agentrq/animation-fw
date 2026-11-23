@@ -37,7 +37,7 @@ function term(s, { x, y, w, h, title, color, lines }) {
 }
 
 // Nine o'clock: the same three prompts, typed by hand into three agents.
-function artMorning(s, at) {
+export function artMorning(s, at) {
   const T = [
     ['STOREFRONT', SHOP, '> check last night\'s errors', at('hook', 2.2)],
     ['STOREFRONT', SHOP, '> fix the build that broke', at('pain', 2.2)],
@@ -51,7 +51,7 @@ function artMorning(s, at) {
 }
 
 // The promise: four ways the work starts itself.
-function artPromise(s, at) {
+export function artPromise(s, at) {
   const W = [['SCHEDULE', 'every day at 9', 1.4], ['EVENT', 'one agent to the next', 3.0], ['WEBHOOK', 'GitHub starts it', 5.6], ['WORKFLOW', 'the whole chain', 7.6]];
   return g({},
     ...W.map(([kind, line, o], i) => from(s, g({},

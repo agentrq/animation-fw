@@ -1,0 +1,17 @@
+{
+  "captions": { "C P U": "CPU" },
+  "lines": [
+    { "id": "hook", "min": 6, "text": "Your agents live in a terminal on one laptop. Close the lid, and the work stops." },
+    { "id": "promise", "min": 5, "text": "Agent R Q runs your agents on any machine you own. And it starts them from the browser." },
+    { "id": "mach-add", "min": 7, "text": "Ada adds her dev box in two commands. Install the daemon, then enroll it with a one-time code." },
+    { "id": "mach-online", "min": 6, "text": "The daemon connects, and the card turns green, with its C P U and memory." },
+    { "id": "start-card", "min": 6, "text": "Storefront has no agent, so its page offers one. Start it in its folder, on the dev box." },
+    { "id": "start-pick", "min": 4, "text": "She picks Claude Code, with Opus and high effort." },
+    { "id": "start-term", "min": 6, "text": "The machine starts it, and its terminal opens right in the browser, live." },
+    { "id": "start-live", "min": 4, "text": "Seconds later, storefront turns green, ready for tasks." },
+    { "id": "spin", "min": 7, "text": "A waiting task can get an agent of its own. Spin up forks the workspace, and starts a second agent there." },
+    { "id": "note", "min": 7, "text": "When an agent needs you, a toast finds you on any page. With push on, it reaches you with the tab closed." },
+    { "id": "yolo", "min": 7, "text": "And for work you trust, Always Allow turns one yes into a rule. Every call stays on the record." },
+    { "id": "cta", "min": 8, "text": "Your machines, your agents, from any browser. Where would you run your agents? Tell us in the comments, and try it at Agent R Q dot com." }
+  ]
+}

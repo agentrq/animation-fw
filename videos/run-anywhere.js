@@ -44,7 +44,7 @@ function term(s, { x, y, w, h, title, color, lines, size = 13, gap = 22 }) {
 }
 
 // One laptop: the work runs until the lid closes; after lunch, a prompt still waits.
-function artLaptop(s, at) {
+export function artLaptop(s, at) {
   const lid = at('hook', 3.9);
   const after = at('pain', 0.4);
   const base = el('rect', { x: ARTX + 20, y: 322, width: 500, height: 16, fill: C.line, class: 'px' });
@@ -65,7 +65,7 @@ function artLaptop(s, at) {
 }
 
 // The promise: four things AgentRQ does for agents that run away from you.
-function artPromise(s, at) {
+export function artPromise(s, at) {
   const W = [['MACHINES', 'any machine you own', 3.0], ['BROWSER', 'start agents in a tab', 4.4], ['ALERTS', 'the moment one needs you', 6.7], ['YOLO', 'the safe work runs itself', 9.3]];
   return g({},
     ...W.map(([kind, line, o], i) => from(s, g({},

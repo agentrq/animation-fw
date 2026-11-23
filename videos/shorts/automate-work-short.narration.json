@@ -1,0 +1,18 @@
+{
+  "captions": { "A P I changed": "api_changed", "C I failed": "ci_failed", "C I": "CI", "A P I": "API" },
+  "lines": [
+    { "id": "hook", "min": 6, "text": "Nine o'clock. Before any real work, you type the same three prompts into three agents." },
+    { "id": "promise", "min": 6, "text": "You're the scheduler, and the messenger. Agent R Q does both: schedules, events, webhooks and workflows." },
+    { "id": "sched-new", "min": 6, "text": "Ada gives storefront a task. Read last night's error log, and open a task for every new error." },
+    { "id": "sched-pick", "min": 6, "text": "Then she puts it on a schedule: daily, at nine. The footer shows the cron line and the next run." },
+    { "id": "sched-runs", "min": 6, "text": "Every run is a normal task, with its own thread. And runs never pile up." },
+    { "id": "ev-new", "min": 5, "text": "Now the messenger job. Ada creates an event: A P I changed." },
+    { "id": "ev-trigger", "min": 7, "text": "Docs and mobile subscribe to it. When it fires, each gets a task that says exactly what changed." },
+    { "id": "ev-publish", "min": 6, "text": "Billing's agent finishes, publishes the event, and both tasks start at once." },
+    { "id": "hook-route", "min": 6, "text": "Even GitHub can start the work. A webhook turns a failed build on main into C I failed." },
+    { "id": "hook-task", "min": 6, "text": "So when the build breaks at three, storefront's agent gets the failure. Before anyone wakes up." },
+    { "id": "wf-graph", "min": 7, "text": "And a workflow chains it all. Billing deploys first. Then docs and mobile follow, side by side." },
+    { "id": "wf-tasks", "min": 7, "text": "Each step lands as a task in its own workspace. Put the first one on a schedule, and the release runs every Friday." },
+    { "id": "cta", "min": 8, "text": "Schedules, events, webhooks and workflows. What would you automate first? Tell us in the comments, and try it at Agent R Q dot com." }
+  ]
+}
