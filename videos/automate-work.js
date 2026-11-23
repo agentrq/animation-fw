@@ -137,8 +137,8 @@ export default () => {
   const s = videoScene({
     tl,
     ground: false,
-    poster: at('wf-graph', 4),
-    thumbnail: at('wf-graph', 4),
+    poster: at('recap', 6.5),
+    thumbnail: at('recap', 6.5),
     description: 'AgentRQ, automate the work, narrated over real screens of the app: Ada schedules a morning error triage and the scheduler runs it every day, billing\'s agent publishes an api_changed event that opens tasks for docs and mobile, a failed GitHub build fires ci_failed through the built-in hook and the storefront agent picks it up, and a release_pipeline workflow deploys billing and then hands the release notes and the mobile client to their agents.',
   });
   groundStrip(s);
