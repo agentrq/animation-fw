@@ -1,0 +1,385 @@
+{
+ "shots": {
+  "sched-form": {
+   "file": "sched-form.webp",
+   "route": "/workspaces/0mSNbM3vCzd/tasks/new",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "title": [399, 232.3, 682, 19.5],
+    "body": [361, 258, 766, 160],
+    "schedule": [666, 431, 28, 28],
+    "submit": [1079, 427, 36, 36]
+   }
+  },
+  "sched-daily": {
+   "file": "sched-daily.webp",
+   "route": "/workspaces/0mSNbM3vCzd/tasks/new",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "menu": [660, 145.5, 332, 279.5],
+    "tabs": [683, 204.5, 286, 39],
+    "preset": [683, 279, 184, 32],
+    "time": [879, 279, 90, 30.5],
+    "footer": [683, 375.5, 286, 26.5],
+    "schedule": [666, 431, 28, 28]
+   }
+  },
+  "sched-custom": {
+   "file": "sched-custom.webp",
+   "route": "/workspaces/0mSNbM3vCzd/tasks/new",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "menu": [666, 140.5, 320, 278.5],
+    "days": [683, 316, 286, 43.5],
+    "preset": [683, 268, 184, 32],
+    "footer": [683, 375.5, 286, 26.5]
+   }
+  },
+  "sched-list": {
+   "file": "sched-list.webp",
+   "route": "/tasks/scheduled",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "triage": [289, 250.1, 351, 105.6],
+    "links": [289, 140.5, 351, 105.6],
+    "monthly": [289, 359.8, 351, 105.6],
+    "menu": [24, 441, 208, 28]
+   }
+  },
+  "sched-runs": {
+   "file": "sched-runs.webp",
+   "route": "/workspaces/0mSNbM3vCzd/tasks/0mSYPc7wGft/instances",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "chip": [1262, 121.5, 112, 15],
+    "next": [503, 149.3, 129.4, 13.5],
+    "list": [481, 227.5, 177.2, 21],
+    "title": [119, 41, 642.8, 30]
+   }
+  },
+  "sched-run": {
+   "file": "sched-run.webp",
+   "route": "/workspaces/0mSNbM3vCzd/tasks/0mSYro4erRd",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "title": [481, 109, 324.5, 25],
+    "timeline": [481, 171.5, 910, 58],
+    "reply": [481, 333.9, 910, 42.9],
+    "start": [481, 257, 910, 21.4]
+   }
+  },
+  "ev-form": {
+   "file": "ev-form.webp",
+   "route": "/events",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "name": [118, 241, 1252, 38],
+    "guidelines": [118, 338, 1252, 58],
+    "create": [118, 428, 131.2, 32.5]
+   }
+  },
+  "ev-trigger": {
+   "file": "ev-trigger.webp",
+   "route": "/events/0mSZC5eTSNB",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "ws": [118, 230, 1252, 37],
+    "title": [118, 303.5, 1252, 38],
+    "body": [118, 378, 1252, 78],
+    "insert": [1292, 358.3, 78, 15],
+    "resp": [118, 478, 157, 61.5],
+    "yolo": [299, 478, 134.7, 61.5],
+    "emit": [118, 555.5, 1252, 66.5],
+    "create": [118, 648, 142.4, 32.5]
+   }
+  },
+  "ev-chain": {
+   "file": "ev-chain.webp",
+   "route": "/events/0mSZC5eTSNB",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "ws": [118, 230, 1252, 37],
+    "title": [118, 303.5, 1252, 38],
+    "body": [118, 378, 1252, 78],
+    "insert": [1292, 358.3, 78, 15],
+    "resp": [118, 478, 157, 61.5],
+    "yolo": [299, 478, 134.7, 61.5],
+    "emit": [118, 555.5, 1252, 66.5],
+    "create": [118, 648, 142.4, 32.5]
+   }
+  },
+  "ev-triggers": {
+   "file": "ev-triggers.webp",
+   "route": "/events/0mSZC5eTSNB",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "docs": [158, 257, 1150, 53.5],
+    "mobile": [158, 169.5, 1150, 53.5]
+   }
+  },
+  "ev-task-form": {
+   "file": "ev-task-form.webp",
+   "route": "/workspaces/0mSNc5wh6aD/tasks/new",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "menu": [470, 268, 260, 151],
+    "event": [487, 368, 226, 34],
+    "completion": [702, 431, 28, 28],
+    "body": [361, 258, 766, 160],
+    "title": [399, 232.3, 682, 19.5]
+   }
+  },
+  "ev-board": {
+   "file": "ev-board.webp",
+   "route": "/kanban",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "toast": [1012, 668, 408, 122],
+    "toast2": [1012, 542, 408, 122],
+    "done": [1012, 396, 408, 142],
+    "docs": [297, 660.6, 250.5, 64.9],
+    "mobile": [297, 733.5, 250.5, 64.9]
+   }
+  },
+  "ev-tasks": {
+   "file": "ev-tasks.webp",
+   "route": "/events/0mSZC5eTSNB",
+   "width": 4320,
+   "height": 2430,
+   "regions": {}
+  },
+  "ev-docs-task": {
+   "file": "ev-docs-task.webp",
+   "route": "/workspaces/0mSNkE9OtVN/tasks/0mSZGkkdqDd",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "title": [481, 109, 237, 25],
+    "payload": [494, 183, 884, 107.2],
+    "faq": [494, 183, 884, 107.2]
+   }
+  },
+  "hook-empty": {
+   "file": "hook-empty.webp",
+   "route": "/events/hooks",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "tab": [177.6, 113, 70.5, 34.5],
+    "add": [1217.2, 41, 173.8, 32.5],
+    "empty": [97, 163.5, 1294, 138]
+   }
+  },
+  "hook-form": {
+   "file": "hook-form.webp",
+   "route": "/events/hooks/new",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "name": [118, 171, 694, 38],
+    "hook": [118, 249.5, 343, 80],
+    "inputs": [118, 370, 694, 80.5],
+    "secret": [118, 390, 591.2, 38],
+    "branches": [118, 482.5, 694, 38],
+    "route": [118, 561, 694, 37],
+    "routes": [118, 561, 694, 37],
+    "submit": [118, 898, 83.6, 32.5]
+   }
+  },
+  "hook-reg": {
+   "file": "hook-reg.webp",
+   "route": "/events/hooks/0mSZiwwglkL",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "url": [114, 172, 617.4, 34.5],
+    "copy": [739.4, 172, 69.4, 34.5],
+    "rotate": [816.8, 172, 127.2, 34.5],
+    "routes": [537, 281, 407, 70.5],
+    "inputs": [114, 281, 407, 26.5],
+    "deliveries": [114, 401.5, 830, 24.5]
+   }
+  },
+  "hook-task": {
+   "file": "hook-task.webp",
+   "route": "/workspaces/0mSNbM3vCzd/tasks/0mSZjTokfw5",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "title": [481, 109, 387, 25],
+    "payload": [481, 147, 910, 16.5],
+    "reply": [481, 257, 910, 21.4]
+   }
+  },
+  "hook-deliveries": {
+   "file": "hook-deliveries.webp",
+   "route": "/events/hooks/0mSZiwwglkL",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "deliveries": [97, 384.5, 864, 187],
+    "first": [114, 438, 830, 36],
+    "second": [114, 486, 830, 36],
+    "url": [114, 172, 617.4, 34.5]
+   }
+  },
+  "wf-form": {
+   "file": "wf-form.webp",
+   "route": "/workflows",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "name": [118, 162.5, 1252, 38],
+    "desc": [118, 257.5, 1252, 58],
+    "start": [118, 358, 1252, 37],
+    "create": [118, 441.5, 83.6, 32.5],
+    "form": [97, 121, 1294, 375]
+   }
+  },
+  "wf-start": {
+   "file": "wf-start.webp",
+   "route": "/workflows/0mSaHLMnRm1",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "palette": [97, 124, 192, 469.8],
+    "start": [332, 151, 221, 52],
+    "empty": [310, 237, 265, 16]
+   }
+  },
+  "wf-step": {
+   "file": "wf-step.webp",
+   "route": "/workflows/0mSaHLMnRm1",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "editor": [528, 16, 448, 475.5],
+    "title": [549, 114, 406, 38],
+    "body": [549, 188.5, 406, 118],
+    "insert": [585, 320.5, 114, 19],
+    "assignee": [549, 355.5, 151, 55.5],
+    "allow": [716, 367, 128, 32.5],
+    "save": [549, 437, 96.8, 32.5],
+    "palette": [97, 124, 192, 469.8]
+   }
+  },
+  "wf-warn": {
+   "file": "wf-warn.webp",
+   "route": "/workflows/0mSaHLMnRm1",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "warn": [97, 625.8, 1294, 63.5],
+    "billing": [601, 151, 212, 72],
+    "deployed": [861, 151, 212, 52],
+    "canvas": [305, 124, 1086, 242]
+   }
+  },
+  "wf-graph": {
+   "file": "wf-graph.webp",
+   "route": "/workflows/0mSaHLMnRm1",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "canvas": [305, 124, 1086, 242],
+    "start": [332, 203, 221, 52],
+    "billing": [601, 203, 212, 72],
+    "deployed": [861, 203, 212, 52],
+    "docs": [1121, 151, 212, 52],
+    "mobile": [1121, 255, 212, 52],
+    "palette": [97, 124, 192, 469.8],
+    "toggle": [1246, 41, 145, 39]
+   }
+  },
+  "wf-text": {
+   "file": "wf-text.webp",
+   "route": "/workflows/0mSaHLMnRm1",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "text": [97, 170.5, 1294, 369],
+    "toggle": [1246, 41, 145, 39],
+    "help": [97, 124, 1294, 34.5]
+   }
+  },
+  "wf-run-form": {
+   "file": "wf-run-form.webp",
+   "route": "/workspaces/0mSNc5wh6aD/tasks/new",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "menu": [470, 246.3, 260, 172.8],
+    "workflow": [487, 346.3, 226, 34],
+    "hint": [487, 388.3, 226, 13.8],
+    "completion": [702, 431, 28, 28],
+    "title": [399, 232.3, 682, 19.5]
+   }
+  },
+  "wf-board": {
+   "file": "wf-board.webp",
+   "route": "/kanban",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "toast": [1012, 668, 408, 122],
+    "docs": [297, 806.4, 250.5, 64.9],
+    "mobile": [297, 879.3, 250.5, 64.9]
+   }
+  },
+  "wf-tasks": {
+   "file": "wf-tasks.webp",
+   "route": "/workflows/0mSaHLMnRm1",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "tasks": [97, 515.8, 1294, 222.5],
+    "canvas": [305, 14, 1086, 242],
+    "deploy": [97, 654.3, 1294, 38],
+    "docs": [97, 608.3, 1294, 38],
+    "mobile": [97, 562.3, 1294, 38]
+   }
+  },
+  "wf-weekly": {
+   "file": "wf-weekly.webp",
+   "route": "/workspaces/0mSNc5wh6aD/tasks/new",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "menu": [666, 140.5, 320, 278.5],
+    "days": [683, 316, 286, 43.5],
+    "footer": [683, 375.5, 286, 26.5],
+    "completion": [702, 431, 28, 28],
+    "schedule": [666, 431, 28, 28]
+   }
+  },
+  "ctl-list": {
+   "file": "ctl-list.webp",
+   "route": "/tasks/scheduled/0mSNbM3vCzd/0mSYPc7wGft/instances",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "row": [289, 250.1, 351, 105.6],
+    "runs": [673, 111, 718, 21],
+    "edit": [519, 266.1, 22, 22],
+    "del": [545, 266.1, 22, 22]
+   }
+  }
+ },
+ "viewport": {
+  "width": 1440,
+  "height": 810
+ },
+ "scale": 3
+}
