@@ -124,8 +124,10 @@ A video can show the product itself, not a drawing of it. `videos/pano-collabora
 `videos/teams-collaboration.js` (about 6.5 minutes, three people sharing workspaces in a team),
 `videos/workspaces-memory-skills.js` (about 6 minutes, one workspace per project with its own key, memory and skills),
 `videos/see-every-agent.js` (about 6 minutes, four agents on one board: who waits on you, what each is doing, where the time went),
-`videos/automate-work.js` (about 6 minutes, schedules, events, a GitHub webhook and a workflow that start work on their own) and
-`videos/run-anywhere.js` (about 5.5 minutes, agents on your own machines, started from the browser, alerts and YOLO)
+`videos/automate-work.js` (about 6 minutes, schedules, events, a GitHub webhook and a workflow that start work on their own),
+`videos/run-anywhere.js` (about 5.5 minutes, agents on your own machines, started from the browser, alerts and YOLO) and
+`videos/into-your-tools.js` (about 5.5 minutes, any agent connected with one MCP config, its seven tools, the `agentrq-ws`
+CLI, and a team that hands it work and approves it from Slack)
 are the examples: each
 chapter opens on a pain in the house style, then shows the fix on screenshots of the real app. The pieces they share
 are in `videos/house.js`: the pain card (kicker, headline, a line under it, art on the right), the logo, the ground, and
@@ -162,3 +164,12 @@ A focus is `'window'`, a region name, `[x, y, w, h]`, or `{ region, shot?, by?, 
 After a re-shoot, the camera and the callouts follow the regions' new places. For a long script, `beatsById(tl, ids)` (in
 `videos/lib.js`) gives `at(id, offset)`, `start(id)` and `end(id)` by line id instead of beat number. `captions(s, tl,
 { band, size, chars, lineGap, baseline })` sets the caption band, and `videoScene({ ground: false })` leaves the ground out.
+
+**YouTube posters.** `videos/posters.js` draws one 1280x720 thumbnail per video in the same house style: a two-line
+headline, a close-up of one of the video's own shots in a tilted window with a green chip, and the mascots on the ground.
+Each poster is a row in `POSTERS` (its shot, the crop in CSS px, the copy), so changing one is an edit and a rebuild:
+
+```sh
+ANIMFW_PYLIB=DIR node videos/posters.js out/posters                 # every poster
+ANIMFW_PYLIB=DIR node videos/posters.js out/posters run-anywhere    # just one
+```
