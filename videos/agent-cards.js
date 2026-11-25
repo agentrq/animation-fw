@@ -58,7 +58,7 @@ function artWall(s, at) {
 }
 
 // The promise: five kinds of card.
-function artPromise(s, at) {
+export function artPromise(s, at) {
   const W = [['CHART', 'numbers at a glance', 4.4], ['CHECKLIST', 'problems marked', 5.0], ['BUTTONS', 'one click to answer', 5.7],
     ['FORM', 'every detail at once', 6.4], ['LIVE', 'updates while you watch', 7.1]];
   return g({}, ...W.map(([kind, line, o], i) => tile(s, ARTX + (i % 2) * 300, 50 + Math.floor(i / 2) * 84, 280, 70, kind, line, at('promise', o))));
@@ -88,7 +88,7 @@ function artWhy(s, at) {
 }
 
 // Nine numbers in a sentence.
-function artNumbers(s, at) {
+export function artNumbers(s, at) {
   const X = ARTX + 20;
   return g({},
     pane(s, { x: X, y: 90, w: 520, h: 160, title: 'DOCS · AGENT REPLY', color: DOCS }),
@@ -108,7 +108,7 @@ function artChecks(s, at) {
 }
 
 // The back and forth: five rounds for one plan.
-function artRounds(s, at) {
+export function artRounds(s, at) {
   const X = ARTX + 20;
   const Q = [['Which title?', false], ['"Cards are here"', true], ['Which channels?', false], ['YouTube and LinkedIn', true], ['What time?', false]];
   return g({},
@@ -117,7 +117,7 @@ function artRounds(s, at) {
 }
 
 // Updates, one message each.
-function artSpam(s, at) {
+export function artSpam(s, at) {
   const X = ARTX + 20;
   const M = ['step 1 done', 'step 2 done', 'step 3 running', 'step 3 done', 'step 4 running', 'step 4 done'];
   return g({},

@@ -1,0 +1,15 @@
+{
+  "captions": { "Eh two U I": "A2UI" },
+  "lines": [
+    { "id": "hook", "min": 7, "text": "Long jobs are the worst. You either wait in the dark, or drown in step two done messages." },
+    { "id": "promise", "min": 6, "text": "Now Agent R Q agents can post one card that updates while you watch. It's built on Eh two U I, the open standard for agent interfaces." },
+    { "id": "start", "min": 6, "text": "Ada asks the agent to build and check the website, with a live card." },
+    { "id": "queued", "min": 6, "text": "It posts one card. Four steps, all queued, and an empty chart." },
+    { "id": "run", "min": 7, "text": "Then it edits that same card. Install and build are done, in five seconds each." },
+    { "id": "tests", "min": 6, "text": "The tests are running now, and the chart fills in as each step ends." },
+    { "id": "done", "min": 7, "text": "Fifteen seconds in all. Four steps done, in the same place in the thread." },
+    { "id": "quiet", "min": 7, "text": "An update is an edit, not a new message. So it sends no notification. The card is just there, current, when you look." },
+    { "id": "report", "min": 7, "text": "The checks come back as a card too. The build and tests pass. Three hundred and four lint warnings get a yellow mark." },
+    { "id": "cta", "min": 10, "text": "One card that moves, instead of a stream of pings. What long job would you watch live? Tell us in the comments, and try it at Agent R Q dot com." }
+  ]
+}
