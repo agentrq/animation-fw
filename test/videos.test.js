@@ -78,7 +78,7 @@ for (const [name, line, chip] of [['pano-collaboration', 'kanban', '05 / STATUS'
 
 // The vertical shorts of those videos: 720x1280 (1080x1920 at full size), the screen
 // clipped to its box, big captions under it and a chapter chip in the header.
-for (const [name, line, chip] of [['teams-collaboration', 'memory-read', '03 / SHARED MEMORY'], ['workspaces-memory-skills', 'mem-save', '02 / SHARED LEARNING'], ['see-every-agent', 'allow', '02 / WAITING ON YOU'], ['automate-work', 'ev-trigger', '02 / EVENTS'], ['run-anywhere', 'start-term', '02 / FROM THE BROWSER'], ['into-your-tools', 'slack-t', '03 / YOUR TEAM, IN SLACK']]) {
+for (const [name, line, chip] of [['teams-collaboration', 'memory-read', '03 / SHARED MEMORY'], ['workspaces-memory-skills', 'mem-save', '02 / SHARED LEARNING'], ['see-every-agent', 'allow', '02 / WAITING ON YOU'], ['automate-work', 'ev-trigger', '02 / EVENTS'], ['run-anywhere', 'start-term', '02 / FROM THE BROWSER'], ['into-your-tools', 'slack-t', '03 / YOUR TEAM, IN SLACK'], ['task-title-model', 'auto', '02 / NO TITLE']]) {
   test(`${name} short builds vertical, on the long video's screens`, async () => {
     // A short's beats are tight, and its looks are timed into the pause after each line:
     // the voice runs a beat 1.1-1.3 times its line. So 11 s beats over 8 s lines (the

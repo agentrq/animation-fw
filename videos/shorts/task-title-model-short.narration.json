@@ -1,0 +1,72 @@
+{
+  "captions": {
+    "Agent R Q": "AgentRQ",
+    "Flan T 5 base": "FLAN-T5-base",
+    "S 3": "S3",
+    "a thousand": "1,000",
+    "ninety eight percent": "98%",
+    "seventy five": "75%"
+  },
+  "lines": [
+    {
+      "id": "hook",
+      "min": 6,
+      "text": "Every task needs a title. And naming it often takes longer than writing the task."
+    },
+    {
+      "id": "promise",
+      "min": 6,
+      "text": "Agent R Q writes it for you. With its own small model, running right in your browser."
+    },
+    {
+      "id": "typed",
+      "min": 6,
+      "text": "Ada types what she needs. The checkout still shows the old price after a coupon is removed."
+    },
+    {
+      "id": "sparkle",
+      "min": 4,
+      "text": "She clicks the sparkle beside the title."
+    },
+    {
+      "id": "named",
+      "min": 6,
+      "text": "Fix checkout price after coupon removal. Short, and it keeps the detail that matters."
+    },
+    {
+      "id": "second",
+      "min": 7,
+      "text": "A chatty request works too. Can you draft a reply to the Acme renewal email? Draft Acme renewal email."
+    },
+    {
+      "id": "untitled",
+      "min": 6,
+      "text": "Or skip the title. Create the task, and for a moment it is called Untitled."
+    },
+    {
+      "id": "auto",
+      "min": 6,
+      "text": "Then the browser names it in the background. Rerun nightly S 3 export."
+    },
+    {
+      "id": "private",
+      "min": 6,
+      "text": "Nothing is sent anywhere to write a title. The task text never leaves your device."
+    },
+    {
+      "id": "own",
+      "min": 7,
+      "text": "It is Agent R Q's own model, fine tuned for this one job. Anyone can use it, free, under the Apache license."
+    },
+    {
+      "id": "model",
+      "min": 9,
+      "text": "On a thousand test tasks, it wrote a good title ninety eight percent of the time. Flan T 5 base managed seventy five."
+    },
+    {
+      "id": "cta",
+      "min": 8,
+      "text": "Write the task, skip the title. What would you hand off first? Tell us in the comments, and try it at Agent R Q dot com."
+    }
+  ]
+}
