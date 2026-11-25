@@ -1,0 +1,16 @@
+{
+  "captions": { "Eh two U I": "A2UI" },
+  "lines": [
+    { "id": "hook", "min": 7, "text": "Your agent reports back with nine numbers in one sentence. Which month was the busiest? You read it twice to find out." },
+    { "id": "promise", "min": 6, "text": "Now Agent R Q agents can answer with a card. It's built on Eh two U I, the open standard for agent interfaces." },
+    { "id": "ask", "min": 6, "text": "Ada asks the docs agent a plain question. How many blog posts did we publish this year, by month?" },
+    { "id": "bar", "min": 7, "text": "It answers with a card. Sixty five posts so far. November is the tallest bar, with fourteen." },
+    { "id": "light", "min": 5, "text": "The app draws it with its own parts, in its own style. Dark or light." },
+    { "id": "heat", "min": 7, "text": "A heatmap shows a value per day. Here are the commits to Agent R Q in November. One hundred and ninety." },
+    { "id": "heat-top", "min": 5, "text": "The brightest square is November twenty third, with thirty one." },
+    { "id": "tabs", "min": 6, "text": "One card can hold tabs. Ada clicks Per month, and the same data turns into a line." },
+    { "id": "line", "min": 6, "text": "Six hundred and eighteen commits in September, the peak of the year so far." },
+    { "id": "check", "min": 6, "text": "Every card is checked before it is posted. A broken one goes back to the agent, never to you." },
+    { "id": "cta", "min": 10, "text": "Numbers you read at a glance. What would you want your agent to chart for you? Tell us in the comments, and try it at Agent R Q dot com." }
+  ]
+}

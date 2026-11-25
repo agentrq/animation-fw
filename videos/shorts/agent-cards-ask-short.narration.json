@@ -1,0 +1,15 @@
+{
+  "captions": { "Eh two U I": "A2UI", "dev dot to": "dev.to" },
+  "lines": [
+    { "id": "hook", "min": 7, "text": "Your agent asks: reply with A, B or C. Then which title, which channels, and what time. Five rounds for one plan." },
+    { "id": "promise", "min": 6, "text": "Now Agent R Q agents can ask with a card. It's built on Eh two U I, the open standard for agent interfaces." },
+    { "id": "buttons", "min": 7, "text": "The voice for a new video is ready. The agent posts a card with a player, and three buttons." },
+    { "id": "click", "min": 6, "text": "Ada clicks Schedule. Her reply is posted in the button's own words." },
+    { "id": "done", "min": 6, "text": "The agent reads it like any message. The card stays in the thread, read only, with her choice marked." },
+    { "id": "form", "min": 6, "text": "Some questions need more than one answer. So the agent asks with a form, and waits." },
+    { "id": "fields", "min": 6, "text": "A title, the channels, a date and time, a slider and a checkbox." },
+    { "id": "guess", "min": 7, "text": "It filled in its best guess first. Ada picks LinkedIn and dev dot to, and moves the slider to four." },
+    { "id": "send", "min": 6, "text": "She presses Schedule. The agent gets every value at once, as data it can act on." },
+    { "id": "cta", "min": 10, "text": "One click instead of five rounds. What should your agent ask you with a button? Tell us in the comments, and try it at Agent R Q dot com." }
+  ]
+}
