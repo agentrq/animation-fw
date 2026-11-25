@@ -1,0 +1,172 @@
+{
+ "shots": {
+  "what-ask": {
+   "file": "what-ask.webp",
+   "route": "/workspaces/0mbJXXDahQz/tasks/new",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "title": [367, 232.3, 938, 19.5],
+    "desc": [329, 258, 1022, 160]
+   }
+  },
+  "what-asked": {
+   "file": "what-asked.webp",
+   "route": "/workspaces/0mbJXXDahQz/tasks/0mbKaHMb0xZ",
+   "width": 4320,
+   "height": 2430,
+   "regions": {}
+  },
+  "what-card": {
+   "file": "what-card.webp",
+   "route": "/workspaces/0mbJXXDahQz/tasks/0mbKaHMb0xZ",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "card": [673, 215, 718, 282.6]
+   }
+  },
+  "chart-heat": {
+   "file": "chart-heat.webp",
+   "route": "/workspaces/0mbJXXDahQz/tasks/0mbKcxi6R1h",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "card": [673, 215, 718, 319.6],
+    "tab": [763, 296.6, 89, 23]
+   }
+  },
+  "chart-line": {
+   "file": "chart-line.webp",
+   "route": "/workspaces/0mbJXXDahQz/tasks/0mbKcxi6R1h",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "card": [673, 215, 718, 319.6]
+   }
+  },
+  "stat-checks": {
+   "file": "stat-checks.webp",
+   "route": "/workspaces/0mbJXXDahQz/tasks/0mbKe7QNAUH",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "card": [673, 215, 718, 204.9]
+   }
+  },
+  "stat-list": {
+   "file": "stat-list.webp",
+   "route": "/workspaces/0mbJXXDahQz/tasks/0mbKeqONI3x",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "card": [673, 215, 718, 204.6]
+   }
+  },
+  "stat-media": {
+   "file": "stat-media.webp",
+   "route": "/workspaces/0mbJXXDahQz/tasks/0mbKfapmFWP",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "card": [673, 215, 718, 275.6]
+   }
+  },
+  "ask-buttons": {
+   "file": "ask-buttons.webp",
+   "route": "/workspaces/0mbJXXDahQz/tasks/0mbKggRiORB",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "card": [673, 215, 718, 220.1],
+    "sched": [1198, 393.1, 176, 25]
+   }
+  },
+  "ask-clicked": {
+   "file": "ask-clicked.webp",
+   "route": "/workspaces/0mbJXXDahQz/tasks/0mbKggRiORB",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "card": [673, 215, 718, 220.1]
+   }
+  },
+  "ask-done": {
+   "file": "ask-done.webp",
+   "route": "/workspaces/0mbJXXDahQz/tasks/0mbKggRiORB",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "card": [673, 215, 718, 220.1]
+   }
+  },
+  "ask-form": {
+   "file": "ask-form.webp",
+   "route": "/workspaces/0mbJXXDahQz/tasks/0mbKiunB6yj",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "card": [673, 215, 718, 408.9]
+   }
+  },
+  "ask-picked": {
+   "file": "ask-picked.webp",
+   "route": "/workspaces/0mbJXXDahQz/tasks/0mbKiunB6yj",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "card": [673, 215, 718, 408.9]
+   }
+  },
+  "ask-submitted": {
+   "file": "ask-submitted.webp",
+   "route": "/workspaces/0mbJXXDahQz/tasks/0mbKiunB6yj",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "card": [673, 141, 718, 408.9]
+   }
+  },
+  "live-queued": {
+   "file": "live-queued.webp",
+   "route": "/workspaces/0mbJXXDahQz/tasks/0mbKleWjhIb",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "card": [673, 209, 718, 437.3]
+   }
+  },
+  "live-running": {
+   "file": "live-running.webp",
+   "route": "/workspaces/0mbJXXDahQz/tasks/0mbKleWjhIb",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "card": [673, 209, 718, 437.3]
+   }
+  },
+  "live-done": {
+   "file": "live-done.webp",
+   "route": "/workspaces/0mbJXXDahQz/tasks/0mbKleWjhIb",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "card": [673, 209, 718, 437.3]
+   }
+  },
+  "what-card-light": {
+   "file": "what-card-light.webp",
+   "route": "/workspaces/0mbJXXDahQz/tasks/0mbKaHMb0xZ",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "card": [673, 215, 718, 282.6]
+   }
+  }
+ },
+ "viewport": {
+  "width": 1440,
+  "height": 810
+ },
+ "scale": 3
+}

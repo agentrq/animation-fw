@@ -1,0 +1,53 @@
+{
+  "captions": { "A two U I": "A2UI", "dev dot to": "dev.to" },
+  "lines": [
+    { "id": "hook", "min": 9, "text": "Your agent finishes a job and reports back in a paragraph. Twelve numbers in one sentence, and the one check that failed sits in the middle of a list." },
+    { "id": "pain", "min": 8, "text": "Then it asks: reply with A, B or C. So you read it twice, work out what matters, and type an answer." },
+    { "id": "promise", "min": 10, "text": "Now Agent R Q agents can answer with a card instead. A chart, a checklist, buttons, a form, or a status card that updates while you watch." },
+
+    { "id": "what-pain", "min": 6, "text": "So what is a card, and where does it come from?" },
+    { "id": "what-ask", "min": 8, "text": "Ada asks the docs agent a plain question: how many blog posts did we publish this year, by month?" },
+    { "id": "what-json", "min": 10, "text": "The agent counts them, then replies with text and a card. The card is not code or HTML. It is a short description in JSON: a flat list of parts, each with an id." },
+    { "id": "what-open", "min": 9, "text": "That format is A two U I, an open standard for interfaces an agent describes and an app draws." },
+    { "id": "what-draw", "min": 9, "text": "Agent R Q draws it with its own components, in the app's own style, light or dark. Sixty five posts, and November is the busiest month." },
+    { "id": "what-check", "min": 9, "text": "Every card is checked before it is posted. A wrong part refuses the whole card, and the agent gets back each problem, so it fixes it and sends again." },
+
+    { "id": "why-pain", "min": 6, "text": "Why does that matter? Because the agent already knows which part is important." },
+    { "id": "why-glance", "min": 9, "text": "With a card, it can show you. The problem gets a warning mark, the trend is a line, and the busiest month is the tallest bar." },
+    { "id": "why-press", "min": 9, "text": "A choice becomes a button, so the agent gets back exactly the option it offered, not free text it has to guess at." },
+    { "id": "why-watch", "min": 9, "text": "And long work gets one card that moves, so you can watch it happen without a stream of step two done messages." },
+
+    { "id": "chart-pain", "min": 6, "text": "Numbers over time are the hardest thing to read in a sentence." },
+    { "id": "chart-bar", "min": 8, "text": "So charts come first. Bars put values side by side, like the posts per month." },
+    { "id": "chart-heat", "min": 10, "text": "A heatmap shows a value per day. Here are the commits to the Agent R Q repo in November: one hundred and ninety, with thirty one on the busiest day." },
+    { "id": "chart-tabs", "min": 9, "text": "One card can hold tabs. Ada clicks Per month, and the same data turns into a line." },
+    { "id": "chart-line", "min": 9, "text": "Six hundred and eighteen commits in September, the peak of the year so far. Charts are drawn like the workspace analytics pages, in the same colours." },
+
+    { "id": "stat-pain", "min": 6, "text": "A status report is a list of checks. You want the failures first." },
+    { "id": "stat-checks", "min": 10, "text": "Here the agent ran the website's real checks. The build and all the tests pass. The page lint finds no errors, but three hundred and four warnings, so that line gets a yellow mark." },
+    { "id": "stat-list", "min": 8, "text": "Rows of data line up in a list, with the values on the right, so you can scan down them." },
+    { "id": "stat-media", "min": 10, "text": "A card can show a picture, a video or a sound, from a file attached to the same reply. Here it is the homepage, right after the build." },
+
+    { "id": "ask-pain", "min": 6, "text": "Questions are where text replies cost the most time." },
+    { "id": "ask-buttons", "min": 9, "text": "The voice for this video is ready. The agent puts a player in the card, and three buttons: schedule for Monday, needs changes, or publish now." },
+    { "id": "ask-click", "min": 9, "text": "Ada clicks Schedule. That posts her reply in the button's words, and the agent reads it like any other message." },
+    { "id": "ask-done", "min": 8, "text": "The card stays in the thread, read only, with her choice marked." },
+    { "id": "ask-form", "min": 10, "text": "Some questions need more than one answer. Here the agent asks and waits, with a form: a title, the channels, a date and time, a slider and a checkbox." },
+    { "id": "ask-guess", "min": 9, "text": "It filled in its best guess first. Ada picks LinkedIn and dev dot to, moves the slider, and presses Schedule." },
+    { "id": "ask-values", "min": 9, "text": "The agent gets every value at once, as data it can act on. No five rounds of back and forth." },
+
+    { "id": "live-pain", "min": 6, "text": "Long jobs are the worst: you either wait in the dark, or drown in updates." },
+    { "id": "live-start", "min": 9, "text": "Ada asks the agent to build and check the website, with a live card. It posts one card: four steps, all queued." },
+    { "id": "live-run", "min": 9, "text": "Then it updates that same card. Install and build are done, the tests are running, and the chart fills in." },
+    { "id": "live-done", "min": 9, "text": "A few seconds later, all four steps are done, in the same place in the thread." },
+    { "id": "live-quiet", "min": 9, "text": "An update is an edit, not a new message. So it sends no notification. The card is just there, current, when you look." },
+
+    { "id": "ctl-pain", "min": 6, "text": "An agent drawing in your app sounds risky. So the rules are strict." },
+    { "id": "ctl-safe", "min": 10, "text": "A card can only use the parts in its catalog. It never runs code, and its media can only come from files attached to the reply, never from a link the agent picked." },
+    { "id": "ctl-text", "min": 10, "text": "And every card comes with text that says it all. Push, email and other agents get the text, and Slack gets the card as Slack blocks, with a button to open it in Agent R Q." },
+    { "id": "ctl-ask", "min": 9, "text": "There is nothing to switch on. Just ask: send me a chart, show the checks as a card, or ask me with buttons." },
+
+    { "id": "recap", "min": 9, "text": "Charts you read at a glance, decisions in one click, forms that ask everything at once, and live cards you can watch." },
+    { "id": "cta", "min": 8, "text": "What would you want your agent to show you as a card? Tell us in the comments. Agent R Q dot com." }
+  ]
+}
