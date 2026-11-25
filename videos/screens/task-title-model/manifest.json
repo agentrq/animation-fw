@@ -1,0 +1,213 @@
+{
+ "shots": {
+  "typed-1": {
+   "file": "typed-1.webp",
+   "route": "/workspaces/0mZWb5Xyrn3/tasks/new",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "title": [
+     399,
+     232.3,
+     682,
+     19.5
+    ],
+    "desc": [
+     361,
+     258,
+     766,
+     160
+    ],
+    "sparkle": [
+     1089,
+     231,
+     22,
+     22
+    ]
+   }
+  },
+  "gen-1": {
+   "file": "gen-1.webp",
+   "route": "/workspaces/0mZWb5Xyrn3/tasks/new",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "title": [
+     399,
+     232.3,
+     682,
+     19.5
+    ],
+    "desc": [
+     361,
+     258,
+     766,
+     160
+    ],
+    "sparkle": [
+     1089,
+     231,
+     22,
+     22
+    ]
+   }
+  },
+  "named-1": {
+   "file": "named-1.webp",
+   "route": "/workspaces/0mZWb5Xyrn3/tasks/new",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "title": [
+     399,
+     232.3,
+     682,
+     19.5
+    ],
+    "desc": [
+     361,
+     258,
+     766,
+     160
+    ],
+    "sparkle": [
+     1089,
+     231,
+     22,
+     22
+    ]
+   }
+  },
+  "typed-2": {
+   "file": "typed-2.webp",
+   "route": "/workspaces/0mZWb5Xyrn3/tasks/new",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "title": [
+     399,
+     232.3,
+     682,
+     19.5
+    ],
+    "desc": [
+     361,
+     258,
+     766,
+     160
+    ],
+    "sparkle": [
+     1089,
+     231,
+     22,
+     22
+    ]
+   }
+  },
+  "gen-2": {
+   "file": "gen-2.webp",
+   "route": "/workspaces/0mZWb5Xyrn3/tasks/new",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "title": [
+     399,
+     232.3,
+     682,
+     19.5
+    ],
+    "desc": [
+     361,
+     258,
+     766,
+     160
+    ],
+    "sparkle": [
+     1089,
+     231,
+     22,
+     22
+    ]
+   }
+  },
+  "named-2": {
+   "file": "named-2.webp",
+   "route": "/workspaces/0mZWb5Xyrn3/tasks/new",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "title": [
+     399,
+     232.3,
+     682,
+     19.5
+    ],
+    "desc": [
+     361,
+     258,
+     766,
+     160
+    ],
+    "sparkle": [
+     1089,
+     231,
+     22,
+     22
+    ]
+   }
+  },
+  "typed-3": {
+   "file": "typed-3.webp",
+   "route": "/workspaces/0mZWb5Xyrn3/tasks/new",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "title": [
+     399,
+     232.3,
+     682,
+     19.5
+    ],
+    "desc": [
+     361,
+     258,
+     766,
+     160
+    ]
+   }
+  },
+  "untitled": {
+   "file": "untitled.webp",
+   "route": "/workspaces/0mZWb5Xyrn3",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "row": [
+     109,
+     482.4,
+     327,
+     29.1
+    ]
+   }
+  },
+  "auto-named": {
+   "file": "auto-named.webp",
+   "route": "/workspaces/0mZWb5Xyrn3",
+   "width": 4320,
+   "height": 2430,
+   "regions": {
+    "row": [
+     109,
+     482.4,
+     327,
+     29.1
+    ]
+   }
+  }
+ },
+ "viewport": {
+  "width": 1440,
+  "height": 810
+ },
+ "scale": 3
+}
