@@ -243,7 +243,7 @@ export default () => {
 
   const CARDS = [
     { span: [0, end('pain')], kicker: 'THE REPORT', headline: ['A wall of', 'text.'], sub: 'The one that matters, in the middle.', art: artWall },
-    { span: [start('promise'), end('promise')], kicker: 'AGENTRQ', headline: ['Agents answer', 'with cards.'], sub: 'Right in the task thread.', art: artPromise },
+    { span: [start('promise'), end('promise')], kicker: 'AGENTRQ', headline: ['Agents answer', 'with cards.'], sub: 'Built on A2UI, the open standard.', art: artPromise },
     { span: [start('what-pain'), end('what-pain')], kicker: '01 / WHAT IS A2UI', headline: ['JSON in,', 'a card out.'], sub: 'Described by the agent, drawn by the app.', art: artWhat },
     { span: [start('why-pain'), end('why-pain')], kicker: '02 / WHY IT UNLOCKS', headline: ['The agent knows', 'what matters.'], sub: 'Now it can show you.', art: artWhy },
     { span: [start('chart-pain'), end('chart-pain')], kicker: '03 / CHARTS', headline: ['Nine numbers,', 'one sentence.'], sub: 'Hard to read, harder to compare.', art: artNumbers },
