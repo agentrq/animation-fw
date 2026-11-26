@@ -1,0 +1,225 @@
+{
+  "captions": {
+    "Panno": "Pano",
+    "mesher dot S H": "mesher.sh",
+    "call tool": "callTool",
+    "Eh two U I": "A2UI"
+  },
+  "lines": [
+    {
+      "id": "hook",
+      "min": 9,
+      "text": "Most task boards were built for people. Hand one to an A I agent, and it breaks."
+    },
+    {
+      "id": "pain",
+      "min": 11,
+      "text": "The agent forgets everything when its session ends. It runs whatever it is allowed to run. And it keeps working at three in the morning, when nobody is watching."
+    },
+    {
+      "id": "promise",
+      "min": 11,
+      "text": "So a task manager for agents has two readers: the agent, over M C P, and the people, on a board. Here is what it needs, with Agent R Q as the worked example."
+    },
+    {
+      "id": "loop",
+      "min": 13,
+      "text": "Every task goes through the same loop. The work arrives. The agent gets its context. It acts. It asks. And it finishes, so the next piece of work can start. Around all of it, a human team."
+    },
+    {
+      "id": "arrive-pain",
+      "min": 8,
+      "text": "First, the work has to arrive. An agent that sees every project will act on the wrong one. And an agent nobody wakes does nothing at all."
+    },
+    {
+      "id": "arrive-ws",
+      "min": 10,
+      "text": "So every project gets its own workspace, with its own queue, memory and token. Each card names the agent working in it, green while it is connected."
+    },
+    {
+      "id": "arrive-push",
+      "min": 10,
+      "text": "Hand billing a task, and it is pushed straight to billing's agent. No polling: an idle agent costs nothing, and it answers in seconds."
+    },
+    {
+      "id": "arrive-live",
+      "min": 10,
+      "text": "The conversation is pushed in real time too. Type while the agent works, and your message reaches it at once, in the middle of its work. No restart, no new prompt."
+    },
+    {
+      "id": "arrive-status",
+      "min": 11,
+      "text": "Every task has one clear status: Not Started, Ongoing, Blocked or Done. The Kanban puts every workspace's tasks on one board that people can read, and it moves live."
+    },
+    {
+      "id": "ctx-pain",
+      "min": 9,
+      "text": "Second, context. Your agent spends an hour learning that the billing tests need Postgres on port five four three three. Tomorrow, a new session learns it again."
+    },
+    {
+      "id": "ctx-save",
+      "min": 9,
+      "text": "Here, before it marks a task done, the agent saves what the next task should know, as one short note in the workspace memory."
+    },
+    {
+      "id": "ctx-next",
+      "min": 9,
+      "text": "The next task loads that memory first, and goes straight to the right port. The workspace gets smarter, not just one session."
+    },
+    {
+      "id": "ctx-version",
+      "min": 10,
+      "text": "And every memory has a version. When two agents save at once, the stale save is refused, so the agent loads the note again, merges, and saves."
+    },
+    {
+      "id": "ctx-skill",
+      "min": 11,
+      "text": "Skills are the team's playbooks: one copy in your account, switched on per workspace. An agent loads one only when its task needs it, and a fix reaches every workspace at once."
+    },
+    {
+      "id": "ctx-pano",
+      "min": 10,
+      "text": "And bigger context, like a project plan, lives on the Panno: markdown docs every workspace shares. Their checkboxes tick as the tasks finish."
+    },
+    {
+      "id": "tool-pain",
+      "min": 10,
+      "text": "Third, the agent acts. Ten M C P servers can put hundreds of tool definitions in its context before it reads the task. And an A P I key in its environment ends up in its logs."
+    },
+    {
+      "id": "tool-one",
+      "min": 11,
+      "text": "mesher dot S H, the open source tools layer from the Agent R Q team, puts every service behind one tool: call tool. The agent searches for a tool, reads its help, and calls it."
+    },
+    {
+      "id": "tool-host",
+      "min": 11,
+      "text": "The host checks every request against the connector's allowlist, and adds the credential itself. The agent never sees your token, and it cannot send your data anywhere else."
+    },
+    {
+      "id": "tool-toon",
+      "min": 11,
+      "text": "Profiles keep your accounts apart. Results can come back as TOON, a compact table that costs fewer tokens than JSON. And a circuit breaker stops a runaway loop."
+    },
+    {
+      "id": "ask-pain",
+      "min": 9,
+      "text": "Fourth, the agent asks. Without approvals you get two bad options: let agents do anything, or sit and watch every terminal."
+    },
+    {
+      "id": "ask-req",
+      "min": 10,
+      "text": "Here, a risky command comes to you as a request, with the exact command. Allow and Deny sit right on its card."
+    },
+    {
+      "id": "ask-card",
+      "min": 11,
+      "text": "An agent can ask with a card, too, built on Eh two U I, the open standard for agent interfaces. Buttons for a choice, a form for the details, and one click answers it."
+    },
+    {
+      "id": "ask-show",
+      "min": 10,
+      "text": "Results come back the same way: a chart you read at a glance, a list of checks, or one live card that updates while the agent works."
+    },
+    {
+      "id": "ask-reach",
+      "min": 10,
+      "text": "A toast finds you on any page, and push, email and Slack reach you with the tab closed. An agent waiting on a person is an agent doing nothing."
+    },
+    {
+      "id": "ask-yolo",
+      "min": 10,
+      "text": "For one task you trust end to end, turn on Yolo, and its agent stops asking. Every call still goes on the record, marked auto-allowed."
+    },
+    {
+      "id": "ask-trace",
+      "min": 10,
+      "text": "And nothing is off the record. The trajectory keeps every tool call, and the timeline says where the time went: worked, blocked, or waiting on you."
+    },
+    {
+      "id": "next-pain",
+      "min": 9,
+      "text": "Fifth, the work finishes. Without events, you sit between every two agents, reading one result and typing the next task. When you sleep, the work stops."
+    },
+    {
+      "id": "next-event",
+      "min": 9,
+      "text": "Events hand work on. When billing's agent publishes A P I changed, docs and mobile get their tasks at once."
+    },
+    {
+      "id": "next-wf",
+      "min": 9,
+      "text": "A workflow puts events and workspaces on one graph, so a whole release becomes a picture anyone can read and change."
+    },
+    {
+      "id": "next-hook",
+      "min": 9,
+      "text": "Hooks let outside services start the work. A failed build on main becomes a task, before anyone wakes up."
+    },
+    {
+      "id": "next-sched",
+      "min": 10,
+      "text": "And routine work runs on a schedule: daily at nine, read last night's errors. Each run is its own task, with its own thread."
+    },
+    {
+      "id": "team-pain",
+      "min": 6,
+      "text": "Then, scale. One agent with six tasks queued is a line."
+    },
+    {
+      "id": "team-mach",
+      "min": 10,
+      "text": "Enroll the machines you own, and start agents from the browser, in the workspace's folder. Each terminal opens live, in the page."
+    },
+    {
+      "id": "team-fork",
+      "min": 10,
+      "text": "Fork a workspace, and a second agent works in parallel, with the same memory and skills. Merge the fork back when its tasks are done."
+    },
+    {
+      "id": "team-sup",
+      "min": 10,
+      "text": "A supervisor agent plans for you. Ask it to split a feature, and it creates a task in each workspace, and the agents start at once."
+    },
+    {
+      "id": "people-pain",
+      "min": 9,
+      "text": "Last, the people. If every person's agents learn alone, a team of five learns the same lesson five times, and nobody can see anyone else's agents."
+    },
+    {
+      "id": "people-share",
+      "min": 10,
+      "text": "So share a workspace with your team, and choose what goes with it: tasks, memory and skills. Same-named workspaces become one team workspace."
+    },
+    {
+      "id": "people-see",
+      "min": 10,
+      "text": "Teammates see every task live, with the owner's name on each. It is read-only: nobody can reply or approve for you."
+    },
+    {
+      "id": "people-mem",
+      "min": 10,
+      "text": "Ben's agent saves what it learned. Ada's agent reads that note before it starts, and gets it right the first time. Each agent writes only to its own memory."
+    },
+    {
+      "id": "people-skill",
+      "min": 9,
+      "text": "The team owns its skills, so when one agent adds a missing step, every member's agent follows it on the next task."
+    },
+    {
+      "id": "people-ctl",
+      "min": 10,
+      "text": "There are no owners or admins, and the activity log names who did what. Turn a share off, and the team stops seeing it at once."
+    },
+    {
+      "id": "recap",
+      "min": 14,
+      "text": "So, the checklist. Work and replies pushed to agents, one status per task, and memory and skills. Few, safe tools, approvals and cards from anywhere, every step on the record, work that hands itself on, and a team that learns together."
+    },
+    {
+      "id": "cta",
+      "min": 10,
+      "text": "What does your task board still make you do by hand? Tell us in the comments. Agent R Q is open source: try it at Agent R Q dot com."
+    }
+  ]
+}

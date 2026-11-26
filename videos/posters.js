@@ -43,6 +43,7 @@ export const POSTERS = [
   { slug: 'hand-off-fast', kicker: 'HAND OFF FAST', headline: ['Hand off', 'in seconds.'], sub: 'Talk, skip the title, take it back.', shot: 'd-sending', crop: [900, 410, 520, 160], chip: 'Cancel, before it goes', mascots: ['claude', 'codex', 'agy'] },
   { slug: 'end-to-end', kicker: 'THE OVERVIEW', headline: ['Every agent,', 'one place.'], sub: 'The whole tour, in seven minutes.', shot: 'kanban', crop: [280, 100, 1130, 560], chip: 'every agent, one board', mascots: ['claude', 'codex', 'agy', 'hermes'] },
   { slug: 'agent-cards', kicker: 'AGENT CARDS / A2UI', headline: ['Agents answer', 'with cards.'], sub: 'Charts, buttons, forms, live.', shot: 'live-running', crop: [673, 209, 718, 437], chip: 'one card, updated live', mascots: ['claude', 'codex', 'agy'] },
+  { slug: 'task-manager', kicker: 'AGENT TASK BOARD', headline: ['A board built', 'for agents.'], sub: 'What it needs, and why.', shot: 'midturn', crop: [470, 285, 940, 230], chip: 'pushed to it, mid-task', mascots: ['claude', 'codex', 'agy', 'hermes'] },
   { slug: 'run-anywhere', kicker: 'MACHINES', headline: ['Run agents', 'anywhere.'], sub: 'Your machines, started from the browser.', shot: 'term-4', crop: [60, 30, 760, 260], chip: 'Claude Code, live in a tab', mascots: ['claude', 'codex', 'agy', 'hermes'] },
 ];
 
