@@ -1,0 +1,17 @@
+{
+  "captions": {"Eh two U I": "A2UI", "A I": "AI"},
+  "lines": [
+    {"id": "hook", "min": 8, "text": "Without approvals you get two bad options. Let agents do anything, or watch every terminal."},
+    {"id": "promise", "min": 6, "text": "An A I agent task board brings each question to you. Here is how Agent R Q does it."},
+    {"id": "req", "min": 7, "text": "A risky command comes to you as a request, with the exact command. Allow and Deny sit on its card."},
+    {"id": "card", "min": 6, "text": "Agents can ask with a card too, built on Eh two U I, the open standard."},
+    {"id": "form", "min": 6, "text": "A button for a choice, a form for the details. One click answers."},
+    {"id": "show", "min": 6, "text": "Results come back the same way: a chart, or one live card that updates."},
+    {"id": "reach", "min": 7, "text": "A toast finds you on any page. Push, email and Slack reach you with the tab closed."},
+    {"id": "yolo", "min": 6, "text": "Trust a task end to end? Turn on Yolo for autonomous task execution."},
+    {"id": "record", "min": 5, "text": "Every call still goes on the record, marked auto-allowed."},
+    {"id": "trace", "min": 6, "text": "The trajectory keeps every tool call, and who said no."},
+    {"id": "time", "min": 6, "text": "The timeline says where the time went. Worked, blocked, or waiting on you."},
+    {"id": "cta", "min": 9, "text": "What would you still approve by hand? Tell us in the comments. Agent R Q is open source: try it at Agent R Q dot com."}
+  ]
+}

@@ -55,7 +55,7 @@ function artPeopleBoard(s, at) {
 }
 
 // Two readers: the agent over MCP, the people on a board.
-function artReaders(s, at) {
+export function artReaders(s, at) {
   return g({},
     tile(s, ARTX, 70, 290, 70, 'THE AGENT', 'reads it over MCP', at('promise', 4.0)),
     tile(s, ARTX + 310, 70, 290, 70, 'THE PEOPLE', 'read it on a board', at('promise', 5.6)),
@@ -63,7 +63,7 @@ function artReaders(s, at) {
 }
 
 // The loop: five steps, and a team around them.
-function artLoop(s, at) {
+export function artLoop(s, at) {
   const STEPS = [['1', 'ARRIVES', 4.0], ['2', 'CONTEXT', 5.8], ['3', 'ACTS', 6.6], ['4', 'ASKS', 7.1], ['5', 'FINISHES', 7.8]];
   return g({},
     ...STEPS.map(([n, kind, o], i) => from(s, g({},
@@ -77,7 +77,7 @@ function artLoop(s, at) {
 }
 
 // One agent, every project; and an agent nobody wakes.
-function artWrongRepo(s, at) {
+export function artWrongRepo(s, at) {
   const X = ARTX + 20;
   return g({},
     pane(s, { x: X, y: 60, w: 520, h: 150, title: 'ONE AGENT · EVERY PROJECT', color: C.dim }),
@@ -88,7 +88,7 @@ function artWrongRepo(s, at) {
 }
 
 // Monday it learns the port; Tuesday it learns it again.
-function artForget(s, at) {
+export function artForget(s, at) {
   const X = ARTX + 20;
   return g({},
     from(s, g({},
@@ -117,7 +117,7 @@ function artToolFlood(s, at) {
 }
 
 // Two bad options.
-function artTwoBad(s, at) {
+export function artTwoBad(s, at) {
   return g({},
     term(s, ARTX, 70, 290, 'LET IT DO ANYTHING', C.blocked, '> git push --force', at('ask-pain', 5.2)),
     term(s, ARTX + 310, 70, 290, 'WATCH EVERY TERMINAL', C.ask, '> Allow? (y/n)', at('ask-pain', 6.9)),
@@ -149,7 +149,7 @@ function artQueue(s, at) {
 }
 
 // Five people, five agents, one lesson learned five times.
-function artAlone(s, at) {
+export function artAlone(s, at) {
   const X = ARTX + 20;
   const P = [['ADA', CL], ['BEN', CX], ['CHEN', AG], ['DEV', HE], ['EVA', C.cron]];
   return g({},

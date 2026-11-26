@@ -1,0 +1,17 @@
+{
+  "captions": {"slash clear": "/clear", "A I": "AI"},
+  "lines": [
+    {"id": "hook", "min": 8, "text": "One agent sees every project, so it fixes the wrong one. Or nobody wakes it, and it does nothing."},
+    {"id": "promise", "min": 6, "text": "A task manager for A I agents pushes the work. Here is how Agent R Q does it."},
+    {"id": "ws", "min": 7, "text": "Every project gets its own workspace. Each card names its agent, green while it is connected."},
+    {"id": "push", "min": 6, "text": "Hand billing a task, and it goes straight to billing's agent."},
+    {"id": "latency", "min": 6, "text": "No polling. Task latency is seconds, and an idle agent costs nothing."},
+    {"id": "live", "min": 6, "text": "The conversation is pushed too. Type while the agent works."},
+    {"id": "answer", "min": 6, "text": "Your message reaches it mid-task. It answers, and keeps working."},
+    {"id": "status", "min": 6, "text": "Every task has one clear status: Not Started, Ongoing, Blocked or Done."},
+    {"id": "clear", "min": 7, "text": "Switch tasks, and it starts fresh. Agent R Q runs slash clear in its terminal first."},
+    {"id": "board", "min": 6, "text": "And every workspace's tasks sit on one agent task board, live."},
+    {"id": "keys", "min": 6, "text": "People get a task keyboard too. N for a new task, Command K to find one."},
+    {"id": "cta", "min": 9, "text": "Does your agent wait for work, or get it pushed? Tell us in the comments. Agent R Q is open source: try it at Agent R Q dot com."}
+  ]
+}
