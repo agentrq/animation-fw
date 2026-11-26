@@ -1043,6 +1043,68 @@
         ]
       }
     },
+    "c-form": {
+      "file": "c-form.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/new",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "eraser": [
+          583,
+          427,
+          36,
+          36
+        ],
+        "yolo": [
+          619,
+          427,
+          79,
+          36
+        ]
+      }
+    },
+    "c-term-1": {
+      "file": "c-term-1.webp",
+      "route": "/sessions/0mTMK7huqF3",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "term": [
+          90,
+          154.5,
+          1308,
+          615.5
+        ]
+      }
+    },
+    "c-term-3": {
+      "file": "c-term-3.webp",
+      "route": "/sessions/0mTMK7huqF3",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "term": [
+          90,
+          154.5,
+          1308,
+          615.5
+        ]
+      }
+    },
+    "k-help": {
+      "file": "k-help.webp",
+      "route": "/workspaces/0mSNbM3vCzd/tasks/0mTMPDlyZwz",
+      "width": 4320,
+      "height": 2430,
+      "regions": {
+        "dialog": [
+          0,
+          0,
+          1440,
+          810
+        ]
+      }
+    },
     "ask-buttons": {
       "file": "ask-buttons.webp",
       "route": "/workspaces/0mbJXXDahQz/tasks/0mbKggRiORB",

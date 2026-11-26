@@ -49,31 +49,31 @@ function artPeopleBoard(s, at) {
     ...['Fix checkout on mobile', 'Update the refunds guide', 'Nightly dependency audit'].map((t, i) => g({},
       el('rect', { x: X + 20, y: 98 + i * 40, width: 16, height: 16, fill: 'none', stroke: C.dim, 'stroke-width': 2, class: 'px' }),
       s.text(t, { x: X + 50, y: 112 + i * 40, font: 'semi', size: 15, fill: C.text }))),
-    from(s, tagChip(s, 'forgets at session end', { x: X, y: 252, fill: C.ask }), at('pain', 3.2)),
-    from(s, tagChip(s, 'runs what it may', { x: X + 250, y: 252, fill: C.ask }), at('pain', 5.5)),
-    from(s, tagChip(s, '3 AM, nobody watching', { x: X, y: 292, fill: C.blocked, color: C.text }), at('pain', 7.9)));
+    from(s, tagChip(s, 'forgets at session end', { x: X, y: 252, fill: C.ask }), at('pain', 3.5)),
+    from(s, tagChip(s, 'runs what it may', { x: X + 250, y: 252, fill: C.ask }), at('pain', 5.0)),
+    from(s, tagChip(s, '3 AM, nobody watching', { x: X, y: 292, fill: C.blocked, color: C.text }), at('pain', 8.5)));
 }
 
 // Two readers: the agent over MCP, the people on a board.
 function artReaders(s, at) {
   return g({},
-    tile(s, ARTX, 70, 290, 70, 'THE AGENT', 'reads it over MCP', at('promise', 3.9)),
-    tile(s, ARTX + 310, 70, 290, 70, 'THE PEOPLE', 'read it on a board', at('promise', 5.5)),
-    from(s, tagChip(s, 'worked example: AgentRQ', { x: ARTX, y: 170, fill: C.lit }), at('promise', 8.6)));
+    tile(s, ARTX, 70, 290, 70, 'THE AGENT', 'reads it over MCP', at('promise', 4.0)),
+    tile(s, ARTX + 310, 70, 290, 70, 'THE PEOPLE', 'read it on a board', at('promise', 5.6)),
+    from(s, tagChip(s, 'worked example: AgentRQ', { x: ARTX, y: 170, fill: C.lit }), at('promise', 9.7)));
 }
 
 // The loop: five steps, and a team around them.
 function artLoop(s, at) {
-  const STEPS = [['1', 'ARRIVES', 3.3], ['2', 'CONTEXT', 4.9], ['3', 'ACTS', 6.1], ['4', 'ASKS', 6.9], ['5', 'FINISHES', 8.0]];
+  const STEPS = [['1', 'ARRIVES', 4.0], ['2', 'CONTEXT', 5.8], ['3', 'ACTS', 6.6], ['4', 'ASKS', 7.1], ['5', 'FINISHES', 7.8]];
   return g({},
     ...STEPS.map(([n, kind, o], i) => from(s, g({},
       el('rect', { x: ARTX + i * 122, y: 70, width: 110, height: 70, fill: C.panel, stroke: C.lit, 'stroke-width': 2, class: 'px' }),
       s.text(n, { x: ARTX + i * 122 + 12, y: 96, font: 'pixel', size: 16, fill: C.lit }),
       s.text(kind, { x: ARTX + i * 122 + 12, y: 126, font: 'pixel', size: 11, fill: C.text })), at('loop', o))),
-    from(s, tagChip(s, 'then the next one starts', { x: ARTX, y: 160, fill: C.lit }), at('loop', 9.1)),
+    from(s, tagChip(s, 'then the next task starts', { x: ARTX, y: 160, fill: C.lit }), at('loop', 9.0)),
     from(s, g({},
       el('rect', { x: ARTX, y: 206, width: 598, height: 50, fill: 'none', stroke: C.ask, 'stroke-width': 2, 'stroke-dasharray': '6 6', class: 'px' }),
-      s.text('AROUND ALL OF IT: A HUMAN TEAM', { x: ARTX + 299, y: 237, font: 'pixel', size: 13, fill: C.ask, anchor: 'middle' })), at('loop', 11.6)));
+      s.text('AROUND ALL OF IT: A HUMAN TEAM', { x: ARTX + 299, y: 237, font: 'pixel', size: 13, fill: C.ask, anchor: 'middle' })), at('loop', 10.8)));
 }
 
 // One agent, every project; and an agent nobody wakes.
@@ -109,11 +109,11 @@ function artToolFlood(s, at) {
     pane(s, { x: X, y: 50, w: 520, h: 200, title: 'CONTEXT WINDOW · BEFORE THE TASK', color: C.dim }),
     ...rows.map((i) => from(s, g({},
       bar(X + 20, 90 + i * 18, 90 + (i * 37) % 120, C.cron),
-      bar(X + 130 + (i * 37) % 120, 90 + i * 18, 200 + (i * 53) % 150)), at('tool-pain', 2.4 + i * 0.25))),
-    from(s, tagChip(s, 'hundreds of tool definitions', { x: X, y: 268, fill: C.ask }), at('tool-pain', 3.9)),
+      bar(X + 130 + (i * 37) % 120, 90 + i * 18, 200 + (i * 53) % 150)), at('tool-pain', 3.4 + i * 0.2))),
+    from(s, tagChip(s, 'hundreds of tool definitions', { x: X, y: 268, fill: C.ask }), at('tool-pain', 4.7)),
     from(s, g({},
       el('rect', { x: X, y: 306, width: 330, height: 30, fill: C.panel, stroke: C.blocked, 'stroke-width': 2, class: 'px' }),
-      s.text('log: API_KEY=sk-live-...', { x: X + 12, y: 326, font: 'mono', size: 14, fill: C.blocked })), at('tool-pain', 7.5)));
+      s.text('log: API_KEY=sk-live-...', { x: X + 12, y: 326, font: 'mono', size: 14, fill: C.blocked })), at('tool-pain', 6.8)));
 }
 
 // Two bad options.
@@ -127,14 +127,14 @@ function artTwoBad(s, at) {
 // You in the middle, relaying between agents.
 function artGlue(s, at) {
   const X = ARTX + 20;
-  const A = [['QA', CL, 2.6], ['DEPLOY', CX, 3.0], ['DOCS', AG, 3.4], ['MOBILE', HE, 3.8]];
+  const A = [['QA', CL, 2.2], ['DEPLOY', CX, 2.4], ['DOCS', AG, 2.6], ['MOBILE', HE, 2.8]];
   return g({},
     ...A.map(([title, color, o], i) => from(s, pane(s, { x: X + (i % 2) * 380, y: 50 + Math.floor(i / 2) * 150, w: 160, h: 100, title, color }), at('next-pain', o))),
     from(s, g({},
       el('rect', { x: X + 200, y: 130, width: 140, height: 70, fill: C.panel, stroke: C.ask, 'stroke-width': 2, class: 'px' }),
-      s.text('YOU', { x: X + 270, y: 172, font: 'pixel', size: 16, fill: C.ask, anchor: 'middle' })), at('next-pain', 4.3)),
-    from(s, tagChip(s, 'read it, type the next task', { x: X, y: 320, fill: C.ask }), at('next-pain', 5.3)),
-    from(s, tagChip(s, 'you sleep: it stops', { x: X + 330, y: 320, fill: C.blocked, color: C.text }), at('next-pain', 7.4)));
+      s.text('YOU', { x: X + 270, y: 172, font: 'pixel', size: 16, fill: C.ask, anchor: 'middle' })), at('next-pain', 3.1)),
+    from(s, tagChip(s, 'type the next task, by hand', { x: X, y: 320, fill: C.ask }), at('next-pain', 4.8)),
+    from(s, tagChip(s, 'you sleep: it stops', { x: X + 330, y: 320, fill: C.blocked, color: C.text }), at('next-pain', 6.4)));
 }
 
 // One agent, six tasks in a line.
@@ -156,15 +156,14 @@ function artAlone(s, at) {
     ...P.map(([who, color], i) => from(s, g({},
       el('rect', { x: X, y: 50 + i * 46, width: 520, height: 36, fill: C.panel, stroke: C.line, class: 'px' }),
       s.text(who, { x: X + 14, y: 73 + i * 46, font: 'pixel', size: 12, fill: color }),
-      s.text('learned: clear the build cache', { x: X + 90, y: 73 + i * 46, font: 'mono', size: 13, fill: C.text })), at('people-pain', 4.0 + i * 0.4))),
-    from(s, tagChip(s, 'five times', { x: X, y: 290, fill: C.ask }), at('people-pain', 6.2)),
-    from(s, tagChip(s, "can't see each other's agents", { x: X + 130, y: 290, fill: C.blocked, color: C.text }), at('people-pain', 7.4)));
+      s.text('learned: clear the build cache', { x: X + 90, y: 73 + i * 46, font: 'mono', size: 13, fill: C.text })), at('people-pain', 3.5 + i * 0.3))),
+    from(s, tagChip(s, 'one lesson, five times', { x: X, y: 290, fill: C.ask }), at('people-pain', 6.0)));
 }
 
 // The checklist, one row per characteristic, ticked as the voice names it.
 function artChecklist(s, at) {
-  const R = [['pushed to agents', 3.0], ['one status per task', 4.2], ['memory and skills', 5.4], ['few, safe tools', 6.7],
-    ['approvals and cards', 7.3], ['every step on record', 9.2], ['hands itself on', 10.6], ['a team that learns', 12.3]];
+  const R = [['pushed to agents', 3.8], ['one status per task', 4.8], ['memory and skills', 5.9], ['few, safe tools', 7.1],
+    ['approvals, anywhere', 8.0], ['every step on record', 9.3], ['hands itself on', 10.6], ['a team that learns', 12.2]];
   return g({}, ...R.map(([line, o], i) => {
     const x = ARTX + (i % 2) * 305;
     const y = 40 + Math.floor(i / 2) * 64;
@@ -180,9 +179,9 @@ function artChecklist(s, at) {
 function artEnd(s) {
   return g({},
     s.text('agentrq.com', { x: 860, y: 200, font: 'bold', size: 64, fill: C.text, anchor: 'middle', spacing: -1.5 }),
-    s.text('Open source. The full checklist is in our guidelines.', { x: 860, y: 244, font: 'body', size: 20, fill: C.dim, anchor: 'middle' }),
-    el('rect', { x: 560, y: 290, width: 600, height: 54, fill: C.panel, stroke: C.lit, 'stroke-width': 2, class: 'px' }),
-    s.text('What does your board still make you do by hand?', { x: 860, y: 324, font: 'semi', size: 18, fill: C.lit, anchor: 'middle' }));
+    s.text('The open source task manager for AI agents.', { x: 860, y: 244, font: 'body', size: 20, fill: C.dim, anchor: 'middle' }),
+    el('rect', { x: 540, y: 290, width: 640, height: 54, fill: C.panel, stroke: C.lit, 'stroke-width': 2, class: 'px' }),
+    s.text('What does your agent task board still make you do by hand?', { x: 860, y: 324, font: 'semi', size: 18, fill: C.lit, anchor: 'middle' }));
 }
 
 // ---------------------------------------------------------------- the drawn tools chapter
@@ -202,15 +201,15 @@ function drawOneTool(s, at) {
     from(s, g({},
       el('rect', { x: 80, y: 182, width: 320, height: 34, fill: '#14532d', stroke: C.lit, class: 'px' }),
       mono(s, 'callTool', 96, 205, C.lit, 16),
-      s.text('mesher.sh', { x: 388, y: 205, font: 'pixel', size: 11, fill: C.lit, anchor: 'end' })), at('tool-one', 6.2)),
-    from(s, s.text('one tool, whatever is installed', { x: 80, y: 246, font: 'body', size: 15, fill: C.dim }), at('tool-one', 6.5)),
-    ...[['gmail', 4.7], ['github', 5.0], ['a remote MCP server', 5.3]].map(([name, o], i) => from(s, tagChip(s, name, { x: 80 + [0, 84, 180][i], y: 278, fill: C.card, color: C.text }), at('tool-one', o))),
+      s.text('mesher.sh', { x: 388, y: 205, font: 'pixel', size: 11, fill: C.lit, anchor: 'end' })), at('tool-one', 6.6)),
+    from(s, s.text('one tool, whatever is installed', { x: 80, y: 246, font: 'body', size: 15, fill: C.dim }), at('tool-one', 6.9)),
+    ...[['gmail', 4.9], ['github', 5.2], ['a remote MCP server', 5.5]].map(([name, o], i) => from(s, tagChip(s, name, { x: 80 + [0, 84, 180][i], y: 278, fill: C.card, color: C.text }), at('tool-one', o))),
     pane(s, { x: 450, y: 140, w: 690, h: 190, title: 'CALLTOOL · A COMMAND LINE', color: C.lit }),
-    from(s, mono(s, "> gmail.searchTools 'unread' 10", 470, 192), at('tool-one', 7.7)),
-    from(s, mono(s, '> gmail.tools sendEmail help', 470, 232), at('tool-one', 8.9)),
-    from(s, mono(s, `> gmail.tools sendEmail -b '{"to":"ada@example.com",...}'`, 470, 272), at('tool-one', 9.3)),
-    from(s, s.text('the same commands run in a shell: mesher gmail tools sendEmail', { x: 470, y: 312, font: 'body', size: 14, fill: C.dim }), at('tool-one', 9.3)),
-    from(s, tagChip(s, 'search, read its help, call it', { x: 450, y: 360, fill: C.lit }), at('tool-one', 7.9)));
+    from(s, mono(s, "> gmail.searchTools 'unread' 10", 470, 192), at('tool-one', 8.1)),
+    from(s, mono(s, '> gmail.tools sendEmail help', 470, 232), at('tool-one', 8.8)),
+    from(s, mono(s, `> gmail.tools sendEmail -b '{"to":"ada@example.com",...}'`, 470, 272), at('tool-one', 9.8)),
+    from(s, s.text('the same commands run in a shell: mesher gmail tools sendEmail', { x: 470, y: 312, font: 'body', size: 14, fill: C.dim }), at('tool-one', 10.0)),
+    from(s, tagChip(s, 'search, read its help, call it', { x: 450, y: 360, fill: C.lit }), at('tool-one', 8.1)));
 }
 
 // The host checks the allowlist and adds the credential; the agent never holds it.
@@ -248,15 +247,15 @@ function drawToon(s, at) {
     from(s, tagChip(s, 'gmail@personal', { x: 80, y: 202, fill: C.card, color: C.text }), at('tool-toon', 1.6)),
     from(s, g({},
       pane(s, { x: 390, y: 130, w: 470, h: 160, title: `JSON · ${chars(JSON_ROWS)} CHARACTERS`, color: C.dim }),
-      ...JSON_ROWS.map((r, i) => mono(s, r, 404, 164 + i * 22, C.dim, 12))), at('tool-toon', 3.1)),
+      ...JSON_ROWS.map((r, i) => mono(s, r, 404, 164 + i * 22, C.dim, 12))), at('tool-toon', 3.0)),
     from(s, g({},
       pane(s, { x: 880, y: 130, w: 260, h: 160, title: `TOON · ${chars(TOON_ROWS)}`, color: C.lit }),
-      ...TOON_ROWS.map((r, i) => mono(s, r, 894, 164 + i * 22, C.lit, 12))), at('tool-toon', 4.6)),
-    from(s, tagChip(s, 'same emails, fewer tokens', { x: 880, y: 304, fill: C.lit }), at('tool-toon', 6.1)),
+      ...TOON_ROWS.map((r, i) => mono(s, r, 894, 164 + i * 22, C.lit, 12))), at('tool-toon', 3.6)),
+    from(s, tagChip(s, 'same emails, fewer tokens', { x: 880, y: 304, fill: C.lit }), at('tool-toon', 4.5)),
     from(s, g({},
       box(390, 370, 750, 70, C.ask),
       s.text('CIRCUIT BREAKER', { x: 410, y: 398, font: 'pixel', size: 13, fill: C.ask }),
-      s.text('half of the recent calls failed: calls to it pause for a while', { x: 410, y: 424, font: 'body', size: 15, fill: C.text })), at('tool-toon', 8.3)));
+      s.text('half of the recent calls failed: calls to it pause for a while', { x: 410, y: 424, font: 'body', size: 15, fill: C.text })), at('tool-toon', 6.2)));
 }
 
 // ---------------------------------------------------------------- the video
@@ -277,16 +276,16 @@ export default () => {
   // ------------------------------------------------ cards
   const CARDS = [
     { span: [0, end('pain')], kicker: 'A BOARD FOR PEOPLE', headline: ['Hand it', 'to an agent.'], sub: 'And it breaks.', art: artPeopleBoard },
-    { span: [start('promise'), end('promise')], kicker: 'TWO READERS', headline: ['Agents and', 'people.'], sub: 'One task manager for both.', art: artReaders },
-    { span: [start('loop'), end('loop')], kicker: 'THE LOOP', headline: ['Every task,', 'the same loop.'], sub: 'Each step is where weak tools break.', art: artLoop },
+    { span: [start('promise'), end('promise')], kicker: 'TASK MANAGER FOR AI AGENTS', headline: ['Agents and', 'people.'], sub: 'One agent task manager for both.', art: artReaders },
+    { span: [start('loop'), end('loop')], kicker: 'THE AGENT TASK LOOP', headline: ['Every task,', 'the same loop.'], sub: 'Each step is where weak tools break.', art: artLoop },
     { span: [start('arrive-pain'), end('arrive-pain')], kicker: '01 / THE WORK ARRIVES', headline: ['Wrong project,', 'or no wake-up.'], sub: 'Work has to reach the right agent.', art: artWrongRepo },
     { span: [start('ctx-pain'), end('ctx-pain')], kicker: '02 / CONTEXT', headline: ['Learned today,', 'gone tomorrow.'], sub: 'Every session starts empty.', art: artForget },
     { span: [start('tool-pain'), end('tool-pain')], kicker: '03 / FEW, SAFE TOOLS', headline: ['Too many tools,', 'keys in the logs.'], sub: 'Context spent before the task.', art: artToolFlood },
     { span: [start('ask-pain'), end('ask-pain')], kicker: '04 / ASK AND ANSWER', headline: ['Anything goes,', 'or you watch.'], sub: 'Two bad options.', art: artTwoBad },
     { span: [start('next-pain'), end('next-pain')], kicker: '05 / WORK HANDS ITSELF ON', headline: ['You are', 'the relay.'], sub: 'Between every two agents.', art: artGlue },
     { span: [start('team-pain'), end('team-pain')], kicker: '06 / ONE AGENT TO MANY', headline: ['Six tasks,', 'one agent.'], sub: 'The work waits in line.', art: artQueue },
-    { span: [start('people-pain'), end('people-pain')], kicker: '07 / A HUMAN TEAM', headline: ['Five agents,', 'one lesson.'], sub: 'Learned five times, alone.', art: artAlone },
-    { span: [start('recap'), end('recap')], kicker: 'THE CHECKLIST', headline: ['What a board', 'for agents needs.'], sub: 'Judge any task manager by it.', art: artChecklist },
+    { span: [start('people-pain'), end('people-pain')], kicker: '07 / A HUMAN TEAM', headline: ['Five agents,', 'one lesson.'], sub: 'Every agent learns alone.', art: artAlone },
+    { span: [start('recap'), end('recap')], kicker: 'THE CHECKLIST', headline: ['What an agent', 'task board needs.'], sub: 'Judge any task manager for agents by it.', art: artChecklist },
     { span: [start('cta'), tl.end], kicker: 'TRY IT', headline: ['Your agents,', 'one board.'], sub: 'Real screens, real agents, real work.', art: artEnd },
   ];
   addCards(s, CARDS, at);
@@ -356,9 +355,9 @@ export default () => {
   sc.callout(at('arrive-ws', 5.5), at('arrive-ws', 7.8), 'billing', { label: 'the agent, named on its card', side: 'below' });
   sc.callout(at('arrive-ws', 7.9), end('arrive-ws') - 0.3, 'docs', { label: 'green: connected', side: 'below' });
   sc.show('task-billing', start('arrive-push'), { fade: 0.3 }).cut(start('arrive-push'), CHAT);
-  sc.callout(at('arrive-push', 2.9), at('arrive-push', 5.2), 'reply', { label: "pushed to billing's agent", side: 'below' });
-  sc.look(at('arrive-push', 5.3), 'window', { dur: 0.8 });
-  sc.callout(at('arrive-push', 6.3), end('arrive-push') - 0.3, 'row', { label: 'on it in seconds', side: 'right' });
+  sc.callout(at('arrive-push', 2.8), at('arrive-push', 5.0), 'reply', { label: "pushed to billing's agent", side: 'below' });
+  sc.look(at('arrive-push', 5.1), 'window', { dur: 0.8 });
+  sc.callout(at('arrive-push', 6.0), end('arrive-push') - 0.3, 'row', { label: 'task latency: seconds', side: 'right' });
   sc.show('midturn-typed', start('arrive-live'), { fade: 0.3 }).cut(start('arrive-live'), LOWER);
   sc.callout(at('arrive-live', 3.2), at('arrive-live', 5.1), 'box', { label: 'typed while it works', side: 'above' });
   sc.show('midturn', at('arrive-live', 5.2), { fade: 0.25 }).cut(at('arrive-live', 5.2), MID);
@@ -366,12 +365,23 @@ export default () => {
   sc.callout(at('arrive-live', 7.0), at('arrive-live', 8.1), 'reply', { label: 'answered mid-task', side: 'below' });
   sc.callout(at('arrive-live', 8.2), end('arrive-live') - 0.3, 'working', { label: 'still working: no restart', side: 'above' });
   sc.show('kanban', start('arrive-status'), { fade: 0.3 }).cut(start('arrive-status'), BOARD);
-  sc.callout(at('arrive-status', 2.8), at('arrive-status', 3.5), 'notstarted', {});
-  sc.callout(at('arrive-status', 3.6), at('arrive-status', 4.0), 'ongoing', {});
-  sc.callout(at('arrive-status', 4.1), at('arrive-status', 4.7), 'blocked', {});
-  sc.callout(at('arrive-status', 4.8), at('arrive-status', 5.6), 'done', {});
-  sc.callout(at('arrive-status', 6.1), at('arrive-status', 8.1), [568, 113, 267, 420], { label: "every workspace's tasks", side: 'right' });
-  sc.callout(at('arrive-status', 8.3), end('arrive-status') - 0.3, [1125, 113, 267, 420], { label: 'live, no refresh', side: 'left' });
+  sc.callout(at('arrive-status', 2.5), at('arrive-status', 3.2), 'notstarted', {});
+  sc.callout(at('arrive-status', 3.3), at('arrive-status', 3.7), 'ongoing', {});
+  sc.callout(at('arrive-status', 3.8), at('arrive-status', 4.3), 'blocked', {});
+  sc.callout(at('arrive-status', 4.4), at('arrive-status', 5.1), 'done', {});
+  sc.callout(at('arrive-status', 5.2), at('arrive-status', 8.5), [568, 113, 267, 420], { label: 'every workspace, in sync', side: 'right' });
+  sc.callout(at('arrive-status', 8.6), end('arrive-status') - 0.3, [1125, 113, 267, 420], { label: 'one Kanban, live', side: 'left' });
+  sc.show('c-form', start('arrive-clear'), { fade: 0.3 }).cut(start('arrive-clear'), [340, 190, 820, 320]);
+  sc.callout(at('arrive-clear', 1.7), at('arrive-clear', 3.9), 'eraser', { label: 'start fresh', side: 'below' });
+  sc.callout(at('arrive-clear', 4.0), at('arrive-clear', 6.9), [376, 394, 440, 24], { label: 'cleared before it picks the task up', side: 'above' });
+  sc.show('c-term-1', at('arrive-clear', 7.0), { fade: 0.25 }).cut(at('arrive-clear', 7.0), TERM_FRAME);
+  sc.callout(at('arrive-clear', 7.8), at('arrive-clear', 8.8), [86, 290, 74, 20], { label: '/clear, typed for it', side: 'right' });
+  sc.show('c-term-3', at('arrive-clear', 8.9), { fade: 0.2 });
+  sc.callout(at('arrive-clear', 9.1), end('arrive-clear') - 0.3, [86, 324, 720, 20], { label: 'then the task, on a clean slate', side: 'below' });
+  sc.show('k-help', start('arrive-keys'), { fade: 0.3 }).cut(start('arrive-keys'), [480, 105, 480, 560]);
+  sc.callout(at('arrive-keys', 2.7), at('arrive-keys', 3.7), [508, 250, 420, 26], { label: 'N: a new task', side: 'right' });
+  sc.callout(at('arrive-keys', 3.8), at('arrive-keys', 5.3), [508, 203, 420, 26], { label: 'Cmd K: find a task', side: 'right' });
+  sc.callout(at('arrive-keys', 5.4), end('arrive-keys') - 0.3, [508, 434, 420, 26], { label: '?: every shortcut', side: 'right' });
 
   // 02 Context
   sc.show('mem-saved', start('ctx-save'), { fade: 0 }).cut(start('ctx-save'), CHAT);
@@ -395,16 +405,16 @@ export default () => {
   sc.callout(at('ask-req', 6.3), end('ask-req') - 0.3, [591, 309, 120, 28], { label: 'Allow and Deny, on the card', side: 'right' });
   sc.show('ask-buttons', start('ask-card'), { fade: 0.3 }).cut(start('ask-card'), CARD);
   sc.callout(at('ask-card', 2.2), at('ask-card', 6.2), 'card', { label: 'an A2UI card, from the agent', side: 'above' });
-  sc.callout(at('ask-card', 6.3), at('ask-card', 7.5), 'sched', { label: 'a choice: a button', side: 'above' });
-  sc.show('ask-form', at('ask-card', 7.6), { fade: 0.25 }).cut(at('ask-card', 7.6), FORM_CARD);
-  sc.callout(at('ask-card', 7.8), at('ask-card', 8.9), 'card', { label: 'the details: a form', side: 'left' });
-  sc.show('ask-clicked', at('ask-card', 9.0), { fade: 0.25 }).cut(at('ask-card', 9.0), CARD);
-  sc.callout(at('ask-card', 9.2), end('ask-card') - 0.3, 'card', { label: 'one click answers it', side: 'above' });
+  sc.callout(at('ask-card', 6.5), at('ask-card', 7.9), 'sched', { label: 'a choice: a button', side: 'above' });
+  sc.show('ask-form', at('ask-card', 8.0), { fade: 0.25 }).cut(at('ask-card', 8.0), FORM_CARD);
+  sc.callout(at('ask-card', 8.1), at('ask-card', 9.1), 'card', { label: 'the details: a form', side: 'left' });
+  sc.show('ask-clicked', at('ask-card', 9.2), { fade: 0.25 }).cut(at('ask-card', 9.2), CARD);
+  sc.callout(at('ask-card', 9.3), end('ask-card') - 0.3, 'card', { label: 'one click answers it', side: 'above' });
   sc.show('chart-heat', start('ask-show'), { fade: 0.3 }).cut(start('ask-show'), [660, 190, 750, 360]);
-  sc.callout(at('ask-show', 3.0), at('ask-show', 4.9), 'card', { label: 'a chart, at a glance', side: 'left' });
-  sc.show('live-running', at('ask-show', 5.0), { fade: 0.25 }).cut(at('ask-show', 5.0), TALL_CARD);
-  sc.callout(at('ask-show', 5.1), at('ask-show', 6.3), { region: 'card', y: 0.18, h: 0.36 }, { label: 'the checks', side: 'left' });
-  sc.callout(at('ask-show', 6.4), end('ask-show') - 0.3, 'card', { label: 'one live card, updating', side: 'left' });
+  sc.callout(at('ask-show', 2.9), at('ask-show', 3.7), 'card', { label: 'a chart, at a glance', side: 'left' });
+  sc.show('live-running', at('ask-show', 3.8), { fade: 0.25 }).cut(at('ask-show', 3.8), TALL_CARD);
+  sc.callout(at('ask-show', 3.9), at('ask-show', 4.9), { region: 'card', y: 0.18, h: 0.36 }, { label: 'the checks', side: 'left' });
+  sc.callout(at('ask-show', 5.0), end('ask-show') - 0.3, 'card', { label: 'one live card, updating', side: 'left' });
   sc.show('note-toast', start('ask-reach'), { fade: 0.3 }).cut(start('ask-reach'), TOAST_FRAME);
   sc.callout(at('ask-reach', 1.0), at('ask-reach', 2.6), 'toast', { label: 'on any page', side: 'left' });
   sc.show('note-settings', at('ask-reach', 2.7), { fade: 0.3 }).cut(at('ask-reach', 2.7), SET_FRAME);
@@ -413,7 +423,7 @@ export default () => {
   sc.callout(at('ask-reach', 6.3), end('ask-reach') - 0.3, 'chip', { label: 'yellow: waiting on you', side: 'below' });
   sc.show('yolo-task', start('ask-yolo'), { fade: 0.3 }).cut(start('ask-yolo'), YOLO_FORM);
   sc.callout(at('ask-yolo', 1.1), at('ask-yolo', 3.4), 'form', { label: 'one task you trust', side: 'below' });
-  sc.callout(at('ask-yolo', 3.5), at('ask-yolo', 5.6), 'chip', { label: 'Yolo, for this task', side: 'below' });
+  sc.callout(at('ask-yolo', 3.5), at('ask-yolo', 5.6), 'chip', { label: 'Yolo: autonomous task execution', side: 'below' });
   sc.show('yolo-record', at('ask-yolo', 5.7), { fade: 0.3 }).cut(at('ask-yolo', 5.7), REC_FRAME);
   sc.callout(at('ask-yolo', 6.2), end('ask-yolo') - 0.3, 'auto', { label: 'auto-allowed, on the record', side: 'right' });
   sc.show('trace-denied', start('ask-trace'), { fade: 0.3 }).cut(start('ask-trace'), TRACE);
@@ -438,21 +448,22 @@ export default () => {
   sc.callout(at('next-hook', 4.2), at('next-hook', 6.4), 'payload', { label: 'the failed build on main', side: 'below' });
   sc.callout(at('next-hook', 6.5), end('next-hook') - 0.3, 'reply', { label: 'and the agent is on it', side: 'below' });
   sc.show('sched-form', start('next-sched'), { fade: 0.3 }).cut(start('next-sched'), FORM);
-  sc.callout(at('next-sched', 1.0), at('next-sched', 2.5), [361, 258, 766, 48], { label: "read last night's errors", side: 'below' });
-  sc.click(at('next-sched', 2.6), 'schedule');
-  sc.show('sched-daily', at('next-sched', 2.8), { fade: 0.25 }).away(at('next-sched', 2.9));
-  sc.look(at('next-sched', 2.8), MENU, { dur: 0.5 });
-  sc.callout(at('next-sched', 3.4), at('next-sched', 3.9), 'preset', { label: 'Daily', side: 'below' });
-  sc.callout(at('next-sched', 4.0), at('next-sched', 5.8), 'time', { label: 'at nine', side: 'below' });
-  sc.show('sched-runs', at('next-sched', 5.9), { fade: 0.25 }).look(at('next-sched', 5.9), RUNS, { dur: 0.5 });
-  sc.callout(at('next-sched', 6.5), end('next-sched') - 0.3, RUN_ROW, { label: 'each run, its own task', side: 'above' });
+  sc.callout(at('next-sched', 1.0), at('next-sched', 3.4), [361, 258, 766, 48], { label: "read last night's errors", side: 'below' });
+  sc.click(at('next-sched', 3.5), 'schedule');
+  sc.show('sched-daily', at('next-sched', 3.7), { fade: 0.25 }).away(at('next-sched', 3.8));
+  sc.look(at('next-sched', 3.7), MENU, { dur: 0.5 });
+  sc.callout(at('next-sched', 4.3), at('next-sched', 6.5), 'tabs', { label: 'one time, or repeated', side: 'above' });
+  sc.callout(at('next-sched', 6.6), at('next-sched', 7.1), 'preset', { label: 'Daily', side: 'below' });
+  sc.callout(at('next-sched', 7.2), at('next-sched', 8.4), 'time', { label: 'at nine', side: 'below' });
+  sc.show('sched-runs', at('next-sched', 8.5), { fade: 0.25 }).look(at('next-sched', 8.5), RUNS, { dur: 0.4 });
+  sc.callout(at('next-sched', 9.0), end('next-sched') - 0.3, RUN_ROW, { label: 'each run, its own task', side: 'above' });
 
   // 06 One agent to many
   sc.show('mach-online', start('team-mach'), { fade: 0 }).cut(start('team-mach'), CARD_FRAME);
-  sc.callout(at('team-mach', 1.0), at('team-mach', 2.9), 'name', { label: 'a machine you own', side: 'right' });
-  sc.callout(at('team-mach', 3.0), at('team-mach', 6.6), CPU_MEM, { label: 'enrolled and green', side: 'below' });
-  sc.show('term-1', at('team-mach', 6.7), { fade: 0.25 }).look(at('team-mach', 6.7), TERM_FRAME, { dur: 0.6 });
-  sc.callout(at('team-mach', 7.6), end('team-mach') - 0.3, LIVE, { label: 'its terminal, live in the page', side: 'right' });
+  sc.callout(at('team-mach', 1.0), at('team-mach', 4.2), CPU_MEM, { label: 'working in the background', side: 'below' });
+  sc.callout(at('team-mach', 4.3), at('team-mach', 6.2), 'name', { label: 'a machine you own', side: 'right' });
+  sc.show('term-1', at('team-mach', 6.3), { fade: 0.25 }).look(at('team-mach', 6.3), TERM_FRAME, { dur: 0.6 });
+  sc.callout(at('team-mach', 7.2), end('team-mach') - 0.3, LIVE, { label: 'its terminal, live in the page', side: 'right' });
   sc.show('fork-modal', start('team-fork'), { fade: 0.3 }).cut(start('team-fork'), FORK);
   sc.callout(at('team-fork', 1.0), at('team-fork', 2.6), 'name', { label: 'billing-refunds', side: 'below' });
   sc.callout(at('team-fork', 2.7), at('team-fork', 4.3), 'text', { label: 'its own queue and agent', side: 'right' });
@@ -471,10 +482,10 @@ export default () => {
   sc.callout(at('people-share', 1.0), at('people-share', 4.8), 'sharing', { label: 'shared with the team', side: 'below' });
   sc.callout(at('people-share', 4.9), end('people-share') - 0.3, [354, 225, 230, 24], { label: 'tasks, memory, skills', side: 'right' });
   sc.show('team-tasks', start('people-see'), { fade: 0.3 }).cut(start('people-see'), TEAM_LIST);
-  sc.callout(at('people-see', 1.0), at('people-see', 3.8), 'list', { label: 'every task, live', side: 'right' });
-  sc.callout(at('people-see', 3.9), at('people-see', 5.4), 'owner0', { label: "the owner's name", side: 'right' });
-  sc.cut(at('people-see', 5.5), RO_BAR);
-  sc.callout(at('people-see', 5.9), end('people-see') - 0.3, 'bar', { label: 'read-only', side: 'above' });
+  sc.callout(at('people-see', 1.0), at('people-see', 3.7), 'list', { label: 'every task, live', side: 'right' });
+  sc.callout(at('people-see', 3.8), at('people-see', 5.1), 'owner0', { label: "the owner's name", side: 'right' });
+  sc.cut(at('people-see', 5.2), RO_BAR);
+  sc.callout(at('people-see', 5.4), end('people-see') - 0.3, 'bar', { label: 'read-only', side: 'above' });
   sc.show('ben-saved', start('people-mem'), { fade: 0.3 }).cut(start('people-mem'), TEAM_CHAT);
   sc.callout(at('people-mem', 1.0), at('people-mem', 2.8), 'msg2', { label: "Ben's agent saves it", side: 'below' });
   sc.show('ada-fixed', at('people-mem', 2.9), { fade: 0.3 }).cut(at('people-mem', 2.9), TEAM_CHAT);
@@ -486,12 +497,12 @@ export default () => {
   sc.show('members', start('people-ctl'), { fade: 0.3 }).cut(start('people-ctl'), TEAM_SET);
   sc.callout(at('people-ctl', 1.4), at('people-ctl', 3.1), [354, 154, 1004, 114], { label: 'no owners, no admins', side: 'below' });
   sc.show('activity', at('people-ctl', 3.2), { fade: 0.25 }).cut(at('people-ctl', 3.2), TEAM_SET);
-  sc.callout(at('people-ctl', 3.4), at('people-ctl', 5.5), 'list', { label: 'who did what', side: 'below' });
-  sc.show('share-on', at('people-ctl', 5.6), { fade: 0.25 }).cut(at('people-ctl', 5.6), TEAM_SET);
-  sc.callout(at('people-ctl', 5.9), end('people-ctl') - 0.3, 'list', { label: 'one switch per workspace', side: 'below' });
+  sc.callout(at('people-ctl', 3.4), at('people-ctl', 5.8), 'list', { label: 'who did what', side: 'below' });
+  sc.show('share-on', at('people-ctl', 5.9), { fade: 0.25 }).cut(at('people-ctl', 5.9), TEAM_SET);
+  sc.callout(at('people-ctl', 6.1), end('people-ctl') - 0.3, 'list', { label: 'one switch per workspace', side: 'below' });
 
   sc.visible([
-    [start('arrive-ws'), end('arrive-status')],
+    [start('arrive-ws'), end('arrive-keys')],
     [start('ctx-save'), end('ctx-pano')],
     [start('ask-req'), end('ask-trace')],
     [start('next-event'), end('next-sched')],
@@ -506,7 +517,7 @@ export default () => {
   s.add(fadeSpan(s, drawToon(s, at), [start('tool-toon'), end('tool-toon')], 0.3));
 
   // The chapter, in a corner, while its screens show.
-  chapterChips(s, [['01 / THE WORK ARRIVES', 'arrive-ws', 'arrive-status'], ['02 / CONTEXT', 'ctx-save', 'ctx-pano'], ['03 / FEW, SAFE TOOLS', 'tool-one', 'tool-toon'],
+  chapterChips(s, [['01 / THE WORK ARRIVES', 'arrive-ws', 'arrive-keys'], ['02 / CONTEXT', 'ctx-save', 'ctx-pano'], ['03 / FEW, SAFE TOOLS', 'tool-one', 'tool-toon'],
     ['04 / ASK AND ANSWER', 'ask-req', 'ask-trace'], ['05 / WORK HANDS ITSELF ON', 'next-event', 'next-sched'], ['06 / ONE AGENT TO MANY', 'team-mach', 'team-sup'],
     ['07 / A HUMAN TEAM', 'people-share', 'people-ctl']].map(([label, a, z]) => [label, start(a), end(z)]));
 
