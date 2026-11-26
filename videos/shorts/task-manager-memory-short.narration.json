@@ -1,0 +1,17 @@
+{
+  "captions": {"Panno": "Pano", "five four three three": "5433"},
+  "lines": [
+    {"id": "hook", "min": 8, "text": "Your agent spends an hour learning the tests need port five four three three. Tomorrow, a new session learns it again."},
+    {"id": "promise", "min": 6, "text": "An agent task manager should remember for it. In Agent R Q, the workspace does."},
+    {"id": "save", "min": 7, "text": "Before it marks a task done, the agent saves one short note. It goes to the workspace memory."},
+    {"id": "next", "min": 6, "text": "The next task loads that memory first, and goes to the right port. The workspace gets smarter, not one session."},
+    {"id": "version", "min": 6, "text": "Every memory has a version. When two agents save at once, the stale save is refused."},
+    {"id": "merge", "min": 5, "text": "So the agent reloads, merges, and saves version three."},
+    {"id": "safe", "min": 5, "text": "Nothing is lost, and no agent writes over another."},
+    {"id": "skill", "min": 7, "text": "Skills are the team's playbooks, switched on per workspace. One fix reaches them all."},
+    {"id": "load", "min": 5, "text": "An agent loads a skill only when its task needs it."},
+    {"id": "pano", "min": 6, "text": "Bigger plans live on the Panno, and tick as the tasks finish."},
+    {"id": "docs", "min": 5, "text": "Those are markdown docs that every workspace shares."},
+    {"id": "cta", "min": 9, "text": "What does your agent relearn every morning? Tell us in the comments. Agent R Q is open source: try it at Agent R Q dot com."}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "captions": {},
+  "lines": [
+    {"id": "hook", "min": 8, "text": "Five people, five agents. Each one learns to clear the build cache, alone. One lesson, five times."},
+    {"id": "promise", "min": 6, "text": "A task manager for agents should let a team learn together. Here is how Agent R Q does it."},
+    {"id": "share", "min": 7, "text": "Share a workspace with your team. Choose what goes with it: tasks, memory and skills."},
+    {"id": "same", "min": 5, "text": "Same-named workspaces become one team workspace."},
+    {"id": "see", "min": 6, "text": "Teammates see every task live, with the owner's name on each."},
+    {"id": "ro", "min": 5, "text": "It is read-only. Nobody can reply or approve for you."},
+    {"id": "ben", "min": 6, "text": "Ben's agent hits a flaky build, and saves the fix to its memory."},
+    {"id": "ada", "min": 7, "text": "Ada's agent reads that note before it starts. It gets it right the first time."},
+    {"id": "own", "min": 5, "text": "Each agent still writes only to its own memory."},
+    {"id": "skill", "min": 7, "text": "The team owns its skills. One agent adds a missing step, and every agent follows it."},
+    {"id": "ctl", "min": 6, "text": "There are no owners or admins. The activity log names who did what, and one switch stops a share."},
+    {"id": "cta", "min": 9, "text": "What should your team's agents learn only once? Tell us in the comments. Agent R Q is open source: try it at Agent R Q dot com."}
+  ]
+}
