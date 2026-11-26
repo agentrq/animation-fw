@@ -44,7 +44,7 @@ test('without a timeline a video scene says what to set', async () => {
 });
 
 // The videos told over real screens of the app, with a caption to find and a chapter chip.
-for (const [name, line, chip] of [['pano-collaboration', 'kanban', '05 / STATUS'], ['teams-collaboration', 'merge', '07 / YOU STAY IN CONTROL'], ['workspaces-memory-skills', 'mem-save', '05 / YOU STAY IN CONTROL'], ['see-every-agent', 'wait-allow', '06 / YOU STAY IN CONTROL'], ['automate-work', 'ev-trigger', '05 / YOU STAY IN CONTROL'], ['run-anywhere', 'start-term', '05 / YOU STAY IN CONTROL'], ['into-your-tools', 'slack-t', '05 / YOU STAY IN CONTROL'], ['hand-off-fast', 'delay-cancel', '06 / A CLEAN SLATE'], ['end-to-end', 'see-ask', '04 / SEE EVERY AGENT'], ['agent-cards', 'ask-click', '07 / SAFE BY DESIGN']]) {
+for (const [name, line, chip] of [['pano-collaboration', 'kanban', '05 / STATUS'], ['teams-collaboration', 'merge', '07 / YOU STAY IN CONTROL'], ['workspaces-memory-skills', 'mem-save', '05 / YOU STAY IN CONTROL'], ['see-every-agent', 'wait-allow', '06 / YOU STAY IN CONTROL'], ['automate-work', 'ev-trigger', '05 / YOU STAY IN CONTROL'], ['run-anywhere', 'start-term', '05 / YOU STAY IN CONTROL'], ['into-your-tools', 'slack-t', '05 / YOU STAY IN CONTROL'], ['hand-off-fast', 'delay-cancel', '06 / A CLEAN SLATE'], ['end-to-end', 'see-ask', '04 / SEE EVERY AGENT'], ['agent-cards', 'ask-click', '07 / SAFE BY DESIGN'], ['task-manager', 'ask-card', '04 / ASK AND ANSWER']]) {
   test(`${name} builds on real screens, with its own ground and caption band`, async () => {
     // One beat per narration line, 11 s each, so every stage event lands inside its beat.
     const ids = JSON.parse(fs.readFileSync(`videos/${name}.narration.json`, 'utf8')).lines.map((l) => l.id);

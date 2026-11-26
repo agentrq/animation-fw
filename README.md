@@ -130,9 +130,11 @@ A video can show the product itself, not a drawing of it. `videos/pano-collabora
 CLI, and a team that hands it work and approves it from Slack),
 `videos/hand-off-fast.js` (about 5.5 minutes, tasks named by a model in the browser, replies spoken and transcribed by
 Whisper on your machine, presets, the send delay, single-key shortcuts and /clear before each task),
-`videos/end-to-end.js` (about 7 minutes, the overview: one chapter per feature, told over the screens of the videos above) and
+`videos/end-to-end.js` (about 7 minutes, the overview: one chapter per feature, told over the screens of the videos above),
 `videos/agent-cards.js` (about 6.5 minutes, A2UI cards an agent sends in a task: charts, a status card, a list, media,
-buttons, a form asked with elicit and a live card, all with real data)
+buttons, a form asked with elicit and a live card, all with real data) and
+`videos/task-manager.js` (about 9 minutes, how a task board for AI agents should work: the loop every task goes through,
+on the screens of the videos above, with the mesher.sh tools chapter drawn)
 are the examples: each
 chapter opens on a pain in the house style, then shows the fix on screenshots of the real app. The pieces they share
 are in `videos/house.js`: the pain card (kicker, headline, a line under it, art on the right), the logo, the ground, and
